@@ -139,25 +139,36 @@ def check_deck(path, report):
     return d
 
 
+BIO_DOCS = ("01-presence-audit.md", "07-ig-setup.md")
+
+
 def check_bios(report):
-    audit = (HERE / "01-presence-audit.md").read_text(encoding="utf-8")
-    # The audit has two name-field/bio blocks; scan every occurrence.
-    names, bios = [], []
-    for i, line in enumerate(audit.splitlines()):
-        if line.startswith("**Name field") or line.startswith("**Bio ("):
-            block = "\n".join(audit.splitlines()[i:i + 7])
+    """Validate every fenced Name field / Bio block in the copy-paste docs.
+
+    07-ig-setup.md repeats the studio bio as a quick-copy block, so both
+    documents are checked: if they drift, the linter says so.
+    """
+    found_any = False
+    for doc in BIO_DOCS:
+        path = HERE / doc
+        if not path.exists():
+            continue
+        lines = path.read_text(encoding="utf-8").splitlines()
+        for i, line in enumerate(lines):
+            if not (line.startswith("**Name field") or line.startswith("**Bio (")):
+                continue
+            block = "\n".join(lines[i:i + 7])
             m = re.search(r"```\n(.+?)\n```", block, re.S)
             if not m:
                 continue
-            (names if line.startswith("**Name") else bios).append(m.group(1))
-    for i, n in enumerate(names):
-        status = "PASS" if len(n.strip()) <= 30 else "FAIL"
-        report.append((status, "bio", f"name field {i+1}: {len(n.strip())}/30 chars"))
-    for i, b in enumerate(bios):
-        status = "PASS" if len(b.strip()) <= 150 else "FAIL"
-        report.append((status, "bio", f"bio {i+1}: {len(b.strip())}/150 chars"))
-    if not names or not bios:
-        report.append(("WARN", "bio", "could not parse 01-presence-audit.md; check by hand"))
+            found_any = True
+            value = m.group(1).strip()
+            limit = 30 if line.startswith("**Name") else 150
+            status = "PASS" if len(value) <= limit else "FAIL"
+            label = "name field" if limit == 30 else "bio"
+            report.append((status, "bio", f"{doc}: {label} {len(value)}/{limit} chars"))
+    if not found_any:
+        report.append(("WARN", "bio", "could not parse any bio block; check by hand"))
 
 
 def main():

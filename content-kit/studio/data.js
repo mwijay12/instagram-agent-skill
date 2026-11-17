@@ -573,6 +573,13 @@ window.KIT_DATA = {
    ]
   }
  ],
+ "setup": {
+  "account": "@altrawaretechnology",
+  "name": "Altraware | Websites & POS TZ",
+  "bio": "Tovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani, hata offline.\nDar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi",
+  "link": "https://altra.tanzaniareach.com/",
+  "doc": "07-ig-setup.md"
+ },
  "scenes": [
   {
    "id": "faida-offline",

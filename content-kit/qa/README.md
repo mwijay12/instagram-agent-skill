@@ -11,7 +11,7 @@ Sio maelezo ya jinsi zana zinavyofanya kazi. Haya ni **matokeo halisi** ya kuzie
 | [`sloppy-draft.txt`](sloppy-draft.txt) | `skills/ig-human/detect.py` | [`detect-sloppy.out`](detect-sloppy.out) — 24.8 FLAGGED |
 | [`sloppy-draft.txt`](sloppy-draft.txt) | `skills/ig-human/humanize.py --report` | [`humanize.out`](humanize.out) — vifaa 10 vimeondolewa, miundo 3 imebaki kwa rewrite |
 | before / after | `skills/ig-human/detect.py before.txt humanized.txt` | [`detect-delta.out`](detect-delta.out) — 24.8 → 38.4, bado FLAGGED |
-| Kit kizima | `content-kit/check.py` | `29 pass · 0 warn · 0 fail · 6 decks · READY` |
+| Kit kizima | `content-kit/check.py` | `31 pass · 0 warn · 0 fail · 6 decks · READY` |
 
 Kuzalisha upya:
 

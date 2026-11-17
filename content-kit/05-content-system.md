@@ -110,6 +110,8 @@ python3 ../skills/ig-human/humanize.py caption.txt --report
 python3 check.py          # hukagua pia madai yasiyoruhusiwa
 ```
 
+**Vile vile yamekatazwa kwenye uendeshaji wa akaunti** (sio maneno tu; yanaweza kuondoa akaunti nzima): kununua followers/likes/views, growth service, follow-for-follow, auto-follow / auto-like / auto-comment, mass DM kwa mtu asiyewahi kuingiliana, scraper inayotumia password, na kurudisha content ya mtu mwingine bila kuibadilisha (10+ ndani ya siku 30 = hutoki kwenye recommendations). Sababu na vyanzo: [`07-ig-setup.md`](07-ig-setup.md) §2G. Pia: **keywords na hashtag kwenye caption, si kwenye comments** — Instagram mwenyewe anasema hivyo, na caption ya kwanza ndiyo inayoonekana kabla ya "... more" (§8 hapa chini).
+
 ---
 
 ## 8. Caption, CTA na DM (kwa `/ig-caption` na `/ig-dm`)

@@ -4,6 +4,11 @@
 
 Soma ukurasa huu kwanza. Mengine yote ni vitu vya kuchukua na kutumia.
 
+> 🟢 **Uko kwenye IG ya `@altrawaretechnology` sasa hivi?** Ruka moja kwa moja kwenda
+> [`07-ig-setup.md`](07-ig-setup.md) — bio ya copy-paste, settings za kuonekana kwenye
+> Search/Google, usalama baada ya akaunti ya zamani kubanwa, na "natumia vipi kitu hiki chote?".
+> Ukarasa huu ni ramani; `07` ndiyo ya kufanya leo.
+
 ---
 
 ## 1. Nilichokuta, kwa kifupi
@@ -42,11 +47,13 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`04-voice-altraware.md`](04-voice-altraware.md) | `voice.md` iliyojazwa kwa akaunti ya studio |
 | [`05-content-system.md`](05-content-system.md) | Nguzo 4, hadhira, **proof bank** iliyogawanywa "verified / self-claimed / NEEDS_INPUT", maneno yaliyokatazwa, ramani ya CTA na keyword |
 | [`06-30-day-plan.md`](06-30-day-plan.md) | Wiki 4 za post zenye angle halisi, hook formula id, format, stories na keywords |
+| [`07-ig-setup.md`](07-ig-setup.md) | **Setup ya leo:** bio ya studio, professional/search-engine settings, SEO ya kila post, usalama + recovery ya akaunti ya zamani, na jinsi ya kutumia kit chote (utafiti wa 17 Nov 2026) |
+| [`log-template.md`](log-template.md) | Template ya `~/.claude/instagram/log.md` — historia ya post 10–30 kabla ya `/ig-audit` |
 | [`carousels/`](carousels/README.md) | Carousel 6 zilizoandikwa tayari, na **PNG 1080×1350 za kupakia** |
 | [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, na MP4 iliyotengenezwa kwa code |
 | [`qa/`](qa/README.md) | **Receipts halisi**: zana 5 za repo zimeendeshwa kwenye content hii, pamoja na before/after ya draft mbaya |
 | [`studio/index.html`](studio/index.html) | Live preview: carousel zote 48, MP4, prompt 32, brand tokens na QA kwenye ukurasa mmoja |
-| [`check.py`](check.py) | Linter ya stdlib: maneno ya slop, idadi ya hashtag, cover, urefu wa slide, bio, madai yasiyothibitishwa → `29 pass · 0 fail · READY` |
+| [`check.py`](check.py) | Linter ya stdlib: maneno ya slop, idadi ya hashtag, cover, urefu wa slide, bio (kwenye doc 01 na 07), madai yasiyothibitishwa → `31 pass · 0 fail · READY` |
 | [`use-voice.sh`](use-voice.sh) | Installer ya `~/.claude/instagram/voice.md` (inahifadhi ya awali kama `voice.previous.md`) |
 | [`skills/ig-codevideo/SKILL.md`](../skills/ig-codevideo/SKILL.md) | Skill ya 14: kugeuza repo/code kuwa Reel prompt isiyo ya kawaida |
 
@@ -70,7 +77,7 @@ python3 content-kit/code-video/promptgen.py --list
 python3 content-kit/code-video/promptgen.py --scene faida-offline --lang sw
 
 # 5. Kagua kila kitu kabla ya kupost
-python3 content-kit/check.py        # 29 pass · 0 fail · READY
+python3 content-kit/check.py        # 31 pass · 0 fail · READY
 
 # 6. Fungua live preview (server tayari inaendesha kwenye port 8000)
 #    https://8000-<sandbox>.e2b.app/studio/index.html

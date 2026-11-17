@@ -6,6 +6,7 @@ Run after editing any deck, scene or prompt:
     python3 content-kit/studio/build_data.py
 """
 import json
+import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -32,6 +33,23 @@ for item in manifest["decks"]:
         "images": ["../carousels/build/" + p for p in built.get(d["id"], {}).get("paths", [])],
     })
 
+# The studio tab shows the SAME studio bio as 01-presence-audit.md, read from
+# the file rather than retyped. The second name/bio block is the studio one.
+audit_lines = (KIT / "01-presence-audit.md").read_text(encoding="utf-8").splitlines()
+_names, _bios = [], []
+for i, line in enumerate(audit_lines):
+    if line.startswith("**Name field") or line.startswith("**Bio ("):
+        m = re.search(r"```\n(.+?)\n```", "\n".join(audit_lines[i:i + 7]), re.S)
+        if m:
+            (_names if line.startswith("**Name") else _bios).append(m.group(1))
+setup = {
+    "account": "@altrawaretechnology",
+    "name": _names[-1] if _names else "",
+    "bio": _bios[-1] if _bios else "",
+    "link": "https://altra.tanzaniareach.com/",
+    "doc": "07-ig-setup.md",
+}
+
 scenes = json.loads(SCENES.read_text(encoding="utf-8"))
 prompt_map = {}
 for p in sorted(PROMPTS.glob("*.txt")):
@@ -40,6 +58,7 @@ for p in sorted(PROMPTS.glob("*.txt")):
 payload = {
     "generated": __import__("datetime").date.today().isoformat(),
     "decks": decks,
+    "setup": setup,
     "scenes": scenes["scenes"],
     "brand": scenes["brand"],
     "negative": scenes["common_negative"],

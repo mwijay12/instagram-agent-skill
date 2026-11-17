@@ -346,7 +346,7 @@ content-kit/carousels/           6 decks (8 slides each) + 48 rendered PNGs
 content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s MP4
 content-kit/qa/                  receipts: all five tools run on this content
 content-kit/studio/              live preview of decks, prompts, MP4 and brand
-content-kit/check.py             stdlib linter: 29 pass, 0 fail, READY
+content-kit/check.py             stdlib linter: 31 pass, 0 fail, READY
 skills/ig-codevideo/SKILL.md     the fourteenth skill
 ```
 

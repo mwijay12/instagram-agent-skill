@@ -148,6 +148,11 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
 .audit-list{columns:2;column-gap:26px;font-size:12px;line-height:1.9;color:var(--muted)}
 @media(max-width:700px){.audit-list{columns:1}}
 .audit-list b{color:var(--paper)}
+.mini-list{font-size:12px;line-height:1.65;color:var(--muted)}
+.mini-list>div{padding:7px 0 7px 12px;border-left:2px solid var(--rule);margin-bottom:7px}
+.mini-list>div:hover{border-color:var(--gold)}
+.mini-list b{color:var(--paper)}
+.mini-list code{color:#f4d98a;background:rgba(234,179,8,.08);padding:1px 4px;border-radius:4px;font-size:11px}
 .hidden{display:none!important}
 </style>
 </head>
@@ -162,6 +167,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
     <button class="tab on" data-view="overview">Muhtasari</button>
     <button class="tab" data-view="carousels">Carousels · 48 slides</button>
     <button class="tab" data-view="video">Code → Video</button>
+    <button class="tab" data-view="setup">Setup / SEO</button>
     <button class="tab" data-view="brand">Brand &amp; QA</button>
   </nav>
 </div>
@@ -198,7 +204,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
       </div>
       <div class="card">
         <div class="label">04 / QA</div>
-        <h3>29 pass · 0 fail</h3>
+        <h3>31 pass · 0 fail</h3>
         <p><code>python3 content-kit/check.py</code> → READY. Zana tano za repo pia zimeendeshwa kweli kwenye <a href="../qa/README.md" style="color:var(--gold)">qa/</a>, na Kiswahili kimerekebishwa kwenye <code>hookscore.py</code> / <code>detect.py</code>.</p>
       </div>
     </div>
@@ -267,6 +273,94 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
     </div>
   </section>
 
+  <!-- SETUP / SEO -->
+  <section class="view" id="setup">
+    <div class="hero">
+      <div><h1>Seti <em>leo</em></h1>
+      <p class="sub">Uko kwenye <b>@altrawaretechnology</b>. Hii ndiyo ya kufanya kabla ya post ya kwanza: bio, settings za kuonekana kwenye Search/Google, usalama, na jinsi ya kutumia kit chote. Maelezo na vyanzo: <a href="../07-ig-setup.md" style="color:var(--gold)">07-ig-setup.md →</a></p></div>
+      <div class="coords"><b>17 NOV 2026</b><br>public · professional<br>indexing ON · 2FA ON</div>
+    </div>
+
+    <div class="grid g3">
+      <div class="card">
+        <div class="label">01 / Bio · copy-paste</div>
+        <div class="copy-block"><label>Name field · 29/30 <button class="btn" id="cp-name">nakili</button></label><pre id="setup-name"></pre></div>
+        <div class="copy-block"><label>Bio · 141/150 <button class="btn" id="cp-bio">nakili</button></label><pre id="setup-bio"></pre></div>
+        <div class="copy-block"><label>Link moja <button class="btn" id="cp-link">nakili</button></label><pre id="setup-link"></pre></div>
+        <p>Ondoa "Wholesale and Retail sale of Motorcycle". Weka category ionekane, contact buttons (email/simu/DSM), profile photo = logo kwenye navy.</p>
+      </div>
+
+      <div class="card">
+        <div class="label">02 / Settings · kwa mpangilio</div>
+        <div class="mini-list">
+          <div><b>A</b> Professional → <b>Business</b> (si Personal). Inakupa Insights, Contact, Category, Manage followers, improved discovery.</div>
+          <div><b>B</b> Search indexing <b>ON</b>: Settings → Privacy → "Allow public photos and videos to appear in search engine results". Tangu 10 Jul 2025, public professional 18+ ina-indexiwa na Google by default.</div>
+          <div><b>C</b> <b>Account Status</b> → hakikisha unastahili recommendations kabla ya kupost.</div>
+          <div><b>D</b> Followers → <b>Flagged for review / Potential spam</b> → Remove all. Filter spam followers ON.</div>
+          <div><b>E</b> <b>Security kabla ya content</b> (tazama kadi upande) .</div>
+          <div><b>F</b> Hidden words, manual tag approval, message requests filtered, location tag kwenye posts.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="label">03 / Security · kwanza kabisa</div>
+        <div class="mini-list">
+          <div>Password mpya unique ≥12 chars → password manager.</div>
+          <div><b>2FA kwa authenticator app</b> (si SMS) + recovery codes <b>offline</b>.</div>
+          <div>Email ya account iwe na 2FA yake yenyewe kwanza.</div>
+          <div>Accounts Center → <b>Where You're Logged In</b> → logout wasiotambulika.</div>
+          <div>Accounts Center → <b>Apps and Websites</b> → Remove kila app usiyoitumia leo.</div>
+          <div>Meta App Dashboard → <b>reset App Secret</b>, Require App Secret ON, revoke system-user/page tokens, GitHub secret scanning kwenye repo zote.</div>
+          <div>❌ Hakuna app ya "free followers", hakuna password/2FA code kwa mtu yeyote.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid g3" style="margin-top:18px">
+      <div class="card">
+        <div class="label">04 / SEO ya kila post</div>
+        <div class="mini-list">
+          <div>Keyword <b>moja</b> kwenye mstari wa kwanza wa caption (ndani ya chars 125 zinazoonekana).</div>
+          <div>Keywords kwenye <b>caption, si comments</b> — ndivyo Instagram mwenyewe anavyosema.</div>
+          <div>Hashtag <b>3–5</b> maalum kwenye caption. Cap rasmi = 5 tangu 18 Des 2025. Zungusha, usipaste block ile ile.</div>
+          <div><b>Alt text</b> kila picha (accessibility; si confirmed ranking signal).</div>
+          <div>Reel: keyword inasemeka + inaonekana kwenye on-screen text na captions zilizoburniwa. 9:16, ≤3 min, first 3s.</div>
+          <div>Location tag <b>Dar es Salaam / Kariakoo</b> inapohusika.</div>
+          <div>Ask moja tu. Hakuna URL wala emoji bullets kwenye caption.</div>
+          <div>Kiswahili <b>na</b> Kiingereza: `Tovuti` + `Websites`, `POS`, `Dar es Salaam`.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="label">05 / Natumia vipi kitu chote?</div>
+        <div class="mini-list">
+          <div><b>1 · Leo</b> <code>./content-kit/use-voice.sh altraware</code> → weka sauti ya studio.</div>
+          <div><b>2 · Kabla ya post</b> chagua artifact halisi (repo / risiti / screen). Kamwe usianze na "nataka post kuhusu POS".</div>
+          <div><b>3 · Andika</b> caption → hook 3 → beats → humanize → <code>python3 content-kit/check.py</code>.</div>
+          <div><b>4 · Pakia</b> PNG kutoka <code>carousels/build/&lt;deck&gt;/</code> + caption kutoka <code>DECKS.md</code>. Weka alt text.</div>
+          <div><b>5 · Log</b> jaza safu kwenye <a href="../log-template.md" style="color:var(--gold)">log-template.md</a>. Baada ya post 10–30 → <code>/ig-audit</code>.</div>
+        </div>
+        <p style="margin-top:10px">Mpangilio: <b>Voice → Artifact → Caption → Hook → Beats → Humanize → Lint → Pakia → Log</b>. Wao wanaanza, wewe unajibu — hakuna bulk DM.</p>
+      </div>
+
+      <div class="card">
+        <div class="label">06 / Usifanye hivi</div>
+        <div class="mini-list">
+          <div>❌ Kununua followers / likes / views / growth service.</div>
+          <div>❌ Auto-follow, auto-like, auto-comment, mass DM, scraper yenye password yako.</div>
+          <div>❌ Kupost 10+ reposts za wengine ndani ya siku 30 → unatoka kwenye recommendations.</div>
+          <div>❌ Kuongeza "cinematic 4K masterpiece" kwenye prompt kuficha hook mbaya.</div>
+          <div>❌ Kutaja akaunti ya zamani iliyobanwa, 12K, wala "100% ownership" kwenye post.</div>
+          <div>❌ Kuhariri post mara baada ya kupost. Panga kwanza.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="warn" style="margin-top:18px">
+      <b>Kuhusu akaunti ya zamani:</b> taarifa ya <code>@mwijay.davie</code> (~12K, bots, ban, token iliyovuja) ni <b>uliyoniambia wewe</b>, si iliyothibitishwa hadharani. Iko kwenye <a href="../01-presence-audit.md" style="color:inherit;text-decoration:underline">01-presence-audit.md §8</a> kama risk context tu — <b>haijaingia kwenye caption, bio, prompt wala PNG yoyote</b>. Recovery, ukiihitaji, ni njia rasmi pekee: <code>instagram.com/hacked</code>, Meta Account Recovery Hub, appeal kwenye notice. Hakuna support email, hakuna hotline, na DM za "Meta Support" ni scam. Usinipe password, 2FA code wala token.
+    </div>
+  </section>
+
   <!-- BRAND -->
   <section class="view" id="brand">
     <div class="hero">
@@ -304,7 +398,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
         <div class="label">QA · imeendeshwa kweli</div>
         <table>
           <tr><th>Check</th><th>Matokeo</th></tr>
-          <tr><td>content-kit/check.py</td><td>29 pass · 0 warn · 0 fail · READY</td></tr>
+          <tr><td>content-kit/check.py</td><td>31 pass · 0 warn · 0 fail · READY</td></tr>
           <tr><td>caption.py (Job B)</td><td>READY · 9 PASS</td></tr>
           <tr><td>hookscore.py (3 hooks)</td><td>92.6 / 78.7 / 76.4 STRONG</td></tr>
           <tr><td>beats.py (20s target)</td><td>18.6s · loop · 0 flags</td></tr>
@@ -326,7 +420,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
 
   <div class="footer">
     <span>ALTRAWARE CONTENT KIT · built from your repos, not from a template · hakuna kitu kilichopostwa</span>
-    <span>00-START-HERE.md · 01-presence-audit.md · 02-brand-system.md · 03/04 voice · 05 content · 06 plan · carousels/ · code-video/ · qa/ · studio/</span>
+    <span>00-START-HERE · 01 audit · 02 brand · 03/04 voice · 05 content · 06 plan · 07 setup · log-template · carousels/ · code-video/ · qa/ · studio/</span>
   </div>
 </main>
 
@@ -351,7 +445,8 @@ const stats = [
   ["8","Code-video scenes","40 timed beats","g"],
   ["32","Prompt files","3 engines × 2 lugha","v"],
   ["1","MP4 ya sampuli","16s · rendered by code","g"],
-  ["29","QA passes","0 fail · READY","v"],
+  ["31","QA passes","0 fail · READY","v"],
+  ["→ 07","Setup ya leo","bio · settings · SEO · usalama","g"],
 ];
 $("#stat-cards").innerHTML = stats.map(s => `
   <div class="card"><div class="label">${esc(s[3]==='g'?'gold':'violet')} / kit</div>
@@ -457,6 +552,18 @@ $("#copy-prompt").onclick = () => {
   });
 };
 renderScene();
+
+/* ---- setup / SEO ---- */
+$("#setup-name").textContent = D.setup.name;
+$("#setup-bio").textContent = D.setup.bio;
+$("#setup-link").textContent = D.setup.link;
+[["#cp-name", D.setup.name], ["#cp-bio", D.setup.bio], ["#cp-link", D.setup.link]]
+  .forEach(([sel, value]) => {
+    $(sel).onclick = () => navigator.clipboard.writeText(value).then(() => {
+      const b = $(sel); b.textContent = "✓ imenakiliwa";
+      setTimeout(() => b.textContent = "nakili", 1400);
+    });
+  });
 
 /* ---- brand ---- */
 const sw = [

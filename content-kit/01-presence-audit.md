@@ -97,11 +97,13 @@ Co-founder @altrawaretechnology · Code halisi, DSM 🇹🇿
 Altraware | Websites & POS TZ
 ```
 
-**Bio (128/150 chars):**
+**Bio (141/150 chars):**
 ```
-Tovuti, app na mifumo ya biashara. Kiswahili kwanza, M-Pesa ndani, hata offline.
-Dar es Salaam · Bei wazi · Mkataba wa maandishi
+Tovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani, hata offline.
+Dar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi
 ```
+
+> Imeboreshwa 17 Nov 2026 baada ya utafiti wa IG Search: `POS` (keyword ya bidhaa) na `kwenye link` (CTA moja laini) vimeongezwa; `Websites` kwenye name field na `Tovuti` kwenye bio vinashikilia Kiswahili na Kiingereza bila kurudia tafsiri. Maelezo yote kwenye [`07-ig-setup.md`](07-ig-setup.md) §1.
 
 **Link moja:** `https://altra.tanzaniareach.com/` — sio Tanzania Reach, sio pikipiki, sio link tree ya chaguo 11.
 
@@ -154,3 +156,25 @@ Hii ni sehemu muhimu zaidi ya audit. Vyanzo vyako **havisemi kitu kimoja**. Ukia
 4. Rekodi ushahidi mmoja halisi (§6) na uutumie kwenye Reel ya kwanza.
 5. Anzisha `~/.claude/instagram/log.md`: tarehe, hook formula id, mstari wa kwanza.
 6. Baada ya post 30, endesha `/ig-audit`. Kabla ya hapo, usibadilishe muda wa kupost ukitafuta sababu ya views kidogo: repo lenyewe linasema **first two seconds** ndizo zinazoamua.
+
+---
+
+## 8. Taarifa kutoka kwa mmiliki (17 Nov 2026) — akaunti ya zamani
+
+> **Aina ya taarifa:** imesemwa na mmiliki kwenye conversation, **haijathibitishwa hadharani**. Si sehemu ya utafiti wa §1, wala chanzo cha identity, wala namba ya kutaja kwenye content. Iko hapa tu kwa ajili ya **risk context** na maamuzi ya usalama.
+
+Mmiliki alikuwa na akaunti ya zamani `@mwijay.davie` yenye takriban **12K followers**, ambayo anasema wengi walikuwa **bots / fake**, na idadi hiyo ilikuwa "numbers tu". Akaunti ilibanwa; anadhani ilitokana na **automation**, na kwamba **Meta API token iliyo-expose** iliruhusu watu wengine kuingia hadi verification ikafungwa na akaunti ikalockiwa kabisa.
+
+**Marekebisho kwenye utafiti wa awali:** matokeo ya web search yaliyomtaja "Mwijay Davie" kama freelancer wa graphic design / gospel music na `@mwijay.davie` yalikuwa yakisomwa kama *akaunti tofauti ya mtu mwingine*. Kwa taarifa hii, ni **akaunti yake ya zamani iliyobanwa**, si mwingine. Bado **si source-of-truth** ya tech identity — GitHub `mwijay12`, IG `@mwijay__davie` na `@altrawaretechnology` ndizo zinazotumika.
+
+**Athari kwenye kit (muhimu):**
+
+1. **Usichase idadi.** Followers 5 wa kweli kwenye studio ni baseline safi kuliko 12K ya bots. Vipimo vya kufuatilia ni reach, saves, sends, hold@3s, DM halisi, si follower count.
+2. **Hakuna automation / hakuna kununua engagement / hakuna bulk DM.** Hii imekazwa kwenye [`07-ig-setup.md`](07-ig-setup.md) §2G. Meta ana Spam na Inauthentic Behavior policies zinazokataza fake engagement.
+3. **Security kabla ya content:** 2FA kwa authenticator app, recovery codes offline, email iliyo salama, revoke `Apps and Websites`, angalia sessions, na **reset ya Meta App Secret / revoke tokens / GitHub secret scanning** (§7 ya `07-ig-setup.md`).
+4. **Usafishe followers waliobaki:** professional account ina *Manage followers / Potential spam / Flagged for review* rasmi.
+5. **Haijaingia kwenye caption, bio, prompt, carousel, wala MP4 yoyote.** Kamwe usiiandike kwenye post; usiitumie kama "experience" wala kama namba ya kujitangaza.
+6. **Usijaribu kuikwepa kwa akaunti hizi:** endelea na credentials tofauti, hakuna automation ya pamoja, na recovery ikijaribiwa iwe kupitia njia rasmi tu (`instagram.com/hacked`, Meta Account Recovery Hub, appeal kwenye notice). Angalia [`07-ig-setup.md`](07-ig-setup.md) §7.
+
+**Bado NEEDS_INPUT:** tarehe kamili ya ban, ujumbe halisi unaoonekana ukijaribu kuingia (disabled / suspended / hakuna ujumbe), na kama token iliyovuja ilikuwa ya app gani. Haya yanahitajika tu ukiamua kufuata recovery — **usitume password, 2FA code, wala token kwenye chat/repo**.
+
