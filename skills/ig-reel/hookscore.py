@@ -21,6 +21,14 @@ not tell you which of two decent hooks will travel, and nothing that reads text
 can, because that is decided by your face, your edit, your audio and who
 Instagram shows it to. Trust the retention graph over this script.
 
+Kiswahili note (added in this fork): the STAKES, SPOKEN_NUMBERS,
+MONEY_WORDS, WEAK_OPENERS and IMPERATIVES sets now also carry direct
+Kiswahili equivalents, because a Swahili hook scored 39.2 WEAK
+purely for having no English tension word. Those additions are literal
+translations, NOT re-validated against the 74-hook corpus above. The AUC
+numbers in the README describe the English scorer only. Use the Swahili
+score to kill greetings and vague lines; do not treat 70 vs 80 as evidence.
+
 Each check returns 0 to 100. Higher is better.
 
 Usage
@@ -78,6 +86,29 @@ STAKES = {
     "still", "already", "only", "without", "versus", "vs", "actually",
 }
 
+# Kiswahili equivalents of the markers above. Literal translations, not a
+# new measured signal. Without these, every Swahili hook gets STAKES=20.
+STAKES.update({
+    "poteza", "kupoteza", "potea", "imepotea", "hasara", "kosa", "makosa",
+    "ghali", "imekatika", "kukatika", "imesimama", "kusimama", "chelewa",
+    "kuchelewa", "tatizo", "shida", "hatari", "haribika", "imeharibika",
+    "shindwa", "kushindwa", "sitaki", "hatutaki", "kamwe", "bado", "lakini",
+    "badala", "kabla", "mpaka", "bila", "siyo", "sio", "hapana",
+})
+SPOKEN_NUMBERS.update({
+    "moja", "mbili", "tatu", "nne", "tano", "sita", "saba", "nane", "tisa",
+    "kumi", "ishirini", "thelathini", "arobaini", "hamsini", "mia", "elfu",
+    "milioni", "nusu", "mara",
+})
+MONEY_WORDS.update({"shilingi", "tsh", "tzs", "pesa", "bei", "gharama", "deni"})
+
+# Kiswahili verbs inflect with prefixes, so a word list alone misses
+# "unapoteza" / "hayasimami". One compact regex for the inflected forms.
+SW_TENSION_RE = re.compile(
+    r"\b(?:ha(?:i|u|ya|zi|wa|ki|vi|tu|m|pa)[a-z]+|siyo|sio|kamwe|"
+    r"[a-z]*pote[sz]a|[a-z]*potea|[a-z]*katika|[a-z]*simama|"
+    r"[a-z]*chelewa|[a-z]*haribika)\b", re.IGNORECASE)
+
 # Openers that spend the first second saying nothing.
 WEAK_OPENERS = [
     "so", "ok", "okay", "hey", "hi", "hello", "guys", "yo", "alright",
@@ -86,6 +117,9 @@ WEAK_OPENERS = [
     "have you", "did you", "do you", "are you", "in this", "in today",
     "the thing", "a lot", "there is", "there are", "this is", "it is",
     "as a", "when it", "if you've", "you know",
+    # Kiswahili openers that say nothing for the first second
+    "habari", "karibu", "leo", "ndugu", "mimi", "nataka", "nilitaka",
+    "katika video", "kweli", "kwa kweli", "kama unavyojua",
 ]
 
 # Imperatives that earn the front position.
@@ -93,6 +127,9 @@ IMPERATIVES = {
     "stop", "steal", "copy", "delete", "try", "watch", "read", "save",
     "use", "build", "make", "write", "send", "take", "start", "quit",
     "never", "always", "don't", "dont", "do", "put", "run", "check",
+    # Kiswahili imperatives
+    "acha", "ondoa", "weka", "angalia", "jaribu", "chukua", "anza", "soma",
+    "tumia", "jenga", "andika", "tuma", "usifanye", "usijenge", "usinunue",
 }
 
 DEALBREAKERS = [
@@ -155,6 +192,8 @@ def check_stakes(text):
     markers = sorted(set(hits))
     if re.search(r"\$\s?\d", text):
         markers.append("a price")
+    if SW_TENSION_RE.search(text):
+        markers.append("sw-negation/loss")
     n = len(markers)
     score = {0: 20.0, 1: 70.0}.get(n, 100.0)
     detail = f"{n} tension marker(s)" + (f": {', '.join(markers[:4])}" if markers else
@@ -178,7 +217,8 @@ def check_frontload(text):
     payload = None
     for i, token in enumerate(low):
         if (token in STAKES or token in SPOKEN_NUMBERS or token in MONEY_WORDS
-                or NUMBER_RE.match(w[i]) or (i and PROPER_RE.match(w[i]))):
+                or NUMBER_RE.match(w[i]) or (i and PROPER_RE.match(w[i]))
+                or SW_TENSION_RE.fullmatch(token)):
             payload = i
             break
     if payload is None:
@@ -203,10 +243,15 @@ def check_address(text):
     w = [x.lower().strip("'’") for x in words(text)]
     if re.search(r"\b(you|your|you're|youre|yourself)\b", low):
         return 100.0, "speaks to the viewer"
+    # Kiswahili second person: -ako / wewe / -wenu forms.
+    if re.search(r"\b(wewe|wako|lako|yako|zako|vyako|chako|kwako|nawe|wenu|wenu)\b", low):
+        return 100.0, "speaks to the viewer (Kiswahili)"
     if w and w[0] in IMPERATIVES:
         return 90.0, f"imperative opener (\"{w[0]}\")"
     if re.search(r"\b(i|my|me|we|our)\b", low):
         return 70.0, "first person, no viewer named"
+    if re.search(r"\b(mimi|nina|nime|nili|nitafanya|tuna|tume|yetu|wetu)\b", low):
+        return 70.0, "first person, no viewer named (Kiswahili)"
     return 35.0, "third person, nobody in the room"
 
 

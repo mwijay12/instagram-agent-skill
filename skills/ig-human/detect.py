@@ -12,6 +12,14 @@ It does not call their APIs and it cannot promise their verdict. It catches
 the things they all key on, which is why fixing them tends to move their
 numbers too - but the only honest claim is the one on this line.
 
+Kiswahili note (added in this fork): PRONOUNS now also matches Swahili
+first/second person forms, so a Swahili caption is not punished for lacking
+"you/your". CONTRACTIONS still counts English apostrophe contractions only;
+Kiswahili has none, so a clean Swahili caption tops out around 63 REVIEW on
+the VOICE check. That is a property of this heuristic, not a verdict on the
+writing. Judge Swahili drafts on BURSTINESS, SPECIFICITY, SLOP and FINGERPRINT,
+and on whether a human would say the line out loud.
+
 Each check returns a HUMAN score from 0 to 100. Higher is better.
 
 Usage
@@ -35,7 +43,14 @@ LEX = os.path.join(HERE, "slop.json")
 SENT_RE = re.compile(r"[^.!?\n]+[.!?]*")
 WORD_RE = re.compile(r"[A-Za-z']+")
 CONTRACTIONS = re.compile(r"\b\w+'(?:s|t|re|ve|ll|d|m)\b", re.IGNORECASE)
-PRONOUNS = re.compile(r"\b(i|me|my|mine|we|us|our|you|your)\b", re.IGNORECASE)
+PRONOUNS = re.compile(
+    r"\b(i|me|my|mine|we|us|our|you|your|"
+    # Kiswahili first/second person and possessives. Added in this fork so a
+    # Swahili caption is not scored 30 on VOICE for lacking English pronouns.
+    # Translation only, not a re-validated detector signal.
+    r"mimi|wewe|sisi|nyinyi|yangu|yako|lako|chako|vyako|zangu|zako|"
+    r"yetu|wetu|wenu|wao|wako|nina|nime|nili|tuna|tume|tuli|nitaku|tutaku)\b",
+    re.IGNORECASE)
 NUMBERS = re.compile(r"\b\d[\d,.]*%?\b|\$\d")
 PROPER = re.compile(r"(?<![.!?]\s)(?<!^)\b[A-Z][a-z]{2,}\b", re.MULTILINE)
 

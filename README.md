@@ -1,7 +1,8 @@
 # The Instagram agent skill
 
-Thirteen Claude skills that run an Instagram account. Free, MIT, no signup, no
-API key, nothing to connect.
+Fourteen Claude skills that run an Instagram account. Free, MIT, no signup, no
+API key, nothing to connect. (This fork adds `/ig-codevideo` and a full
+worked content kit; see [Fork additions](#fork-additions).)
 
 One of them writes your Reels off 26 hook formulas and scores the hook before
 you waste a take on it. One goes and finds the reels that are actually working
@@ -52,7 +53,7 @@ reels and say "write my voice.md from these". Every skill reads that file. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 
-## The thirteen
+## The fourteen
 
 | command | what it does |
 | --- | --- |
@@ -69,6 +70,7 @@ out loud.
 | `/ig-dm` | The keyword delivery, the first message, the collab pitch, and the two follow-ups. Two. |
 | `/ig-repurpose` | One video, podcast or newsletter into a week of reels and carousels that each stand alone. |
 | `/ig-audit` | Post-mortem on what you already posted. Ranks by outlier multiple and sends per reach, not views. |
+| `/ig-codevideo` | **Fork addition.** Turns a real repo, code file, screen or product fact into a seven-layer video prompt: artifact, one true claim, timed shot list, exact brand tokens, motion, a 30+ item negative block, and a QA gate. Never asks a video model to draw code. |
 
 ## The five tools that actually run
 
@@ -325,6 +327,41 @@ skills/ig-viral/swipe.py           outlier ranking and formula classification
 skills/ig-profile/rubric.json      the 100-point profile score
 templates/voice.md                 your voice profile. Fill this in first.
 ```
+
+## Fork additions
+
+This fork (`mwijay12/instagram-agent-skill`, branch `arena/…`) keeps the
+original thirteen skills and adds a worked, non-generic content kit for
+`@mwijay__davie` and `@altrawaretechnology`, built from their public GitHub
+repos, live sites and public Instagram pages on 17 Nov 2026.
+
+```
+content-kit/00-START-HERE.md     start here (Kiswahili / English)
+content-kit/01-presence-audit.md verified presence, bio rewrites, source conflicts
+content-kit/02-brand-system.md   exact tokens from motion-lab/tokens.css
+content-kit/03,04-voice-*.md     filled voice.md profiles for both accounts
+content-kit/05-content-system.md pillars, proof bank, banned words, CTAs
+content-kit/06-30-day-plan.md    four-week plan + first Reel script
+content-kit/carousels/           6 decks (8 slides each) + 48 rendered PNGs
+content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s MP4
+content-kit/qa/                  receipts: all five tools run on this content
+content-kit/studio/              live preview of decks, prompts, MP4 and brand
+content-kit/check.py             stdlib linter: 29 pass, 0 fail, READY
+skills/ig-codevideo/SKILL.md     the fourteenth skill
+```
+
+Two upstream tools were localised while QA-ing the kit:
+`skills/ig-reel/hookscore.py` and `skills/ig-human/detect.py` now recognise
+Kiswahili tension words, inflected verbs, pronouns and second-person forms.
+English regressions still score the same. These additions are literal
+translations, **not** re-validated against the original 74-hook corpus; the
+docstrings say so. A clean Swahili caption still tops out around 63 REVIEW
+because Kiswahili has no apostrophe contractions - that is a heuristic limit,
+not a verdict on the writing. See `content-kit/qa/README.md`.
+
+The kit does not post, does not DM, and does not invent clients, metrics or
+testimonials. Self-claimed numbers on the client's own sites are labelled as
+such and kept out of the copy until permission and evidence arrive.
 
 ## Credit
 
