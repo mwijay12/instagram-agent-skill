@@ -17,6 +17,12 @@ Kwa hiyo kanuni ya kwanza ya setup hii: **hatuchasi idadi. Tunajenga iwe rahisi 
 
 ## 1. Bio: weka hivi leo (copy-paste)
 
+> 🆕 **17 Nov 2026, baada ya maongezi na mmiliki:** kuna **variations 4** sasa kwenye
+> [`08-bio-variations.md`](08-bio-variations.md) / [`bio-variations.json`](bio-variations.json),
+> pamoja na **Kiswahili kamili**. Hapa chini ni **V2 (default iliyoandikwa kwenye `01-presence-audit.md §4`)**.
+> Mmiliki bado hajachagua; akichagua V1/V3/V4 nitasasisha 01, studio, PDF na Google Doc **pamoja**.
+> Pia: **Altraware Tech ndio brand**, na `altra.tanzaniareach.com` ni **subdomain tu, hakuna domain bado** — hiyo si aibu na haijafichwa.
+
 ### 1.1 Name field — 29/30 chars
 
 **Name field (29/30 chars):**
@@ -52,13 +58,19 @@ https://altra.tanzaniareach.com/
 
 Ondoa `tanzaniareach.com` (ni portal ya elimu, si studio — na tovuti yake inakataza kutumia maandishi yake kwa AI training). Hadi uamue mgongano wa links kwenye `01-presence-audit.md §5`, hii ndiyo canonical. **Link moja**, si Linktree yenye chaguo 11.
 
+**Kuhusu domain:** hii ni **subdomain**, si domain yenu bado — mmiliki amesema wazi "tunajitafuta". Kwa hiyo:
+- ✅ Iache kama ilivyo. Ni ukweli, na inafanya kazi.
+- ❌ Usiiandike kama "official website", usibuni `altra.tech` / `altraware.co.tz`, usiweke domain ya kufikirika kwenye caption wala PDF.
+- 🔁 Ukishapata domain: **badilisha link hii moja tu**. Name, bio, captions, pinned na highlights hazibadiliki.
+- Variation **V4** kwenye `08-bio-variations.md` inakubali hali hii hadharani ("Hatuna domain yetu…") kama ukitaka kuigeuza kuwa nguvu ya build-in-public.
+
 ### 1.4 Profile photo, category, contact
 
 | Kitu | Weka | Kwa nini |
 | --- | --- | --- |
 | Profile photo | Logo ya Altraware kwenye navy `#071022`, gold `#eab308` tu, 320×320+ | Inasomeka hata kidole kidogo. Si picha ya pikipiki. |
 | Category | `Software Company` (au `Web Designer` / `Computer Software` kama ipo kwenye Facebook Page yako) na **ionyeshwe** | Category label ni text inayoonekana chini ya jina; kuificha kunapoteza signal ya uelewa. Kwenye professional account unaweza kuchagua kuonyesha/kuficha [3](https://help.instagram.com/138925576505882/). |
-| Contact buttons | Email + simu + `Dar es Salaam` (si street address ya nyumbani) | Business account inaruhusu Contact button yenye email/phone/directions [3](https://help.instagram.com/138925576505882/). Namba za routing ziko kwenye [`05-content-system.md`](05-content-system.md) §8; weka **email rasmi ya biashara**, si Gmail ya kibinafsi iliyowahi kuhusika kwenye account iliyobanwa. |
+| Contact buttons | **Email** `altrawaretechnology@gmail.com` + **Call/WhatsApp** `+255 792 867 427` (mtu) + `Dar es Salaam` (si street address ya nyumbani) | Business account inaruhusu Contact button yenye email/phone/directions [3](https://help.instagram.com/138925576505882/). **Bot `0790942616` haiendi kwenye Call button** — mteja akipiga anapata bot. Bot inakwenda kwenye DM auto-reply / FAQ / Highlight `Maswali` / first comment. Routing kamili: [`08-bio-variations.md`](08-bio-variations.md) §4. |
 | Action button | **Usiweke** hadi uwe na booking tool halisi | Book Now/Reserve/Order Food zinahitaji partner aliyeidhinishwa; kwa software studio, "Comment POS" kwenye posts + link moja ni wazi zaidi kuliko button isiyofanya kazi [1](https://creatorflow.so/blog/instagram-business-account-setup-checklist/). |
 | Display | `Display category label` ON, `Display contact info` ON | Njia: Edit profile → Public business information → Profile display [5](https://help.instagram.com/502981923235522/). |
 
@@ -217,7 +229,7 @@ Instagram mwenyewe: *"The text you enter in the search bar is by far the most im
 [ ] Nimeiangalia kwenye SIMU kabla ya Publish (si desktop tu).
 ```
 
-Kit chako tayari kinafanya karibu yote: `check.py` inakagua caption hook ≤125 chars, hashtag ≤5, ask moja, URL, alt text, na madai yasiyothibitishwa. Ndiyo maana `python3 content-kit/check.py` inatoa **31 pass · 0 fail · READY**.
+Kit chako tayari kinafanya karibu yote: `check.py` inakagua caption hook ≤125 chars, hashtag ≤5, ask moja, URL, alt text, na madai yasiyothibitishwa. Ndiyo maana `python3 content-kit/check.py` inatoa **47 pass · 0 fail · READY**.
 
 ### Kuhusu "views" — usipime follower count
 
@@ -239,7 +251,7 @@ cd /home/user/instagram-agent-skill
 #    → ya awali inahifadhiwa kama voice.previous.md
 
 # 2) Hakikisha kit bado safi
-python3 content-kit/check.py          # 31 pass · 0 fail · READY
+python3 content-kit/check.py          # 47 pass · 0 fail · READY
 
 # 3) Fungua live preview (server inaendesha kwenye port 8000)
 #    https://8000-<sandbox>.e2b.app/   → ina-redirect kwenda studio/

@@ -53,7 +53,9 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, na MP4 iliyotengenezwa kwa code |
 | [`qa/`](qa/README.md) | **Receipts halisi**: zana 5 za repo zimeendeshwa kwenye content hii, pamoja na before/after ya draft mbaya |
 | [`studio/index.html`](studio/index.html) | Live preview: carousel zote 48, MP4, prompt 32, brand tokens na QA kwenye ukurasa mmoja |
-| [`check.py`](check.py) | Linter ya stdlib: maneno ya slop, idadi ya hashtag, cover, urefu wa slide, bio (kwenye doc 01 na 07), madai yasiyothibitishwa → `31 pass · 0 fail · READY` |
+| [`08-bio-variations.md`](08-bio-variations.md) · [`bio-variations.json`](bio-variations.json) | **Bio variations 4** (moja Kiswahili kamili), brand `Altraware Tech`, ukweli wa subdomain, contacts (bot vs mtu), na mifano ya caption za lugha mbili |
+| [`present/`](present/README.md) | PDF ya kampuni, HTML ya Google Doc, na tovuti ya Vercel — kwa watu wasiotaka kusoma `.md` |
+| [`check.py`](check.py) | Linter ya stdlib: slop, hashtag, cover, urefu wa slide, bio (01 + 07), variations 4, madai yasiyothibitishwa → `47 pass · 0 fail · READY` |
 | [`use-voice.sh`](use-voice.sh) | Installer ya `~/.claude/instagram/voice.md` (inahifadhi ya awali kama `voice.previous.md`) |
 | [`skills/ig-codevideo/SKILL.md`](../skills/ig-codevideo/SKILL.md) | Skill ya 14: kugeuza repo/code kuwa Reel prompt isiyo ya kawaida |
 
@@ -77,7 +79,7 @@ python3 content-kit/code-video/promptgen.py --list
 python3 content-kit/code-video/promptgen.py --scene faida-offline --lang sw
 
 # 5. Kagua kila kitu kabla ya kupost
-python3 content-kit/check.py        # 31 pass · 0 fail · READY
+python3 content-kit/check.py        # 47 pass · 0 fail · READY
 
 # 6. Fungua live preview (server tayari inaendesha kwenye port 8000)
 #    https://8000-<sandbox>.e2b.app/studio/index.html

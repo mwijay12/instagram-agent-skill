@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altraware Tech · Mkakati wa Maudhui</title>
+<style>
+:root{--navy:#071022;--navy2:#0a1735;--paper:#f7f6f2;--gold:#eab308;
+--violet:#7c3aed;--muted:#a3aecb;--rule:rgba(247,246,242,.18);--ink:#14203a;--line:#d8d6cd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--paper);
+ font-family:Inter,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(7,16,34,.96);
+ backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);padding:14px 18px}
+.brandline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brandline strong{font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brandline small{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:.08em}
+.nav{display:flex;gap:6px;overflow-x:auto;margin-top:11px;padding-bottom:2px}
+.nav a{flex:0 0 auto;font-family:"JetBrains Mono",monospace;font-size:9.5px;
+ letter-spacing:.06em;color:var(--muted);text-decoration:none;border:1px solid var(--rule);
+ border-radius:999px;padding:6px 10px;white-space:nowrap}
+.nav a:hover{color:var(--gold);border-color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:26px 18px 80px}
+.hero{padding:26px 0 30px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,8vw,58px);
+ line-height:1.03;letter-spacing:-.03em;margin:12px 0 8px}
+h1 em{font-style:italic;color:var(--gold);font-family:Fraunces,Georgia,serif}
+.lede{font-size:14px;line-height:1.65;color:var(--muted);max-width:660px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.badge{font-family:"JetBrains Mono",monospace;font-size:9px;border:1px solid var(--rule);
+ border-radius:999px;padding:6px 10px;color:var(--muted)}
+.badge.g{border-color:rgba(234,179,8,.55);color:var(--gold)}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.links a{font-size:12px;text-decoration:none;border:1px solid var(--gold);color:var(--gold);
+ border-radius:9px;padding:9px 13px}
+.links a.ghost{border-color:var(--rule);color:var(--muted)}
+section.card{background:var(--navy2);border:1px solid var(--rule);border-radius:18px;
+ padding:20px;margin-bottom:18px;scroll-margin-top:110px}
+section.card h2{font-family:Fraunces,Georgia,serif;font-size:clamp(21px,4.4vw,29px);
+ font-weight:600;margin:6px 0 14px;line-height:1.15}
+.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:16px}
+p{font-size:13px;line-height:1.7;color:#dfe3ec;margin:0 0 11px}
+ul{padding-left:18px;margin:0 0 12px}
+li{font-size:13px;line-height:1.65;color:#dfe3ec;margin-bottom:7px}
+li::marker{color:var(--gold)}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:11.5px}
+th{background:var(--navy);color:var(--gold);text-align:left;font-family:"JetBrains Mono",monospace;
+ font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:9px 8px}
+td{border-bottom:1px solid var(--rule);padding:9px 8px;color:#dfe3ec;vertical-align:top;line-height:1.55}
+tr:nth-child(even) td{background:rgba(247,246,242,.035)}
+.callout{background:rgba(234,179,8,.08);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;
+ padding:12px 14px;margin:10px 0 14px}
+.callout b{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.1em;color:var(--gold)}
+.callout p{margin:6px 0 0;font-size:12.5px}
+.var{background:var(--paper);color:var(--ink);border-left:4px solid var(--violet);
+ border-radius:0 12px 12px 0;padding:14px;margin-bottom:11px}
+.var.pick{border-left-color:var(--gold)}
+.var h3{font-family:Fraunces,Georgia,serif;font-size:18px;margin:0 0 8px;color:var(--navy)}
+.var .pick-tag{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--violet);
+ letter-spacing:.08em;margin-left:6px}
+.var .lbl{font-family:"JetBrains Mono",monospace;font-size:9px;color:#6b7488;letter-spacing:.1em;
+ text-transform:uppercase;margin:9px 0 3px}
+.var pre{white-space:pre-wrap;word-wrap:break-word;font-family:"JetBrains Mono",monospace;
+ font-size:11.5px;line-height:1.6;background:#e9e7df;border-radius:7px;padding:9px;margin:0;color:var(--navy)}
+.var .note{font-size:11px;line-height:1.6;color:#55607a;margin-top:9px}
+.var .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.btn{background:var(--navy);border:0;color:var(--gold);border-radius:7px;padding:6px 10px;
+ font-family:"JetBrains Mono",monospace;font-size:9px;cursor:pointer;letter-spacing:.06em}
+.btn:hover{background:var(--gold);color:var(--navy)}
+.cap{background:var(--navy);border-left:3px solid var(--violet);border-radius:0 10px 10px 0;
+ padding:13px;margin-bottom:10px}
+.cap .t{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--violet);letter-spacing:.1em}
+.cap b{display:block;font-size:13px;margin:6px 0 7px;color:var(--paper);line-height:1.45}
+.cap p{font-size:12px;color:#cfd5e3;margin:0 0 8px}
+.cap code{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--gold)}
+.footer{border-top:1px solid var(--rule);margin-top:30px;padding-top:16px;
+ font-family:"JetBrains Mono",monospace;font-size:9.5px;color:var(--muted);line-height:1.9}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);
+ background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:10px 16px;
+ border-radius:999px;opacity:0;transition:.3s cubic-bezier(.22,1,.36,1);pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:600px){.wrap{padding:18px 12px 60px}section.card{padding:15px}
+ table{font-size:10.5px}th,td{padding:7px 5px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brandline">
+    <strong>Altraware Tech / Content Kit</strong>
+    <small>6.7924° S, 39.2083° E · 17 NOV 2026</small>
+  </div>
+  <nav class="nav" id="nav"></nav>
+</div>
+<div class="wrap">
+  <div class="hero" id="top">
+    <div class="kicker" id="hero-kicker"></div>
+    <h1 id="hero-title"></h1>
+    <p class="lede" id="hero-lede"></p>
+    <div class="badges" id="badges"></div>
+    <div class="links" id="links"></div>
+  </div>
+  <main id="sections"></main>
+  <div class="footer" id="footer"></div>
+</div>
+<div class="toast" id="toast">✓ imenakiliwa</div>
+
+<script>
+/*__DATA__*/
+const S = window.STRATEGY;
+const $ = s => document.querySelector(s);
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const COPY = [];
+const copyBtn = (text, label="nakili") => {
+  const i = COPY.push(text) - 1;
+  return `<button class="btn" data-copy="${i}">${label}</button>`;
+};
+
+/* hero */
+$("#hero-kicker").textContent = S.meta.company + "  /  " + S.meta.edition;
+$("#hero-title").innerHTML = esc(S.meta.title).replace(/ /g," ") +
+  "<br><em>" + esc(S.meta.subtitle) + "</em>";
+$("#hero-lede").textContent = S.meta.status + "  ·  " + S.meta.prepared_for;
+$("#badges").innerHTML = [
+  S.meta.place, S.meta.accounts, "4 bio variations", "47 pass / 0 fail / READY",
+  "PDF + Google Doc + Vercel"
+].map((b,i)=>`<span class="badge ${i===3?'g':''}">${esc(b)}</span>`).join("");
+const L = S.links || {};
+$("#links").innerHTML =
+  (L.pdf ? `<a href="${esc(L.pdf)}" target="_blank" rel="noopener">Fungua PDF</a>` : "") +
+  (L.doc ? `<a href="${esc(L.doc)}" target="_blank" rel="noopener">Google Doc</a>` : "") +
+  `<a class="ghost" href="https://github.com/mwijay12/instagram-agent-skill" target="_blank" rel="noopener">Repo</a>` +
+  `<a class="ghost" href="#s03">Chagua bio</a>`;
+
+/* nav */
+$("#nav").innerHTML = S.sections.map(s =>
+  `<a href="#s${esc(s.id)}">${esc(s.id)} · ${esc(s.title)}</a>`).join("");
+
+function table(b){
+  return `<table><thead><tr>${b.head.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+    b.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("") +
+    `</tbody></table>`;
+}
+function variations(){
+  return S.bio.variations.map((v,i)=>`
+    <div class="var ${v.recommended?'pick':''}">
+      <div class="row"><h3>V${i+1} · ${esc(v.label)}</h3>${copyBtn(v.name+"\n\n"+v.bio,"nakili zote mbili")}</div>
+      ${v.recommended?'<span class="pick-tag">INAYOSUGGEST</span>':''}
+      <div class="lbl">Name field · ${v.name_chars}/30</div><pre>${esc(v.name)}</pre>
+      <div class="lbl">Bio · ${v.bio_chars}/150</div><pre>${esc(v.bio)}</pre>
+      <div class="note"><b>Kwa nini:</b> ${esc(v.why)}<br><b>Gharama:</b> ${esc(v.tradeoff)}</div>
+    </div>`).join("") +
+    `<p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)">
+      Chanzo: bio-variations.json · default ya sasa ni V2 · mmiliki bado hajachagua</p>`;
+}
+function contacts(){
+  const c=S.bio.contacts, d=S.bio.domain;
+  const rows=[
+    ["Email",c.email,"Contact button (Email) kwenye profile"],
+    ["WhatsApp BOT",c.whatsapp_bot.local+" / "+c.whatsapp_bot.intl,c.whatsapp_bot.use],
+    ["MTU halisi",c.human.intl,c.human.use],
+    ["Link",d.current,d.status]
+  ];
+  return table({head:["Kitu","Thamani","Mahali / maana"],rows}) +
+    `<p><b>Bot si mtu:</b> usiiweke kama Call button. Wao wanaanza, wewe unajibu - hakuna bulk DM.</p>`;
+}
+function captions(){
+  return S.bio.caption_examples.map((c,i)=>`
+    <div class="cap"><div class="t">CAPTION ${i+1}</div><b>${esc(c.line1)}</b>
+    <p>${esc(c.body)}</p><code>${esc(c.ask)}</code>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)">
+      &nbsp; ${esc(c.hashtags.join(" "))}</span></div>`).join("");
+}
+function block(b){
+  switch(b.type){
+    case "p": return `<p>${esc(b.text)}</p>`;
+    case "bullets": return `<ul>${b.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+    case "table": return table(b);
+    case "callout": return `<div class="callout"><b>${esc(b.label)}</b><p>${esc(b.text)}</p></div>`;
+    case "variations": return variations();
+    case "contacts": return contacts();
+    case "captions": return captions();
+    default: return "";
+  }
+}
+$("#sections").innerHTML = S.sections.map(s=>`
+  <section class="card" id="s${esc(s.id)}">
+    <div class="kicker">${esc(s.kicker)}</div>
+    <h2>${esc(s.id)} · ${esc(s.title)}</h2>
+    <div class="rule"></div>
+    ${s.blocks.map(block).join("")}
+  </section>`).join("");
+
+$("#footer").innerHTML = `ALTRAWARE TECH · ${esc(S.meta.edition)}<br>` +
+  `Chanzo: content-kit/present/content.json + content-kit/bio-variations.json<br>` +
+  `Hakuna kilichopostwa kwenye Instagram · hakuna DM · hakuna credentials kwenye tovuti hii.`;
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-copy]");
+  if(!b) return;
+  navigator.clipboard.writeText(COPY[+b.dataset.copy]).then(()=>{
+    const t=$("#toast"); t.classList.add("on");
+    setTimeout(()=>t.classList.remove("on"),1500);
+  });
+});
+</script>
+</body>
+</html>

@@ -171,6 +171,36 @@ def check_bios(report):
         report.append(("WARN", "bio", "could not parse any bio block; check by hand"))
 
 
+def check_variations(report):
+    """Validate the four copy-paste bio variations in bio-variations.json."""
+    path = HERE / "bio-variations.json"
+    if not path.exists():
+        report.append(("FAIL", "variations", "bio-variations.json missing"))
+        return
+    data = json.loads(path.read_text(encoding="utf-8"))
+    vs = data.get("variations", [])
+    report.append(("PASS" if len(vs) == 4 else "FAIL", "variations",
+                   f"{len(vs)} bio variations (want 4)"))
+    for v in vs:
+        n, b = v.get("name", ""), v.get("bio", "")
+        n_ok, b_ok = len(n) <= 30, len(b) <= 150
+        report.append(("PASS" if n_ok else "FAIL", "variations",
+                       f"{v['id']}: name {len(n)}/30 chars"))
+        report.append(("PASS" if b_ok else "FAIL", "variations",
+                       f"{v['id']}: bio {len(b)}/150 chars"))
+        declared = (v.get("name_chars") == len(n) and v.get("bio_chars") == len(b))
+        report.append(("PASS" if declared else "FAIL", "variations",
+                       f"{v['id']}: declared char counts match text"))
+    report.append(("PASS" if any(v.get("fully_swahili") for v in vs) else "FAIL",
+                   "variations", "at least one fully-Kiswahili option"))
+    c = data.get("contacts", {})
+    ok = all(k in c for k in ("email", "whatsapp_bot", "human"))
+    report.append(("PASS" if ok else "FAIL", "variations",
+                   "email + bot + human contact are labelled"))
+    report.append(("PASS" if "subdomain" in data.get("domain", {}).get("status", "")
+                   else "WARN", "variations", "subdomain status is stated honestly"))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", action="store_true")
@@ -183,6 +213,7 @@ def main():
     for p in decks:
         parsed.append(check_deck(p, report))
     check_bios(report)
+    check_variations(report)
 
     manifest = DECKS / "index.json"
     if manifest.exists():

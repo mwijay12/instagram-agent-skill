@@ -134,7 +134,12 @@ python3 check.py          # hukagua pia madai yasiyoruhusiwa
 | `PROMPT` | binafsi | Mfumo wa code-to-video | Mtu anacomment |
 | `LUGHA` | binafsi | Carousel ya Kiswahili kwanza | Mtu anacomment |
 
-**Routing:** maswali ya kibinafsi/collab/automation → `+255 790 942 616`. Mteja wa studio → kukusanya (huduma, jina la biashara, WhatsApp) kisha `+255 792 867 427`. Jibu la kwanza halina attachment wala pitch. Keyword auto-reply ni sawa; bulk DM kwa mtu asiyewahi kuingiliana si sawa.
+**Routing** (imethibitishwa na mmiliki 17 Nov 2026):
+- `altrawaretechnology@gmail.com` → **Email** kwenye Contact button ya profile.
+- `0790942616` = `+255 790 942 616` → **WhatsApp BOT** (majibu ya haraka, si mtu). Inaenda kwenye DM auto-reply / FAQ / Highlight `Maswali` / first comment. **Usiiweke kama Call button** — mteja akipiga anapata bot. Maswali ya kibinafsi / collab / automation huanzia hapa.
+- `+255 792 867 427` → **MTU halisi**, mauzo / mteja wa studio. Ndiyo **Call / WhatsApp** button inayoonekana kwenye profile. Mteja wa studio → kusanya (huduma, jina la biashara, WhatsApp) kisha mpelekee huyu.
+- Jibu la kwanza halina attachment wala pitch. **Wao wanaanza, wewe unajibu.** Keyword auto-reply ni sawa; bulk DM kwa mtu asiyewahi kuingiliana si sawa.
+- Maelezo zaidi: [`08-bio-variations.md`](08-bio-variations.md) §4.
 
 ---
 
