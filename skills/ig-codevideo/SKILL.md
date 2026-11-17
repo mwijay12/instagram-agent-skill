@@ -140,7 +140,7 @@ from altra.tanzaniareach.com.
 Hook options scored:
   76.4 STRONG  #16  "Duka lako likikosa mtandao dakika 5..."
   56.0 OK      #18  "Nazima Wi-Fi kwenye duka. Mauzo hayasimami."
-  92.6 STRONG  #2   "Stop building cloud-first apps for Kariakoo..."
+  81.8 STRONG  #2   "Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops."
 
 Shooting #18 anyway: it is the one the user can say while actually switching
 off Wi-Fi on camera. The score is a drafting aid, not a view prediction.

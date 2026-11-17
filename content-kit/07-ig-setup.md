@@ -17,6 +17,12 @@ Kwa hiyo kanuni ya kwanza ya setup hii: **hatuchasi idadi. Tunajenga iwe rahisi 
 
 ## 1. Bio: weka hivi leo (copy-paste)
 
+> 🆕 **17 Nov 2026, baada ya maongezi na mmiliki:** kuna **variations 4** sasa kwenye
+> [`08-bio-variations.md`](08-bio-variations.md) / [`bio-variations.json`](bio-variations.json),
+> pamoja na **Kiswahili kamili**. Hapa chini ni **V2 (default iliyoandikwa kwenye `01-presence-audit.md §4`)**.
+> Mmiliki bado hajachagua; akichagua V1/V3/V4 nitasasisha 01, studio, PDF na Google Doc **pamoja**.
+> Pia: **Altraware Tech ndio brand**, na `altra.tanzaniareach.com` ni **subdomain tu, hakuna domain bado** — hiyo si aibu na haijafichwa.
+
 ### 1.1 Name field — 29/30 chars
 
 **Name field (29/30 chars):**
@@ -52,13 +58,19 @@ https://altra.tanzaniareach.com/
 
 Ondoa `tanzaniareach.com` (ni portal ya elimu, si studio — na tovuti yake inakataza kutumia maandishi yake kwa AI training). Hadi uamue mgongano wa links kwenye `01-presence-audit.md §5`, hii ndiyo canonical. **Link moja**, si Linktree yenye chaguo 11.
 
+**Kuhusu domain:** hii ni **subdomain**, si domain yenu bado — mmiliki amesema wazi "tunajitafuta". Kwa hiyo:
+- ✅ Iache kama ilivyo. Ni ukweli, na inafanya kazi.
+- ❌ Usiiandike kama "official website", usibuni `altra.tech` / `altraware.co.tz`, usiweke domain ya kufikirika kwenye caption wala PDF.
+- 🔁 Ukishapata domain: **badilisha link hii moja tu**. Name, bio, captions, pinned na highlights hazibadiliki.
+- Variation **V4** kwenye `08-bio-variations.md` inakubali hali hii hadharani ("Hatuna domain yetu…") kama ukitaka kuigeuza kuwa nguvu ya build-in-public.
+
 ### 1.4 Profile photo, category, contact
 
 | Kitu | Weka | Kwa nini |
 | --- | --- | --- |
 | Profile photo | Logo ya Altraware kwenye navy `#071022`, gold `#eab308` tu, 320×320+ | Inasomeka hata kidole kidogo. Si picha ya pikipiki. |
 | Category | `Software Company` (au `Web Designer` / `Computer Software` kama ipo kwenye Facebook Page yako) na **ionyeshwe** | Category label ni text inayoonekana chini ya jina; kuificha kunapoteza signal ya uelewa. Kwenye professional account unaweza kuchagua kuonyesha/kuficha [3](https://help.instagram.com/138925576505882/). |
-| Contact buttons | Email + simu + `Dar es Salaam` (si street address ya nyumbani) | Business account inaruhusu Contact button yenye email/phone/directions [3](https://help.instagram.com/138925576505882/). Namba za routing ziko kwenye [`05-content-system.md`](05-content-system.md) §8; weka **email rasmi ya biashara**, si Gmail ya kibinafsi iliyowahi kuhusika kwenye account iliyobanwa. |
+| Contact buttons | **Email** `altrawaretechnology@gmail.com` + **Call/WhatsApp** `+255 792 867 427` (mtu) + `Dar es Salaam` (si street address ya nyumbani) | Business account inaruhusu Contact button yenye email/phone/directions [3](https://help.instagram.com/138925576505882/). **Bot `0790942616` haiendi kwenye Call button** — mteja akipiga anapata bot. Bot inakwenda kwenye DM auto-reply / FAQ / Highlight `Maswali` / first comment. Routing kamili: [`08-bio-variations.md`](08-bio-variations.md) §4. |
 | Action button | **Usiweke** hadi uwe na booking tool halisi | Book Now/Reserve/Order Food zinahitaji partner aliyeidhinishwa; kwa software studio, "Comment POS" kwenye posts + link moja ni wazi zaidi kuliko button isiyofanya kazi [1](https://creatorflow.so/blog/instagram-business-account-setup-checklist/). |
 | Display | `Display category label` ON, `Display contact info` ON | Njia: Edit profile → Public business information → Profile display [5](https://help.instagram.com/502981923235522/). |
 
@@ -74,7 +86,7 @@ Hiyo ndiyo iliyokuwa inaelezea **biashara ya pikipiki** kwenye akaunti ya softwa
 
 **Pinned 3** (viko kwenye `carousels/build/`, pakia leo au kesho):
 1. `01-offline-first` → **proof** (Faida POS, Wi-Fi off).
-2. `03-bei-wazi` → **offer** (350K / 550K / 750K / 800K / 1.2M / 99K).
+2. `03-bei-wazi` → **offer** (Web Starter 350K / Growth 550K / Custom kuanzia 800K / mifumo kuanzia 1.2M / Care Plan 99K kwa mwezi).
 3. `05-wiki-1-hadi-uzinduzi` → **process**.
 
 **Highlights 5** — yaitwe kwa **maneno ya kutafutwa**, si emoji tu: `Bei`, `Faida POS`, `Kazi`, `Mchakato`, `Maswali`. Majina yenye maneno husaidia kwenye Search; orodha ya "✨ | 💼 | 🔥" haisaidii [3](https://www.organicsgrowth.com/post/instagram-seo-how-to-get-found-on-instagram-and-google).
@@ -217,7 +229,7 @@ Instagram mwenyewe: *"The text you enter in the search bar is by far the most im
 [ ] Nimeiangalia kwenye SIMU kabla ya Publish (si desktop tu).
 ```
 
-Kit chako tayari kinafanya karibu yote: `check.py` inakagua caption hook ≤125 chars, hashtag ≤5, ask moja, URL, alt text, na madai yasiyothibitishwa. Ndiyo maana `python3 content-kit/check.py` inatoa **31 pass · 0 fail · READY**.
+Kit chako tayari kinafanya karibu yote: `check.py` inakagua caption hook ≤125 chars, hashtag ≤5, ask moja, URL, alt text, na madai yasiyothibitishwa. Ndiyo maana `python3 content-kit/check.py` inatoa **47 pass · 0 fail · READY**.
 
 ### Kuhusu "views" — usipime follower count
 
@@ -239,7 +251,7 @@ cd /home/user/instagram-agent-skill
 #    → ya awali inahifadhiwa kama voice.previous.md
 
 # 2) Hakikisha kit bado safi
-python3 content-kit/check.py          # 31 pass · 0 fail · READY
+python3 content-kit/check.py          # 47 pass · 0 fail · READY
 
 # 3) Fungua live preview (server inaendesha kwenye port 8000)
 #    https://8000-<sandbox>.e2b.app/   → ina-redirect kwenda studio/
@@ -260,7 +272,7 @@ Kisha kwenye **simu/IG**: fanya §1 (bio + link + photo + category), §2 A–E (
 | Brand / rangi / fonti | `content-kit/02-brand-system.md` | BRAND BLOCK + NEGATIVE BLOCK. |
 | Nani, lini, keyword gani | `content-kit/06-30-day-plan.md` | Wiki 1–4. |
 | Ukweli unaoruhusiwa | `content-kit/05-content-system.md` | Proof bank: Verified / Self-claimed / NEEDS_INPUT. |
-| Migongano ya kuepuka | `content-kit/01-presence-audit.md` §5 | Bei, cloud-first, umiliki, tagline, link. |
+| Migongano iliyoamuliwa | `content-kit/09-decisions.md` | Bei za kuanzia, offline-first/cloud-synced, umiliki kwa leseni, tagline mpya, link moja. |
 
 ### Kila post (mtiririko huo huo, usiubadilishe)
 
@@ -426,9 +438,9 @@ Hii ni tofauti na IG settings; ni upande wa **Meta for Developers / GitHub**.
 
 | Kitu | Kwa nini |
 | --- | --- |
-| Maneno halisi ya IG Search suggestions DSM (`POS Dar es Salaam`, `tovuti`, …) | Kuingiza kwenye caption za wiki 2 badala ya hypothesis |
+| IG Search suggestions DSM (dakika 10 zako) | Google autocomplete TZ imeshafanywa kwenye `search-terms.md`; leta screenshots za IG tuta-replace kwenye caption za wiki 2 |
 | Email + simu rasmi ya biashara (si ya kibinafsi) | Contact buttons kwenye §1.4 |
-| Uamuzi wa mgongano 5 kwenye `01-presence-audit.md` §5 | Bei, cloud-first, umiliki wa code, tagline, link moja |
+| ~~Uamuzi wa mgongano 5~~ ✅ Imeamuliwa → `09-decisions.md` | Usiseme "100%" wala "SaaS" isipokuwa Faida inauzwa kwa usajili |
 | Screenshots 3 za caption/Reel zako za zamani | Kurekebisha `voice.md` iwe sauti yako hasa |
 | Insights za post 10–30 | `/ig-audit` inahitaji evidence yako |
 | Kama utajaribu recovery: **ni notice gani** unayoona ukilogin (disabled / suspended / hakuna ujumbe) | Njia ya appeal inategemea hiyo — lakini usinipe password wala code |

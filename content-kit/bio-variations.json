@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "account": "@altrawaretechnology",
+    "brand": "Altraware Tech",
+    "handle_note": "Username @altrawaretechnology haibadilishwi; 'Altraware Tech' ndio jina la brand, si lazima liingie lote kwenye name field yenye limit ya 30.",
+    "date": "2026-11-17",
+    "status": "variations - mmiliki atachagua moja",
+    "source_of_truth": "content-kit/bio-variations.json",
+    "canonical_default": "02-mchanganyiko-search",
+    "canonical_note": "01-presence-audit.md §4 na studio/data.js bado vinatumia V2 kama default. Ukishachagua variation nyingine, sasisha 01, studio, PDF na Google Doc pamoja - usiache tofauti.",
+    "decisions_ref": "content-kit/09-decisions.md",
+    "decisions_date": "2026-11-17",
+    "edition_note": "v1.2: migongano 5 imeamuliwa; variation bado inasubiri chaguo."
+  },
+  "domain": {
+    "current": "https://altra.tanzaniareach.com/",
+    "status": "subdomain tu; hatuna domain yetu bado (imesemwa na mmiliki 17 Nov 2026)",
+    "rule": "Usiiite 'official website', usibuni domain, usiweke altra.tech wala .co.tz ya kufikirika. Subdomain ni sawa kabisa kwa hatua hii.",
+    "when_domain_arrives": "Badilisha link MOJA tu kwenye bio; kila kitu kingine (name, bio, captions, pinned) kinabaki.",
+    "conflict_ref": "01-presence-audit.md §5 #5"
+  },
+  "language_rule": {
+    "name_bio": "Kiswahili mbele",
+    "captions": "Kiswahili kwa hisia, mfano wa DSM/Kariakoo na CTA; English kwa technical depth na search terms",
+    "principle": "Matoleo mawili, si tafsiri",
+    "why_english_stays": "English ni lugha kubwa kwenye utafutaji na kwa wateja wa nje; haiwezi kuondolewa kwenye captions, alt text, hashtag na on-screen text ya Reel.",
+    "honest_caveat": "Instagram mwaka 2021 ilisema keyword search results ilianza na Kiingereza na lugha nyingine zitaongezwa baadaye. Sijapata tamko rasmi la 2026 la lugha zote. Kwa hiyo bio ya Kiswahili kamili inaweza kuwa dhaifu kidogo kwenye IG Search; fidia ni maneno ya Kiingereza kwenye caption, alt text, hashtag na location tag.",
+    "sources": [
+      "https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works",
+      "https://github.com/mwijay12/strategies/blob/main/docs/05-content-engine.md"
+    ]
+  },
+  "contacts": {
+    "email": "altrawaretechnology@gmail.com",
+    "whatsapp_bot": {
+      "local": "0790942616",
+      "intl": "+255 790 942 616",
+      "label": "WhatsApp bot - majibu ya haraka, SI mtu",
+      "use": "DM auto-reply, FAQ, Highlight ya 'Maswali', first comment. Usiiweke kama Call button: mteja akipiga anapata bot.",
+      "routing": "maswali ya kibinafsi / collab / automation"
+    },
+    "human": {
+      "intl": "+255 792 867 427",
+      "label": "Mtu halisi - mauzo / mteja wa studio",
+      "use": "Contact button (Call / WhatsApp) inayoonekana kwenye profile. Huyu ndiye anayejibu maswali ya bei na mkataba.",
+      "routing": "mteja wa studio: kusanya (huduma, jina la biashara, WhatsApp) kisha mpelekee"
+    },
+    "bio_note": "Namba na email haziingii kwenye maandishi ya bio (limit 150). Zinaingia kwenye Contact buttons, Highlights na first comment.",
+    "gmail_note": "Gmail ni sawa kwa sasa (tunajitafuta). Ukishapata domain, tengeneza email ya domain na uibadilishe kwenye Contact button."
+  },
+  "variations": [
+    {
+      "id": "01-kiswahili-kamili",
+      "label": "Kiswahili kamili",
+      "tone": "Joto, la kwetu, rahisi kusoma kwa mwenye duka Kariakoo",
+      "name": "Altraware Tech | Mifumo",
+      "name_chars": 23,
+      "bio": "Tunatengeneza tovuti, programu na mifumo ya mauzo kwa biashara za kwetu.\nKiswahili kwanza, M-Pesa ndani, hata bila mtandao. Dar es Salaam · Bei wazi",
+      "bio_chars": 148,
+      "fully_swahili": true,
+      "why": "Ndiyo unayoiomba: Kiswahili kamili isipokuwa jina la brand na M-Pesa (majina yasiyo na tafsiri). 'Programu' badala ya 'app', 'mifumo ya mauzo' badala ya 'POS', 'biashara za kwetu' badala ya 'TZ'.",
+      "tradeoff": "Name field haina 'POS' wala 'Websites', kwa hiyo IG/Google search inategemea zaidi caption, alt text, hashtag na location tag. Ndiyo maana English inabaki kwenye captions.",
+      "recommended": true,
+      "recommended_note": "Hii ndiyo ninayokusuggest kwa brand yako: Kiswahili mbele kwenye bio, English ikifanya kazi yake kwenye captions.",
+      "alt_name_if_you_want_product_word": "Altraware Tech | Tovuti na POS (30/30)"
+    },
+    {
+      "id": "02-mchanganyiko-search",
+      "label": "Mchanganyiko / search-first",
+      "tone": "Wazi, inatafutika, salama kwa Google",
+      "name": "Altraware | Websites & POS TZ",
+      "name_chars": 29,
+      "bio": "Tovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani, hata offline.\nDar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi",
+      "bio_chars": 141,
+      "fully_swahili": false,
+      "why": "Ina 'Websites', 'POS', 'TZ' kwenye name field na 'Dar es Salaam' kwenye bio. Hii ndiyo iliyokuwa canonical kwenye 01-presence-audit.md §4.",
+      "tradeoff": "Inasikika kidogo kama agency ya Kiingereza; si 'yetu' kama V1.",
+      "recommended": false,
+      "recommended_note": "Chagua hii kama kipaumbele chako leo ni kupatikana kwenye search badala ya sauti ya Kiswahili."
+    },
+    {
+      "id": "03-faida-pos-mbele",
+      "label": "Faida POS mbele",
+      "tone": "Bidhaa moja wazi, proof mbele",
+      "name": "Altraware Tech | Faida POS",
+      "name_chars": 26,
+      "bio": "Faida POS: mauzo, risiti na stoo hata mtandao ukikatika. Pia tovuti na app\nkwa biashara TZ. Kiswahili kwanza, M-Pesa ndani. Dar es Salaam · Bei wazi",
+      "bio_chars": 148,
+      "fully_swahili": false,
+      "why": "Mtu anayetafuta 'Faida POS' anakupata moja kwa moja. Inaunganisha na carousel 01-offline-first na Reel ya kwanza.",
+      "tradeoff": "Inafanya studio ionekane kama kampuni ya POS tu, wakati pia unajenga tovuti, app, Shule-Altra na loanapp.",
+      "recommended": false
+    },
+    {
+      "id": "04-build-in-public",
+      "label": "Ujasiri / build in public",
+      "tone": "Ukweli, haina kujifanya, inastandout sana",
+      "name": "Altraware Tech | DSM, TZ",
+      "name_chars": 24,
+      "bio": "Hatuna domain yetu. Tuna code, bei wazi na mkataba.\nTovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani. Dar es Salaam",
+      "bio_chars": 133,
+      "fully_swahili": false,
+      "why": "Inakubali wazi kuwa bado uko kwenye subdomain. Hii ni tofauti kabisa na 'agency' za kawaida zenye 'world-class solutions' - ni uaminifu unaoonekana.",
+      "tradeoff": "Kwa mteja mkubwa anayekutathmini leo, 'hatuna domain' inaweza kusoma kama udogo. Ni nzuri zaidi kwa akaunti ya kibinafsi @mwijay__davie au kwa hadhira ya founder/build-in-public.",
+      "recommended": false
+    }
+  ],
+  "caption_examples": [
+    {
+      "id": "sw-with-en-keywords",
+      "line1": "Mtandao ukikatika Kariakoo, risiti 0342 bado inatoka.",
+      "body": "Faida POS inarekodi mauzo, inatoa risiti ya thermal na inasasisha stoo hata bila internet. Muunganisho ukirudi, M-Pesa na stoo vina-sync chenyewe. Offline-first POS for Tanzanian shops, si demo.",
+      "ask": "Comment POS",
+      "hashtags": [
+        "#FaidaPOS",
+        "#BiasharaTanzania",
+        "#Altraware"
+      ]
+    },
+    {
+      "id": "en-technical",
+      "line1": "Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops.",
+      "body": "A Flutter POS writes the sale locally, prints the thermal receipt, then syncs to the cloud when the connection returns. Real code: faida.checkout({ items, pay: \"M-PESA\", lang: \"sw\" }).",
+      "ask": "Comment CODE",
+      "hashtags": [
+        "#POSSoftware",
+        "#DarEsSalaam",
+        "#BuildInPublic"
+      ]
+    }
+  ],
+  "selection": {
+    "chosen": null,
+    "chosen_note": "Mmiliki bado hajachagua V1-V4. Migongano 5 imeamuliwa 17 Nov 2026 (09-decisions.md). Hadi achague, 01-presence-audit.md §4, studio na PDF vinatumia V2 kama default iliyoandikwa wazi."
+  },
+  "name_options": {
+    "rejected": {
+      "value": "Altraware Tech | Websites & Apps",
+      "chars": 32,
+      "reason": "> 30, litakatwa kwenye Instagram name field."
+    },
+    "corrected": {
+      "value": "Altraware | Websites & Apps",
+      "chars": 27,
+      "note": "Jina lililosahihishwa kutoka kwa mmiliki 17 Nov 2026. Mbadala wa name field, si variation mpya; V2 bado ni default hadi uchague."
+    }
+  },
+  "decisions": {
+    "date": "2026-11-17",
+    "source": "mmiliki",
+    "pricing": "Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. 'Bei wazi' = bei ya kuanzia iko wazi, bei kamili kwa maandishi baada ya scope. Usiseme 'SaaS' isipokuwa Faida inauzwa kwa usajili.",
+    "cloud": "offline-first, cloud-synced. Hakuna msimamo mkali dhidi ya cloud; hook ni 'Build the queue first'.",
+    "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "ownership_en": "You own your data and your site/app; the Faida core is licensed to you.",
+    "ownership_rule": "Hakuna '100%' kwenye post wala bot. Mkataba na matangazo vifuate ukweli huu.",
+    "tagline": "Built in Tanzania, for how Tanzania really works.",
+    "link": "altra.tanzaniareach.com inabaki; usiiite 'official website'. Domain ikipatikana, badilisha link moja tu."
+  },
+  "week2_caption_openers": [
+    "Web design Dar es Salaam: bei ya kuanzia iko wazi, si baada ya mkutano wa tatu.",
+    "Pos system ya dukani: risiti inatoka hata mtandao ukikatika.",
+    "Mfumo wa mauzo dukani unaoandika kwanza, kisha una-sync kwenye cloud.",
+    "Pos software Tanzania: offline-first, cloud-synced, si demo ya laptop.",
+    "App developer near me? Anza na scope, bei na tarehe iliyoandikwa."
+  ],
+  "week2_caption_note": "Maneno haya yametokana na Google autocomplete (gl=TZ, hl=sw) 17 Nov 2026, si mawazo. IG search-bar suggestions bado ni dakika 10 za mmiliki; akileta screenshots, ya-replace hapa bila kubadilisha mfumo. Angalia content-kit/search-terms.md."
+}

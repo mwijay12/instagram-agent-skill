@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="sw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Altraware Tech · Mkakati wa Maudhui</title>
+<style>
+:root{--navy:#071022;--navy2:#0a1735;--paper:#f7f6f2;--gold:#eab308;
+--violet:#7c3aed;--muted:#a3aecb;--rule:rgba(247,246,242,.18);--ink:#14203a;--line:#d8d6cd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--paper);
+ font-family:Inter,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(7,16,34,.96);
+ backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);padding:14px 18px}
+.brandline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brandline strong{font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brandline small{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:.08em}
+.nav{display:flex;gap:6px;overflow-x:auto;margin-top:11px;padding-bottom:2px}
+.nav a{flex:0 0 auto;font-family:"JetBrains Mono",monospace;font-size:9.5px;
+ letter-spacing:.06em;color:var(--muted);text-decoration:none;border:1px solid var(--rule);
+ border-radius:999px;padding:6px 10px;white-space:nowrap}
+.nav a:hover{color:var(--gold);border-color:var(--gold)}
+.wrap{max-width:960px;margin:0 auto;padding:26px 18px 80px}
+.hero{padding:26px 0 30px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.kicker{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(32px,8vw,58px);
+ line-height:1.03;letter-spacing:-.03em;margin:12px 0 8px}
+h1 em{font-style:italic;color:var(--gold);font-family:Fraunces,Georgia,serif}
+.lede{font-size:14px;line-height:1.65;color:var(--muted);max-width:660px}
+.badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.badge{font-family:"JetBrains Mono",monospace;font-size:9px;border:1px solid var(--rule);
+ border-radius:999px;padding:6px 10px;color:var(--muted)}
+.badge.g{border-color:rgba(234,179,8,.55);color:var(--gold)}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.links a{font-size:12px;text-decoration:none;border:1px solid var(--gold);color:var(--gold);
+ border-radius:9px;padding:9px 13px}
+.links a.ghost{border-color:var(--rule);color:var(--muted)}
+section.card{background:var(--navy2);border:1px solid var(--rule);border-radius:18px;
+ padding:20px;margin-bottom:18px;scroll-margin-top:110px}
+section.card h2{font-family:Fraunces,Georgia,serif;font-size:clamp(21px,4.4vw,29px);
+ font-weight:600;margin:6px 0 14px;line-height:1.15}
+.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin-bottom:16px}
+p{font-size:13px;line-height:1.7;color:#dfe3ec;margin:0 0 11px}
+ul{padding-left:18px;margin:0 0 12px}
+li{font-size:13px;line-height:1.65;color:#dfe3ec;margin-bottom:7px}
+li::marker{color:var(--gold)}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:11.5px}
+th{background:var(--navy);color:var(--gold);text-align:left;font-family:"JetBrains Mono",monospace;
+ font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:9px 8px}
+td{border-bottom:1px solid var(--rule);padding:9px 8px;color:#dfe3ec;vertical-align:top;line-height:1.55}
+tr:nth-child(even) td{background:rgba(247,246,242,.035)}
+.callout{background:rgba(234,179,8,.08);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;
+ padding:12px 14px;margin:10px 0 14px}
+.callout b{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.1em;color:var(--gold)}
+.callout p{margin:6px 0 0;font-size:12.5px}
+.var{background:var(--paper);color:var(--ink);border-left:4px solid var(--violet);
+ border-radius:0 12px 12px 0;padding:14px;margin-bottom:11px}
+.var.pick{border-left-color:var(--gold)}
+.var h3{font-family:Fraunces,Georgia,serif;font-size:18px;margin:0 0 8px;color:var(--navy)}
+.var .pick-tag{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--violet);
+ letter-spacing:.08em;margin-left:6px}
+.var .lbl{font-family:"JetBrains Mono",monospace;font-size:9px;color:#6b7488;letter-spacing:.1em;
+ text-transform:uppercase;margin:9px 0 3px}
+.var pre{white-space:pre-wrap;word-wrap:break-word;font-family:"JetBrains Mono",monospace;
+ font-size:11.5px;line-height:1.6;background:#e9e7df;border-radius:7px;padding:9px;margin:0;color:var(--navy)}
+.var .note{font-size:11px;line-height:1.6;color:#55607a;margin-top:9px}
+.var .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.btn{background:var(--navy);border:0;color:var(--gold);border-radius:7px;padding:6px 10px;
+ font-family:"JetBrains Mono",monospace;font-size:9px;cursor:pointer;letter-spacing:.06em}
+.btn:hover{background:var(--gold);color:var(--navy)}
+.cap{background:var(--navy);border-left:3px solid var(--violet);border-radius:0 10px 10px 0;
+ padding:13px;margin-bottom:10px}
+.cap .t{font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--violet);letter-spacing:.1em}
+.cap b{display:block;font-size:13px;margin:6px 0 7px;color:var(--paper);line-height:1.45}
+.cap p{font-size:12px;color:#cfd5e3;margin:0 0 8px}
+.cap code{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--gold)}
+.footer{border-top:1px solid var(--rule);margin-top:30px;padding-top:16px;
+ font-family:"JetBrains Mono",monospace;font-size:9.5px;color:var(--muted);line-height:1.9}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);
+ background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;padding:10px 16px;
+ border-radius:999px;opacity:0;transition:.3s cubic-bezier(.22,1,.36,1);pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:600px){.wrap{padding:18px 12px 60px}section.card{padding:15px}
+ table{font-size:10.5px}th,td{padding:7px 5px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brandline">
+    <strong>Altraware Tech / Content Kit</strong>
+    <small>6.7924° S, 39.2083° E · 17 NOV 2026</small>
+  </div>
+  <nav class="nav" id="nav"></nav>
+</div>
+<div class="wrap">
+  <div class="hero" id="top">
+    <div class="kicker" id="hero-kicker"></div>
+    <h1 id="hero-title"></h1>
+    <p class="lede" id="hero-lede"></p>
+    <div class="badges" id="badges"></div>
+    <div class="links" id="links"></div>
+  </div>
+  <main id="sections"></main>
+  <div class="footer" id="footer"></div>
+</div>
+<div class="toast" id="toast">✓ imenakiliwa</div>
+
+<script>
+window.STRATEGY = {"meta": {"company": "Altraware Tech", "title": "Mkakati wa Maudhui Instagram", "subtitle": "Content Strategy & Setup", "edition": "Toleo la kazi v1.2 · 17 Novemba 2026", "place": "Dar es Salaam, Tanzania · 6.7924° S, 39.2083° E", "accounts": "@altrawaretechnology  ·  @mwijay__davie", "prepared_for": "Mmiliki na marafiki wa kampuni - ya kusoma, kuchagua na kuwasilisha", "status": "Hakuna kilichopostwa. Hakuna DM. Migongano 5 imeamuliwa; bio variations bado zinasubiri chaguo lako."}, "sections": [{"id": "01", "kicker": "ACT 01 / MIZIZI", "title": "Kwa nini tuko hapa", "blocks": [{"type": "p", "text": "Repo ya instagram-agent-skill ilikuja na skills 13 nzuri za kuandika Instagram, lakini templates/voice.md ilikuwa tupu. Kila skill inasoma ~/.claude/instagram/voice.md; ikiwa haipo, kila caption inatoka kwa sauti ya default. Hapo ndipo 'outputs mbaya za kawaida' zinaanzia, hata kabla hujafika kwenye video."}, {"type": "table", "head": ["Ukweli", "Thamani (17 Nov 2026)"], "rows": [["GitHub mwijay12", "42 public repos · 205 followers · Systems Architect, Dar es Salaam"], ["@mwijay__davie", "48 followers · link ya portfolio"], ["@altrawaretechnology", "5 followers · post 1 · bio iliyokuwa inataja pikipiki"], ["Kit kilichojengwa", "6 carousel decks · 48 PNG · 8 scenes · 32 prompts · 1 MP4"], ["QA", "47 pass · 0 warn · 0 fail · READY"], ["PR", "#1 ime-merge kwenye main (commit 724f21e)"]]}, {"type": "callout", "label": "Ugonjwa", "text": "Prompt ilielezea MADA ('make a video about my POS app') badala ya KITU HALISI (repo, mstari wa code, risiti, namba). Modeli ikajaza pengo na laptop, globe na purple-blue gradient. Pia iliombwa KUCHORA CODE - jambo ambalo modeli ya video haiwezi."}, {"type": "bullets", "items": ["Sauti haikuwa imeandikwa popote -> tumejaza voice.md mbili.", "Hakuna brand tokens -> tumetumia hex/fonti/mwendo kutoka motion-lab yako mwenyewe.", "Hakuna shot list wala negative prompt -> tumetengeneza beats 40 zenye sekunde.", "Hakuna QA gate -> check.py na zana 5 za repo zimeendeshwa kweli."]}]}, {"id": "02", "kicker": "ACT 02 / LUGHA", "title": "Kiswahili mbele, English kwenye captions", "blocks": [{"type": "p", "text": "Uamuzi wa mmiliki: strategy ni Kiswahili, lakini English ni lugha kubwa na haiwezi kupuuzwa, hasa kwenye captions. Hii si maelewano - ndiyo mfumo sahihi: matoleo mawili, si tafsiri."}, {"type": "table", "head": ["Mahali", "Lugha", "Kazi"], "rows": [["Name field + Bio", "Kiswahili", "Utambulisho, hisia, mteja wa DSM"], ["Mstari wa 1 wa caption", "Kiswahili", "Hook, eneo, tatizo halisi"], ["Mstari wa kiufundi", "English", "Search terms, code, technical depth"], ["Alt text / hashtag / on-screen", "Zote mbili", "Kupatikana IG Search + Google"], ["Reel anayosema mtu", "Kiswahili", "Sauti ya kwetu; subtitles zimeburniwa"]]}, {"type": "callout", "label": "Uaminifu", "text": "Instagram aliandika 2021 kwamba keyword search results ilianza na Kiingereza na lugha nyingine zitaongezwa baadaye. Sijapata tamko rasmi la 2026 la lugha zote. Kwa hiyo bio ya Kiswahili kamili inaweza kuwa dhaifu kidogo kwenye IG Search - fidia ni maneno ya Kiingereza kwenye caption, alt text, hashtag na location tag. Hatujadai 'Kiswahili SEO guaranteed'."}, {"type": "captions"}]}, {"id": "03", "kicker": "ACT 03 / BIO", "title": "Bio: variations 4, chagua moja", "blocks": [{"type": "p", "text": "Brand ni Altraware Tech. Username @altrawaretechnology haibadilishwi. Website bado ni subdomain altra.tanzaniareach.com - hakuna domain yetu, 'tunajitafuta'. Hiyo haijafichwa wala haijaigizwa."}, {"type": "variations"}]}, {"id": "04", "kicker": "ACT 04 / MAWASILIANO", "title": "Domain, email, bot na mtu", "blocks": [{"type": "contacts"}, {"type": "callout", "label": "Subdomain si aibu", "text": "Usiiite 'official website', usibuni altra.tech au .co.tz ya kufikirika. Ukishapata domain, badilisha LINK MOJA tu kwenye bio; name, bio, captions, pinned na highlights zinabaki. Vile vile Gmail ni sawa kwa hatua hii - ukishapata domain, tengeneza email ya domain."}]}, {"id": "05", "kicker": "ACT 05 / SETTINGS", "title": "Settings zinazofanya uonekane", "blocks": [{"type": "table", "head": ["Hatua", "Weka", "Kwa nini"], "rows": [["A", "Professional -> Business, public", "Insights, Contact, Category, Manage followers, improved discovery"], ["B", "Search-engine indexing ON", "Tangu 10 Jul 2025 public professional 18+ ina-indexiwa na Google by default"], ["C", "Account Status", "Hakikisha unastahili recommendations kabla ya post ya kwanza"], ["D", "Followers -> Flagged / Potential spam", "Ondoa bots; filter spam followers ON"], ["E", "2FA (authenticator app) + revoke Apps and Websites", "Security kabla ya content"], ["F", "Hidden words, manual tag approval, location tag", "Usafi wa comments + ishara ya DSM"]]}, {"type": "callout", "label": "Hakuna setting ya siri", "text": "Hakuna toggle inayokupa reach. Vile vya 'weka settings hizi uonekane' ni: public + professional + indexing ON + keywords mahali sahihi + Account Status safi. Vingine ni kazi ya content na muda."}]}, {"id": "06", "kicker": "ACT 06 / SEO", "title": "SEO ya kila post", "blocks": [{"type": "bullets", "items": ["Keyword MOJA kwenye mstari wa kwanza wa caption, ndani ya herufi 125 zinazoonekana kabla ya '... more'.", "Keywords na hashtag kwenye CAPTION, si kwenye comments - ndivyo Instagram mwenyewe anavyosema.", "Hashtag 3-5 maalum, zinazozungushwa. Cap rasmi = 5 tangu 18 Desemba 2025.", "Alt text kila picha. Ni accessibility; Instagram HAIJATHIBITISHA kuwa ni ranking signal - tunaiandika kwa sababu ni sahihi, si kama hack.", "Reel 9:16, chini ya dakika 3, first 3 seconds inashika; keyword inasemeka na inaonekana kwenye captions zilizoburniwa.", "Location tag Dar es Salaam / Kariakoo inapohusika.", "Ask MOJA tu. Hakuna URL wala emoji bullets kwenye caption.", "Original content tu: 10+ reposts za wengine ndani ya siku 30 = hutoki kwenye recommendations."]}, {"type": "callout", "label": "Vipimo vya kweli", "text": "Watch time, DM shares (sends) na saves ndizo zinazobeba reach; likes ni za pili. Pendekezo: 3-5 post kwa wiki, niche moja. Haya ni heuristics za industry, si ahadi ya viral - retention graph yako baada ya post 30 ndiyo hakimu."}]}, {"id": "07", "kicker": "ACT 07 / MFUMO", "title": "Nguzo 4 na plan ya siku 30", "blocks": [{"type": "table", "head": ["Nguzo", "Inaonyesha nini", "Mfano"], "rows": [["1. Matatizo ya biashara", "Ukweli wa duka/shule/kliniki", "Wi-Fi ikikatika, risiti bado inatoka"], ["2. Build in public", "Repo, code, mchakato", "Hii si mockup. Ni code."], ["3. Elimu ya vitendo", "Jinsi ya kufanya", "Prompt moja, video ya kawaida -> tabaka 7"], ["4. Watu / backstory", "Mizizi, DSM, Kiswahili", "6.7924° S, 39.2083° E"]]}, {"type": "bullets", "items": ["Wiki 1: profile + voice + carousel 01 (POS) + 03 (BEI) + Reel ya kwanza.", "Wiki 2-4: 4-5 post kwa wiki, 1-3 Stories kwa siku, keyword moja kwa kila post.", "CTA / keyword: POS, BEI, MKATABA, AUDIT, CODE, PROMPT, LUGHA. Ask moja tu.", "DM: wao wanaanza, wewe unajibu. Hakuna bulk DM, hakuna auto-DM.", "Baada ya post 10-30: log.md -> /ig-audit na /ig-viral zenye evidence yako."]}]}, {"id": "08", "kicker": "ACT 08 / VITU", "title": "Vilivyotengenezwa tayari", "blocks": [{"type": "table", "head": ["Kitu", "Idadi", "Mahali"], "rows": [["Carousel decks (8 slides kila moja)", "6 / 48 PNG 1080x1350", "carousels/decks/ · carousels/build/"], ["Code-video scenes zenye beats", "8 / 40 beats", "code-video/scenes.json"], ["Prompts (3 engines x 2 lugha)", "32", "code-video/prompts/"], ["MP4 iliyotengenezwa kwa code", "16s · 1080x1920 H.264", "code-video/samples/"], ["Voice profiles", "2", "03-voice-mwijay.md · 04-voice-altraware.md"], ["Brand tokens halisi", "navy #071022 · gold #eab308", "02-brand-system.md"], ["Studio / live preview", "1", "studio/index.html"], ["Bio variations", "4", "08-bio-variations.md"]]}, {"type": "p", "text": "Vyanzo vya ukweli ni faili za JSON. PNG, MP4, PDF, Google Doc na tovuti ya Vercel ni OUTPUT zinazoweza kuzalishwa upya - usihariri output moja kwa moja."}]}, {"id": "09", "kicker": "ACT 09 / QA", "title": "QA na mipaka ya uaminifu", "blocks": [{"type": "table", "head": ["Chombo", "Matokeo"], "rows": [["content-kit/check.py", "47 pass · 0 warn · 0 fail · READY"], ["ig-caption/caption.py", "READY · 9 PASS · first line 105/125 chars"], ["ig-reel/hookscore.py", "81.8 STRONG / 76.4 STRONG / 56.0 OK (cold-open)"], ["ig-reel/beats.py", "18.6s · loop · 0 flags"], ["ig-human/detect.py", "62.9 REVIEW (safi) vs 24.8 FLAGGED (sloppy)"]]}, {"type": "callout", "label": "Hatujadai", "text": "Hakuna majina ya wateja, NIDA/IMEI halisi, asilimia za matokeo, wala ushuhuda wa kubuni. 99.98% uptime, 24ms, 0.8s checkout, 10x, 'Neema', '100% Cloud Sync' na '100% code ownership' hazijatumika kama proof. Migongano 5 sasa imeamuliwa: umiliki ni kwa leseni (si '100%'), muundo ni offline-first / cloud-synced, bei ni za kuanzia, tagline ni 'Built in Tanzania, for how Tanzania really works.' Angalia §12 na 09-decisions.md."}]}, {"id": "10", "kicker": "ACT 10 / USALAMA", "title": "Usalama kwanza, mara ya pili", "blocks": [{"type": "p", "text": "Akaunti ya zamani @mwijay.davie (~12K, wengi bots, ilibanwa baada ya automation na token ya Meta API iliyovuja) ni taarifa ya mmiliki, SI iliyothibitishwa hadharani. Iko kwenye 01-presence-audit.md §8 kama risk context tu - haijaingia kwenye caption, bio, prompt wala PNG yoyote."}, {"type": "bullets", "items": ["Password mpya unique + 2FA kwa authenticator app + recovery codes offline.", "Email ya account iwe na 2FA yake yenyewe kwanza.", "Accounts Center -> Where You're Logged In -> logout wasiotambulika.", "Accounts Center -> Apps and Websites -> Remove kila app usiyoitumia leo.", "Meta App Dashboard -> reset App Secret, Require App Secret ON, revoke tokens; GitHub secret scanning kwenye repo zote. Rotate KWANZA, kisha safisha history.", "Hakuna app ya 'free followers', hakuna auto-follow/auto-like/mass DM, hakuna password au 2FA code kwa mtu yeyote.", "Recovery ikihitajika: instagram.com/hacked na Meta Account Recovery Hub tu. Hakuna support email wala hotline; DM za 'Meta Support' ni scam."]}]}, {"id": "11", "kicker": "ACT 11 / INAYOFUATA", "title": "Bado tunahitaji kutoka kwako", "blocks": [{"type": "table", "head": ["Kitu", "Kwa nini"], "rows": [["Variation uliyochagua (V1-V4)", "Kusasisha 01 + studio + PDF + Doc pamoja, bila drift"], ["IG Search suggestions DSM (dakika 10 zako)", "Google autocomplete TZ imeshafanywa (search-terms.md); leta screenshots za IG tuta-replace."], ["✅ Migongano 5 imeamuliwa", "Angalia §12 / 09-decisions.md; usiseme '100%' wala 'SaaS' isipokuwa kwa usajili."], ["Screenshots 3 za caption/Reel zako", "Kurekebisha voice.md iwe sauti yako hasa (dakika 10 zako; ficha binafsi, usilete token/login)."], ["Insights za post 10-30", "Hazifanyiki bado: hakuna kilichopostwa. Rekodi views, reach, sends, saves, hold@3s."], ["Ujumbe halisi wa login wa akaunti ya zamani", "Kama utajaribu recovery - bila password wala code"]]}, {"type": "callout", "label": "Vyanzo vikuu", "text": "about.instagram.com/blog/announcements/break-down-how-instagram-search-works · help.instagram.com/147542625391305 · help.instagram.com/138925576505882 · help.instagram.com/502981923235522 · creators.instagram.com/recommendations-and-originality · docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret · Orodha kamili: 07-ig-setup.md §9"}]}, {"id": "12", "kicker": "ACT 12 / MAAMUZI", "title": "Maamuzi yaliyokubaliwa (17 Nov 2026)", "blocks": [{"type": "p", "text": "Mmiliki ameamua migongano 5 ya 01-presence-audit.md §5. Hii ndiyo source of truth mpya; §5 inabaki kama historia ya vyanzo vilivyogongana. Voice profiles, proof bank, caption, carousel 03, PDF, Doc na site vimesasishwa."}, {"type": "table", "head": ["#", "Mada", "Uamuzi"], "rows": [["1", "Bei", "Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. 'Bei wazi' = bei ya kuanzia iko wazi; bei kamili kwa maandishi baada ya scope. Usiseme 'SaaS' isipokuwa Faida inauzwa kwa usajili."], ["2", "Cloud", "offline-first, cloud-synced. Hakuna msimamo mkali dhidi ya cloud; hook ni 'Build the queue first' bila kukanusha cloud."], ["3", "Umiliki", "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Hakuna '100%' kwenye post wala bot; mkataba na matangazo vifuate ukweli huu."], ["4", "Tagline", "Built in Tanzania, for how Tanzania really works. 'Engineered for the World' imeachwa kwa akaunti yenye wafuasi 5; inaweza kurudi baadaye."], ["5", "Link", "altra.tanzaniareach.com inabaki. Usiiite 'official website'. Ukipata domain, badilisha link moja tu."]]}, {"type": "callout", "label": "Umiliki - sentensi moja", "text": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. (EN: You own your data and your site/app; the Faida core is licensed to you.) Hii inaendana na kifungu 3 cha mkataba na inaondoa ahadi ya '100% code & IP ownership' kwenye bot FAQ."}, {"type": "callout", "label": "Jina lililosahihishwa", "text": "'Altraware Tech | Websites & Apps' ni 32/30 → litakatwa. Tumia 'Altraware | Websites & Apps' (27/30) kama jina mbadala. V2 bado ni default hadi uchague variation V1-V4."}, {"type": "bullets", "items": ["Maneno ya search: Google autocomplete (gl=TZ, hl=sw) imeshafanywa kwenye search-terms.md; IG search bar bado ni dakika 10 zako.", "Screenshots 3 za caption/Reel: kazi yako ya dakika 10; ficha taarifa binafsi, usiingize chochote kuhusu akaunti ya zamani.", "Insights za post 10-30: hazifanyiki bado - hakuna kilichopostwa. Angalia log-template.md.", "Hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credentials kwenye kit hiki."]}]}], "bio": {"meta": {"account": "@altrawaretechnology", "brand": "Altraware Tech", "handle_note": "Username @altrawaretechnology haibadilishwi; 'Altraware Tech' ndio jina la brand, si lazima liingie lote kwenye name field yenye limit ya 30.", "date": "2026-11-17", "status": "variations - mmiliki atachagua moja", "source_of_truth": "content-kit/bio-variations.json", "canonical_default": "02-mchanganyiko-search", "canonical_note": "01-presence-audit.md §4 na studio/data.js bado vinatumia V2 kama default. Ukishachagua variation nyingine, sasisha 01, studio, PDF na Google Doc pamoja - usiache tofauti.", "decisions_ref": "content-kit/09-decisions.md", "decisions_date": "2026-11-17", "edition_note": "v1.2: migongano 5 imeamuliwa; variation bado inasubiri chaguo."}, "domain": {"current": "https://altra.tanzaniareach.com/", "status": "subdomain tu; hatuna domain yetu bado (imesemwa na mmiliki 17 Nov 2026)", "rule": "Usiiite 'official website', usibuni domain, usiweke altra.tech wala .co.tz ya kufikirika. Subdomain ni sawa kabisa kwa hatua hii.", "when_domain_arrives": "Badilisha link MOJA tu kwenye bio; kila kitu kingine (name, bio, captions, pinned) kinabaki.", "conflict_ref": "01-presence-audit.md §5 #5"}, "language_rule": {"name_bio": "Kiswahili mbele", "captions": "Kiswahili kwa hisia, mfano wa DSM/Kariakoo na CTA; English kwa technical depth na search terms", "principle": "Matoleo mawili, si tafsiri", "why_english_stays": "English ni lugha kubwa kwenye utafutaji na kwa wateja wa nje; haiwezi kuondolewa kwenye captions, alt text, hashtag na on-screen text ya Reel.", "honest_caveat": "Instagram mwaka 2021 ilisema keyword search results ilianza na Kiingereza na lugha nyingine zitaongezwa baadaye. Sijapata tamko rasmi la 2026 la lugha zote. Kwa hiyo bio ya Kiswahili kamili inaweza kuwa dhaifu kidogo kwenye IG Search; fidia ni maneno ya Kiingereza kwenye caption, alt text, hashtag na location tag.", "sources": ["https://about.instagram.com/blog/announcements/break-down-how-instagram-search-works", "https://github.com/mwijay12/strategies/blob/main/docs/05-content-engine.md"]}, "contacts": {"email": "altrawaretechnology@gmail.com", "whatsapp_bot": {"local": "0790942616", "intl": "+255 790 942 616", "label": "WhatsApp bot - majibu ya haraka, SI mtu", "use": "DM auto-reply, FAQ, Highlight ya 'Maswali', first comment. Usiiweke kama Call button: mteja akipiga anapata bot.", "routing": "maswali ya kibinafsi / collab / automation"}, "human": {"intl": "+255 792 867 427", "label": "Mtu halisi - mauzo / mteja wa studio", "use": "Contact button (Call / WhatsApp) inayoonekana kwenye profile. Huyu ndiye anayejibu maswali ya bei na mkataba.", "routing": "mteja wa studio: kusanya (huduma, jina la biashara, WhatsApp) kisha mpelekee"}, "bio_note": "Namba na email haziingii kwenye maandishi ya bio (limit 150). Zinaingia kwenye Contact buttons, Highlights na first comment.", "gmail_note": "Gmail ni sawa kwa sasa (tunajitafuta). Ukishapata domain, tengeneza email ya domain na uibadilishe kwenye Contact button."}, "variations": [{"id": "01-kiswahili-kamili", "label": "Kiswahili kamili", "tone": "Joto, la kwetu, rahisi kusoma kwa mwenye duka Kariakoo", "name": "Altraware Tech | Mifumo", "name_chars": 23, "bio": "Tunatengeneza tovuti, programu na mifumo ya mauzo kwa biashara za kwetu.\nKiswahili kwanza, M-Pesa ndani, hata bila mtandao. Dar es Salaam · Bei wazi", "bio_chars": 148, "fully_swahili": true, "why": "Ndiyo unayoiomba: Kiswahili kamili isipokuwa jina la brand na M-Pesa (majina yasiyo na tafsiri). 'Programu' badala ya 'app', 'mifumo ya mauzo' badala ya 'POS', 'biashara za kwetu' badala ya 'TZ'.", "tradeoff": "Name field haina 'POS' wala 'Websites', kwa hiyo IG/Google search inategemea zaidi caption, alt text, hashtag na location tag. Ndiyo maana English inabaki kwenye captions.", "recommended": true, "recommended_note": "Hii ndiyo ninayokusuggest kwa brand yako: Kiswahili mbele kwenye bio, English ikifanya kazi yake kwenye captions.", "alt_name_if_you_want_product_word": "Altraware Tech | Tovuti na POS (30/30)"}, {"id": "02-mchanganyiko-search", "label": "Mchanganyiko / search-first", "tone": "Wazi, inatafutika, salama kwa Google", "name": "Altraware | Websites & POS TZ", "name_chars": 29, "bio": "Tovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani, hata offline.\nDar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi", "bio_chars": 141, "fully_swahili": false, "why": "Ina 'Websites', 'POS', 'TZ' kwenye name field na 'Dar es Salaam' kwenye bio. Hii ndiyo iliyokuwa canonical kwenye 01-presence-audit.md §4.", "tradeoff": "Inasikika kidogo kama agency ya Kiingereza; si 'yetu' kama V1.", "recommended": false, "recommended_note": "Chagua hii kama kipaumbele chako leo ni kupatikana kwenye search badala ya sauti ya Kiswahili."}, {"id": "03-faida-pos-mbele", "label": "Faida POS mbele", "tone": "Bidhaa moja wazi, proof mbele", "name": "Altraware Tech | Faida POS", "name_chars": 26, "bio": "Faida POS: mauzo, risiti na stoo hata mtandao ukikatika. Pia tovuti na app\nkwa biashara TZ. Kiswahili kwanza, M-Pesa ndani. Dar es Salaam · Bei wazi", "bio_chars": 148, "fully_swahili": false, "why": "Mtu anayetafuta 'Faida POS' anakupata moja kwa moja. Inaunganisha na carousel 01-offline-first na Reel ya kwanza.", "tradeoff": "Inafanya studio ionekane kama kampuni ya POS tu, wakati pia unajenga tovuti, app, Shule-Altra na loanapp.", "recommended": false}, {"id": "04-build-in-public", "label": "Ujasiri / build in public", "tone": "Ukweli, haina kujifanya, inastandout sana", "name": "Altraware Tech | DSM, TZ", "name_chars": 24, "bio": "Hatuna domain yetu. Tuna code, bei wazi na mkataba.\nTovuti, app na POS kwa biashara TZ. Kiswahili kwanza, M-Pesa ndani. Dar es Salaam", "bio_chars": 133, "fully_swahili": false, "why": "Inakubali wazi kuwa bado uko kwenye subdomain. Hii ni tofauti kabisa na 'agency' za kawaida zenye 'world-class solutions' - ni uaminifu unaoonekana.", "tradeoff": "Kwa mteja mkubwa anayekutathmini leo, 'hatuna domain' inaweza kusoma kama udogo. Ni nzuri zaidi kwa akaunti ya kibinafsi @mwijay__davie au kwa hadhira ya founder/build-in-public.", "recommended": false}], "caption_examples": [{"id": "sw-with-en-keywords", "line1": "Mtandao ukikatika Kariakoo, risiti 0342 bado inatoka.", "body": "Faida POS inarekodi mauzo, inatoa risiti ya thermal na inasasisha stoo hata bila internet. Muunganisho ukirudi, M-Pesa na stoo vina-sync chenyewe. Offline-first POS for Tanzanian shops, si demo.", "ask": "Comment POS", "hashtags": ["#FaidaPOS", "#BiasharaTanzania", "#Altraware"]}, {"id": "en-technical", "line1": "Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops.", "body": "A Flutter POS writes the sale locally, prints the thermal receipt, then syncs to the cloud when the connection returns. Real code: faida.checkout({ items, pay: \"M-PESA\", lang: \"sw\" }).", "ask": "Comment CODE", "hashtags": ["#POSSoftware", "#DarEsSalaam", "#BuildInPublic"]}], "selection": {"chosen": null, "chosen_note": "Mmiliki bado hajachagua V1-V4. Migongano 5 imeamuliwa 17 Nov 2026 (09-decisions.md). Hadi achague, 01-presence-audit.md §4, studio na PDF vinatumia V2 kama default iliyoandikwa wazi."}, "name_options": {"rejected": {"value": "Altraware Tech | Websites & Apps", "chars": 32, "reason": "> 30, litakatwa kwenye Instagram name field."}, "corrected": {"value": "Altraware | Websites & Apps", "chars": 27, "note": "Jina lililosahihishwa kutoka kwa mmiliki 17 Nov 2026. Mbadala wa name field, si variation mpya; V2 bado ni default hadi uchague."}}, "decisions": {"date": "2026-11-17", "source": "mmiliki", "pricing": "Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. 'Bei wazi' = bei ya kuanzia iko wazi, bei kamili kwa maandishi baada ya scope. Usiseme 'SaaS' isipokuwa Faida inauzwa kwa usajili.", "cloud": "offline-first, cloud-synced. Hakuna msimamo mkali dhidi ya cloud; hook ni 'Build the queue first'.", "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.", "ownership_en": "You own your data and your site/app; the Faida core is licensed to you.", "ownership_rule": "Hakuna '100%' kwenye post wala bot. Mkataba na matangazo vifuate ukweli huu.", "tagline": "Built in Tanzania, for how Tanzania really works.", "link": "altra.tanzaniareach.com inabaki; usiiite 'official website'. Domain ikipatikana, badilisha link moja tu."}, "week2_caption_openers": ["Web design Dar es Salaam: bei ya kuanzia iko wazi, si baada ya mkutano wa tatu.", "Pos system ya dukani: risiti inatoka hata mtandao ukikatika.", "Mfumo wa mauzo dukani unaoandika kwanza, kisha una-sync kwenye cloud.", "Pos software Tanzania: offline-first, cloud-synced, si demo ya laptop.", "App developer near me? Anza na scope, bei na tarehe iliyoandikwa."], "week2_caption_note": "Maneno haya yametokana na Google autocomplete (gl=TZ, hl=sw) 17 Nov 2026, si mawazo. IG search-bar suggestions bado ni dakika 10 za mmiliki; akileta screenshots, ya-replace hapa bila kubadilisha mfumo. Angalia content-kit/search-terms.md."}, "links": {"pdf": "https://drive.google.com/file/d/1JtgqO9Tw7fbwsQC4HYXMw4QsudKjaIFU/view?usp=drivesdk", "site": "https://altraware-tech-git-arena-1db882-davidbyanmwijage-7829s-projects.vercel.app/", "doc": "https://docs.google.com/document/d/1njUgtZfAovlz1atWWKp6AT6SOdQ2NiOsvCsR4QHz67k/edit?usp=drivesdk", "docx": "https://drive.google.com/uc?id=1KLrpobXkKfmLMpHdGK4S9TScsDYBGrZr&export=download"}};
+const S = window.STRATEGY;
+const $ = s => document.querySelector(s);
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const COPY = [];
+const copyBtn = (text, label="nakili") => {
+  const i = COPY.push(text) - 1;
+  return `<button class="btn" data-copy="${i}">${label}</button>`;
+};
+
+/* hero */
+$("#hero-kicker").textContent = S.meta.company + "  /  " + S.meta.edition;
+$("#hero-title").innerHTML = esc(S.meta.title).replace(/ /g," ") +
+  "<br><em>" + esc(S.meta.subtitle) + "</em>";
+$("#hero-lede").textContent = S.meta.status + "  ·  " + S.meta.prepared_for;
+$("#badges").innerHTML = [
+  S.meta.place, S.meta.accounts, "4 bio variations", "47 pass / 0 fail / READY",
+  "PDF + Google Doc + Vercel"
+].map((b,i)=>`<span class="badge ${i===3?'g':''}">${esc(b)}</span>`).join("");
+const L = S.links || {};
+$("#links").innerHTML =
+  (L.pdf ? `<a href="${esc(L.pdf)}" target="_blank" rel="noopener">Fungua PDF</a>` : "") +
+  (L.doc ? `<a href="${esc(L.doc)}" target="_blank" rel="noopener">Google Doc</a>` : "") +
+  (L.preview ? `<a class="ghost" href="${esc(L.preview)}" target="_blank" rel="noopener">Live preview</a>` : "") +
+  `<a class="ghost" href="https://github.com/mwijay12/instagram-agent-skill" target="_blank" rel="noopener">Repo</a>` +
+  `<a class="ghost" href="#s03">Chagua bio</a>`;
+
+/* nav */
+$("#nav").innerHTML = S.sections.map(s =>
+  `<a href="#s${esc(s.id)}">${esc(s.id)} · ${esc(s.title)}</a>`).join("");
+
+function table(b){
+  return `<table><thead><tr>${b.head.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>` +
+    b.rows.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("") +
+    `</tbody></table>`;
+}
+function variations(){
+  return S.bio.variations.map((v,i)=>`
+    <div class="var ${v.recommended?'pick':''}">
+      <div class="row"><h3>V${i+1} · ${esc(v.label)}</h3>${copyBtn(v.name+"\n\n"+v.bio,"nakili zote mbili")}</div>
+      ${v.recommended?'<span class="pick-tag">INAYOSUGGEST</span>':''}
+      <div class="lbl">Name field · ${v.name_chars}/30</div><pre>${esc(v.name)}</pre>
+      <div class="lbl">Bio · ${v.bio_chars}/150</div><pre>${esc(v.bio)}</pre>
+      <div class="note"><b>Kwa nini:</b> ${esc(v.why)}<br><b>Gharama:</b> ${esc(v.tradeoff)}</div>
+    </div>`).join("") +
+    `<p style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)">
+      Chanzo: bio-variations.json · default ya sasa ni V2 · mmiliki bado hajachagua</p>`;
+}
+function contacts(){
+  const c=S.bio.contacts, d=S.bio.domain;
+  const rows=[
+    ["Email",c.email,"Contact button (Email) kwenye profile"],
+    ["WhatsApp BOT",c.whatsapp_bot.local+" / "+c.whatsapp_bot.intl,c.whatsapp_bot.use],
+    ["MTU halisi",c.human.intl,c.human.use],
+    ["Link",d.current,d.status]
+  ];
+  return table({head:["Kitu","Thamani","Mahali / maana"],rows}) +
+    `<p><b>Bot si mtu:</b> usiiweke kama Call button. Wao wanaanza, wewe unajibu - hakuna bulk DM.</p>`;
+}
+function captions(){
+  return S.bio.caption_examples.map((c,i)=>`
+    <div class="cap"><div class="t">CAPTION ${i+1}</div><b>${esc(c.line1)}</b>
+    <p>${esc(c.body)}</p><code>${esc(c.ask)}</code>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)">
+      &nbsp; ${esc(c.hashtags.join(" "))}</span></div>`).join("");
+}
+function block(b){
+  switch(b.type){
+    case "p": return `<p>${esc(b.text)}</p>`;
+    case "bullets": return `<ul>${b.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul>`;
+    case "table": return table(b);
+    case "callout": return `<div class="callout"><b>${esc(b.label)}</b><p>${esc(b.text)}</p></div>`;
+    case "variations": return variations();
+    case "contacts": return contacts();
+    case "captions": return captions();
+    default: return "";
+  }
+}
+$("#sections").innerHTML = S.sections.map(s=>`
+  <section class="card" id="s${esc(s.id)}">
+    <div class="kicker">${esc(s.kicker)}</div>
+    <h2>${esc(s.id)} · ${esc(s.title)}</h2>
+    <div class="rule"></div>
+    ${s.blocks.map(block).join("")}
+  </section>`).join("");
+
+$("#footer").innerHTML = `ALTRAWARE TECH · ${esc(S.meta.edition)}<br>` +
+  `Chanzo: content-kit/present/content.json + content-kit/bio-variations.json<br>` +
+  `Hakuna kilichopostwa kwenye Instagram · hakuna DM · hakuna credentials kwenye tovuti hii.`;
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-copy]");
+  if(!b) return;
+  navigator.clipboard.writeText(COPY[+b.dataset.copy]).then(()=>{
+    const t=$("#toast"); t.classList.add("on");
+    setTimeout(()=>t.classList.remove("on"),1500);
+  });
+});
+</script>
+</body>
+</html>
