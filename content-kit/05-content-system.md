@@ -56,7 +56,7 @@ Hii ndiyo sehemu inayozuia "outputs za kubuni". **Kitu chochote kisicho kwenye s
 | loanapp: NIDA tarakimu 20, dual-IMEI, Kariakoo/Mbezi/Arusha/Mwanza/Dodoma, EN+SW | [loanapp](https://github.com/mwijay12/loanapp) |
 | Shule Altra: NECTA O-level grading, kadi, "Shule Guide" (si LLM) | [Shule-Altra](https://github.com/mwijay12/Shule-Altra) |
 | TabTune: `.lrc`, Kiswahili/Sheng/English, MV3, karaoke | [tabtune-studio](https://github.com/mwijay12/tabtune-studio) |
-| Bei: 350K / 550K / 750K / kuanzia 800K / kuanzia 1.2M / kuanzia 99K kwa mwezi | knowledge base + [pricing](https://altra.tanzaniareach.com/pricing) |
+| **Bei za kuanzia:** Web Starter 350K · Growth 550K · Custom kuanzia 800K · mifumo kuanzia 1.2M · Care Plan 99K/mwezi (huduma tofauti) | knowledge base + [pricing](https://altra.tanzaniareach.com/pricing) + uamuzi wa mmiliki 17 Nov 2026 |
 | Hatua 5 na siku 30 za hypercare | knowledge base + [motion-lab](https://altra-motion-lab.vercel.app/) |
 | Kazi 6 zilizo hewani | [motion-lab/work](https://altra-motion-lab.vercel.app/work/) |
 | `6.7924° S, 39.2083° E`, Dar es Salaam | motion-lab hero |
@@ -78,10 +78,10 @@ Ukihitaji namba na huna, andika `{{NEEDS_INPUT: ...}}` — sawa na `{{your numbe
 
 ## 5. Migongano inayoathiri copy (angalia [`01-presence-audit.md`](01-presence-audit.md) §5)
 
-- Faida POS: **custom build (1.2M)** dhidi ya **SaaS (35K/mwezi)** → andika ni ipi.
+- Faida POS: **custom build kuanzia 1.2M**. FaidaHQ ikiuzwa kwa usajili ndiyo tu inaitwa SaaS. Care Plan 99K/mwezi ni huduma tofauti, si SaaS. "Bei wazi" = bei ya kuanzia wazi, bei kamili kwa maandishi baada ya scope.
 - **Offline-first** dhidi ya **cloud-first / 100% Cloud Sync** → chagua moja.
 - **"100% code ownership"** dhidi ya kifungu 3 cha mkataba wako → sema "umiliki umeandikwa wazi kwenye mkataba".
-- Tagline moja tu: `Rooted at home. Engineered for the world.`
+- Tagline moja tu: `Built in Tanzania, for how Tanzania really works.` (imeamuliwa 17 Nov 2026; "Engineered for the World" imeachwa kwa akaunti yenye wafuasi 5).
 - Link moja tu kwenye bio: `altra.tanzaniareach.com`.
 
 ---

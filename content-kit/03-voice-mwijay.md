@@ -10,6 +10,7 @@
 
 - **Name:** David Erick Mwijage ("Mwijay Davie")
 - **Handle:** `@mwijay__davie` (GitHub `mwijay12`, TikTok `@mwijay.davie`, YouTube `@dataamigo`)
+- **Tagline ya studio:** Built in Tanzania, for how Tanzania really works.
 - **What I do, in one sentence:** Ninajenga mifumo ya biashara yenye code halisi kwa maduka, shule na kliniki za Tanzania, hasa inayofanya kazi mtandao ukikatika.
 - **Who I am talking to:** Watengenezaji na wanafunzi wa tech wa Tanzania wanaotaka kuona kazi halisi; pia wamiliki wa biashara ndogo wa DSM wanaotaka kujua "huyu anaweza kunijengea?" (Sio "creatives", sio "tech enthusiasts" kwa ujumla.)
 - **What I sell:** Sio course, sio template pack. Ni uwezo wa kujenga: Altraware (co-founder), pamoja na consulting ya AI/automation kwa watu wanaouliza kwenye DM.
@@ -56,7 +57,7 @@ Haya ndio mambo ninayoamini ambayo baadhi ya hadhira yangu hawaamini. Ndiyo chan
 
 - **Topics I do not post about:** Siasa, dini kama mada ya bidhaa, bei ya mteja maalum, mambo ya ndani ya mkataba wa mteja.
 - **Clients, numbers or names I cannot say publicly:** Majina ya wateja bila ruhusa (pamoja na "Neema Mwakalinga" kwenye tovuti — `NEEDS_INPUT`). Hakuna data ya mgonjwa/wanafunzi, hakuna NIDA/IMEI halisi kwenye screenshot.
-- **Claims I am not allowed to make:** "tumeidhinishwa na PDPC", "BRELA registered" bila namba, "100% code ownership" (kifungu 3 cha mkataba wako kinasema vinginevyo — angalia `01-presence-audit.md` §5), "95+ Lighthouse", "99.98% uptime", "0.8s checkout", "10x faster", "0% lost stock", "12 wateja kwa siku" (mfano wa doc 05, si kipimo). Hakuna matokeo ya mteja yasiyo na ruhusa ya maandishi.
+- **Claims I am not allowed to make:** "tumeidhinishwa na PDPC", "BRELA registered" bila namba, "100% code ownership" (imekataliwa 17 Nov 2026 — angalia `09-decisions.md`), "95+ Lighthouse", "99.98% uptime", "0.8s checkout", "10x faster", "0% lost stock", "12 wateja kwa siku" (mfano wa doc 05, si kipimo). Hakuna matokeo ya mteja yasiyo na ruhusa ya maandishi.
 
 ## Proof I can use
 

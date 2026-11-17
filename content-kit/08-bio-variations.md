@@ -165,10 +165,10 @@ Comment POS, tutakutumia demo.
 
 **Caption B (Kiingereza kwa technical depth / hadhira ya nje):**
 ```
-Stop building cloud-first apps for Kariakoo. Build the queue first.
+Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops.
 
 A Flutter POS writes the sale locally, prints the thermal receipt, then syncs
-when the connection returns. Real code:
+to the cloud when the connection returns. Real code:
 faida.checkout({ items, pay: "M-PESA", lang: "sw" })
 
 Comment CODE
@@ -176,6 +176,19 @@ Comment CODE
 ```
 
 Kanuni: **mstari wa kwanza Kiswahili (hisia / eneo / tatizo), mstari wa kiufundi English (utafutaji / ushahidi), CTA moja.** Usitafsiri caption yote mara mbili — zote mbili zinakuwa mbaya.
+
+---
+
+## 5b. Maamuzi yaliyokubaliwa + jina lililosahihishwa (17 Nov 2026)
+
+- **Umiliki:** *"Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni."* Hakuna "100%".
+- **Cloud:** `offline-first, cloud-synced`; Caption B imesahihishwa, hakuna kukanusha cloud.
+- **Bei:** Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M · Care Plan 99k/mwezi (huduma tofauti). Usiseme "SaaS" isipokuwa kwa usajili.
+- **Tagline:** `Built in Tanzania, for how Tanzania really works.`
+- **Link:** `altra.tanzaniareach.com` inabaki; usiiite "official website".
+- **Jina:** `Altraware Tech | Websites & Apps` = **32/30** → litakatwa. Tumia **`Altraware | Websites & Apps` (27/30)** kama mbadala. V2 bado ni default hadi uchague V1-V4.
+
+Maelezo yote: [`09-decisions.md`](09-decisions.md). Maneno ya search: [`search-terms.md`](search-terms.md).
 
 ---
 

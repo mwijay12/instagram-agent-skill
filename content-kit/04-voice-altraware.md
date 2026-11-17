@@ -10,9 +10,10 @@
 
 - **Name:** Altraware Technology Ltd (Dar es Salaam, Tanzania)
 - **Handle:** `@altrawaretechnology`
+- **Tagline:** Built in Tanzania, for how Tanzania really works.
 - **What I do, in one sentence:** Tunajenga tovuti, app na mifumo ya biashara kwa Kiswahili na Kiingereza, kwa M-Pesa ndani, mikataba ya maandishi, na msaada baada ya uzinduzi.
 - **Who I am talking to:** Mmiliki wa duka / supermarket / pharmacy, mkuu wa shule binafsi, meneja wa kliniki, au hotel/lodge ya DSM na Zanzibar. Ana shida ya leo (stoo, risiti, ada, inquiries zisizojibiwa), hashangazwi na "digital transformation".
-- **What I sell:** Tovuti (350K / 550K / 750K), custom apps (kuanzia 800K), mifumo (kuanzia 1.2M), na Care & Support (kuanzia 99K/mwezi). **Bei zote ni za knowledge base yako; thibitisha kabla ya kuweka kwenye caption.** Pia kuna FaidaHQ kama subscription tofauti — usichanganye (angalia `01-presence-audit.md` §5).
+- **What I sell:** Web Starter 350K, Growth 550K, Custom app **kuanzia** 800K, mifumo **kuanzia** 1.2M. **Care Plan 99K/mwezi ni huduma tofauti.** "Bei wazi" = bei ya kuanzia iko wazi; bei kamili inawekwa kwa maandishi baada ya scope. FaidaHQ inaitwa **SaaS tu ikiwa inauzwa kwa usajili** — usichanganye. Angalia `09-decisions.md`.
 
 ## What I sound like
 
@@ -48,21 +49,21 @@ Lugha: Kiswahili cha kawaida cha biashara (si cha vitabu, si cha mtaa kupita kia
 ## My positions
 
 1. **Kiswahili kwanza, lakini si kama tafsiri.** Mfumo unaotumia maneno ya mtu anayeutumia unatumika zaidi.
-2. **Mtandao si uhakika. Mfumo ndiyo unapaswa kuwa uhakika.** Ndiyo maana offline-first na sync viko kwenye muundo, si kwenye brochure.
+2. **Mtandao si uhakika. Mfumo ndiyo unapaswa kuwa uhakika.** Muundo ni **offline-first, cloud-synced**: mauzo yanaandikwa kwanza, kisha yana-sync kwenye cloud. Hakuna msimamo mkali dhidi ya cloud.
 3. **Bei na tarehe vinatakiwa kuandikwa kabla ya code.** Mkataba, prototype, demo ya kila wiki: mteja anajua anaenda wapi.
 4. **Baada ya uzinduzi ndipo kazi inaanza.** Siku 30 za hypercare, backups, usalama, WhatsApp SLA.
-5. **Code ya mteja ni ya mteja, na hilo linatakiwa kuandikwa** — kwa usahihi unaoendana na kifungu cha mkataba wako (angalia `01-presence-audit.md` §5 #3).
+5. **Umiliki umeamuliwa:** *"Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni."* Hakuna "100% code & IP ownership" kwenye post wala bot (angalia `09-decisions.md`).
 
 ## Off limits
 
 - **Topics I do not post about:** Siasa, kulinganisha wateja hadharani, data za wagonjwa/wanafunzi, madeni ya mtu, bei iliyopunguzwa kwa mteja mmoja.
 - **Clients, numbers or names I cannot say publicly:** Majina ya wateja, pamoja na testimonial ya "Neema Mwakalinga" iliyoko kwenye tovuti hadi ithibitishwe (`NEEDS_INPUT`). Kazi 6 zilizoorodheshwa kwenye motion-lab zinaweza kutajwa kama **kazi za studio**, si kama "wateja walioridhika X%".
-- **Claims I am not allowed to make:** "99.98% uptime", "24ms", "0.8s average checkout", "95+ Lighthouse", "<2s kwenye 2G/3G", "10x faster billing", "0% lost stock", "100% Cloud Sync" (inakinzana na offline-first), "PDPA certified / PDPC approved", "BRELA registered" bila namba, "100% code & IP ownership" (kifungu 3 kinasema Altraware anamiliki templates/prompts/libraries), "tunasaidia biashara 200+", "tumeidhinishwa na serikali". Pia: Tanzania Reach si chombo cha serikali — usiiite hivyo.
+- **Claims I am not allowed to make:** "99.98% uptime", "24ms", "0.8s average checkout", "95+ Lighthouse", "<2s kwenye 2G/3G", "10x faster billing", "0% lost stock", "100% Cloud Sync" (inakinzana na offline-first), "PDPA certified / PDPC approved", "BRELA registered" bila namba, "100% code & IP ownership" (imekataliwa 17 Nov 2026; angalia `09-decisions.md`), "tunasaidia biashara 200+", "tumeidhinishwa na serikali". Pia: Tanzania Reach si chombo cha serikali — usiiite hivyo.
 
 ## Proof I can use
 
 - **Mchakato wa hatua 5 ulioandikwa wazi:** Discovery & Scope (wiki 1) · UI/UX Prototype (wiki 1–2) · Agile Engineering (wiki 2–6, demo kila wiki) · Launch & Training (siku 30 hypercare) · Care & Support.
-- **Bei zilizochapishwa:** 350K / 550K / 750K / kuanzia 800K / kuanzia 1.2M / kuanzia 99K kwa mwezi (knowledge base + [pricing page](https://altra.tanzaniareach.com/pricing)). Thibitisha kabla ya post.
+- **Bei za kuanzia zilizoamuliwa:** Web Starter 350K · Growth 550K · Custom kuanzia 800K · mifumo kuanzia 1.2M · Care Plan 99K/mwezi (huduma tofauti). knowledge base + [pricing page](https://altra.tanzaniareach.com/pricing) + `09-decisions.md`. Bei kamili kwa maandishi baada ya scope.
 - **Njia za malipo zilizounganishwa:** M-Pesa, Tigo Pesa, Airtel Money, HaloPesa.
 - **Kazi 6 zilizo hewani:** Faida POS, [UAUT Connect](https://www.uautconnect.com/), [AYMI Africa](https://aymiafrica.org/), [Volta Rentals](https://volta-rentals.vercel.app/), [Bongo Foodie](https://bongofoodie.vercel.app/), [Audenic](https://audenic.vercel.app/) — kama zilivyoorodheshwa kwenye [motion-lab / work](https://altra-motion-lab.vercel.app/work/).
 - **Mifumo ya ndani:** Faida POS (risiti za thermal, tahadhari za stoo, matawi mengi), CareTrack (EHR, mahudhurio, SMS/WhatsApp kwa walezi), ShuleDirect Pro / Shule Altra (alama za NECTA, ada kwa M-Pesa).

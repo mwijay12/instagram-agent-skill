@@ -32,13 +32,23 @@ Imetengenezwa kwa kutumia muundo wa [`/ig-plan`](../skills/ig-plan/SKILL.md): 4�
 
 | Siku | Akaunti | Format / nguzo | Angle halisi | Hook | Keyword |
 | --- | --- | --- | --- | --- | --- |
-| Jumatatu | A | **CAROUSEL** · Offer | `03-bei-wazi`: 350K / 550K / 750K / 800K / 1.2M / 99K. Sema wazi "bei za custom build" | cover | `BEI` |
+| Jumatatu | A | **CAROUSEL** · Offer | `03-bei-wazi`: Web Starter 350K · Growth 550K · Custom kuanzia 800K · mifumo kuanzia 1.2M · Care Plan 99K/mwezi. Sema wazi "bei za kuanzia" | cover | `BEI` |
 | Jumanne | M | **REEL** · Build in public | "Nilijaribu NIDA ya tarakimu 20 kwenye loanapp. Hiki ndicho kilichokataa mara ya kwanza." (Onyesha validation, si data halisi ya mtu.) | #1 Cost Confession | `CODE` |
 | Jumatano | A | **REEL** · Elimu | "Wiki 1 tunakupa prototype unayoibofya kwenye simu kabla hatujaandika code." Onyesha clickable prototype | #20 Permission | `MKATABA` |
 | Alhamisi | A | **CAROUSEL** · Elimu | `05-wiki-1-hadi-uzinduzi`: hatua 5 + siku 30 hypercare | cover | `MKATABA` |
 | Ijumaa | M | **REEL** · Story | "Kwa nini niliacha heavy scroll plugin kwenye motion-lab: iliangusha frame rate kwenye Android ya 3G." (Imeandikwa kwenye README ya `altraware-technology`.) | #5 Time Collapse / #21 Mid-Sentence | `PROMPT` |
 
 **Stories:** bei kwenye highlight `Bei`; slider "Bei gani ulidhani tovuti inaanza?"; link sticker moja tu kwenda `altra.tanzaniareach.com/pricing`.
+
+**Mistari ya kwanza ya caption za wiki 2 (maneno halisi ya search, si mawazo):**
+
+1. `Web design Dar es Salaam: bei ya kuanzia iko wazi, si baada ya mkutano wa tatu.`
+2. `Pos system ya dukani: risiti inatoka hata mtandao ukikatika.`
+3. `Mfumo wa mauzo dukani unaoandika kwanza, kisha una-sync kwenye cloud.`
+4. `Pos software Tanzania: offline-first, cloud-synced, si demo ya laptop.`
+5. `App developer near me? Anza na scope, bei na tarehe iliyoandikwa.`
+
+> Chanzo: Google autocomplete `gl=TZ&hl=sw` 17 Nov 2026 kwenye [`search-terms.md`](search-terms.md). **IG search-bar suggestions bado ni dakika 10 zako**; ukileta screenshots, ya-replace hapa. Haya yamewekwa kwenye mstari wa kwanza kama ulivyoagiza; caption A/B za `08-bio-variations.md` bado zinafuata kanuni ya Kiswahili-first / English-technical.
 
 ---
 
@@ -60,7 +70,7 @@ Imetengenezwa kwa kutumia muundo wa [`/ig-plan`](../skills/ig-plan/SKILL.md): 4�
 
 | Siku | Akaunti | Format / nguzo | Angle halisi | Hook | Keyword |
 | --- | --- | --- | --- | --- | --- |
-| Jumatatu | A | **CAROUSEL** · Offer | `03-bei-wazi` toleo la pili: "Nini kinabadilika kutoka 350K kwenda 750K" (sio kurudia deck) | cover | `BEI` |
+| Jumatatu | A | **CAROUSEL** · Offer | `03-bei-wazi` toleo la pili: "Nini kinabadilika kutoka Web Starter 350K kwenda Custom kuanzia 800K" (sio kurudia deck) | cover | `BEI` |
 | Jumanne | M | **REEL** · Elimu | "Prompt moja, video ya kawaida. Hizi ndizo tabaka 7 ninazoweka sasa." Onyesha `promptgen.py` ikitoa prompt | #9 The Steal | `PROMPT` |
 | Jumatano | A | **REEL** · Proof | Kazi 6 za studio kwenye motion-lab: montage ya screenshots halisi, si picha za Unsplash | #11 Numbered With A Favourite | `AUDIT` |
 | Alhamisi | zote | **REPOST + context** | Chukua post yenye **sends/reach** kubwa zaidi, iweke kwenye story ukisema kilichotokea kwenye comments. Kamwe usi-repost bila maoni. | — | — |
@@ -107,16 +117,16 @@ BODY  (0:06–0:20, kila beat frame inabadilika)
 "Muunganisho ukirudi, kila kitu kina-sync chenyewe."
 
 PAYOFF (0:20–0:27)
-"Ndiyo maana hatuandiki 'cloud-first' kwenye mfumo huu."   ← tumia tu baada ya kusuluhisha §5
+"Ndiyo maana mauzo yanaandikwa kwanza, kisha yana-sync kwenye cloud."
 LOOP  (0:27-0:29)
 "Nazima Wi-Fi. Mauzo hayasimami."
 
 CTA   "Comment POS, nitakutumia demo."
 ```
 
-> ⚠️ Mstari wa PAYOFF unategemea uamuzi wako kuhusu mgongano wa `cloud-first` dhidi ya `offline-first` ([`01-presence-audit.md`](01-presence-audit.md) §5 #2). Hadi uamue, tumia: **"Hii ndiyo tofauti kati ya demo na mfumo wa dukani."**
+> ✅ Uamuzi wa 17 Nov 2026: **offline-first, cloud-synced**. Hakuna tena mstari unaokanusha cloud; angalia [`09-decisions.md`](09-decisions.md).
 
-**Mbadala wa hook (iliyopimwa):** `hookscore.py` inaipa hook ya cold-open hapo juu **56.0 OK**. Ukitaka yenye alama ya juu zaidi, tumia formula #16: **"Duka lako likikosa mtandao dakika 5, unapoteza mauzo mangapi?"** → **76.4 STRONG**. Au toleo la Kiingereza kwa hadhira ya nje: **"Stop building cloud-first apps for Kariakoo. Build the queue first."** → **92.6 STRONG**. Usichague kwa alama pekee: chagua unayoweza kuisema bila kusita, kisha angalia hold@3s.
+**Mbadala wa hook (iliyopimwa upya 17 Nov 2026):** `hookscore.py` inaipa cold-open **56.0 OK**, formula #16 **"Duka lako likikosa mtandao dakika 5, unapoteza mauzo mangapi?"** → **76.4 STRONG**, na toleo la Kiingereza lililosahihishwa **"Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops."** → **81.8 STRONG** (limepungua kutoka 92.6 kwa sababu tumeondoa kukanusha cloud; bado STRONG). Usichague kwa alama pekee: chagua unayoweza kuisema bila kusita, kisha angalia hold@3s.
 
 Faili za QA ziko kwenye [`qa/`](qa/README.md): hooks zilizopimwa na `hookscore.py`, script iliyopimwa na `beats.py` (18.6s, hakuna flag, loop imegunduliwa), caption iliyopimwa na `caption.py` (READY), na draft iliyopimwa na `detect.py`. Ndani pia kuna kumbukumbu ya **marekebisho ya Kiswahili** yaliyofanywa kwenye `hookscore.py` na `detect.py`.
 

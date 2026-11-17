@@ -86,7 +86,7 @@ Hiyo ndiyo iliyokuwa inaelezea **biashara ya pikipiki** kwenye akaunti ya softwa
 
 **Pinned 3** (viko kwenye `carousels/build/`, pakia leo au kesho):
 1. `01-offline-first` → **proof** (Faida POS, Wi-Fi off).
-2. `03-bei-wazi` → **offer** (350K / 550K / 750K / 800K / 1.2M / 99K).
+2. `03-bei-wazi` → **offer** (Web Starter 350K / Growth 550K / Custom kuanzia 800K / mifumo kuanzia 1.2M / Care Plan 99K kwa mwezi).
 3. `05-wiki-1-hadi-uzinduzi` → **process**.
 
 **Highlights 5** — yaitwe kwa **maneno ya kutafutwa**, si emoji tu: `Bei`, `Faida POS`, `Kazi`, `Mchakato`, `Maswali`. Majina yenye maneno husaidia kwenye Search; orodha ya "✨ | 💼 | 🔥" haisaidii [3](https://www.organicsgrowth.com/post/instagram-seo-how-to-get-found-on-instagram-and-google).
@@ -272,7 +272,7 @@ Kisha kwenye **simu/IG**: fanya §1 (bio + link + photo + category), §2 A–E (
 | Brand / rangi / fonti | `content-kit/02-brand-system.md` | BRAND BLOCK + NEGATIVE BLOCK. |
 | Nani, lini, keyword gani | `content-kit/06-30-day-plan.md` | Wiki 1–4. |
 | Ukweli unaoruhusiwa | `content-kit/05-content-system.md` | Proof bank: Verified / Self-claimed / NEEDS_INPUT. |
-| Migongano ya kuepuka | `content-kit/01-presence-audit.md` §5 | Bei, cloud-first, umiliki, tagline, link. |
+| Migongano iliyoamuliwa | `content-kit/09-decisions.md` | Bei za kuanzia, offline-first/cloud-synced, umiliki kwa leseni, tagline mpya, link moja. |
 
 ### Kila post (mtiririko huo huo, usiubadilishe)
 
@@ -438,9 +438,9 @@ Hii ni tofauti na IG settings; ni upande wa **Meta for Developers / GitHub**.
 
 | Kitu | Kwa nini |
 | --- | --- |
-| Maneno halisi ya IG Search suggestions DSM (`POS Dar es Salaam`, `tovuti`, …) | Kuingiza kwenye caption za wiki 2 badala ya hypothesis |
+| IG Search suggestions DSM (dakika 10 zako) | Google autocomplete TZ imeshafanywa kwenye `search-terms.md`; leta screenshots za IG tuta-replace kwenye caption za wiki 2 |
 | Email + simu rasmi ya biashara (si ya kibinafsi) | Contact buttons kwenye §1.4 |
-| Uamuzi wa mgongano 5 kwenye `01-presence-audit.md` §5 | Bei, cloud-first, umiliki wa code, tagline, link moja |
+| ~~Uamuzi wa mgongano 5~~ ✅ Imeamuliwa → `09-decisions.md` | Usiseme "100%" wala "SaaS" isipokuwa Faida inauzwa kwa usajili |
 | Screenshots 3 za caption/Reel zako za zamani | Kurekebisha `voice.md` iwe sauti yako hasa |
 | Insights za post 10–30 | `/ig-audit` inahitaji evidence yako |
 | Kama utajaribu recovery: **ni notice gani** unayoona ukilogin (disabled / suspended / hakuna ujumbe) | Njia ya appeal inategemea hiyo — lakini usinipe password wala code |

@@ -7,12 +7,12 @@
   "goal": "(b) kumwandaa mteja kwa bei",
   "keyword": "BEI",
   "caption_job": "B",
-  "title": "Bei za tovuti, bila kuficha",
+  "title": "Bei za kuanzia, bila kuficha",
   "slides": [
     {
       "kicker": "ACT 03 / BEI",
       "headline": "BEI ZA TOVUTI, BILA KUFICHA",
-      "body": "Orodha ya bei za custom build, Dar es Salaam.",
+      "body": "Orodha ya bei za kuanzia za custom build, Dar es Salaam.",
       "visual": "numbers",
       "theme": "night"
     },
@@ -38,37 +38,41 @@
       "theme": "paper"
     },
     {
-      "kicker": "05 / PRO PORTAL",
-      "headline": "750K · NA DASHIBODI",
-      "body": "Kurasa zisizo na kikomo, database, mfumo wa booking, na dashibodi ya mteja.",
+      "kicker": "05 / CUSTOM APP",
+      "headline": "KUANZIA 800K",
+      "body": "Custom app: scope, bei kamili na tarehe ya uzinduzi vimeandikwa kabla ya code.",
       "visual": "code",
       "theme": "night"
     },
     {
-      "kicker": "06 / APP NA MIFUMO",
-      "headline": "800K / 1.2M · KUANZIA",
-      "body": "Custom app kuanzia 800K. Mifumo kama Faida POS, CareTrack na ShuleDirect kuanzia 1.2M.",
+      "kicker": "06 / MIFUMO",
+      "headline": "KUANZIA 1.2M",
+      "body": "Mifumo kama Faida POS, CareTrack na ShuleDirect. Offline-first, cloud-synced.",
       "visual": "grid",
       "theme": "paper"
     },
     {
-      "kicker": "07 / BAADA YA UZINDUZI",
+      "kicker": "07 / CARE PLAN",
       "headline": "99K / MWEZI · HIARI",
-      "body": "Backups za kila siku, usalama, uangalizi, na WhatsApp SLA. Sio lazima.",
+      "body": "Care Plan ni huduma tofauti: backups, usalama, uangalizi, WhatsApp SLA. Si lazima, si SaaS.",
       "visual": "receipt",
       "theme": "night"
     },
     {
       "kicker": "MWISHO / ASK MOJA",
       "headline": "COMMENT BEI",
-      "body": "Orodha kamili ya bei za custom build, bila mshangao.",
+      "body": "Orodha kamili ya bei za kuanzia, bila mshangao.",
       "visual": "swipe",
       "theme": "night"
     }
   ],
-  "caption": "Bei ya tovuti ya biashara haipaswi kujulikana baada ya mkutano wa tatu. Iko hapa.\n\nWeb Starter 350K, Growth Business Site 550K, Pro Web Portal 750K. Custom app kuanzia 800K; mifumo ya biashara kama Faida POS, CareTrack na ShuleDirect Pro kuanzia 1.2M. Care & Support, hiari, kuanzia 99K kwa mwezi. Hizi ni bei za custom build zenye mkataba wa maandishi.\n\nKabla ya code tunakupa scope, bei na tarehe ya uzinduzi kwa maandishi. Ndiyo maana hatuulizani bei kwenye DM mara nne.\n\nComment BEI, tutakutumia orodha kamili.\n\n#BeiZaTovuti #Altraware #BiasharaTanzania",
-  "hashtags": ["#BeiZaTovuti", "#Altraware", "#BiasharaTanzania"],
-  "first_comment": "FaidaHQ pia ina mpango wa subscription tofauti (TZS 0 / 35,000 / 90,000 kwa mwezi): faida-hq.vercel.app. Ukilinganisha, linganisha custom build na subscription, si bei mbili za kitu kimoja.",
+  "caption": "Bei ya kuanzia haipaswi kujulikana baada ya mkutano wa tatu. Iko hapa.\n\nWeb Starter 350K, Growth 550K. Custom app kuanzia 800K; mifumo ya biashara kama Faida POS, CareTrack na ShuleDirect Pro kuanzia 1.2M. Care Plan, hiari, 99K kwa mwezi ni huduma tofauti. Hizi ni bei za KUANZIA za custom build zenye mkataba wa maandishi; bei kamili inawekwa baada ya scope.\n\nKabla ya code tunakupa scope, bei na tarehe ya uzinduzi kwa maandishi. Ndiyo maana hatuulizani bei kwenye DM mara nne.\n\nComment BEI, tutakutumia orodha kamili.\n\n#BeiZaTovuti #Altraware #BiasharaTanzania",
+  "hashtags": [
+    "#BeiZaTovuti",
+    "#Altraware",
+    "#BiasharaTanzania"
+  ],
+  "first_comment": "FaidaHQ pia ina mpango wa subscription tofauti (TZS 0 / 35,000 / 90,000 kwa mwezi): faida-hq.vercel.app. Ukilinganisha, linganisha custom build na subscription, si bei mbili za kitu kimoja. Usiiite 'SaaS' isipokuwa Faida inauzwa kwa usajili.",
   "alt": "Carousel ya Kiswahili ya slides 8 yenye bei za tovuti na mifumo ya Altraware; cover ya navy yenye namba kubwa ya dhahabu na maandishi 'BEI ZA TOVUTI, BILA KUFICHA'.",
   "sources": [
     "altraware_knowledge.md (bei na muda)",
@@ -76,5 +80,5 @@
     "https://altra-motion-lab.vercel.app/services/",
     "https://faida-hq.vercel.app/ (mpango tofauti wa subscription)"
   ],
-  "claim_note": "Bei zote zimetajwa kama 'custom build'. Mgongano na bei za FaidaHQ SaaS umeelezwa kwenye first comment na 01-presence-audit.md §5 #1. Thibitisha bei kabla ya kupost."
+  "claim_note": "Bei zote zimetajwa kama 'kuanzia' za custom build. Care Plan 99K/mwezi ni huduma tofauti. Migongano na FaidaHQ imeamuliwa 17 Nov 2026: angalia 09-decisions.md. Hakuna '100%' wala 'SaaS' kwenye caption."
 }

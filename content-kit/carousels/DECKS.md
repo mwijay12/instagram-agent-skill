@@ -177,7 +177,7 @@ Comment CODE, nitakutumia orodha ya repos.
 
 ---
 
-## 03-bei-wazi · Bei za tovuti, bila kuficha
+## 03-bei-wazi · Bei za kuanzia, bila kuficha
 
 - **Akaunti:** @altrawaretechnology  · **Nguzo:** 3 · Elimu ya vitendo / offer  · **Keyword:** `BEI`
 - **Lengo:** (b) kumwandaa mteja kwa bei  · **Lugha:** sw
@@ -185,7 +185,7 @@ Comment CODE, nitakutumia orodha ya repos.
 **01 · ACT 03 / BEI**
 ### BEI ZA TOVUTI, BILA KUFICHA
 
-Orodha ya bei za custom build, Dar es Salaam.
+Orodha ya bei za kuanzia za custom build, Dar es Salaam.
 
 _(visual: numbers · night)_
 
@@ -210,40 +210,40 @@ Kurasa 4-6, katalogi ya bidhaa, fomu za quote, na local SEO.
 
 _(visual: steps · paper)_
 
-**05 · 05 / PRO PORTAL**
-### 750K · NA DASHIBODI
+**05 · 05 / CUSTOM APP**
+### KUANZIA 800K
 
-Kurasa zisizo na kikomo, database, mfumo wa booking, na dashibodi ya mteja.
+Custom app: scope, bei kamili na tarehe ya uzinduzi vimeandikwa kabla ya code.
 
 _(visual: code · night)_
 
-**06 · 06 / APP NA MIFUMO**
-### 800K / 1.2M · KUANZIA
+**06 · 06 / MIFUMO**
+### KUANZIA 1.2M
 
-Custom app kuanzia 800K. Mifumo kama Faida POS, CareTrack na ShuleDirect kuanzia 1.2M.
+Mifumo kama Faida POS, CareTrack na ShuleDirect. Offline-first, cloud-synced.
 
 _(visual: grid · paper)_
 
-**07 · 07 / BAADA YA UZINDUZI**
+**07 · 07 / CARE PLAN**
 ### 99K / MWEZI · HIARI
 
-Backups za kila siku, usalama, uangalizi, na WhatsApp SLA. Sio lazima.
+Care Plan ni huduma tofauti: backups, usalama, uangalizi, WhatsApp SLA. Si lazima, si SaaS.
 
 _(visual: receipt · night)_
 
 **08 · MWISHO / ASK MOJA**
 ### COMMENT BEI
 
-Orodha kamili ya bei za custom build, bila mshangao.
+Orodha kamili ya bei za kuanzia, bila mshangao.
 
 _(visual: swipe · night)_
 
 **Caption**
 
 ```text
-Bei ya tovuti ya biashara haipaswi kujulikana baada ya mkutano wa tatu. Iko hapa.
+Bei ya kuanzia haipaswi kujulikana baada ya mkutano wa tatu. Iko hapa.
 
-Web Starter 350K, Growth Business Site 550K, Pro Web Portal 750K. Custom app kuanzia 800K; mifumo ya biashara kama Faida POS, CareTrack na ShuleDirect Pro kuanzia 1.2M. Care & Support, hiari, kuanzia 99K kwa mwezi. Hizi ni bei za custom build zenye mkataba wa maandishi.
+Web Starter 350K, Growth 550K. Custom app kuanzia 800K; mifumo ya biashara kama Faida POS, CareTrack na ShuleDirect Pro kuanzia 1.2M. Care Plan, hiari, 99K kwa mwezi ni huduma tofauti. Hizi ni bei za KUANZIA za custom build zenye mkataba wa maandishi; bei kamili inawekwa baada ya scope.
 
 Kabla ya code tunakupa scope, bei na tarehe ya uzinduzi kwa maandishi. Ndiyo maana hatuulizani bei kwenye DM mara nne.
 
@@ -252,11 +252,11 @@ Comment BEI, tutakutumia orodha kamili.
 #BeiZaTovuti #Altraware #BiasharaTanzania
 ```
 
-**First comment:** FaidaHQ pia ina mpango wa subscription tofauti (TZS 0 / 35,000 / 90,000 kwa mwezi): faida-hq.vercel.app. Ukilinganisha, linganisha custom build na subscription, si bei mbili za kitu kimoja.
+**First comment:** FaidaHQ pia ina mpango wa subscription tofauti (TZS 0 / 35,000 / 90,000 kwa mwezi): faida-hq.vercel.app. Ukilinganisha, linganisha custom build na subscription, si bei mbili za kitu kimoja. Usiiite 'SaaS' isipokuwa Faida inauzwa kwa usajili.
 
 **Alt text (cover):** Carousel ya Kiswahili ya slides 8 yenye bei za tovuti na mifumo ya Altraware; cover ya navy yenye namba kubwa ya dhahabu na maandishi 'BEI ZA TOVUTI, BILA KUFICHA'.
 
-**Claim note:** Bei zote zimetajwa kama 'custom build'. Mgongano na bei za FaidaHQ SaaS umeelezwa kwenye first comment na 01-presence-audit.md §5 #1. Thibitisha bei kabla ya kupost.
+**Claim note:** Bei zote zimetajwa kama 'kuanzia' za custom build. Care Plan 99K/mwezi ni huduma tofauti. Migongano na FaidaHQ imeamuliwa 17 Nov 2026: angalia 09-decisions.md. Hakuna '100%' wala 'SaaS' kwenye caption.
 
 **Vyanzo:** altraware_knowledge.md (bei na muda); https://altra.tanzaniareach.com/pricing; https://altra-motion-lab.vercel.app/services/; https://faida-hq.vercel.app/ (mpango tofauti wa subscription)
 

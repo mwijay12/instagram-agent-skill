@@ -7,7 +7,10 @@
     "status": "variations - mmiliki atachagua moja",
     "source_of_truth": "content-kit/bio-variations.json",
     "canonical_default": "02-mchanganyiko-search",
-    "canonical_note": "01-presence-audit.md §4 na studio/data.js bado vinatumia V2 kama default. Ukishachagua variation nyingine, sasisha 01, studio, PDF na Google Doc pamoja - usiache tofauti."
+    "canonical_note": "01-presence-audit.md §4 na studio/data.js bado vinatumia V2 kama default. Ukishachagua variation nyingine, sasisha 01, studio, PDF na Google Doc pamoja - usiache tofauti.",
+    "decisions_ref": "content-kit/09-decisions.md",
+    "decisions_date": "2026-11-17",
+    "edition_note": "v1.2: migongano 5 imeamuliwa; variation bado inasubiri chaguo."
   },
   "domain": {
     "current": "https://altra.tanzaniareach.com/",
@@ -108,18 +111,57 @@
       "line1": "Mtandao ukikatika Kariakoo, risiti 0342 bado inatoka.",
       "body": "Faida POS inarekodi mauzo, inatoa risiti ya thermal na inasasisha stoo hata bila internet. Muunganisho ukirudi, M-Pesa na stoo vina-sync chenyewe. Offline-first POS for Tanzanian shops, si demo.",
       "ask": "Comment POS",
-      "hashtags": ["#FaidaPOS", "#BiasharaTanzania", "#Altraware"]
+      "hashtags": [
+        "#FaidaPOS",
+        "#BiasharaTanzania",
+        "#Altraware"
+      ]
     },
     {
       "id": "en-technical",
-      "line1": "Stop building cloud-first apps for Kariakoo. Build the queue first.",
-      "body": "A Flutter POS writes the sale locally, prints the thermal receipt, then syncs when the connection returns. Real code: faida.checkout({ items, pay: \"M-PESA\", lang: \"sw\" }).",
+      "line1": "Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops.",
+      "body": "A Flutter POS writes the sale locally, prints the thermal receipt, then syncs to the cloud when the connection returns. Real code: faida.checkout({ items, pay: \"M-PESA\", lang: \"sw\" }).",
       "ask": "Comment CODE",
-      "hashtags": ["#POSSoftware", "#DarEsSalaam", "#BuildInPublic"]
+      "hashtags": [
+        "#POSSoftware",
+        "#DarEsSalaam",
+        "#BuildInPublic"
+      ]
     }
   ],
   "selection": {
     "chosen": null,
-    "chosen_note": "Mmiliki bado hajachagua. Hadi achague, 01-presence-audit.md §4, studio na PDF vinatumia V2 kama default iliyoandikwa wazi."
-  }
+    "chosen_note": "Mmiliki bado hajachagua V1-V4. Migongano 5 imeamuliwa 17 Nov 2026 (09-decisions.md). Hadi achague, 01-presence-audit.md §4, studio na PDF vinatumia V2 kama default iliyoandikwa wazi."
+  },
+  "name_options": {
+    "rejected": {
+      "value": "Altraware Tech | Websites & Apps",
+      "chars": 32,
+      "reason": "> 30, litakatwa kwenye Instagram name field."
+    },
+    "corrected": {
+      "value": "Altraware | Websites & Apps",
+      "chars": 27,
+      "note": "Jina lililosahihishwa kutoka kwa mmiliki 17 Nov 2026. Mbadala wa name field, si variation mpya; V2 bado ni default hadi uchague."
+    }
+  },
+  "decisions": {
+    "date": "2026-11-17",
+    "source": "mmiliki",
+    "pricing": "Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. 'Bei wazi' = bei ya kuanzia iko wazi, bei kamili kwa maandishi baada ya scope. Usiseme 'SaaS' isipokuwa Faida inauzwa kwa usajili.",
+    "cloud": "offline-first, cloud-synced. Hakuna msimamo mkali dhidi ya cloud; hook ni 'Build the queue first'.",
+    "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "ownership_en": "You own your data and your site/app; the Faida core is licensed to you.",
+    "ownership_rule": "Hakuna '100%' kwenye post wala bot. Mkataba na matangazo vifuate ukweli huu.",
+    "tagline": "Built in Tanzania, for how Tanzania really works.",
+    "link": "altra.tanzaniareach.com inabaki; usiiite 'official website'. Domain ikipatikana, badilisha link moja tu."
+  },
+  "week2_caption_openers": [
+    "Web design Dar es Salaam: bei ya kuanzia iko wazi, si baada ya mkutano wa tatu.",
+    "Pos system ya dukani: risiti inatoka hata mtandao ukikatika.",
+    "Mfumo wa mauzo dukani unaoandika kwanza, kisha una-sync kwenye cloud.",
+    "Pos software Tanzania: offline-first, cloud-synced, si demo ya laptop.",
+    "App developer near me? Anza na scope, bei na tarehe iliyoandikwa."
+  ],
+  "week2_caption_note": "Maneno haya yametokana na Google autocomplete (gl=TZ, hl=sw) 17 Nov 2026, si mawazo. IG search-bar suggestions bado ni dakika 10 za mmiliki; akileta screenshots, ya-replace hapa bila kubadilisha mfumo. Angalia content-kit/search-terms.md."
 }

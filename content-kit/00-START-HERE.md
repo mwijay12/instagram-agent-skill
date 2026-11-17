@@ -54,7 +54,9 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`qa/`](qa/README.md) | **Receipts halisi**: zana 5 za repo zimeendeshwa kwenye content hii, pamoja na before/after ya draft mbaya |
 | [`studio/index.html`](studio/index.html) | Live preview: carousel zote 48, MP4, prompt 32, brand tokens na QA kwenye ukurasa mmoja |
 | [`08-bio-variations.md`](08-bio-variations.md) · [`bio-variations.json`](bio-variations.json) | **Bio variations 4** (moja Kiswahili kamili), brand `Altraware Tech`, ukweli wa subdomain, contacts (bot vs mtu), na mifano ya caption za lugha mbili |
-| [`present/`](present/README.md) | PDF ya kampuni, HTML ya Google Doc, na tovuti ya Vercel — kwa watu wasiotaka kusoma `.md` |
+| [`09-decisions.md`](09-decisions.md) | **Maamuzi 5 yaliyokubaliwa 17 Nov 2026**: bei za kuanzia, offline-first/cloud-synced, umiliki kwa leseni, tagline mpya, link moja + jina 27/30 |
+| [`search-terms.md`](search-terms.md) | Maneno halisi ya Google autocomplete (TZ); IG search-bar suggestions bado ni dakika 10 zako |
+| [`present/`](present/README.md) | PDF ya kampuni, Google Doc/DOCX, na tovuti ya Vercel — kwa watu wasiotaka kusoma `.md` |
 | [`check.py`](check.py) | Linter ya stdlib: slop, hashtag, cover, urefu wa slide, bio (01 + 07), variations 4, madai yasiyothibitishwa → `47 pass · 0 fail · READY` |
 | [`use-voice.sh`](use-voice.sh) | Installer ya `~/.claude/instagram/voice.md` (inahifadhi ya awali kama `voice.previous.md`) |
 | [`skills/ig-codevideo/SKILL.md`](../skills/ig-codevideo/SKILL.md) | Skill ya 14: kugeuza repo/code kuwa Reel prompt isiyo ya kawaida |
@@ -106,6 +108,6 @@ Mpangilio ni muhimu: **profile → voice → post → log → audit**. Ukiruka p
 | --- | --- |
 | Screenshots 3 za Reel/caption zako za zamani | Kurekebisha `voice.md` iwe sauti yako hasa, si ile niliyokisia kutoka `strategies/docs/05-content-engine.md` |
 | Insights za post 10–30 (views, reach, sends, hold@3s) | `/ig-audit` na `/ig-viral` zinahitaji **evidence yako**, si defaults za repo |
-| Uamuzi juu ya migongano kwenye `01-presence-audit.md` §5 | Hasa: Faida POS ni custom build ya TSh 1.2M au SaaS ya TZS 35k/mwezi? `cloud-first` au `offline-first`? |
+| ~~Uamuzi juu ya migongano~~ ✅ **Imeamuliwa 17 Nov 2026** | Angalia [`09-decisions.md`](09-decisions.md): bei za kuanzia, offline-first/cloud-synced, umiliki kwa leseni, tagline mpya, link moja |
 | Ruhusa ya kutumia namba kama "0.8s checkout", "99.98% uptime" | Ziko kwenye tovuti zako lakini sijazithibitisha, kwa hiyo **hazijatumika** kama proof kwenye content |
 | Akaunti 10 za kuingiliana nazo (kutoka Saved collection yako) | `/ig-plan` inahitaji orodha halisi, si majina niliyoyabuni |

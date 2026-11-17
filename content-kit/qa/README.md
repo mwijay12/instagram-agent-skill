@@ -4,7 +4,7 @@ Sio maelezo ya jinsi zana zinavyofanya kazi. Haya ni **matokeo halisi** ya kuzie
 
 | Input | Zana | Matokeo |
 | --- | --- | --- |
-| [`hooks.txt`](hooks.txt) | `skills/ig-reel/hookscore.py` | [`hookscore.out`](hookscore.out) — 92.6 STRONG / 76.4 STRONG / 56.0 OK |
+| [`hooks.txt`](hooks.txt) | `skills/ig-reel/hookscore.py` | [`hookscore.out`](hookscore.out) — 81.8 STRONG / 76.4 STRONG / 56.0 OK |
 | [`script.txt`](script.txt) | `skills/ig-reel/beats.py --target 20` | [`beats.out`](beats.out) — 18.6s, loop imegunduliwa, **hakuna flag** |
 | [`caption.txt`](caption.txt) | `skills/ig-caption/caption.py --keywords "mfumo wa mauzo dukani,POS Tanzania"` | [`caption.out`](caption.out) — **VERDICT READY**, 9 PASS / 0 FAIL |
 | [`caption.txt`](caption.txt) | `skills/ig-human/detect.py` | [`detect-clean.out`](detect-clean.out) — 62.9 REVIEW (angalia dokezo hapa chini) |
@@ -40,7 +40,7 @@ Nimeongeza kwenye [`skills/ig-reel/hookscore.py`](../../skills/ig-reel/hookscore
 - `SW_TENSION_RE`: regex ya viambishi vya Kiswahili, kwa sababu `unapoteza` na `hayasimami` haviwezi kuorodheshwa neno kwa neno.
 - `check_address`: `lako / yako / wewe / wako...` vinatambuliwa kama "speaks to the viewer".
 
-**Baada:** `Duka lako likikosa mtandao dakika 5, unapoteza mauzo mangapi?` → **76.4 STRONG**. Hook ya cold-open → 56.0 OK.
+**Baada:** `Duka lako likikosa mtandao dakika 5, unapoteza mauzo mangapi?` → **76.4 STRONG**. Hook ya cold-open → 56.0 OK. Toleo la Kiingereza lililosahihishwa (17 Nov 2026, bila kukanusha cloud): `"Build the queue first. Offline-first, cloud-synced POS for Tanzanian shops."` → **81.8 STRONG** (limepungua kutoka 92.6 kwa sababu tumeondoa "Stop building cloud-first apps"; bado STRONG).
 
 **Regression ya Kiingereza haijabadilika:** `I lost $18,000 because of one missing contract.` bado **81.4 STRONG**; `Nobody tells you that your first 30 reels are supposed to flop` bado **85.6 STRONG** (namba za README ya repo).
 

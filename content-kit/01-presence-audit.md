@@ -16,7 +16,7 @@
 | [`strategies`](https://github.com/mwijay12/strategies) | `docs/05-content-engine.md` (nguzo 4, brand voice, anti-hallucination guard), `docs/06-client-acquisition.md` (ICP 8, offer ladder), `docs/09-templates-scripts.md` (vifungu vya mkataba) |
 | [`motion-lab`](https://github.com/mwijay12/motion-lab) | Design tokens halisi, fonti, mwendo, muundo wa tovuti ya studio |
 | [altra.tanzaniareach.com](https://altra.tanzaniareach.com/) | Tagline, bidhaa, bei, "Act I — Mizizi", code snippet ya `faida.checkout()`, marquee ya Kiswahili |
-| [altra-motion-lab.vercel.app](https://altra-motion-lab.vercel.app/) | Coordinates `6.7924° S, 39.2083° E`, "Mizizi ya nyumbani. Ufundi wa kidunia.", kazi 6 zilizoorodheshwa, hatua 5, namba za kujitangaza |
+| [altra-motion-lab.vercel.app](https://altra-motion-lab.vercel.app/) | Coordinates `6.7924° S, 39.2083° E`, "Built in Tanzania, for how Tanzania really works." (tagline mpya 17 Nov 2026; ya zamani: "Mizizi ya nyumbani. Ufundi wa kidunia."), kazi 6 zilizoorodheshwa, hatua 5, namba za kujitangaza |
 | [faida-hq.vercel.app](https://faida-hq.vercel.app/) | FaidaHQ kama SaaS: TZS 0 / 35,000 / 90,000 kwa mwezi, "cloud-first", "10x Faster Billing" |
 | [tanzaniareach.com](https://www.tanzaniareach.com/) | Hub ya sekta 18, mikoa 31, "Independent Educational Resource", **not government** |
 | [instagram.com/mwijay__davie](https://www.instagram.com/mwijay__davie/) | "David Mwijage", "Co founder of Altraware Technology @altrawaretechnology", 48 followers / 159 following, link `mwijay-studio.vercel.app` |
@@ -107,11 +107,13 @@ Dar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi
 >
 > **Hii ni variation V2 (default), si uamuzi wa mwisho.** Mmiliki ameomba variations 4 (pamoja na Kiswahili kamili) → [`08-bio-variations.md`](08-bio-variations.md) / [`bio-variations.json`](bio-variations.json). Akichagua nyingine, sasisha §4 hii, `studio/data.js`, PDF na Google Doc pamoja. Pia amethibitisha: **brand = Altraware Tech**, **link ni subdomain, hakuna domain bado**, email `altrawaretechnology@gmail.com`, WhatsApp **bot** `0790942616`, na **mtu** `+255 792 867 427`.
 
+> **Jina mbadala lililosahihishwa (17 Nov 2026):** `Altraware Tech | Websites & Apps` ni **32/30** → litakatwa. Tumia `Altraware | Websites & Apps` (**27/30**). Bado si canonical hadi uchague variation; angalia [`09-decisions.md`](09-decisions.md).
+
 **Link moja:** `https://altra.tanzaniareach.com/` — sio Tanzania Reach, sio pikipiki, sio link tree ya chaguo 11.
 
 **Pinned 3:**
 1. **Proof** → carousel `01-offline-first` (Faida POS).
-2. **Offer** → carousel `03-bei-wazi` (bei 350k / 550k / 750k / 800k / 1.2M / 99k).
+2. **Offer** → carousel `03-bei-wazi` (Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M · Care Plan 99k/mwezi).
 3. **Process** → carousel `05-wiki-1-hadi-uzinduzi`.
 
 **Highlights 5:** `Bei`, `Faida POS`, `Kazi`, `Mchakato`, `Maswali`.
@@ -122,21 +124,21 @@ Dar es Salaam · Bei wazi kwenye link · Mkataba wa maandishi
 
 ---
 
-## 5. Migongano kati ya vyanzo vyako (suluhisha kabla ya kupost)
+## 5. Migongano kati ya vyanzo vyako (historia + maamuzi)
 
-Hii ni sehemu muhimu zaidi ya audit. Vyanzo vyako **havisemi kitu kimoja**. Ukiacha hivi, mteja atauliza na hutakuwa na jibu.
+> ✅ **IMESASISHWA 17 Nov 2026:** mmiliki ameamua migongano 5. **Source of truth mpya ni [`09-decisions.md`](09-decisions.md)** na §12 ya PDF/Doc. Jedwali hili linabaki kuonyesha *ni kwa nini* yaligongana; safu ya mwisho sasa ina uamuzi, si sheria ya muda.
 
-| # | Mada | Chanzo A | Chanzo B | Sheria ya content |
+| # | Mada | Chanzo A | Chanzo B | Uamuzi (17 Nov 2026) |
 | --- | --- | --- | --- | --- |
-| 1 | **Faida POS ni nini?** | Knowledge base: mfumo wa custom **kuanzia TSh 1,200,000**, offline-first | [FaidaHQ live](https://faida-hq.vercel.app/): SaaS **TZS 0 / 35,000 / 90,000 kwa mwezi** | Usiseme "Faida POS inagharimu X" bila kutaja ni **custom build** au **subscription**. Carousel `03` inatumia bei za custom na inasema hivyo wazi. |
-| 2 | **Offline au cloud?** | KB: "100% offline-first, inafanya kazi bila internet, ina-sync ikirudi" | FaidaHQ: "cloud-first", "100% Cloud Sync"; motion-lab: "0.8s average checkout" | Chagua ukweli mmoja na urekebishe tovuti nyingine. Hadi hapo, content yetu inasema tu **"inaendelea kufanya kazi mtandao ukikatika, kisha inasync"** (tabia), si asilimia wala kasi. |
-| 3 | **Umiliki wa code** | KB: "100% code & IP ownership kwa mteja" | [`strategies/docs/09`](https://github.com/mwijay12/strategies/blob/main/docs/09-templates-scripts.md) kifungu 3: mteja anamiliki data + workflows zilizojengwa; **Altraware anamiliki templates, prompts na libraries** | Zote zinaweza kuwa kweli zikielezwa vizuri, lakini "100%" haiendani na kifungu hicho. Tumia: *"Mkataba wa maandishi unaoeleza wazi umiliki wa code, data na libraries."* |
-| 4 | **Tagline** | KB: "Rooted at Home. Engineered for the World." | Hero ya altra.tanzaniareach.com: "Rooted at home. **Built** for the world." | Kanuni: **`Rooted at home. Engineered for the world.`** / Kiswahili: **`Mizizi ya nyumbani. Ufundi wa kidunia.`** |
-| 5 | **Link gani?** | `altra.tanzaniareach.com`, `altra-motion-lab.vercel.app`, `altraware-tech.vercel.app`, `altraware-technology.vercel.app`, `mwijay-studio.vercel.app`, `mwijayportfolio.vercel.app`, `tanzaniareach.com` | Mmiliki 17 Nov 2026: **hatuna domain bado**, `altra.tanzaniareach.com` ni **subdomain tu**, "tunajitafuta" | Bio moja = mlango mmoja. Chagua `altra.tanzaniareach.com` na **usiiite "official website" wala kubuni domain**. Ukishapata domain, badilisha link moja tu. Nyingine ziwe first comment / story link. |
-| 6 | **Namba za kujitangaza** | 95+ Lighthouse, <2s kwenye 2G/3G, 99.98% uptime, 24ms, 0.8s checkout, 10x billing, 0% lost stock, "Neema Mwakalinga" testimonial | Vimethibitishwa tu kama **maandishi kwenye tovuti zako**, si kama vipimo wala ushuhuda ulioidhinishwa | **Hazijatumika kama proof** kwenye kit hiki. Usizitaje hadi uwe na measurement/log au ruhusa ya mteja. |
-| 7 | **Uzingatiaji sheria** | KB: "PDPA 2022 / TZ PDPC compliance"; repo README: "BRELA REGISTERED" | Hakuna cheti wala link ya registry iliyothibitishwa | Sema *"tunaandika mikataba na kufuata misingi ya PDPA 2022"*, si *"tumeidhinishwa"*. "BRELA registered" itumike tu ukiwa na namba ya usajili mkononi. |
-| 8 | **Tanzania Reach** | KB: "linaloendeshwa na Altraware" | [Tovuti](https://www.tanzaniareach.com/): "private, independent portal... **NOT a Government Agency**", footer: *"Unauthorized reproduction or AI training prohibited"* | Usichukue maandishi/picha za Tanzania Reach kama asset za AI content. Ui-link tu, na usiiite "serikali" wala "hub yetu ya kisheria rasmi". |
-| 9 | **Sauti ya lugha** | KB: "bilingual, warm, concise" | `strategies/docs/05`: "Kiswahili kwa hisia, English kwa technical depth; **matoleo mawili, si tafsiri**" | Fuata doc 05. Ndiyo iliyojaza `voice.md`. |
+| 1 | **Faida POS ni nini?** | KB: custom **kuanzia TSh 1,200,000**, offline-first | [FaidaHQ](https://faida-hq.vercel.app/): **TZS 0 / 35,000 / 90,000 kwa mwezi** | **Bei za kuanzia:** Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. "Bei wazi" = bei ya kuanzia wazi, bei kamili kwa maandishi baada ya scope. **Usiseme "SaaS" isipokuwa Faida inauzwa kwa usajili.** |
+| 2 | **Offline au cloud?** | KB: "100% offline-first, ina-sync ikirudi" | FaidaHQ: "cloud-first", "100% Cloud Sync" | **offline-first, cloud-synced.** Hakuna msimamo mkali. Hook: *"Build the queue first"* bila kukanusha cloud. Caption 2 imesahihishwa. |
+| 3 | **Umiliki wa code** | KB: "100% code & IP ownership kwa mteja" | [`strategies/docs/09`](https://github.com/mwijay12/strategies/blob/main/docs/09-templates-scripts.md) kifungu 3: Altraware anamiliki templates/prompts/libraries | **Ukweli uliochaguliwa:** *"Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni."* **Hakuna "100%"** kwenye post wala bot. Mkataba + matangazo vifuate. Mmiliki atarekebisha FAQ za knowledge files zote mbili. |
+| 4 | **Tagline** | KB: "Rooted at Home. Engineered for the World." | Hero: "Rooted at home. **Built** for the world." | **`Built in Tanzania, for how Tanzania really works.`** "Engineered for the World" ni dai kubwa kwa wafuasi 5; inaweza kurudi baadaye. |
+| 5 | **Link gani?** | `altra.tanzaniareach.com` + vercel nyingi 6 | Mmiliki: **hatuna domain bado**, "tunajitafuta" | **Weka `altra.tanzaniareach.com` uiache hivyo.** Usiiite "official website", usibuni domain. Ukipata domain, badilisha **link moja tu**. |
+| 6 | **Namba za kujitangaza** | 95+ Lighthouse, 99.98% uptime, 24ms, 0.8s, 10x, 0% lost stock, "Neema" | Maandishi ya tovuti tu, si vipimo wala ruhusa | **Hazijatumika kama proof.** Usizitaje hadi uwe na log/measurement au ruhusa ya mteja. |
+| 7 | **Uzingatiaji sheria** | "PDPA / PDPC compliant", "BRELA REGISTERED" | Hakuna cheti wala namba iliyothibitishwa | Sema *"tunaandika mikataba na kufuata misingi ya PDPA 2022"*, si *"tumeidhinishwa"*. |
+| 8 | **Tanzania Reach** | KB: "linaloendeshwa na Altraware" | Tovuti: "NOT a Government Agency", footer inakataza AI training | Ui-link tu; usichukue maandishi/picha kama asset, usiiite serikali. |
+| 9 | **Sauti ya lugha** | "bilingual, warm, concise" | `strategies/docs/05`: "matoleo mawili, si tafsiri" | Fuata doc 05. Ndiyo iliyojaza `voice.md`. |
 
 ---
 

@@ -268,7 +268,8 @@ def draw_cover(canvas, doc):
     canvas.setFont("Mono", 7.6)
     canvas.setFillColor(MUTED)
     canvas.drawString(LM, 80, "ALTRAWARE TECH  ·  17 NOV 2026  ·  DAR ES SALAAM")
-    canvas.drawRightString(W - RM, 80, "TOLEO LA KAZI v1")
+    edition_short = CONTENT["meta"]["edition"].split("·")[0].strip().upper()
+    canvas.drawRightString(W - RM, 80, edition_short)
     canvas.restoreState()
 
 

@@ -3,11 +3,11 @@
   "company": "Altraware Tech",
   "title": "Mkakati wa Maudhui Instagram",
   "subtitle": "Content Strategy & Setup",
-  "edition": "Toleo la kazi v1 · 17 Novemba 2026",
+  "edition": "Toleo la kazi v1.2 · 17 Novemba 2026",
   "place": "Dar es Salaam, Tanzania · 6.7924° S, 39.2083° E",
   "accounts": "@altrawaretechnology  ·  @mwijay__davie",
   "prepared_for": "Mmiliki na marafiki wa kampuni - ya kusoma, kuchagua na kuwasilisha",
-  "status": "Hakuna kilichopostwa. Hakuna DM. Bio variations bado zinasubiri chaguo lako."
+  "status": "Hakuna kilichopostwa. Hakuna DM. Migongano 5 imeamuliwa; bio variations bado zinasubiri chaguo lako."
  },
  "sections": [
   {
@@ -358,7 +358,7 @@
       ],
       [
        "ig-reel/hookscore.py",
-       "92.6 STRONG / 76.4 STRONG / 56.0 OK (cold-open)"
+       "81.8 STRONG / 76.4 STRONG / 56.0 OK (cold-open)"
       ],
       [
        "ig-reel/beats.py",
@@ -373,7 +373,7 @@
     {
      "type": "callout",
      "label": "Hatujadai",
-     "text": "Hakuna majina ya wateja, NIDA/IMEI halisi, asilimia za matokeo, wala ushuhuda wa kubuni. 99.98% uptime, 24ms, 0.8s checkout, 10x, 'Neema' na '100% code ownership' ni SELF-CLAIMED au yanagongana na clause 3 ya mkataba - hayajatumika kama proof. Migongano 5 bado inahitaji uamuzi wako (01-presence-audit.md §5)."
+     "text": "Hakuna majina ya wateja, NIDA/IMEI halisi, asilimia za matokeo, wala ushuhuda wa kubuni. 99.98% uptime, 24ms, 0.8s checkout, 10x, 'Neema', '100% Cloud Sync' na '100% code ownership' hazijatumika kama proof. Migongano 5 sasa imeamuliwa: umiliki ni kwa leseni (si '100%'), muundo ni offline-first / cloud-synced, bei ni za kuanzia, tagline ni 'Built in Tanzania, for how Tanzania really works.' Angalia §12 na 09-decisions.md."
     }
    ]
   },
@@ -417,20 +417,20 @@
        "Kusasisha 01 + studio + PDF + Doc pamoja, bila drift"
       ],
       [
-       "Maneno halisi ya IG Search suggestions DSM",
-       "Kuingiza kwenye caption za wiki 2 badala ya hypothesis"
+       "IG Search suggestions DSM (dakika 10 zako)",
+       "Google autocomplete TZ imeshafanywa (search-terms.md); leta screenshots za IG tuta-replace."
       ],
       [
-       "Uamuzi wa migongano 5",
-       "Bei custom vs SaaS, cloud-first, umiliki, tagline, link"
+       "✅ Migongano 5 imeamuliwa",
+       "Angalia §12 / 09-decisions.md; usiseme '100%' wala 'SaaS' isipokuwa kwa usajili."
       ],
       [
        "Screenshots 3 za caption/Reel zako",
-       "Kurekebisha voice.md iwe sauti yako hasa"
+       "Kurekebisha voice.md iwe sauti yako hasa (dakika 10 zako; ficha binafsi, usilete token/login)."
       ],
       [
        "Insights za post 10-30",
-       "views, reach, sends, hold@3s - /ig-audit inahitaji evidence"
+       "Hazifanyiki bado: hakuna kilichopostwa. Rekodi views, reach, sends, saves, hold@3s."
       ],
       [
        "Ujumbe halisi wa login wa akaunti ya zamani",
@@ -442,6 +442,71 @@
      "type": "callout",
      "label": "Vyanzo vikuu",
      "text": "about.instagram.com/blog/announcements/break-down-how-instagram-search-works · help.instagram.com/147542625391305 · help.instagram.com/138925576505882 · help.instagram.com/502981923235522 · creators.instagram.com/recommendations-and-originality · docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret · Orodha kamili: 07-ig-setup.md §9"
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "kicker": "ACT 12 / MAAMUZI",
+   "title": "Maamuzi yaliyokubaliwa (17 Nov 2026)",
+   "blocks": [
+    {
+     "type": "p",
+     "text": "Mmiliki ameamua migongano 5 ya 01-presence-audit.md §5. Hii ndiyo source of truth mpya; §5 inabaki kama historia ya vyanzo vilivyogongana. Voice profiles, proof bank, caption, carousel 03, PDF, Doc na site vimesasishwa."
+    },
+    {
+     "type": "table",
+     "head": [
+      "#",
+      "Mada",
+      "Uamuzi"
+     ],
+     "rows": [
+      [
+       "1",
+       "Bei",
+       "Web Starter 350k · Growth 550k · Custom kuanzia 800k · mifumo kuanzia 1.2M. Care Plan 99k/mwezi ni huduma tofauti. 'Bei wazi' = bei ya kuanzia iko wazi; bei kamili kwa maandishi baada ya scope. Usiseme 'SaaS' isipokuwa Faida inauzwa kwa usajili."
+      ],
+      [
+       "2",
+       "Cloud",
+       "offline-first, cloud-synced. Hakuna msimamo mkali dhidi ya cloud; hook ni 'Build the queue first' bila kukanusha cloud."
+      ],
+      [
+       "3",
+       "Umiliki",
+       "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Hakuna '100%' kwenye post wala bot; mkataba na matangazo vifuate ukweli huu."
+      ],
+      [
+       "4",
+       "Tagline",
+       "Built in Tanzania, for how Tanzania really works. 'Engineered for the World' imeachwa kwa akaunti yenye wafuasi 5; inaweza kurudi baadaye."
+      ],
+      [
+       "5",
+       "Link",
+       "altra.tanzaniareach.com inabaki. Usiiite 'official website'. Ukipata domain, badilisha link moja tu."
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "label": "Umiliki - sentensi moja",
+     "text": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. (EN: You own your data and your site/app; the Faida core is licensed to you.) Hii inaendana na kifungu 3 cha mkataba na inaondoa ahadi ya '100% code & IP ownership' kwenye bot FAQ."
+    },
+    {
+     "type": "callout",
+     "label": "Jina lililosahihishwa",
+     "text": "'Altraware Tech | Websites & Apps' ni 32/30 → litakatwa. Tumia 'Altraware | Websites & Apps' (27/30) kama jina mbadala. V2 bado ni default hadi uchague variation V1-V4."
+    },
+    {
+     "type": "bullets",
+     "items": [
+      "Maneno ya search: Google autocomplete (gl=TZ, hl=sw) imeshafanywa kwenye search-terms.md; IG search bar bado ni dakika 10 zako.",
+      "Screenshots 3 za caption/Reel: kazi yako ya dakika 10; ficha taarifa binafsi, usiingize chochote kuhusu akaunti ya zamani.",
+      "Insights za post 10-30: hazifanyiki bado - hakuna kilichopostwa. Angalia log-template.md.",
+      "Hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credentials kwenye kit hiki."
+     ]
     }
    ]
   }

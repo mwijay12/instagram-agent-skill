@@ -139,3 +139,12 @@ names, invented percentages, invented testimonials.
 - [ ] Hakuna kitu kutoka NEGATIVE BLOCK.
 
 Ikiwa masharti mawili hayajatimia, usi-post. Ondoa na urekebishe prompt, usiongeze "make it more cinematic, 4k, highly detailed" — maneno hayo huongeza clichés, haziongezi ubora.
+
+
+---
+
+## 8. Tagline (imeamuliwa 17 Nov 2026)
+
+**`Built in Tanzania, for how Tanzania really works.`**
+
+Imechaguliwa na mmiliki badala ya `Rooted at home. Engineered for the world.` / `Rooted at home. Built for the world.` / `Mizizi ya nyumbani. Ufundi wa kidunia.` Ni mahususi na inathibitika; haihitaji kudai "world" kwenye akaunti yenye wafuasi 5. Angalia `09-decisions.md`. Ikiwa baadaye utataka kurudisha tagline ya kidunia, badilisha faili HII kwanza kisha regenerate PDF/Doc/site.
