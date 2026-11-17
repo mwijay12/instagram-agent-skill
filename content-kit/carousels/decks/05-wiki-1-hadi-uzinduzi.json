@@ -1,0 +1,79 @@
+{
+  "id": "05-wiki-1-hadi-uzinduzi",
+  "account": "@altrawaretechnology",
+  "handle": "@altrawaretechnology",
+  "pillar": "3 · Elimu ya vitendo / mchakato",
+  "language": "sw",
+  "goal": "(b) kumwandaa mteja kwa mkataba",
+  "keyword": "MKATABA",
+  "caption_job": "B",
+  "title": "Wiki 1 hadi uzinduzi",
+  "slides": [
+    {
+      "kicker": "ACT 05 / MCHAKATO",
+      "headline": "WIKI 1 HADI UZINDUZI",
+      "body": "Hatua 5, zilizoandikwa kabla ya kuanza kazi.",
+      "visual": "contour",
+      "theme": "night"
+    },
+    {
+      "kicker": "01 / DISCOVERY",
+      "headline": "WIKI 1 · MAKUBALIANO",
+      "body": "Scope, bei kamili na tarehe ya uzinduzi kwenye mkataba wa maandishi.",
+      "visual": "steps",
+      "theme": "paper"
+    },
+    {
+      "kicker": "02 / PROTOTYPE",
+      "headline": "WIKI 1-2 · UNAIBOFYA",
+      "body": "Mfano unaobofyeka kwenye simu yako. Unaukubali kabla hatujaandika code.",
+      "visual": "phone",
+      "theme": "night"
+    },
+    {
+      "kicker": "03 / UJENZI",
+      "headline": "WIKI 2-6 · DEMO KILA WIKI",
+      "body": "Sprint fupi, majaribio ya offline, na demo kila wiki. Unaona kazi ikikua.",
+      "visual": "code",
+      "theme": "paper"
+    },
+    {
+      "kicker": "04 / UZINDUZI",
+      "headline": "MAFUNZO NA SIKU 30",
+      "body": "Mfumo unaingia hewani, timu inafunzwa, kisha uangalizi wa karibu wa siku 30.",
+      "visual": "receipt",
+      "theme": "night"
+    },
+    {
+      "kicker": "05 / CARE",
+      "headline": "BAADA YA HAPO, HIARI",
+      "body": "Backups, usalama, uangalizi na WhatsApp SLA. Kuanzia 99K kwa mwezi.",
+      "visual": "numbers",
+      "theme": "paper"
+    },
+    {
+      "kicker": "RECAP / PICHANGA",
+      "headline": "MLANGO MMOJA, MWISHO WAZI",
+      "body": "Mkataba · Prototype · Demo · Mafunzo · Msaada; umiliki wa code na data umeandikwa wazi.",
+      "visual": "steps",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT MKATABA",
+      "body": "Nitakutumia hatua 5 na maswali 6 ya mkutano wa kwanza.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Mteja hatakiwi kugundua bei, tarehe wala anayemiliki code wiki ya tano. Vinatakiwa kuandikwa wiki ya kwanza.\n\nMchakato wetu: discovery na scope (wiki 1), prototype unalobofya kwenye simu (wiki 1-2), ujenzi wenye demo kila wiki (wiki 2-6), uzinduzi na mafunzo pamoja na siku 30 za uangalizi, kisha Care & Support ya hiari kuanzia 99K kwa mwezi.\n\nUmiliki wa code na data umeandikwa wazi kwenye mkataba, pamoja na mipaka yake. Ndiyo tofauti kati ya mradi na mshangao.\n\nComment MKATABA, tutakutumia hatua 5 na maswali 6.\n\n#Mchakato #Altraware #BiasharaTanzania",
+  "hashtags": ["#Mchakato", "#Altraware", "#BiasharaTanzania"],
+  "first_comment": "Maswali 6 ya mkutano na kifungu cha umiliki: strategies/docs/09-templates-scripts.md · altra.tanzaniareach.com/process",
+  "alt": "Carousel ya Kiswahili ya slides 8 yenye hatua 5 za mchakato wa Altraware kutoka wiki 1 hadi uzinduzi; cover ya navy yenye namba 01 na contour lines.",
+  "sources": [
+    "altraware_knowledge.md (hatua 5, 30-day hypercare)",
+    "https://altra-motion-lab.vercel.app/ (process, 30 days close support)",
+    "https://github.com/mwijay12/strategies/blob/main/docs/09-templates-scripts.md (kifungu 3)"
+  ],
+  "claim_note": "Slide 7 na caption vimekusudiwa kuepuka dai la '100% code ownership' linalokinzana na kifungu 3 cha mkataba wako. Angalia 01-presence-audit.md §5 #3."
+}

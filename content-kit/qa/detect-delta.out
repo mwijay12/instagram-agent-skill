@@ -1,0 +1,38 @@
+
+AI DETECTION PANEL  -  sloppy-draft.txt
+==============================================================
+  BURSTINESS    #####################...  87.5
+                variation 0.64 across 4 sentences (want 0.55+)
+  SPECIFICITY   ........................   0.0
+                0 concrete markers, 0.0 per 100 words (want 4+)
+  SLOP DENSITY  ........................   0.0
+                9 stock terms, 15.8 per 100 words (cutting-edge, follow for more, in today's video, leverage, ...)
+  FINGERPRINT   #############...........  54.5
+                0 invisible, 1 em dash, 0 curly quote, 0 ellipsis, 0 hard space
+  VOICE         ################........  65.1
+                5.3 contractions, 7.0 personal pronouns per 100 words, 9 structural tell(s) [not-just, rocket, hashtag-wall, stop-scroll]
+--------------------------------------------------------------
+  HUMAN SCORE   ######..................  24.8   FLAGGED
+
+  Weakest signal: SPECIFICITY. Fix that first.
+
+
+AI DETECTION PANEL  -  humanized.txt
+==============================================================
+  BURSTINESS    ############............  50.0
+                too short to judge
+  SPECIFICITY   ........................   0.0
+                0 concrete markers, 0.0 per 100 words (want 4+)
+  SLOP DENSITY  ######################## 100.0
+                0 stock terms, 0.0 per 100 words
+  FINGERPRINT   ######################## 100.0
+                0 invisible, 0 em dash, 0 curly quote, 0 ellipsis, 0 hard space
+  VOICE         #################.......  70.0
+                4.7 contractions, 9.3 personal pronouns per 100 words, 5 structural tell(s) [not-just, rocket, hashtag-wall]
+--------------------------------------------------------------
+  HUMAN SCORE   #########...............  38.4   FLAGGED
+
+  Weakest signal: SPECIFICITY. Fix that first.
+
+  24.8 FLAGGED  ->  38.4 FLAGGED   (+13.6)
+

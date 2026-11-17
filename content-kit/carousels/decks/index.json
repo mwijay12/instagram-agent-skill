@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "note": "Six finished carousels for @mwijay__davie and @altrawaretechnology. Source of truth for render/build_slides.py and studio/index.html.",
+  "decks": [
+    {
+      "file": "01-offline-first.json",
+      "id": "01-offline-first",
+      "account": "@altrawaretechnology",
+      "title": "Mtandao ukikatika, muuzo unasimama?",
+      "keyword": "POS",
+      "pillar": "Matatizo ya biashara"
+    },
+    {
+      "file": "02-code-halisi.json",
+      "id": "02-code-halisi",
+      "account": "@mwijay__davie",
+      "title": "Hii si mockup. Ni code.",
+      "keyword": "CODE",
+      "pillar": "Ujenzi / build in public"
+    },
+    {
+      "file": "03-bei-wazi.json",
+      "id": "03-bei-wazi",
+      "account": "@altrawaretechnology",
+      "title": "Bei za tovuti, bila kuficha",
+      "keyword": "BEI",
+      "pillar": "Elimu ya vitendo / offer"
+    },
+    {
+      "file": "04-lugha-kwanza.json",
+      "id": "04-lugha-kwanza",
+      "account": "@mwijay__davie",
+      "title": "Kiswahili si tafsiri",
+      "keyword": "LUGHA",
+      "pillar": "Watu / position"
+    },
+    {
+      "file": "05-wiki-1-hadi-uzinduzi.json",
+      "id": "05-wiki-1-hadi-uzinduzi",
+      "account": "@altrawaretechnology",
+      "title": "Wiki 1 hadi uzinduzi",
+      "keyword": "MKATABA",
+      "pillar": "Elimu ya vitendo / mchakato"
+    },
+    {
+      "file": "06-prompt-moja.json",
+      "id": "06-prompt-moja",
+      "account": "@mwijay__davie",
+      "title": "Prompt moja, video ya kawaida",
+      "keyword": "PROMPT",
+      "pillar": "Elimu ya vitendo"
+    }
+  ]
+}

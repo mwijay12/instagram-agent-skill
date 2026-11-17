@@ -1,0 +1,80 @@
+{
+  "id": "01-offline-first",
+  "account": "@altrawaretechnology",
+  "handle": "@altrawaretechnology",
+  "pillar": "1 · Matatizo ya biashara",
+  "language": "sw",
+  "goal": "(a) kupata namba ya simu",
+  "keyword": "POS",
+  "caption_job": "B",
+  "title": "Mtandao ukikatika, muuzo unasimama?",
+  "slides": [
+    {
+      "kicker": "ACT 01 / MIZIZI",
+      "headline": "MTANDAO UKIKATIKA, MUUZO UNASIMAMA?",
+      "body": "Faida POS inaendelea kufanya kazi hata bila internet.",
+      "visual": "contour",
+      "theme": "night"
+    },
+    {
+      "kicker": "02 / HALI HALISI",
+      "headline": "DUKA HALIFUNGWI KWA SABABU YA WI-FI",
+      "body": "Kila dakika ya kusubiri mtandao ni mteja anayeondoka. Hilo ndilo tulilojengea.",
+      "visual": "receipt",
+      "theme": "paper"
+    },
+    {
+      "kicker": "03 / MAUZO",
+      "headline": "UNAUZA BILA MTANDAO",
+      "body": "Faida POS inarekodi mauzo, inatoa risiti ya thermal, na inasasisha stoo. Hata ukiwa offline.",
+      "visual": "phone",
+      "theme": "night"
+    },
+    {
+      "kicker": "04 / MALIPO",
+      "headline": "MALIPO YANAINGIA KAWAIDA",
+      "body": "M-Pesa, Tigo Pesa, Airtel Money, HaloPesa. Uhakiki uko kwenye mfumo, si kwenye daftari.",
+      "visual": "numbers",
+      "theme": "paper"
+    },
+    {
+      "kicker": "05 / SYNC",
+      "headline": "IKIRUDI, INASYNC YENYEWE",
+      "body": "Muunganisho ukirudi, mauzo yote yanasawazishwa. Hakuna kurudisha hesabu za jana.",
+      "visual": "contour",
+      "theme": "night"
+    },
+    {
+      "kicker": "06 / MMILIKI",
+      "headline": "ANAYEONA LEO",
+      "body": "Mauzo, stoo iliyokaribia kuisha, na matawi yote: kwenye simu ya mmiliki.",
+      "visual": "phone",
+      "theme": "paper"
+    },
+    {
+      "kicker": "RECAP / PICHANGA",
+      "headline": "FAIDA POS KWA MISTARI 5",
+      "body": "1. Uza offline\n2. Risiti papo hapo\n3. Malipo ya simu\n4. Sync ikirudi\n5. Ripoti kwenye simu",
+      "visual": "steps",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT POS",
+      "body": "Tutakutumia demo na orodha ya bei.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Mtandao ukikatika Kariakoo, duka lako linaacha kuuza? Hapa ndipo Faida POS inapoanza kazi, si inapoishia.\n\nMfumo wa mauzo dukani unatakiwa kufanya kazi hata bila internet: risiti ya thermal, malipo ya M-Pesa, Tigo Pesa, Airtel Money na HaloPesa, kisha sync muunganisho ukirudi. Ukiwa na matawi mawili, mmiliki anaona yote kwenye simu.\n\nTunajenga POS Tanzania kwa ajili ya jinsi biashara za DSM zinavyofanya kazi, si jinsi demo inavyoonekana.\n\nComment POS, tutakutumia demo na orodha ya bei.\n\n#FaidaPOS #BiasharaTanzania #Altraware",
+  "hashtags": ["#FaidaPOS", "#BiasharaTanzania", "#Altraware"],
+  "first_comment": "Demo ya FaidaHQ (mpango wa subscription, tofauti na custom build): faida-hq.vercel.app · Maswali: +255 792 867 427",
+  "alt": "Carousel ya Kiswahili yenye slides 8 kuhusu Faida POS ikifanya kazi bila mtandao; cover ya navy yenye maandishi makubwa 'MTANDAO UKIKATIKA, MUUZO UNASIMAMA?' na mstari wa dhahabu.",
+  "sources": [
+    "altraware_knowledge.md (Faida POS, malipo, offline-first)",
+    "https://github.com/mwijay12/faida-pos-releases",
+    "https://faida-hq.vercel.app/",
+    "https://altra.tanzaniareach.com/"
+  ],
+  "claim_note": "Hakuna asilimia wala kasi iliyotajwa. 'Inaendelea kufanya kazi bila internet' ni tabia ya mfumo kutoka knowledge base, si kipimo. Angalia 01-presence-audit.md §5 #2 kabla ya kusema cloud-first."
+}

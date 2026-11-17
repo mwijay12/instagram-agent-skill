@@ -1,0 +1,80 @@
+{
+  "id": "06-prompt-moja",
+  "account": "@mwijay__davie",
+  "handle": "@mwijay__davie",
+  "pillar": "3 · Elimu ya vitendo",
+  "language": "sw",
+  "goal": "(a) namba ya simu / (c) uwezo wa kiufundi",
+  "keyword": "PROMPT",
+  "caption_job": "B",
+  "title": "Prompt moja, video ya kawaida",
+  "slides": [
+    {
+      "kicker": "ACT 06 / CODE TO VIDEO",
+      "headline": "PROMPT MOJA, VIDEO YA KAWAIDA",
+      "body": "Ndiyo iliyonipata mara kumi. Hii ndiyo niliyobadilisha.",
+      "visual": "contour",
+      "theme": "night"
+    },
+    {
+      "kicker": "02 / TATIZO",
+      "headline": "TATIZO SI MODEL",
+      "body": "Prompt ilisema: make a video about my app. Model ikajaza pengo kwa laptop, globe na gradient.",
+      "visual": "grid",
+      "theme": "paper"
+    },
+    {
+      "kicker": "03 / TABAKA 1",
+      "headline": "ANZA NA ARTIFACT",
+      "body": "Repo, faili, mstari wa code, au risiti halisi. Si mada wala wazo.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "04 / TABAKA 2",
+      "headline": "CLAIM MOJA YENYE UKWELI",
+      "body": "Sentensi moja yenye namba au kitu kinachoweza kuthibitishwa.",
+      "visual": "numbers",
+      "theme": "paper"
+    },
+    {
+      "kicker": "05 / TABAKA 3",
+      "headline": "SHOT LIST YENYE SEKUNDE",
+      "body": "Kila beat ina muda, kinachosogea, na maandishi yake. Badilisha frame ndani ya 2.5s.",
+      "visual": "phone",
+      "theme": "night"
+    },
+    {
+      "kicker": "06 / TABAKA 4-6",
+      "headline": "BRAND · MOTION · NEGATIVE",
+      "body": "Rangi na fonti halisi; 0.3 / 0.6 / 1.1s; orodha ya clichés zilizokatazwa.",
+      "visual": "receipt",
+      "theme": "paper"
+    },
+    {
+      "kicker": "RECAP / PICHANGA",
+      "headline": "TABAKA 7",
+      "body": "1. Artifact\n2. Claim\n3. Shot list\n4. Brand tokens\n5. Motion\n6. Negative\n7. QA gate",
+      "visual": "steps",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT PROMPT",
+      "body": "Nitakutumia template na scene 8 za kweli.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Prompt yangu ya kwanza: make a video about my POS app. Nikapata laptop, globe, gradient, na code isiyosomeka.\n\nMara kumi. Tatizo halikuwa model. Ilikuwa prompt isiyo na kitu halisi. Sasa naanza na repo, mstari wa code na risiti; naandika claim moja yenye ukweli; nagawanya shot list kwa sekunde; naweka rangi na fonti zetu; kisha naorodhesha kila cliché iliyokatazwa. Tabaka 7, na QA mwishoni.\n\nCode inayosomeka haitoki kwa modeli ya video. Inatoka kwenye render halisi: HTML, Remotion, au ffmpeg. Modeli inapamba tu.\n\nComment PROMPT, nitakutumia template na scene 8.\n\n#CodeToVideo #BuildInPublic #DevTanzania",
+  "hashtags": ["#CodeToVideo", "#BuildInPublic", "#DevTanzania"],
+  "first_comment": "Mfumo kamili, promptgen.py na MP4 iliyotengenezwa kwa code: github.com/mwijay12/instagram-agent-skill/tree/main/content-kit/code-video",
+  "alt": "Carousel ya Kiswahili ya slides 8 inayofundisha tabaka 7 za prompt ya code-to-video; cover ya navy yenye maandishi 'PROMPT MOJA, VIDEO YA KAWAIDA' na dirisha la code.",
+  "sources": [
+    "strategies/docs/05-content-engine.md (anti-hallucination guard)",
+    "https://github.com/mwijay12/video-factory (MoviePy, cuts 1.5-2.5s, captions)",
+    "https://github.com/mwijay12/motion-lab (design tokens na mwendo)",
+    "content-kit/code-video/README.md (tabaka 7)"
+  ],
+  "claim_note": "'Mara kumi' ni uzoefu wa mwandishi, si kipimo cha majaribio. Hakuna idadi ya views iliyodaiwa."
+}
