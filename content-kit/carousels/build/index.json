@@ -1,0 +1,94 @@
+{
+  "decks": {
+    "01-offline-first": {
+      "paths": [
+        "01-offline-first/01.png",
+        "01-offline-first/02.png",
+        "01-offline-first/03.png",
+        "01-offline-first/04.png",
+        "01-offline-first/05.png",
+        "01-offline-first/06.png",
+        "01-offline-first/07.png",
+        "01-offline-first/08.png"
+      ],
+      "title": "Mtandao ukikatika, muuzo unasimama?",
+      "account": "@altrawaretechnology",
+      "keyword": "POS"
+    },
+    "02-code-halisi": {
+      "paths": [
+        "02-code-halisi/01.png",
+        "02-code-halisi/02.png",
+        "02-code-halisi/03.png",
+        "02-code-halisi/04.png",
+        "02-code-halisi/05.png",
+        "02-code-halisi/06.png",
+        "02-code-halisi/07.png",
+        "02-code-halisi/08.png"
+      ],
+      "title": "Hii si mockup. Ni code.",
+      "account": "@mwijay__davie",
+      "keyword": "CODE"
+    },
+    "03-bei-wazi": {
+      "paths": [
+        "03-bei-wazi/01.png",
+        "03-bei-wazi/02.png",
+        "03-bei-wazi/03.png",
+        "03-bei-wazi/04.png",
+        "03-bei-wazi/05.png",
+        "03-bei-wazi/06.png",
+        "03-bei-wazi/07.png",
+        "03-bei-wazi/08.png"
+      ],
+      "title": "Bei za tovuti, bila kuficha",
+      "account": "@altrawaretechnology",
+      "keyword": "BEI"
+    },
+    "04-lugha-kwanza": {
+      "paths": [
+        "04-lugha-kwanza/01.png",
+        "04-lugha-kwanza/02.png",
+        "04-lugha-kwanza/03.png",
+        "04-lugha-kwanza/04.png",
+        "04-lugha-kwanza/05.png",
+        "04-lugha-kwanza/06.png",
+        "04-lugha-kwanza/07.png",
+        "04-lugha-kwanza/08.png"
+      ],
+      "title": "Kiswahili si tafsiri",
+      "account": "@mwijay__davie",
+      "keyword": "LUGHA"
+    },
+    "05-wiki-1-hadi-uzinduzi": {
+      "paths": [
+        "05-wiki-1-hadi-uzinduzi/01.png",
+        "05-wiki-1-hadi-uzinduzi/02.png",
+        "05-wiki-1-hadi-uzinduzi/03.png",
+        "05-wiki-1-hadi-uzinduzi/04.png",
+        "05-wiki-1-hadi-uzinduzi/05.png",
+        "05-wiki-1-hadi-uzinduzi/06.png",
+        "05-wiki-1-hadi-uzinduzi/07.png",
+        "05-wiki-1-hadi-uzinduzi/08.png"
+      ],
+      "title": "Wiki 1 hadi uzinduzi",
+      "account": "@altrawaretechnology",
+      "keyword": "MKATABA"
+    },
+    "06-prompt-moja": {
+      "paths": [
+        "06-prompt-moja/01.png",
+        "06-prompt-moja/02.png",
+        "06-prompt-moja/03.png",
+        "06-prompt-moja/04.png",
+        "06-prompt-moja/05.png",
+        "06-prompt-moja/06.png",
+        "06-prompt-moja/07.png",
+        "06-prompt-moja/08.png"
+      ],
+      "title": "Prompt moja, video ya kawaida",
+      "account": "@mwijay__davie",
+      "keyword": "PROMPT"
+    }
+  }
+}

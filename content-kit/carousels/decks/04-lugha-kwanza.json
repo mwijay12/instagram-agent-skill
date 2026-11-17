@@ -1,0 +1,80 @@
+{
+  "id": "04-lugha-kwanza",
+  "account": "@mwijay__davie",
+  "handle": "@mwijay__davie",
+  "pillar": "4 · Watu / position",
+  "language": "sw",
+  "goal": "(c) kuonyesha uwezo wa kiufundi + brand",
+  "keyword": "LUGHA",
+  "caption_job": "B",
+  "title": "Kiswahili si tafsiri",
+  "slides": [
+    {
+      "kicker": "ACT 04 / MIZIZI",
+      "headline": "KISWAHILI SI TAFSIRI",
+      "body": "Ukijenga Kiingereza kwanza, mfumo unasikika kama mgeni.",
+      "visual": "contour",
+      "theme": "night"
+    },
+    {
+      "kicker": "02 / NENO LA MTUMIAJI",
+      "headline": "HARAKA, KAWAIDA, BAADAYE",
+      "body": "Haya ni majina ya priority kwenye todo yangu, si tafsiri ya high, medium, low.",
+      "visual": "numbers",
+      "theme": "paper"
+    },
+    {
+      "kicker": "03 / MALIPO",
+      "headline": "M-PESA SI CARD PAYMENT",
+      "body": "Malipo ya simu yana majina yake, hatua zake, na ujumbe wake. Hayafai kubadilishwa jina.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "04 / SHENG",
+      "headline": "SHENG NI DATA, SI KELELE",
+      "body": "TabTune inatengeneza .lrc kwa Kiswahili, Sheng na English kwenye wimbo mmoja.",
+      "visual": "receipt",
+      "theme": "paper"
+    },
+    {
+      "kicker": "05 / ARCHITECTURE",
+      "headline": "SW / EN IKO KWENYE CODE",
+      "body": "lang: sw iko kwenye checkout, si kwenye footer ya tovuti.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "06 / GHARAMA",
+      "headline": "TAFSIRI HUCHELEWA",
+      "body": "Ukifanya baadaye, unatafsiri pia makosa yaliyokwisha kuingia kwenye database.",
+      "visual": "contour",
+      "theme": "paper"
+    },
+    {
+      "kicker": "RECAP / PICHANGA",
+      "headline": "KANUNI 5",
+      "body": "1. Neno la mtumiaji\n2. Malipo ya ndani\n3. Lugha zote mbili\n4. lang kwenye code\n5. Matoleo mawili, si tafsiri",
+      "visual": "steps",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT LUGHA",
+      "body": "Nitakutumia carousel hii kama PDF.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Ukitengeneza mfumo kwa Kiingereza halafu ukautafsiri, mtumiaji anasikika kama mgeni kwenye kazi yake mwenyewe.\n\nNdiyo maana priority kwenye todo yangu ni haraka, kawaida, baadaye. Ndiyo maana lang: sw iko kwenye code ya checkout, si kwenye footer. Na ndiyo maana TabTune inashughulikia Kiswahili, Sheng na English kwenye wimbo mmoja.\n\nKiswahili kwanza si hisia ya brand. Ni uamuzi wa architecture unaoathiri database, malipo na majina ya vitu.\n\nComment LUGHA, nitakutumia carousel hii kama PDF.\n\n#KiswahiliKwanza #DevTanzania #BuildInPublic",
+  "hashtags": ["#KiswahiliKwanza", "#DevTanzania", "#BuildInPublic"],
+  "first_comment": "Mfano wa code: const sale = await faida.checkout({ items, pay: 'M-PESA', lang: 'sw' }) · kutoka altra.tanzaniareach.com",
+  "alt": "Carousel ya Kiswahili ya slides 8 kuhusu kujenga mifumo kwa Kiswahili kwanza; cover ya navy yenye maandishi makubwa 'KISWAHILI SI TAFSIRI' na neno moja la italic.",
+  "sources": [
+    "strategies/docs/05-content-engine.md (kanuni ya lugha)",
+    "https://github.com/mwijay12/techymwijay (haraka / kawaida / baadaye)",
+    "https://github.com/mwijay12/tabtune-studio (Kiswahili, Sheng, English)",
+    "https://altra.tanzaniareach.com/ (lang: sw kwenye code snippet)"
+  ],
+  "claim_note": "Hii ni position, si kipimo. Hakuna asilimia wala dai la 'watumiaji wengi wanapenda'. Hakuna data ya mteja."
+}

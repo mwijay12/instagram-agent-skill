@@ -1,0 +1,81 @@
+{
+  "id": "02-code-halisi",
+  "account": "@mwijay__davie",
+  "handle": "@mwijay__davie",
+  "pillar": "2 · Ujenzi / build in public",
+  "language": "sw",
+  "goal": "(c) kuonyesha uwezo wa kiufundi",
+  "keyword": "CODE",
+  "caption_job": "B",
+  "title": "Hii si mockup. Ni code.",
+  "slides": [
+    {
+      "kicker": "ACT 02 / UJENZI",
+      "headline": "HII SI MOCKUP. NI CODE.",
+      "body": "Repo 42 za public ziko wazi kwenye GitHub yangu.",
+      "visual": "grid",
+      "theme": "night"
+    },
+    {
+      "kicker": "02 / KWANINI",
+      "headline": "WATU HUAMINI SCREENSHOT HARAKA",
+      "body": "Repo inaaminiwa polepole. Lakini haiondoki, na unaweza kuifungua.",
+      "visual": "contour",
+      "theme": "paper"
+    },
+    {
+      "kicker": "03 / LOANAPP",
+      "headline": "DUAL-IMEI, SI TU JINA LA SIMU",
+      "body": "LIMS inashughulikia mikopo ya simu, NIDA tarakimu 20, na matawi Kariakoo, Mbezi, Arusha, Mwanza, Dodoma.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "04 / SHULE ALTRA",
+      "headline": "NECTA IKO KWENYE CODE",
+      "body": "Alama za O-level, mahudhurio, kadi za wanafunzi, na Shule Guide ya Kiswahili na Kiingereza.",
+      "visual": "numbers",
+      "theme": "paper"
+    },
+    {
+      "kicker": "05 / TABTUNE",
+      "headline": "KISWAHILI, SHENG, ENGLISH",
+      "body": "Extension ya Chrome inageuza sauti ya tab kuwa .lrc yenye muda, kwa ajili ya karaoke.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "06 / FAIDA POS",
+      "headline": "APK HUTOKA KWENYE RELEASE",
+      "body": "Flutter, Hive, BLoC. Risiti, stoo na matawi. Release hujengwa na GitHub Actions.",
+      "visual": "receipt",
+      "theme": "paper"
+    },
+    {
+      "kicker": "RECAP / PICHANGA",
+      "headline": "VYOTE VINA LINK",
+      "body": "loanapp · Shule-Altra · TabTune · faida-pos-releases · RoadSafety_Dar · techymwijay",
+      "visual": "steps",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT CODE",
+      "body": "Nitakutumia orodha ya repos. Kila moja unaweza kuifungua.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Screenshot inaonekana vizuri. Repo inaonekana kweli.\n\nNina repo 42 za public kwenye GitHub (17 Nov 2026): mfumo wa mikopo ya simu wenye dual-IMEI, shule yenye grading ya NECTA, extension ya .lrc kwa Kiswahili na Sheng, na POS ya Flutter inayotoa APK kupitia GitHub Releases. Vyote vina link, vina commit, na vinaweza kufunguliwa.\n\nBuild in public si kuonyesha dashboard ya kubuni. Ni kuacha kazi ionekane.\n\nComment CODE, nitakutumia orodha ya repos.\n\n#BuildInPublic #DevTanzania #OpenSource",
+  "hashtags": ["#BuildInPublic", "#DevTanzania", "#OpenSource"],
+  "first_comment": "github.com/mwijay12 · Kila repo ina README yake. Ukitaka kuanzia mahali, anza na faida-pos-releases.",
+  "alt": "Carousel ya Kiswahili yenye slides 8 za mifumo halisi ya code; cover ya navy yenye maandishi 'HII SI MOCKUP. NI CODE.' na grid ya mistari ya contour.",
+  "sources": [
+    "https://github.com/mwijay12 (42 public repos, 205 followers, checked 2026-11-17)",
+    "https://github.com/mwijay12/loanapp",
+    "https://github.com/mwijay12/Shule-Altra",
+    "https://github.com/mwijay12/tabtune-studio",
+    "https://github.com/mwijay12/faida-pos-releases"
+  ],
+  "claim_note": "'42' ni hesabu ya tarehe 17 Nov 2026. Angalia tena kabla ya kuitumia baadaye. Hakuna idadi ya wateja wala matokeo yaliyotajwa."
+}

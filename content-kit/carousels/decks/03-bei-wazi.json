@@ -1,0 +1,80 @@
+{
+  "id": "03-bei-wazi",
+  "account": "@altrawaretechnology",
+  "handle": "@altrawaretechnology",
+  "pillar": "3 · Elimu ya vitendo / offer",
+  "language": "sw",
+  "goal": "(b) kumwandaa mteja kwa bei",
+  "keyword": "BEI",
+  "caption_job": "B",
+  "title": "Bei za tovuti, bila kuficha",
+  "slides": [
+    {
+      "kicker": "ACT 03 / BEI",
+      "headline": "BEI ZA TOVUTI, BILA KUFICHA",
+      "body": "Orodha ya bei za custom build, Dar es Salaam.",
+      "visual": "numbers",
+      "theme": "night"
+    },
+    {
+      "kicker": "02 / KWANINI",
+      "headline": "KABLA YA CODE KUNA MAKUBALIANO",
+      "body": "Mkataba, bei kamili, na tarehe ya uzinduzi vimeandikwa kabla kazi inaanza.",
+      "visual": "contour",
+      "theme": "paper"
+    },
+    {
+      "kicker": "03 / WEB STARTER",
+      "headline": "350K · WIKI 1-2",
+      "body": "Landing page moja, mobile-first, inayopeleka mteja kwenye simu na WhatsApp.",
+      "visual": "phone",
+      "theme": "night"
+    },
+    {
+      "kicker": "04 / GROWTH SITE",
+      "headline": "550K · KWA AWAMU",
+      "body": "Kurasa 4-6, katalogi ya bidhaa, fomu za quote, na local SEO.",
+      "visual": "steps",
+      "theme": "paper"
+    },
+    {
+      "kicker": "05 / PRO PORTAL",
+      "headline": "750K · NA DASHIBODI",
+      "body": "Kurasa zisizo na kikomo, database, mfumo wa booking, na dashibodi ya mteja.",
+      "visual": "code",
+      "theme": "night"
+    },
+    {
+      "kicker": "06 / APP NA MIFUMO",
+      "headline": "800K / 1.2M · KUANZIA",
+      "body": "Custom app kuanzia 800K. Mifumo kama Faida POS, CareTrack na ShuleDirect kuanzia 1.2M.",
+      "visual": "grid",
+      "theme": "paper"
+    },
+    {
+      "kicker": "07 / BAADA YA UZINDUZI",
+      "headline": "99K / MWEZI · HIARI",
+      "body": "Backups za kila siku, usalama, uangalizi, na WhatsApp SLA. Sio lazima.",
+      "visual": "receipt",
+      "theme": "night"
+    },
+    {
+      "kicker": "MWISHO / ASK MOJA",
+      "headline": "COMMENT BEI",
+      "body": "Orodha kamili ya bei za custom build, bila mshangao.",
+      "visual": "swipe",
+      "theme": "night"
+    }
+  ],
+  "caption": "Bei ya tovuti ya biashara haipaswi kujulikana baada ya mkutano wa tatu. Iko hapa.\n\nWeb Starter 350K, Growth Business Site 550K, Pro Web Portal 750K. Custom app kuanzia 800K; mifumo ya biashara kama Faida POS, CareTrack na ShuleDirect Pro kuanzia 1.2M. Care & Support, hiari, kuanzia 99K kwa mwezi. Hizi ni bei za custom build zenye mkataba wa maandishi.\n\nKabla ya code tunakupa scope, bei na tarehe ya uzinduzi kwa maandishi. Ndiyo maana hatuulizani bei kwenye DM mara nne.\n\nComment BEI, tutakutumia orodha kamili.\n\n#BeiZaTovuti #Altraware #BiasharaTanzania",
+  "hashtags": ["#BeiZaTovuti", "#Altraware", "#BiasharaTanzania"],
+  "first_comment": "FaidaHQ pia ina mpango wa subscription tofauti (TZS 0 / 35,000 / 90,000 kwa mwezi): faida-hq.vercel.app. Ukilinganisha, linganisha custom build na subscription, si bei mbili za kitu kimoja.",
+  "alt": "Carousel ya Kiswahili ya slides 8 yenye bei za tovuti na mifumo ya Altraware; cover ya navy yenye namba kubwa ya dhahabu na maandishi 'BEI ZA TOVUTI, BILA KUFICHA'.",
+  "sources": [
+    "altraware_knowledge.md (bei na muda)",
+    "https://altra.tanzaniareach.com/pricing",
+    "https://altra-motion-lab.vercel.app/services/",
+    "https://faida-hq.vercel.app/ (mpango tofauti wa subscription)"
+  ],
+  "claim_note": "Bei zote zimetajwa kama 'custom build'. Mgongano na bei za FaidaHQ SaaS umeelezwa kwenye first comment na 01-presence-audit.md §5 #1. Thibitisha bei kabla ya kupost."
+}
