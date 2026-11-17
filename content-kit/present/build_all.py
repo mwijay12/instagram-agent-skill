@@ -416,6 +416,9 @@ def build_doc_html():
     if LINKS.get("site"):
         parts.append(f'<p>Tovuti ya simu: <a href="{html.escape(LINKS["site"])}">'
                      + html.escape(LINKS["site"]) + "</a></p>")
+    if LINKS.get("preview"):
+        parts.append(f'<p>Preview ya moja kwa moja (bila login): <a href="{html.escape(LINKS["preview"])}">'
+                     + html.escape(LINKS["preview"]) + "</a></p>")
     for sec in CONTENT["sections"]:
         parts.append(f"<h2>{html.escape(sec['id'])} · {html.escape(sec['title'])}</h2>")
         parts.append(f"<p><i>{html.escape(sec['kicker'])}</i></p>")

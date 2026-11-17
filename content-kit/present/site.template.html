@@ -132,6 +132,7 @@ const L = S.links || {};
 $("#links").innerHTML =
   (L.pdf ? `<a href="${esc(L.pdf)}" target="_blank" rel="noopener">Fungua PDF</a>` : "") +
   (L.doc ? `<a href="${esc(L.doc)}" target="_blank" rel="noopener">Google Doc</a>` : "") +
+  (L.preview ? `<a class="ghost" href="${esc(L.preview)}" target="_blank" rel="noopener">Live preview</a>` : "") +
   `<a class="ghost" href="https://github.com/mwijay12/instagram-agent-skill" target="_blank" rel="noopener">Repo</a>` +
   `<a class="ghost" href="#s03">Chagua bio</a>`;
 
