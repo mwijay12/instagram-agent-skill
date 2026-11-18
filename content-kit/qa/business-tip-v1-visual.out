@@ -1,0 +1,11 @@
+== business-tip-v1 visual receipts ==
+frame   30 @   0.5s  white>=220: 0.910  meanLuma: 241.8  dark<80: 0.013
+frame  180 @   3.0s  white>=220: 0.914  meanLuma: 242.1  dark<80: 0.013
+frame  360 @   6.0s  white>=220: 0.946  meanLuma: 243.2  dark<80: 0.011
+frame  600 @  10.0s  white>=220: 0.929  meanLuma: 244.8  dark<80: 0.003
+frame  900 @  15.0s  white>=220: 0.925  meanLuma: 244.2  dark<80: 0.005
+frame 1290 @  21.5s  white>=220: 0.874  meanLuma: 238.4  dark<80: 0.006
+white fraction range: 0.874-0.946
+mean luminance range: 238.4-244.8/255
+G3 pacing: final beat 5.1s = 23.2% of video; CTA bar visible ~1.4s — within guide, owner review still required
+owner_phone_sun_check: PENDING (G6 never self-certified)

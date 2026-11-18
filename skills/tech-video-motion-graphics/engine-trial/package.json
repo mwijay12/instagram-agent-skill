@@ -16,7 +16,10 @@
     "remotion:v3:stills": "node scripts/render-stills-v3.mjs",
     "remotion:v4:still": "node scripts/render-remotion-v4.mjs --still",
     "remotion:v4:render": "node scripts/render-remotion-v4.mjs --render",
-    "remotion:v4:stills": "node scripts/render-stills-v4.mjs"
+    "remotion:v4:stills": "node scripts/render-stills-v4.mjs",
+    "remotion:tip:still": "node scripts/render-remotion-tip-v1.mjs --still",
+    "remotion:tip:render": "node scripts/render-remotion-tip-v1.mjs --render",
+    "remotion:tip:stills": "node scripts/render-stills-tip-v1.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",

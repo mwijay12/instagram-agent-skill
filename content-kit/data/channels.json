@@ -96,5 +96,7 @@
   "v3_reel_status": "rendered, G0-G6 checked, awaiting owner visual approval and manual posting",
   "v4_reel_drive": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
   "v4_contact_sheet_drive": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
-  "v4_reel_status": "rendered, G0-G6 recorded, agent-side white-dominant/sun-readability check viewed, awaiting owner phone approval and manual posting"
+  "v4_reel_status": "rendered, G0-G6 recorded, agent-side white-dominant/sun-readability check viewed, awaiting owner phone approval and manual posting",
+  "business_tip_v1_reel_status": "rendered, G0-G6 recorded in QA-business-tip-v1.md, agent-side white-dominant check viewed, Drive upload PENDING (connector arguments failed this turn), awaiting owner phone approval and manual posting",
+  "business_tip_v1_reel_local": "content-kit/code-video/samples/08-altraware-business-tip-v1.mp4"
 }

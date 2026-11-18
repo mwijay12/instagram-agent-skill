@@ -203,6 +203,7 @@ Ukikosa mawili, **usiongeze "cinematic, 4K, highly detailed, masterpiece"**. Man
 | `samples/05-*` | corrected `05-altraware-websites-v2.mp4`, poster, contact sheet, manifest, [`05-drive-links.md`](samples/05-drive-links.md), [`QA-websites-v2.md`](QA-websites-v2.md) |
 | `samples/06-*` | **V3 clean Reel** `06-altraware-websites-v3.mp4` (60fps), poster, keyframe/MP4 contact sheets, manifest, [`06-drive-links.md`](samples/06-drive-links.md), [`QA-websites-v3.md`](QA-websites-v3.md), [`scenes-websites-v3.json`](scenes-websites-v3.json) |
 | `samples/07-*` | **V4 short white Reel** `07-altraware-websites-v4.mp4` (<25s, 60fps), poster, keyframe/MP4 contact sheets, manifest, [`07-drive-links.md`](samples/07-drive-links.md), [`QA-websites-v4.md`](QA-websites-v4.md), [`scenes-websites-v4.json`](scenes-websites-v4.json) |
+| `samples/08-*` | **Business-tip Reel v1** `08-altraware-business-tip-v1.mp4` (Jibu la haraka kwenye simu; 22s, 60fps, white-dominant, male TTS), poster, still/MP4 contact sheets, manifest, [`08-drive-links.md`](samples/08-drive-links.md) (Drive PENDING — connector ilishindwa turn hii), [`QA-business-tip-v1.md`](QA-business-tip-v1.md), [`scenes-business-tip-v1.json`](scenes-business-tip-v1.json), `business-tip-script-v1.txt`, `business-tip-caption-v1.txt` |
 | [`QA-websites.md`](QA-websites.md) | Gate ya websites + uaminifu wa engine |
 | [Google Doc](https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk) | Brief ya script + caption + limits, public |
 

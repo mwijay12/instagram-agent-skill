@@ -54,3 +54,22 @@ Mmiliki ameamua migongano 5 ya [`01-presence-audit.md`](01-presence-audit.md) §
 | 20 | **Kazi ya mmiliki** | Mmiliki bado anaongeza music/SFX, final edit, anaidhinisha kwenye simu kwenye jua kali, anapost mwenyewe, kisha anaandika `views, reach, saves, sends, profile visits, hold@3s`. Site copy haijabadilishwa; `09-decisions.md` bado ni source of truth. |
 
 **Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+
+## Business-tip Reel v1 — 18 Nov 2026
+
+- Owner asked for a business-tip Reel in the V4 style: `Jibu la haraka kwenye simu`
+  (`unafanya nini`, `bei gani`, `wasiliana vipi`).
+- Built as `business-tip-v1` (`samples/08-*`): white-dominant, 22.0s @60fps (<25s),
+  burned captions, one male TTS voice (`voice-01`, auto-assigned trial, NOT
+  owner-selected), `atempo 1.3`, no music/SFX.
+- No prices are spoken or shown in this Reel; the approved wording
+  `Bei kamili huandikwa baada ya kufahamu kazi yako` is used instead.
+- Claim guards unchanged: no invented metrics/clients/testimonials/domains,
+  no `official website`, no offline-first/cloud-sync (Faida POS only).
+- CTA for this Reel: `Comment neno TIP`.
+- QA: `content-kit/code-video/QA-business-tip-v1.md` (G0-G5 receipts; G6 owner
+  phone/sun check pending).
+- Drive upload for `08-*` is PENDING: the google_drive connector received empty
+  arguments on every call this turn; retry or manual upload needed. Local files are
+  committed under `content-kit/code-video/samples/`.

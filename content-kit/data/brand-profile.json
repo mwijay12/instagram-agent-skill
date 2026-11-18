@@ -175,5 +175,23 @@
     "prices_in_words": "laki tatu na nusu / laki tano na nusu / laki nane; Care Plan elfu tisini na tisa",
     "status": "rendered and shared for owner review; not approved or posted",
     "qa": "content-kit/code-video/QA-websites-v4.md"
+  },
+  "business_tip_v1_deliverable": {
+    "file": "content-kit/code-video/samples/08-altraware-business-tip-v1.mp4",
+    "topic": "Jibu la haraka kwenye simu: unafanya nini, bei gani, wasiliana vipi",
+    "duration_seconds": 22.0,
+    "fps": 60,
+    "voice": "voice-01 masculine auto-assigned trial (NOT owner-selected), atempo 1.3, no music/SFX",
+    "visual": "V4 white-dominant law; stills white fraction 0.874-0.946, mean luma 238.4-244.8/255",
+    "qa_report": "content-kit/code-video/QA-business-tip-v1.md",
+    "drive": "PENDING - connector arguments failed this turn; local file committed",
+    "owner_pending": [
+      "phone + strong sun readability check",
+      "music/SFX",
+      "final edit",
+      "manual posting",
+      "manual replies",
+      "metrics logging"
+    ]
   }
 }
