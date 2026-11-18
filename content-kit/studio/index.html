@@ -239,13 +239,14 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
   <section class="view" id="video">
     <div class="hero">
       <div><h1>Code → <em>Video</em></h1>
-      <p class="sub">Scene 8 halisi · beats 40 zenye sekunde · prompt 32 (engine 3 × lugha 2) · MP4 tatu za code: kimya, <b>TTS ya Kiswahili + plate 3</b>, na <b>FINAL yenye logo halisi + credits + "comment neno POS"</b>. Modeli ya video <b>haijawahi kuombwa kuchora code</b> - hiyo ndiyo tofauti.</p></div>
-      <div class="coords"><b>1080 × 1920 · 16s / 20s / 28s · 24fps</b><br>H.264 / yuv420p<br>FINAL: + AAC + logo + credits</div>
+      <p class="sub">Scene 8 halisi · beats 40 zenye sekunde · prompt 32 · MP4 nne: kimya, <b>TTS ya Kiswahili</b>, <b>FINAL yenye logo + credits</b>, na <b>Websites 60fps yenye spring/camera/code-diff</b>. Modeli ya video <b>haijawahi kuombwa kuchora code</b> - hiyo ndiyo tofauti.</p></div>
+      <div class="coords"><b>1080 × 1920 · 16s / 20s / 28s / 35s</b><br>24fps · <b>60fps websites</b><br>H.264 + AAC · TTS tu</div>
     </div>
     <div class="video-layout">
       <div>
         <div class="prompt-toolbar" style="margin-bottom:10px">
           <select id="reel-version">
+            <option value="websites">Websites · 60fps motion graphics (35s)</option>
             <option value="final">FINAL · logo + credits + CTA (28s)</option>
             <option value="v2">v2 · TTS + plates (20s, sauti)</option>
             <option value="v1">v1 · kimya, code tu (16s)</option>
@@ -253,8 +254,8 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
           <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted)">code, si modeli ya video</span>
         </div>
         <div class="phone">
-          <video id="reel" controls playsinline loop poster="../code-video/samples/still-01-hook.png">
-            <source id="reel-src" src="../code-video/samples/03-faida-offline-FINAL.mp4" type="video/mp4">
+          <video id="reel" controls playsinline loop poster="../code-video/samples/04-poster.png">
+            <source id="reel-src" src="../code-video/samples/04-altraware-websites.mp4" type="video/mp4">
           </video>
         </div>
         <div class="stills" id="stills"></div>
@@ -415,6 +416,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
           <tr><td>MP4 v1</td><td>16.0s · H.264 · 1080×1920 · kimya</td></tr>
           <tr><td>MP4 v2</td><td>20.0s · H.264 + AAC · TTS Kiswahili · plate 3</td></tr>
           <tr><td>MP4 FINAL</td><td>28.6s · + logo halisi · credits · "comment neno POS"</td></tr>
+          <tr><td>MP4 Websites</td><td>35.1s · <b>60fps</b> · spring/camera/code-diff · G0/G2/G3/G5 PASS</td></tr>
         </table>
         <p style="margin-top:12px"><a href="../qa/README.md" style="color:var(--gold)">Soma receipts →</a></p>
       </div>
@@ -422,6 +424,14 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
     <div class="card" style="margin-top:18px">
       <div class="label">Negative block · yaliyokatazwa kwenye kila prompt</div>
       <div class="chips" id="negative"></div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <div class="label">Websites · script + caption + render gates</div>
+      <div class="copy-block"><label>Script ya sauti</label><pre id="websites-script"></pre></div>
+      <div class="copy-block"><label>Caption ya post</label><pre id="websites-caption"></pre></div>
+      <div class="copy-block"><label>04-look.md</label><pre id="websites-look"></pre></div>
+      <div class="copy-block"><label>04-drive-links.md</label><pre id="websites-drive"></pre></div>
+      <p style="margin-top:12px"><a id="websites-doc" href="#" style="color:var(--gold)">Fungua brief kwenye Google Docs →</a></p>
     </div>
     <div class="warn" style="margin-top:18px">
       <b>Maadili ya data:</b> Madai kama 99.98% uptime, 24ms, 0.8s checkout, 10x faster, "Neema" testimonial, 95+ Lighthouse na "100% code ownership" ni <b>self-claimed</b> au yanagongana na clause 3 ya mkataba wako. Hayajaingia kwenye caption wala prompt kama ushahidi. Repo 42 / followers 205 / IG 48 + 5 ni snapshot ya 17 Nov 2026 - viangalie tena kabla ya kuvitumia.
@@ -450,7 +460,7 @@ $$('.tab').forEach(t => t.onclick = () => {
 
 /* ---- overview ---- */
 const stats = [
-  ["13 → 14","Skills kwenye repo","ig-codevideo imeongezwa","g"],
+  ["13 → 15","Skills kwenye repo","ig-codevideo + motion graphics","g"],
   ["6","Carousel decks","48 PNG · 1080×1350","v"],
   ["8","Code-video scenes","40 timed beats","g"],
   ["32","Prompt files","3 engines × 2 lugha","v"],
@@ -521,18 +531,33 @@ renderDeck();
 
 /* ---- video ---- */
 const REELS = {
+  websites: "../code-video/samples/04-altraware-websites.mp4",
   final: "../code-video/samples/03-faida-offline-FINAL.mp4",
   v2: "../code-video/samples/02-faida-offline-tts.mp4",
   v1: "../code-video/samples/01-faida-offline.mp4"
 };
+const POSTERS = {
+  websites: "../code-video/samples/04-poster.png",
+  final: "../code-video/samples/still-01-hook.png",
+  v2: "../code-video/samples/still-01-hook.png",
+  v1: "../code-video/samples/still-01-hook.png"
+};
 $("#reel-version").onchange = () => {
   const v = $("#reel");
+  const key = $("#reel-version").value;
   v.pause();
-  $("#reel-src").src = REELS[$("#reel-version").value];
+  v.poster = POSTERS[key];
+  $("#reel-src").src = REELS[key];
   v.load();
   v.currentTime = 0;
   v.play().catch(()=>{});
 };
+$("#websites-script").textContent = D.websites_script || "";
+$("#websites-caption").textContent = D.websites_caption || "";
+$("#websites-look").textContent = D.websites_look || "";
+$("#websites-drive").textContent = D.websites_drive || "";
+$("#websites-doc").href = D.websites_doc || "#";
+
 let sci = 0;
 $("#scene-list").innerHTML = D.scenes.map((s,i)=>`
   <button class="scene-btn ${i===0?'on':''}" data-i="${i}">

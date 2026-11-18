@@ -1390,9 +1390,121 @@ window.KIT_DATA = {
  "video": "../code-video/samples/01-faida-offline.mp4",
  "video_tts": "../code-video/samples/02-faida-offline-tts.mp4",
  "video_final": "../code-video/samples/03-faida-offline-FINAL.mp4",
+ "video_websites": "../code-video/samples/04-altraware-websites.mp4",
  "contact_sheet": "../code-video/samples/02-contact-sheet.jpg",
  "contact_sheet_final": "../code-video/samples/03-contact-sheet.jpg",
+ "contact_sheet_websites": "../code-video/samples/04-contact-sheet.jpg",
  "poster": "../code-video/samples/still-01-hook.png",
+ "poster_websites": "../code-video/samples/04-poster.png",
+ "websites_script": "Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako.\nWateja wako wako kwenye simu. Hapo ndipo tunapoanza.\nKiswahili na English: matoleo mawili, si tafsiri mara mbili.\nBei ya kuanzia iko wazi: Web Starter 350k, Growth 550k, Custom kuanzia 800k.\nCare Plan ni huduma tofauti. Bei kamili inaandikwa baada ya scope.\nAltraware Technology. Unahitaji tovuti leo? Comment neno TOVUTI.\n",
+ "websites_caption": "Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako.\nWateja wako wako kwenye simu. Ndiyo maana website yetu huanza na html lang=\"sw\" na viewport ya simu, kisha Kiswahili na English kama matoleo mawili, si tafsiri mara mbili.\nBei ya kuanzia iko wazi: Web Starter 350k, Growth 550k, Custom kuanzia 800k. Care Plan 99k/mwezi ni huduma tofauti. Bei kamili inaandikwa baada ya scope.\nBuilt in Tanzania, for how Tanzania really works.\nComment TOVUTI, tuanze mazungumzo ya scope na bei iliyoandikwa.\n#WebDesignDarEsSalaam #Tovuti #AltrawareTech\n",
+ "websites_look": "# look.md - gates computed on the render (not self-certified)\n\nG0 render exists : PASS  (00:00:35.07, audio=yes, 2572 KB, expected 35.08s)\nG2 no empty frame: PASS  (longest near-flat run 1.983s; limit 3.0s)\nG3 end hold      : PASS  (1.40s; limit 1.4s)\nG5 no page chrome: PASS  (no ACT/coords/timecode/progress bar in renderer)\nG1 proof readable: HUMAN - check 04-contact-sheet.jpg (code/text >= 0.04H)\nG4 one hero      : HUMAN - check 04-contact-sheet.jpg (no equal split panels)\n\nMotion laws: frame-driven only, spring(14/120/0.8), clamped interpolate,\ncamera 1.0->1.35, line focus 25% dim, token morph 0.8s, 4-frame stagger,\ntabular-nums, 3-second rule measured per frame at 60fps.\n\nHonesty: Remotion / Motion Canvas / Revideo / Timecut / Manim-MCP did NOT run\n(there is no Chromium or MCP server). This is the deterministic Python fallback.\nTTS only, no music/SFX - owner adds music. Nothing posted.\n",
+ "websites_manifest": {
+  "version": "websites-v1",
+  "date": "2026-11-18",
+  "skill": "tech-video-motion-graphics",
+  "engine": "frame-driven Pillow + ffmpeg (Remotion/Motion Canvas laws, no Chromium)",
+  "scene": "altraware-websites",
+  "topic": "websites in general",
+  "account": "@altrawaretechnology",
+  "claim_sw": "Tovuti ya Altraware Tech huanzia kwenye simu, ina Kiswahili na English, na bei ya kuanzia imeandikwa kabla ya mkutano.",
+  "seconds": 35.08,
+  "fps": 60,
+  "size": [
+   1080,
+   1920
+  ],
+  "endcard_seconds": 1.4,
+  "voice": {
+   "clips": [
+    {
+     "clip": "web-01-hook.wav",
+     "start": 0.15,
+     "end": 6.521,
+     "duration": 6.371
+    },
+    {
+     "clip": "web-02-simu.wav",
+     "start": 6.701,
+     "end": 10.893,
+     "duration": 4.192
+    },
+    {
+     "clip": "web-03-lugha.wav",
+     "start": 11.073,
+     "end": 14.095,
+     "duration": 3.023
+    },
+    {
+     "clip": "web-04-bei.wav",
+     "start": 14.275,
+     "end": 24.031,
+     "duration": 9.756
+    },
+    {
+     "clip": "web-05-scope.wav",
+     "start": 24.211,
+     "end": 29.244,
+     "duration": 5.032
+    },
+    {
+     "clip": "web-06-cta.wav",
+     "start": 29.424,
+     "end": 34.626,
+     "duration": 5.203
+    }
+   ],
+   "language": "sw",
+   "music": "NONE",
+   "sfx": "NONE"
+  },
+  "gates": {
+   "G0_render": true,
+   "G2_no_empty_frame": true,
+   "G2_worst_flat_seconds": 1.983,
+   "G3_end_hold_le_1_4s": true,
+   "G5_no_page_chrome": true,
+   "G1_G4": "human judgment on 04-contact-sheet.jpg, not self-certified"
+  },
+  "laws": [
+   "frame-driven only (no setTimeout/CSS transition)",
+   "spring damping14 stiffness120 mass0.8",
+   "interpolate clamped",
+   "camera 1.0->1.35",
+   "code line focus 25% dim + token morph",
+   "3-second rule measured per frame",
+   "4-frame stagger",
+   "tabular-nums counters",
+   "no page chrome",
+   "end card 1.4s"
+  ],
+  "artifact": "content-kit/present/site/index.html",
+  "number_source": "content-kit/09-decisions.md (mmiliki ameamua 17 Nov 2026)",
+  "guards": [
+   "Usiseme '100%' wala '95+ Lighthouse' wala 'chini ya sekunde 2 kwenye 2G' wala '10x'",
+   "Bei zote ni ZA KUANZIA; Care Plan 99k/mwezi ni huduma tofauti, si SaaS",
+   "Usiiite altra.tanzaniareach.com 'official website', usibuni domain",
+   "Tagline: Built in Tanzania, for how Tanzania really works",
+   "Angalia 09-decisions.md."
+  ],
+  "outputs": {
+   "mp4": "samples/04-altraware-websites.mp4",
+   "voiceover": "audio/voiceover-websites.wav",
+   "contact_sheet": "samples/04-contact-sheet.jpg",
+   "look": "samples/04-look.md"
+  },
+  "drive": {
+   "mp4": "https://drive.google.com/file/d/1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q/view?usp=drivesdk",
+   "mp4_direct": "https://drive.google.com/uc?id=1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q&export=download",
+   "voiceover": "https://drive.google.com/file/d/1pu9j_QaqHHppGc1Kwt4EvP6pr30Z9Lyy/view?usp=drivesdk",
+   "contact_sheet": "https://drive.google.com/file/d/1EhbjuiCZcMRwP59zhHC8y7qDrgP_WCal/view?usp=drivesdk",
+   "poster": "https://drive.google.com/file/d/1XtLt7QIyhO3rf5VKKrCncR_mXRWDFo2U/view?usp=drivesdk",
+   "brief_doc": "https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk",
+   "permission": "anyoneWithLink reader (confirmed on mp4 + doc)"
+  }
+ },
+ "websites_doc": "https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk",
+ "websites_drive": "# 04 · Websites 60fps — public Drive links (18 Nov 2026)\n\nIme-upload-iwa baada ya render ya mwisho. Permissions `anyoneWithLink reader`\nzimethibitishwa kwa MP4 na Google Doc; WAV, contact sheet na poster pia\nzimewekwa public kwa `make_public`.\n\n| Kitu | View / edit | Direct |\n| --- | --- | --- |\n| **MP4 · 35.07s · 1080×1920 · 60fps · H.264+AAC** | https://drive.google.com/file/d/1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q/view?usp=drivesdk | https://drive.google.com/uc?id=1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q&export=download |\n| **Voiceover WAV · voice-00 · hakuna muziki** | https://drive.google.com/file/d/1pu9j_QaqHHppGc1Kwt4EvP6pr30Z9Lyy/view?usp=drivesdk | https://drive.google.com/uc?id=1pu9j_QaqHHppGc1Kwt4EvP6pr30Z9Lyy&export=download |\n| **Contact sheet · frame 9** | https://drive.google.com/file/d/1EhbjuiCZcMRwP59zhHC8y7qDrgP_WCal/view?usp=drivesdk | https://drive.google.com/uc?id=1EhbjuiCZcMRwP59zhHC8y7qDrgP_WCal&export=download |\n| **Poster · hook** | https://drive.google.com/file/d/1XtLt7QIyhO3rf5VKKrCncR_mXRWDFo2U/view?usp=drivesdk | https://drive.google.com/uc?id=1XtLt7QIyhO3rf5VKKrCncR_mXRWDFo2U&export=download |\n| **Google Doc · script + caption + QA brief** | https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk | — |\n\nMP4 na WAV ni vya kuongezea **muziki wako mwenyewe** kwenye editor; hakuna SFX\nwala muziki uliowekwa na agent. CTA ni neno moja **`TOVUTI`** kwa kuchuja chats\nkwa mkono — hakuna auto-DM, bot, post wala mabadiliko ya akaunti ya Instagram.\n\nAngalia pia [`04-look.md`](04-look.md) kwa G0/G2/G3/G5 na\n[`../QA-websites.md`](../QA-websites.md) kwa gate ya 12.\n",
  "stills": [
   "../code-video/samples/still-01-hook.png",
   "../code-video/samples/still-02-code.png",

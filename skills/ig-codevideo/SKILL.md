@@ -11,12 +11,14 @@ description: >-
 
 # ig-codevideo
 
-The fourteenth skill. Everything else in this pack writes copy; this one turns
-**a real artifact** into a video brief. It exists because "make a video about
-my app" produces a laptop, a globe and a purple gradient. Every time.
+The fourteenth of fifteen skills. Everything else in this pack writes copy; this
+one turns **a real artifact** into a video brief. It exists because "make a
+video about my app" produces a laptop, a globe and a purple gradient. Every time.
 
 This skill is local to the `mwijay12` fork. It reads the content kit at
-`content-kit/` and works with the other thirteen skills.
+`content-kit/` and works with the other fourteen skills. For frame-accurate
+motion physics, code diffs and a virtual camera, hand off to
+`/tech-video-motion-graphics`.
 
 ## The one rule
 
@@ -190,7 +192,7 @@ final cut: render_reel_final.py -> samples/03-faida-offline-FINAL.mp4
   every 2.5s or sooner.
 - **Bilingual, not translated twice.** Kiswahili for the human line, English
   for the technical line. `--lang sw` and `--lang en` are separate deliverables.
-- **Honour the guards.** The five conflicts in `01-presence-audit.md` §5 were
+- **Honour the guards.** The five conflicts were
   decided on 17 Nov 2026 and live in `09-decisions.md`: starting prices (no
   750K, Care Plan is a separate service), `offline-first, cloud-synced`,
   licensed ownership (never `"100%"`), `Built in Tanzania, for how Tanzania

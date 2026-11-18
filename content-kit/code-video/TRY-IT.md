@@ -1,7 +1,7 @@
 # /ig-codevideo — tuitumie vipi? (jaribio halisi, 18 Nov 2026)
 
 > Uliuliza: *"hebu tujaribu making video content, can u try code to video kabisaa???!! na tuangalie hii skill tunaitumia vipi?"*
-> Jibu: **ndio, imefanyika.** Chini ni njia halisi tuliyopitia, si nadharia. Output iko kwenye `samples/02-faida-offline-tts.mp4`.
+> Jibu: **ndio, imefanyika.** Chini ni njia halisi tuliyopitia, si nadharia. Output ya kwanza iko kwenye `samples/02-faida-offline-tts.mp4`; FINAL iko §8, na websites 60fps iko §9.
 
 ---
 
@@ -133,3 +133,59 @@ Inachukua v2 yote (20.14s) na kuongeza **end card**: **logo halisi** ulichotuma 
 | `assets/altraware-logo.png` | logo yako, haijachorwa upya |
 
 **Kanuni ya CTA:** neno moja `POS` linakusaidia kuchuja zile *many chats* **kwa mkono**. Sijaweka auto-DM wala bot — uamuzi huo ni wako, na unakuja baada ya ku-rekebisha FAQ ya bot (angalia `QA-final.md` §5).
+
+---
+
+## 9. Websites · skill ya 15, "nzuri zaidi" (18 Nov 2026) ⭐
+
+Uliuliza tujaribu `motionmaxxing`, `charlie947/motion-graphics-skills`,
+`Barty-Bart/motion-graphics` na prescription ya `tech-video-motion-graphics`,
+halafu content iwe **tuu on websites in general kama Altraware Tech**. Hii ndiyo
+pasi hiyo. Sio Faida POS; ni tovuti, simu, Kiswahili/English, bei za kuanzia na
+scope.
+
+```bash
+# 1. Soma skill + scene halisi
+sed -n '1,80p' skills/tech-video-motion-graphics/SKILL.md
+cat skills/tech-video-motion-graphics/scenes-websites.json
+
+# 2. Skill loop (hook / beats / caption / human lint)
+/tmp/kvenv/bin/python skills/ig-reel/hookscore.py content-kit/qa/websites-hooks.txt
+/tmp/kvenv/bin/python skills/ig-reel/beats.py content-kit/code-video/websites-script.txt --target 30
+/tmp/kvenv/bin/python skills/ig-caption/caption.py --keywords TOVUTI,tovuti,website \
+  content-kit/code-video/websites-caption.txt
+/tmp/kvenv/bin/python skills/ig-human/detect.py content-kit/code-video/websites-caption.txt
+
+# 3. KEYFRAME KWANZA — usirender bila kuangalia
+/tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py \
+  --fps 60 --still 12.0 --out /tmp/web-frame.png
+
+# 4. Full render 60fps
+/tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py --fps 60 --crf 30
+python3 content-kit/check.py
+```
+
+| Faili | Maana |
+| --- | --- |
+| `samples/04-altraware-websites.mp4` | **Ya kushiriki** · 35.08s · 1080×1920 · **60fps** · H.264 + AAC |
+| `samples/04-contact-sheet.jpg` | frame 9 zinazosomeka, si postage stamps |
+| `samples/04-look.md` | G0/G2/G3/G5 zilizohesabiwa kwenye render |
+| `samples/04-render-manifest.json` | clip 6, laws, guards, artifact halisi |
+| `samples/04-drive-links.md` | link za Drive (public) |
+| `audio/voiceover-websites.wav` | sauti safi ya kuwekea muziki wako |
+| `QA-websites.md` | gate + uaminifu wa engine |
+| [Google Doc](https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk) | brief ya script + caption + limits, public |
+
+**Kilichobadilika kweli:** `spring(14/120/0.8)`, `interpolate()` clamped, camera
+`1.0→1.35`, code line-focus 25% + token morph, stagger frame 4, 3-second gate,
+end card 1.4s, **hakuna ACT/coords/timecode/progress bar**. Code halisi ni
+`<html lang="sw">`, viewport na `<title>` kutoka `present/site/index.html`; bei
+halisi ni kutoka `09-decisions.md`. AI plates ni texture tu; herufi zote, code,
+namba, captions na logo vinatoka kwenye deterministic renderer.
+
+⚠️ **Uaminifu:** Remotion / Motion Canvas / Revideo / Timecut / Manim-MCP
+**havikurun** (hakuna Chromium wala MCP server), wala Context7/`llms.txt` live
+docs. Tumejaribu laws zao kwa fallback ya Pillow+ffmpeg, na tumesema hivyo
+wazi. Hook 80.0 STRONG ya Kiswahili ni heuristic isiyothibitishwa kwa views.
+Hakuna muziki/SFX, hakuna post/DM/auto-DM. CTA moja: **`comment neno TOVUTI`**
+kwa kuchuja chats kwa mkono.

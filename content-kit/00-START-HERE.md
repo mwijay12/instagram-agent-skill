@@ -13,7 +13,7 @@ Soma ukurasa huu kwanza. Mengine yote ni vitu vya kuchukua na kutumia.
 
 ## 1. Nilichokuta, kwa kifupi
 
-**Repo hii** ni pakiti ya skills 13 za kuandika Instagram (`/ig-reel`, `/ig-carousel`, `/ig-human`, `/ig-caption`, n.k.; sasa ni **14** baada ya `ig-codevideo`). Ni injini nzuri, lakini ilikuja **bila sauti yako wala ukweli wako**: `templates/voice.md` ni template tupu, na kila skill inasoma `~/.claude/instagram/voice.md`. Ikiwa faili hiyo haipo, kila script inatoka kwa sauti ya "default AI". Hapo ndipo "outputs mbaya za kawaida" zinaanzia, hata kabla hujafika kwenye video.
+**Repo hii** ni pakiti ya skills 13 za kuandika Instagram (`/ig-reel`, `/ig-carousel`, `/ig-human`, `/ig-caption`, n.k.; sasa ni **15** baada ya `ig-codevideo` na `tech-video-motion-graphics`). Ni injini nzuri, lakini ilikuja **bila sauti yako wala ukweli wako**: `templates/voice.md` ni template tupu, na kila skill inasoma `~/.claude/instagram/voice.md`. Ikiwa faili hiyo haipo, kila script inatoka kwa sauti ya "default AI". Hapo ndipo "outputs mbaya za kawaida" zinaanzia, hata kabla hujafika kwenye video.
 
 Mbili kati ya zana zake pia zilikuwa za Kiingereza tu: `hookscore.py` ilipa hook yako ya Kiswahili **39.2 WEAK** kwa sababu haikutambua `bado`, `bila`, `hayasimami`; `detect.py` ilipa caption safi VOICE 30 kwa kukosa `you/your`. Zimerekebishwa kwa tafsiri za Kiswahili (si kwa kuinua alama kwa ulaghai), na maelezo ya uaminifu yako kwenye [`qa/README.md`](qa/README.md).
 
@@ -50,7 +50,7 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`07-ig-setup.md`](07-ig-setup.md) | **Setup ya leo:** bio ya studio, professional/search-engine settings, SEO ya kila post, usalama + recovery ya akaunti ya zamani, na jinsi ya kutumia kit chote (utafiti wa 17 Nov 2026) |
 | [`log-template.md`](log-template.md) | Template ya `~/.claude/instagram/log.md` — historia ya post 10–30 kabla ya `/ig-audit` |
 | [`carousels/`](carousels/README.md) | Carousel 6 zilizoandikwa tayari, na **PNG 1080×1350 za kupakia** |
-| [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, MP4 tatu za code (16s kimya · 20s TTS · **28s FINAL yenye logo + credits + "comment neno POS"**), na [`TRY-IT.md`](code-video/TRY-IT.md) ya kuanzia leo |
+| [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, MP4 nne za code (16s kimya · 20s TTS · **28s FINAL** · **35s websites 60fps yenye spring/camera/code-diff**), na [`TRY-IT.md`](code-video/TRY-IT.md) ya kuanzia leo |
 | [`qa/`](qa/README.md) | **Receipts halisi**: zana 5 za repo zimeendeshwa kwenye content hii, pamoja na before/after ya draft mbaya |
 | [`studio/index.html`](studio/index.html) | Live preview: carousel zote 48, MP4, prompt 32, brand tokens na QA kwenye ukurasa mmoja |
 | [`08-bio-variations.md`](08-bio-variations.md) · [`bio-variations.json`](bio-variations.json) | **Bio variations 4** (moja Kiswahili kamili), brand `Altraware Tech`, ukweli wa subdomain, contacts (bot vs mtu), na mifano ya caption za lugha mbili |
@@ -60,6 +60,7 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`check.py`](check.py) | Linter ya stdlib: slop, hashtag, cover, urefu wa slide, bio (01 + 07), variations 4, madai yasiyothibitishwa → `47 pass · 0 fail · READY` |
 | [`use-voice.sh`](use-voice.sh) | Installer ya `~/.claude/instagram/voice.md` (inahifadhi ya awali kama `voice.previous.md`) |
 | [`skills/ig-codevideo/SKILL.md`](../skills/ig-codevideo/SKILL.md) | Skill ya 14: kugeuza repo/code kuwa Reel prompt isiyo ya kawaida |
+| [`skills/tech-video-motion-graphics/SKILL.md`](../skills/tech-video-motion-graphics/SKILL.md) | Skill ya 15: frame-driven motion graphics, `spring/interpolate`, code diff, virtual camera, 3s gate, 60fps fallback |
 
 ---
 
@@ -81,6 +82,7 @@ python3 content-kit/code-video/promptgen.py --list
 python3 content-kit/code-video/promptgen.py --scene faida-offline --lang sw
 python3 content-kit/code-video/render_reel_v2.py   # picha + TTS + code -> MP4 yenye sauti
 python3 content-kit/code-video/render_reel_final.py # + logo + credits + CTA "comment neno POS"
+python3 skills/tech-video-motion-graphics/render_websites.py --fps 60 --crf 30 # websites 60fps
 
 # 5. Kagua kila kitu kabla ya kupost
 python3 content-kit/check.py        # 47 pass · 0 fail · READY

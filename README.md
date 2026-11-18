@@ -1,8 +1,9 @@
 # The Instagram agent skill
 
-Fourteen Claude skills that run an Instagram account. Free, MIT, no signup, no
-API key, nothing to connect. (This fork adds `/ig-codevideo` and a full
-worked content kit; see [Fork additions](#fork-additions).)
+Fifteen Claude skills that run an Instagram account. Free, MIT, no signup, no
+API key, nothing to connect. (This fork adds `/ig-codevideo`,
+`/tech-video-motion-graphics` and a full worked content kit; see
+[Fork additions](#fork-additions).)
 
 One of them writes your Reels off 26 hook formulas and scores the hook before
 you waste a take on it. One goes and finds the reels that are actually working
@@ -32,7 +33,7 @@ Or do it yourself, in Claude Code:
 
 ```bash
 git clone https://github.com/Jakeschincariol/instagram-agent-skill.git
-cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/
+cp -r instagram-agent-skill/skills/ig-* instagram-agent-skill/skills/tech-video-motion-graphics ~/.claude/skills/
 ```
 
 Or as a plugin:
@@ -53,7 +54,7 @@ reels and say "write my voice.md from these". Every skill reads that file. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 
-## The fourteen
+## The fifteen
 
 | command | what it does |
 | --- | --- |
@@ -71,6 +72,7 @@ out loud.
 | `/ig-repurpose` | One video, podcast or newsletter into a week of reels and carousels that each stand alone. |
 | `/ig-audit` | Post-mortem on what you already posted. Ranks by outlier multiple and sends per reach, not views. |
 | `/ig-codevideo` | **Fork addition.** Turns a real repo, code file, screen or product fact into a seven-layer video prompt: artifact, one true claim, timed shot list, exact brand tokens, motion, a 30+ item negative block, and a QA gate. Never asks a video model to draw code. |
+| `/tech-video-motion-graphics` | **Fork addition.** Frame-driven programmatic motion graphics: spring physics, clamped interpolation, line-by-line code diffs, virtual camera, 3-second pacing gate, no page chrome, and a deterministic Pillow+ffmpeg fallback when Remotion / Motion Canvas / Revideo cannot run. |
 
 ## The five tools that actually run
 
@@ -343,11 +345,12 @@ content-kit/03,04-voice-*.md     filled voice.md profiles for both accounts
 content-kit/05-content-system.md pillars, proof bank, banned words, CTAs
 content-kit/06-30-day-plan.md    four-week plan + first Reel script
 content-kit/carousels/           6 decks (8 slides each) + 48 rendered PNGs
-content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s silent + 20s TTS + 28s FINAL (logo/credits/CTA) MP4
+content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s silent + 20s TTS + 28s FINAL + 35s websites 60fps MP4
 content-kit/qa/                  receipts: all five tools run on this content
 content-kit/studio/              live preview of decks, prompts, MP4 and brand
 content-kit/check.py             stdlib linter: 47 pass, 0 fail, READY
 skills/ig-codevideo/SKILL.md     the fourteenth skill
+skills/tech-video-motion-graphics/SKILL.md  the fifteenth skill + 60fps renderer
 ```
 
 Two upstream tools were localised while QA-ing the kit:

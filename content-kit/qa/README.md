@@ -93,3 +93,26 @@ Tumejaribu "code to video kabisaa": picha 3 za AI kama **texture**, TTS 5 za Kis
 ### FINAL (baada ya maoni ya mmiliki)
 
 `render_reel_final.py` → **28.63s**, clip **6** ya TTS, **logo halisi** + credits + `comment neno POS`, WAV safi ya kuongezea muziki. Drive: [`../code-video/samples/03-drive-links.md`](../code-video/samples/03-drive-links.md). Gate na usafi wa madai: [`../code-video/QA-final.md`](../code-video/QA-final.md). `check.py` bado `47 pass · 0 fail · READY`.
+
+---
+
+## 18 Nov 2026 · websites / tech-video-motion-graphics
+
+Skill loop ilirudiwa kwenye script na caption mpya ya **websites** (si Faida POS).
+Receipts ziko kwenye faili zao, si madai ya "viral":
+
+| Faili | Matokeo |
+| --- | --- |
+| [`websites-hookscore.out`](websites-hookscore.out) | **`80.0 STRONG`** · `63.1 OK` · `47.0 WEAK`; hook iliyoshinda: *"Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako."* |
+| [`websites-beats.out`](websites-beats.out) | maneno 61 · ~22.2s @165wpm · loop `tovuti` · flags: hook 4.4s na beat ya bei 4.7s (visual inabadilika ndani ya beat, si frame tuli) |
+| [`websites-caption.out`](websites-caption.out) | **READY** · 565/2200 chars · hashtag 3 · one ask · search terms 3/3 |
+| [`websites-detect.out`](websites-detect.out) | **71.6 REVIEW** · SLOP/FINGERPRINT/SPECIFICITY 100 · VOICE 48.0 (Kiswahili haina contractions za Kiingereza) |
+| [`websites-humanize.out`](websites-humanize.out) | 0 machine artefacts · **0 structural tells** baada ya hashtag wall kurekebishwa 5→3 |
+| [`../code-video/samples/04-look.md`](../code-video/samples/04-look.md) | G0/G2/G3/G5 zilizohesabiwa kwenye render ya 60fps |
+| `content-kit/check.py` | `47 pass · 0 warn · 0 fail · 6 decks · READY` |
+
+⚠️ Alama za Kiswahili bado ni tafsiri za heuristic, si utabiri wa views;
+`beats.py` inakadiria 165wpm lakini TTS halisi ilichukua **34.63s**, hivyo video
+imenyoshwa hadi **35.08s**. Hii si kosa la script. G1/G4 ni hukumu ya jicho kwenye
+[`04-contact-sheet.jpg`](../code-video/samples/04-contact-sheet.jpg), si
+self-certification.
