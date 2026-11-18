@@ -30,4 +30,4 @@ Environment notes: the sandbox had no system browser or ffmpeg. Chromium was for
 
 ## Not done
 
-No live Instagram posting, DMs, auto-DM/bot, credentials, account changes, Drive/Docs/Vercel work for this v2 cut, music/SFX, or owner-side final edit. TTS is the only audio track; the owner adds music in the editor.
+No live Instagram posting, DMs, auto-DM/bot, credentials, account changes, Docs/Vercel work for this v2 cut, music/SFX, or owner-side final edit. The corrected MP4 was uploaded to Google Drive for review. TTS is the only audio track; the owner adds music in the editor.

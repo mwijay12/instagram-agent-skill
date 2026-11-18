@@ -1,6 +1,6 @@
 # QA — Altraware Websites V2 (corrected final render)
 
-**Status:** `CODE-VIDEO READY` for owner review. The corrected MP4 has been rendered and validated; it has **not** been posted, uploaded to Drive/Docs/Vercel, or sent to anyone. Music/SFX, final edit, and publishing remain owner-side.
+**Status:** `CODE-VIDEO READY` for owner review. The corrected MP4 has been rendered, validated, and uploaded to Google Drive with `anyoneWithLink reader` access; it has **not** been posted to Instagram, converted to Docs, deployed to Vercel, or sent to anyone. Music/SFX, final edit, and publishing remain owner-side.
 
 **Source of truth:** `content-kit/09-decisions.md` and the same-websites scene source `skills/tech-video-motion-graphics/scenes-websites.json`.
 
@@ -27,6 +27,7 @@
 | File | Result |
 |---|---|
 | `content-kit/code-video/samples/05-altraware-websites-v2.mp4` | 7,303,730 bytes · 36.011 s · 1080×1920 · 30 fps |
+| Drive copy of the same MP4 | https://drive.google.com/file/d/1v8W6RpPCdiiLXZY-0nje_94tKcek54ba/view?usp=drivesdk · `anyoneWithLink reader` · 7,303,730 bytes |
 | `content-kit/code-video/samples/05-contact-sheet.jpg` | 289,803 bytes · frames at 1, 5, 10, 15, 20, 25, 30, 32, 35.5 s |
 | `content-kit/code-video/samples/05-altraware-websites-v2-poster.png` | 1,812,717 bytes · still at frame 30 |
 | `content-kit/code-video/samples/05-render-manifest.json` | Render receipt with `corrections` and `guards` |
