@@ -1,0 +1,6 @@
+Mwezi huu, developer mmoja ametengeneza clone ya Adobe kwa AI pekee — bila timu, bila funding.
+Vibe coding imewagawanya: wazabuni, engineers, wamiliki wa biashara.
+Ukweli: AI huandika demo haraka. Lakini demo si production.
+Security, malipo, data ya wateja — hapo biashara inaishi au kufa.
+Vibe coding kwa prototype. Engineering kwa production.
+Tunajenga mifumo inayostahimili Tanzania halisi. Comment neno BUILD.

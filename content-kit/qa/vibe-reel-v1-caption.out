@@ -1,7 +1,23 @@
-Traceback (most recent call last):
-  File "/home/user/instagram-agent-skill/skills/ig-caption/caption.py", line 214, in <module>
-    main()
-  File "/home/user/instagram-agent-skill/skills/ig-caption/caption.py", line 204, in main
-    raw = sys.stdin.read() if args.input == "-" else open(args.input, encoding="utf-8").read()
-                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'content-kit/code-video/vibe-reel-caption-v1.txt'
+
+CAPTION LINT  ·  778 / 2200 chars  ·  3 hashtags  ·  1 ask(s)
+==============================================================
+
+  WHAT THE FEED SHOWS
+  +------------------------------------------------------+
+  | Mwezi huu developer mmoja ametengeneza clone ya      |
+  | Adobe kwa AI pekee — ArtCraft. Bila timu, bila       |
+  | funding. Na X ina debate kali:                       |
+  +-------------------------------------------- ... more +
+
+  PASS  LENGTH            778 / 2200 characters
+  WARN  FIRST LINE        159 characters, so it gets cut at 125 mid-thought. Fine if the cut is a cliffhanger, bad if it is a subordinate clause
+  PASS  HOOK IS CONCRETE  2 number(s) or name(s) in the visible window
+  PASS  HASHTAGS          3 tag(s): #VibeCoding #SoftwareEngineering #AltrawareTech
+  PASS  TAG PLACEMENT     tags are below the fold
+  PASS  LINKS             no dead links in the body
+  PASS  ONE ASK           one call to action: comment a keyword
+  PASS  EMOJI             0 emoji, 0.0 per 100 characters
+  PASS  SEARCH TERMS      3/3 present, 0 in the visible window
+--------------------------------------------------------------
+  VERDICT  REVIEW
+
