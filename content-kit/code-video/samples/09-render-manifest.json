@@ -1,0 +1,15 @@
+{
+  "id": "09-altraware-vibe-reel-v1",
+  "title": "Vibe Coding vs Engineering — ArtCraft hook (Nov 2026 news peg)",
+  "composition": "AltrawareVibeReelV1",
+  "resolution": "1080x1920",
+  "fps": 60,
+  "duration_seconds": 30.02,
+  "audio": "Swahili VO, voice-01, atempo 1.45, 6 beats, no music/SFX",
+  "bg": "motion-lab field.frag.glsl DAY palette (WebGL2), preset-per-beat tweening",
+  "stickers": "12 motion-lab SVGs (spark/cursor/thumb/coins/receipt/...), 4 scribbles with draw-in",
+  "proof": "work/faida-800.webp die-cut card in beat 5",
+  "file": "09-altraware-vibe-reel-v1.mp4",
+  "size_bytes": 3832494,
+  "qa": "content-kit/qa/vibe-reel-v1-guards.out (NO_HITS), vibe-reel-v1-caption.out (REVIEW)"
+}
