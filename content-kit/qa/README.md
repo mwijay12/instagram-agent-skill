@@ -73,3 +73,19 @@ Toleo la kwanza la script lilikuwa na: (a) beats 3–5 zisizo na kitu kinachoone
 ## Mstari wa mwisho
 
 Zana hizi **hazitabiri views**. README ya repo inasema wazi: AUC 0.56 kwenye kutofautisha hit na miss za creator yule yule. Kazi yao hapa ni kuua mambo yanayojulikana kuua Reel: salamu, preamble, ukosefu wa namba, frame isiyobadilika, caption iliyokatwa katikati ya sentensi, na slop. Mengine yataamuliwa na retention graph yako baada ya post 30.
+
+---
+
+## 18 Nov 2026 · jaribio la `/ig-codevideo` (pasi kamili ya v2)
+
+Tumejaribu "code to video kabisaa": picha 3 za AI kama **texture**, TTS 5 za Kiswahili (sauti moja), na render ya Pillow + ffmpeg. Receipts mpya hazibadilishi zile za juu; ziko kwenye faili zao:
+
+| Faili | Matokeo |
+| --- | --- |
+| [`codevideo-v2-hookscore.out`](codevideo-v2-hookscore.out) | `81.8 STRONG / 76.4 STRONG / 56.0 OK` (zile zile tatu, zimethibitishwa tena) |
+| [`codevideo-v2-beats.out`](codevideo-v2-beats.out) | maneno 32 · ~11.6s @ 165 wpm · loop imegunduliwa · **8.4s chini ya target 20s** |
+| `audio/voiceover.wav` | 20.14s · clip 5 · `atempo=1.10` · RMS ~3744 (si kimya) |
+| `samples/02-faida-offline-tts.mp4` | **20.13s** · 1080×1920 · 24fps · H.264 + AAC-LC 48kHz mono |
+| `content-kit/check.py` | `47 pass · 0 warn · 0 fail · 6 decks · READY` |
+
+⚠️ **Tofauti ya uaminifu:** `beats.py` inakadiria ~11.6s kwa 165 wpm, lakini TTS halisi ilichukua **20.72s** kabla ya `atempo`, hivyo video imenyoshwa hadi **20.14s**. Hii si kosa la script; ni kasi ya sauti iliyochaguliwa. Gate ya 12 iko kwenye [`../code-video/QA-v2.md`](../code-video/QA-v2.md), pamoja na mambo mawili yaliyoachwa wazi (frame 1 ni texture ya AI, `TZS 15,000` ni namba ya DEMO).

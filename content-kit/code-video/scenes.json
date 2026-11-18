@@ -36,7 +36,7 @@
         "live": "https://faida-hq.vercel.app/",
         "what_sw": "POS ya Flutter yenye risiti za thermal, tahadhari za stoo, matawi mengi, na APK kupitia GitHub Releases",
         "what_en": "Flutter POS with thermal receipts, low-stock alerts, multi-branch tracking and APK builds from GitHub Releases",
-        "numbers": ["TSh 1,200,000 custom build", "TSh 99,000/mo support"],
+        "numbers": ["mifumo kuanzia TSh 1,200,000 (bei ya kuanzia)", "Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)"],
         "code_source": "altra.tanzaniareach.com homepage (verified)",
         "code": ["const sale = await faida.checkout({", "  items, pay: \"M-PESA\",", "  lang: \"sw\"", "})"]
       },
@@ -59,9 +59,9 @@
       "payoff_sw": "Comment POS, tutakutumia demo.",
       "payoff_en": "Comment POS and I will send the demo.",
       "cta": {"keyword": "POS", "sw": "Comment POS", "en": "Comment POS"},
-      "audio": "No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Voiceover in Kiswahili if used; burn in captions.",
+      "audio": "No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Kiswahili TTS voiceover demo: 5 clips in audio/*.wav assembled by render_reel_v2.py; burn in captions.",
       "sources": ["altraware_knowledge.md", "https://github.com/mwijay12/faida-pos-releases", "https://faida-hq.vercel.app/", "https://altra.tanzaniareach.com/"],
-      "guard": "Usiseme '100% offline' wala '0.8s checkout' wala '10x faster'. angalia 01-presence-audit.md §5 #2 kabla ya kutumia neno cloud-first."
+      "guard": "Usiseme '100%' wala '100% offline' wala '0.8s checkout' wala '10x faster'. Sema offline-first, cloud-synced. Tagline: Built in Tanzania, for how Tanzania really works. Bei zote ni za kuanzia; Care Plan 99k/mwezi ni huduma tofauti, si SaaS. Angalia 09-decisions.md."
     },
     {
       "id": "shule-altra",

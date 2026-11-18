@@ -40,7 +40,7 @@ a happy business owner, and trending music. Add a call to action.
 Artifact : POS ya Flutter yenye risiti za thermal, tahadhari za stoo,
            matawi mengi, na APK kupitia GitHub Releases
 Repo    : mwijay12/faida-pos-releases  (https://github.com/...)
-Numbers you may state: TSh 1,200,000 custom build; TSh 99,000/mo support
+Numbers you may state: mifumo kuanzia TSh 1,200,000; Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)
 Code to composite:
   const sale = await faida.checkout({
     items, pay: "M-PESA",
@@ -118,6 +118,11 @@ python3 promptgen.py --all
 # Video halisi kutoka code (Pillow + ffmpeg), 1080x1920, 16s
 python3 render_video.py
 
+# PASI KAMILI: picha 3 (plates) + TTS ya Kiswahili + AAC -> MP4 yenye sauti
+python3 render_reel_v2.py                  # samples/02-faida-offline-tts.mp4
+python3 render_reel_v2.py --no-voice       # sauti = kimya (parity na sample ya msingi)
+python3 render_reel_v2.py --no-plates      # contour za code tu, bila picha za AI
+
 # Picha moja ya kukagua frame ya 8.0s
 python3 render_video.py --still 8.0 --out /tmp/frame.png
 ```
@@ -180,13 +185,19 @@ Ukikosa mawili, **usiongeze "cinematic, 4K, highly detailed, masterpiece"**. Man
 | `render_video.py` | Renderer halisi: Pillow + ffmpeg → MP4 ya 1080x1920 |
 | `samples/01-faida-offline.mp4` | Mfano uliotengenezwa **kwa code**, si kwa modeli ya video |
 | [`../studio/index.html`](../studio/index.html) | Live preview: cheza MP4, badilisha scene, nakili prompt |
+| `render_reel_v2.py` | Pasi kamili: plates + TTS + mux → MP4 yenye sauti |
+| `plates/` | Picha 3 za AI, **texture tu**, hazina maandishi/code |
+| `audio/` | Clip 5 za TTS (Kiswahili, sauti moja) + `voiceover.wav` + script |
+| `samples/02-*` | `02-faida-offline-tts.mp4`, `02-contact-sheet.jpg`, `02-render-manifest.json` |
+| [`TRY-IT.md`](TRY-IT.md) | Njia ya kutumia skill leo, hatua kwa hatua (Kiswahili) |
+| [`QA-v2.md`](QA-v2.md) | Receipts za pasi kamili + gate ya 12 |
 
 ---
 
 ## 9. Mapungufu ya uaminifu
 
 - `ai-video` prompts hazihakikishii matokeo: kila modeli ina tabia yake. Ndiyo maana zinatoa **texture tu** na QA gate, si ahadi ya "viral".
-- `render_video.py` haina sauti. Sauti iko kwenye `audio` ya scene na inaongezwa kwenye editor/audio pass; kusema "nimekupa Reel kamili" itakuwa uongo.
+- `render_video.py` (sample ya msingi) **haina sauti**. `render_reel_v2.py` inaongeza voiceover ya TTS (clip 5 za Kiswahili, sauti moja) na plate 3 za picha, kisha ina-mux AAC kwa ffmpeg; **bado hakuna muziki wala SFX**, captions zimeburniwa. Sauti ya TTS inatoka kwenye zana ya nje, si `scenes.json`; usipokuwa na clips tumia `--no-voice`. Picha za AI ni **texture tu**, hazina maandishi wala ushahidi wa dai lolote.
 - Hii haiposti chochote. Unapata prompt, brief, spec na MP4. Unapost wewe.
 - Mstari mmoja wa code kwenye `faida-offline` umenakiliwa kutoka [altra.tanzaniareach.com](https://altra.tanzaniareach.com/); mistari mingine iliyoandikwa `ILLUSTRATIVE` haijadaiwa kuwa ya repo zako.
 - Namba kama `400% volume`, `0.8s checkout`, `99.98% uptime`, `10x faster billing` ni **vipengele/madai ya tovuti yako**, si vipimo. Kwenye prompts zetu `400%` imetumika kama kipengele kilichoandikwa kwenye README ya `hype-alarm`; nyingine hazijatumika.

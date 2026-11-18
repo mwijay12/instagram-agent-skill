@@ -343,7 +343,7 @@ content-kit/03,04-voice-*.md     filled voice.md profiles for both accounts
 content-kit/05-content-system.md pillars, proof bank, banned words, CTAs
 content-kit/06-30-day-plan.md    four-week plan + first Reel script
 content-kit/carousels/           6 decks (8 slides each) + 48 rendered PNGs
-content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s MP4
+content-kit/code-video/          8 scenes, 32 prompts, promptgen.py, 16s silent MP4 + 20s TTS/plates MP4
 content-kit/qa/                  receipts: all five tools run on this content
 content-kit/studio/              live preview of decks, prompts, MP4 and brand
 content-kit/check.py             stdlib linter: 47 pass, 0 fail, READY

@@ -50,7 +50,7 @@ Ya pili inaelezea **biashara ya pikipiki** na inapeleka watu kwenye **Tanzania R
 | [`07-ig-setup.md`](07-ig-setup.md) | **Setup ya leo:** bio ya studio, professional/search-engine settings, SEO ya kila post, usalama + recovery ya akaunti ya zamani, na jinsi ya kutumia kit chote (utafiti wa 17 Nov 2026) |
 | [`log-template.md`](log-template.md) | Template ya `~/.claude/instagram/log.md` — historia ya post 10–30 kabla ya `/ig-audit` |
 | [`carousels/`](carousels/README.md) | Carousel 6 zilizoandikwa tayari, na **PNG 1080×1350 za kupakia** |
-| [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, na MP4 iliyotengenezwa kwa code |
+| [`code-video/`](code-video/README.md) | Mfumo wa prompt wa tabaka 7, `promptgen.py`, scene 8 halisi, MP4 mbili za code (16s kimya + 20s yenye TTS), na [`TRY-IT.md`](code-video/TRY-IT.md) ya kuanzia leo |
 | [`qa/`](qa/README.md) | **Receipts halisi**: zana 5 za repo zimeendeshwa kwenye content hii, pamoja na before/after ya draft mbaya |
 | [`studio/index.html`](studio/index.html) | Live preview: carousel zote 48, MP4, prompt 32, brand tokens na QA kwenye ukurasa mmoja |
 | [`08-bio-variations.md`](08-bio-variations.md) · [`bio-variations.json`](bio-variations.json) | **Bio variations 4** (moja Kiswahili kamili), brand `Altraware Tech`, ukweli wa subdomain, contacts (bot vs mtu), na mifano ya caption za lugha mbili |
@@ -79,6 +79,7 @@ ls content-kit/carousels/build/01-offline-first/     # PNG 8, tayari
 # 4. Tengeneza prompt ya video isiyo ya kawaida
 python3 content-kit/code-video/promptgen.py --list
 python3 content-kit/code-video/promptgen.py --scene faida-offline --lang sw
+python3 content-kit/code-video/render_reel_v2.py   # picha + TTS + code -> MP4 yenye sauti
 
 # 5. Kagua kila kitu kabla ya kupost
 python3 content-kit/check.py        # 47 pass · 0 fail · READY
