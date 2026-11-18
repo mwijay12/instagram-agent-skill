@@ -186,7 +186,7 @@ def shot_terminal(im, t):
     d = ImageDraw.Draw(im)
     d.text((130, 440), "FAIDA POS  /  TERMINAL", font=FM(28, 600), fill=rgba(GOLD))
     d.line((130, 500, 950, 500), fill=rgba(PAPER, 45), width=2)
-    d.text((130, 540), "STANDARD ITEM", font=FB(40, 400), fill=rgba(PAPER))
+    d.text((130, 540), "STANDARD ITEM  ·  DEMO", font=FB(40, 400), fill=rgba(PAPER))
     d.text((130, 600), "TZS 15,000", font=FM(52, 700), fill=rgba(GOLD))
     n = 341 + (1 if t > 3.3 else 0)
     d.text((130, 730), f"RISITI  {n:04d}", font=FM(40, 600), fill=rgba(PAPER))
@@ -273,10 +273,10 @@ def shot_payoff(im, t):
     hand_line(d, 90, 740, 620, 740, rgba(VIOLET), p=p)
     d.text((90, 800), "KATI YA DEMO NA MFUMO WA DUKANI", font=FM(30, 600), fill=rgba(NAVY))
     d.rounded_rectangle((90, 980, 560, 1090), radius=20, fill=rgba(VIOLET, int(255 * p)))
-    d.text((130, 1010), "COMMENT POS", font=FM(40, 700), fill=rgba(PAPER, int(255 * p)))
-    d.text((90, 1220), "ROOTED AT HOME · ENGINEERED FOR THE WORLD", font=FM(24, 400),
+    d.text((130, 1010), "COMMENT NENO POS", font=FM(40, 700), fill=rgba(PAPER, int(255 * p)))
+    d.text((90, 1220), "BUILT IN TANZANIA, FOR HOW TANZANIA REALLY WORKS.", font=FM(24, 400),
            fill=rgba(NAVY_700, 160))
-    caption(d, "Comment POS, tutakutumia demo.", 1330, color=NAVY, accent=VIOLET, theme="day")
+    caption(d, "Unahitaji kuiona leo? Comment neno POS.", 1330, color=NAVY, accent=VIOLET, theme="day")
 
 
 SHOTS = [

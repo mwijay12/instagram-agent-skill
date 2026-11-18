@@ -1,0 +1,104 @@
+{
+  "version": "websites-v1",
+  "date": "2026-11-18",
+  "skill": "tech-video-motion-graphics",
+  "engine": "frame-driven Pillow + ffmpeg (Remotion/Motion Canvas laws, no Chromium)",
+  "scene": "altraware-websites",
+  "topic": "websites in general",
+  "account": "@altrawaretechnology",
+  "claim_sw": "Tovuti ya Altraware Tech huanzia kwenye simu, ina Kiswahili na English, na bei ya kuanzia imeandikwa kabla ya mkutano.",
+  "seconds": 35.08,
+  "fps": 60,
+  "size": [
+    1080,
+    1920
+  ],
+  "endcard_seconds": 1.4,
+  "voice": {
+    "clips": [
+      {
+        "clip": "web-01-hook.wav",
+        "start": 0.15,
+        "end": 6.521,
+        "duration": 6.371
+      },
+      {
+        "clip": "web-02-simu.wav",
+        "start": 6.701,
+        "end": 10.893,
+        "duration": 4.192
+      },
+      {
+        "clip": "web-03-lugha.wav",
+        "start": 11.073,
+        "end": 14.095,
+        "duration": 3.023
+      },
+      {
+        "clip": "web-04-bei.wav",
+        "start": 14.275,
+        "end": 24.031,
+        "duration": 9.756
+      },
+      {
+        "clip": "web-05-scope.wav",
+        "start": 24.211,
+        "end": 29.244,
+        "duration": 5.032
+      },
+      {
+        "clip": "web-06-cta.wav",
+        "start": 29.424,
+        "end": 34.626,
+        "duration": 5.203
+      }
+    ],
+    "language": "sw",
+    "music": "NONE",
+    "sfx": "NONE"
+  },
+  "gates": {
+    "G0_render": true,
+    "G2_no_empty_frame": true,
+    "G2_worst_flat_seconds": 1.983,
+    "G3_end_hold_le_1_4s": true,
+    "G5_no_page_chrome": true,
+    "G1_G4": "human judgment on 04-contact-sheet.jpg, not self-certified"
+  },
+  "laws": [
+    "frame-driven only (no setTimeout/CSS transition)",
+    "spring damping14 stiffness120 mass0.8",
+    "interpolate clamped",
+    "camera 1.0->1.35",
+    "code line focus 25% dim + token morph",
+    "3-second rule measured per frame",
+    "4-frame stagger",
+    "tabular-nums counters",
+    "no page chrome",
+    "end card 1.4s"
+  ],
+  "artifact": "content-kit/present/site/index.html",
+  "number_source": "content-kit/09-decisions.md (mmiliki ameamua 17 Nov 2026)",
+  "guards": [
+    "Usiseme '100%' wala '95+ Lighthouse' wala 'chini ya sekunde 2 kwenye 2G' wala '10x'",
+    "Bei zote ni ZA KUANZIA; Care Plan 99k/mwezi ni huduma tofauti, si SaaS",
+    "Usiiite altra.tanzaniareach.com 'official website', usibuni domain",
+    "Tagline: Built in Tanzania, for how Tanzania really works",
+    "Angalia 09-decisions.md."
+  ],
+  "outputs": {
+    "mp4": "samples/04-altraware-websites.mp4",
+    "voiceover": "audio/voiceover-websites.wav",
+    "contact_sheet": "samples/04-contact-sheet.jpg",
+    "look": "samples/04-look.md"
+  },
+  "drive": {
+    "mp4": "https://drive.google.com/file/d/1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q/view?usp=drivesdk",
+    "mp4_direct": "https://drive.google.com/uc?id=1ExQEC_7Q3Ty95SKCzliSRCp9Ays31c6q&export=download",
+    "voiceover": "https://drive.google.com/file/d/1pu9j_QaqHHppGc1Kwt4EvP6pr30Z9Lyy/view?usp=drivesdk",
+    "contact_sheet": "https://drive.google.com/file/d/1EhbjuiCZcMRwP59zhHC8y7qDrgP_WCal/view?usp=drivesdk",
+    "poster": "https://drive.google.com/file/d/1XtLt7QIyhO3rf5VKKrCncR_mXRWDFo2U/view?usp=drivesdk",
+    "brief_doc": "https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk",
+    "permission": "anyoneWithLink reader (confirmed on mp4 + doc)"
+  }
+}

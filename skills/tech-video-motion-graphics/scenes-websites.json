@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "date": "2026-11-18",
+  "note": "Website-in-general scene for Altraware Tech. Artifact = real code in this repo + starting prices in 09-decisions.md. No invented metrics, clients or domains.",
+  "brand": {
+    "name": "Altraware Technology",
+    "coords": "6.7924° S, 39.2083° E",
+    "night": {"bg": "#071022", "fg": "#f7f6f2", "accent": "#eab308", "contour": "#7c3aed", "muted": "#a3aecb"},
+    "day": {"bg": "#f7f6f2", "fg": "#071022", "accent": "#7c3aed", "contour": "#10265c", "muted": "#4b5570"},
+    "fonts": ["Fraunces", "Inter", "JetBrains Mono"],
+    "motion": {"fast": 0.3, "base": 0.6, "slow": 1.1, "ease": "cubic-bezier(.22,1,.36,1)"},
+    "safe_reel": "y 230..1440, keep right 230px clear",
+    "tagline": "Built in Tanzania, for how Tanzania really works."
+  },
+  "common_negative": [
+    "generic purple-blue gradient", "glassmorphism blobs", "hooded hacker",
+    "binary rain", "sparkle", "confetti", "robot", "globe icon", "laptop in the dark",
+    "unreadable garbled code", "invented syntax", "invented client name",
+    "stat wall", "95+ Lighthouse badge", "0.8s checkout claim", "99.98% uptime claim",
+    "10x faster claim", "page chrome", "ACT 01 kicker", "timecode", "progress bar",
+    "tracked-caps corner labels", "deck layout with kicker above headline",
+    "AI-drawn logo", "AI-drawn text", "slogan triplets", "not just X it is Y"
+  ],
+  "scenes": [
+    {
+      "id": "altraware-websites",
+      "account": "@altrawaretechnology",
+      "topic": "websites in general",
+      "title_sw": "Tovuti si picha",
+      "title_en": "A website is not a picture",
+      "artifact": {
+        "repo": "mwijay12/instagram-agent-skill",
+        "file": "content-kit/present/site/index.html",
+        "url": "https://github.com/mwijay12/instagram-agent-skill/blob/main/content-kit/present/site/index.html",
+        "what_sw": "Tovuti ya mkakati iliyotengenezwa na Altraware: html lang=sw, viewport ya simu, na title yenye brand",
+        "what_en": "A real Altraware strategy site: html lang=sw, a mobile viewport meta, and a branded title",
+        "code_label": "REAL - copied from content-kit/present/site/index.html",
+        "code": [
+          "<html lang=\"sw\">",
+          "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+          "<title>Altraware Tech</title>"
+        ],
+        "numbers": [
+          "Web Starter kuanzia TSh 350,000",
+          "Growth kuanzia TSh 550,000",
+          "Custom kuanzia TSh 800,000",
+          "Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)"
+        ],
+        "number_source": "content-kit/09-decisions.md (mmiliki ameamua 17 Nov 2026)"
+      },
+      "hook": {
+        "formula": 16,
+        "sw": "Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako.",
+        "en": "A good website is not measured by its colours. It is measured by the messages it brings in.",
+        "onscreen_sw": "TOVUTI SI PICHA",
+        "onscreen_en": "NOT A PICTURE"
+      },
+      "claim_sw": "Tovuti ya Altraware Tech huanzia kwenye simu, ina Kiswahili na English, na bei ya kuanzia imeandikwa kabla ya mkutano.",
+      "claim_en": "An Altraware Tech website starts on the phone, ships in Kiswahili and English, and has its starting price written before the meeting.",
+      "beats": [
+        {"t": "0:00-0:03", "visual": "Kinetic type over a blank-phone texture; words arrive 4 frames apart, gold underline snaps, camera pushes 1.0->1.12", "text_sw": "Tovuti nzuri haipimwi kwa rangi.", "text_en": "A good website is not measured by colours.", "motion": "spring zoom + staggered words, no fade"},
+        {"t": "0:03-0:06", "visual": "Real HTML lines, unrelated lines dim to 25%, active line highlighted with a bar; viewport token types in", "text_sw": "Wateja wako wako kwenye simu.", "text_en": "Your customers are on a phone.", "motion": "line focus 0.6s, token morph 0.8s"},
+        {"t": "0:06-0:09", "visual": "Two language badges cascade in, counter steps 1->2 with tabular numerals, camera pulls back", "text_sw": "Kiswahili na English: matoleo mawili.", "text_en": "Kiswahili and English: two editions.", "motion": "3-5 frame stagger, spring counter"},
+        {"t": "0:09-0:13", "visual": "Three price rows, each counter springs from 0 to a real starting price, KUANZIA label in mono", "text_sw": "Bei ya kuanzia iko wazi.", "text_en": "Starting prices are in writing.", "motion": "counters step every frame, tabular-nums"},
+        {"t": "0:13-0:16", "visual": "SCOPE -> BEI KAMILI arrow built from real text; Care Plan kept as a separate line", "text_sw": "Bei kamili inaandikwa baada ya scope.", "text_en": "The full price is written after scope.", "motion": "cut on motion, 0.3s snap"},
+        {"t": "0:16-0:19", "visual": "End card 1.4s: real logo, Altraware credits, one keyword CTA. No chrome, no progress bar, no long hold", "text_sw": "Unahitaji tovuti leo? Comment neno TOVUTI.", "text_en": "Need a website today? Comment the word TOVUTI.", "motion": "logo arrives from 3.5x scale, ends in motion"}
+      ],
+      "payoff_sw": "Unahitaji tovuti leo? Comment neno TOVUTI.",
+      "payoff_en": "Need a website today? Comment the word TOVUTI.",
+      "cta": {"keyword": "TOVUTI", "sw": "Comment neno TOVUTI", "en": "Comment the word TOVUTI"},
+      "credits": [
+        "ALTRAWARE TECHNOLOGY",
+        "Websites · Kiswahili + English · mobile-first",
+        "Built in Tanzania, for how Tanzania really works.",
+        "@altrawaretechnology · altra.tanzaniareach.com"
+      ],
+      "audio": "Kiswahili TTS, one voice, 6 clips. No music, no SFX - owner adds music in the editor. Burn in captions.",
+      "guard": "Usiseme '100%' wala '95+ Lighthouse' wala 'chini ya sekunde 2 kwenye 2G' wala '10x'. Bei zote ni ZA KUANZIA; Care Plan 99k/mwezi ni huduma tofauti, si SaaS. Usiiite altra.tanzaniareach.com 'official website', usibuni domain. Tagline: Built in Tanzania, for how Tanzania really works. Angalia 09-decisions.md.",
+      "sources": [
+        "content-kit/09-decisions.md",
+        "content-kit/02-brand-system.md",
+        "content-kit/present/site/index.html",
+        "https://github.com/mwijay12/instagram-agent-skill"
+      ]
+    }
+  ]
+}

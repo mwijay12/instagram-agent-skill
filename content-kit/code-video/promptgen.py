@@ -78,6 +78,14 @@ def shot_list(scene, lang):
         out.append(f"  {b['t']:12} | {b['visual']}\n"
                    f"                 | ON SCREEN / SPOKEN: {text}\n"
                    f"                 | MOTION: {b['motion']}")
+    fc = scene.get("final_card")
+    if fc:
+        text = fc["text_sw"] if lang == "sw" else fc["text_en"]
+        out.append(f"  {fc['t']:12} | {fc['visual']}\n"
+                   f"                 | ON SCREEN / SPOKEN: {text}\n"
+                   f"                 | CREDITS: {' | '.join(fc['credits'])}\n"
+                   f"                 | LOGO: {fc['logo']} (real asset, not AI-drawn)\n"
+                   f"                 | MOTION: {fc['motion']}")
     return "\n".join(out)
 
 

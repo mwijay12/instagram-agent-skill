@@ -11,12 +11,14 @@ description: >-
 
 # ig-codevideo
 
-The fourteenth skill. Everything else in this pack writes copy; this one turns
-**a real artifact** into a video brief. It exists because "make a video about
-my app" produces a laptop, a globe and a purple gradient. Every time.
+The fourteenth of fifteen skills. Everything else in this pack writes copy; this
+one turns **a real artifact** into a video brief. It exists because "make a
+video about my app" produces a laptop, a globe and a purple gradient. Every time.
 
 This skill is local to the `mwijay12` fork. It reads the content kit at
-`content-kit/` and works with the other thirteen skills.
+`content-kit/` and works with the other fourteen skills. For frame-accurate
+motion physics, code diffs and a virtual camera, hand off to
+`/tech-video-motion-graphics`.
 
 ## The one rule
 
@@ -31,8 +33,12 @@ recording). The model gets texture only. Say this out loud in the output.
    `content-kit/use-voice.sh mwijay|altraware`).
 2. Read [`content-kit/02-brand-system.md`](../../content-kit/02-brand-system.md).
    Never invent a palette, a font or a motion duration.
-3. Read [`content-kit/01-presence-audit.md`](../../content-kit/01-presence-audit.md)
-   §5 for the claims that are **banned** until the user resolves them.
+3. Read [`content-kit/09-decisions.md`](../../content-kit/09-decisions.md) for
+   the **resolved** owner decisions (17 Nov 2026): starting prices,
+   `offline-first, cloud-synced`, licensed ownership (never `"100%"`), the
+   Tanzania tagline and the one canonical link.
+   [`content-kit/01-presence-audit.md`](../../content-kit/01-presence-audit.md)
+   §5 is now the *history* of those conflicts, not a list of open questions.
 4. Read `content-kit/code-video/scenes.json`. If the user's artifact is one of
    the eight scenes, use it. If not, build a new scene entry with the same
    fields and get approval before writing a prompt.
@@ -94,9 +100,29 @@ Job B when the video is not carrying the hook, Job A usually. Say which.
 **6. Render or hand off.** For the code path:
 
 ```bash
-python3 content-kit/code-video/render_video.py            # 1080x1920 MP4
+python3 content-kit/code-video/render_video.py            # 1080x1920 MP4 (kimya)
 python3 content-kit/code-video/render_video.py --still 8.0 --out /tmp/frame.png
+
+# Full pass: AI texture plates + Kiswahili TTS + AAC mux -> MP4 yenye sauti
+python3 content-kit/code-video/render_reel_v2.py
+python3 content-kit/code-video/render_reel_v2.py --no-voice    # parity check
+
+# Shareable cut: + real owner logo, Altraware credits, one keyword CTA, 6th TTS clip
+python3 content-kit/code-video/render_reel_final.py
 ```
+
+`render_reel_v2.py` needs `Pillow` + `ffmpeg` (`pip install imageio-ffmpeg`),
+reads `plates/*.png` and `audio/*.wav`, writes `samples/02-*.mp4`,
+`02-contact-sheet.jpg` and `02-render-manifest.json`.
+`render_reel_final.py` adds the **end card**: a real owner-supplied logo
+(`assets/altraware-logo.png`, never AI-drawn), Altraware credits,
+`Faida POS ni app na system`, one CTA (`comment neno POS`) and a 6th TTS clip.
+The AI images are **plates only**: no model draws a glyph, a digit, a logo or
+a line of code. Voiceover clips are external TTS with one consistent voice_id;
+no music or SFX is added (the owner adds music in the editor). If the user has
+no TTS clips, render silently with `--no-voice`. See
+[`content-kit/code-video/TRY-IT.md`](../../content-kit/code-video/TRY-IT.md)
+and [`QA-final.md`](../../content-kit/code-video/QA-final.md).
 
 For the AI path, hand over the prompt plus this sentence: *"Composite all code,
 numbers and captions afterwards as real text. The model supplies the plates."*
@@ -148,6 +174,10 @@ off Wi-Fi on camera. The score is a drafting aid, not a view prediction.
 beats.py: 18.6s / 20s, no flags, loop detected.
 render_video.py: samples/01-faida-offline.mp4 exists as a reference.
 caption: run /ig-caption (Job A). Nothing is posted.
+full pass: render_reel_v2.py -> samples/02-faida-offline-tts.mp4
+           (3 AI plates + 5 Kiswahili TTS clips, burned-in captions, no music).
+final cut: render_reel_final.py -> samples/03-faida-offline-FINAL.mp4
+           (+ real logo, Altraware credits, "comment neno POS", 6th TTS clip).
 ```
 
 ## Rules
@@ -162,10 +192,14 @@ caption: run /ig-caption (Job A). Nothing is posted.
   every 2.5s or sooner.
 - **Bilingual, not translated twice.** Kiswahili for the human line, English
   for the technical line. `--lang sw` and `--lang en` are separate deliverables.
-- **Honour the guards.** `01-presence-audit.md` §5 lists contradictions
-  (custom-build pricing vs SaaS, offline-first vs cloud-first, code ownership,
-  tagline, canonical link). Do not let a prompt take a side the user has not
-  chosen.
-- **Say the limitation.** `ai-video` prompts do not guarantee results;
-  `render_video.py` has no audio; the Swahili scorer additions are unvalidated.
+- **Honour the guards.** The five conflicts were
+  decided on 17 Nov 2026 and live in `09-decisions.md`: starting prices (no
+  750K, Care Plan is a separate service), `offline-first, cloud-synced`,
+  licensed ownership (never `"100%"`), `Built in Tanzania, for how Tanzania
+  really works.`, and `altra.tanzaniareach.com` (not "official website"). Do
+  not let a prompt reintroduce a rejected claim.
+- **Say the limitation.** `ai-video` prompts do not guarantee results; the base
+  `render_video.py` has no audio (use `render_reel_v2.py` for the TTS + plates
+  pass, still no music/SFX); the Swahili scorer additions are unvalidated.
+  Generated plates are AI texture, never evidence for a claim.
 - **Do not post, do not auto-DM.** Copy-ready output only.

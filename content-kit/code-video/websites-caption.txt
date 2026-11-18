@@ -1,0 +1,6 @@
+Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako.
+Wateja wako wako kwenye simu. Ndiyo maana website yetu huanza na html lang="sw" na viewport ya simu, kisha Kiswahili na English kama matoleo mawili, si tafsiri mara mbili.
+Bei ya kuanzia iko wazi: Web Starter 350k, Growth 550k, Custom kuanzia 800k. Care Plan 99k/mwezi ni huduma tofauti. Bei kamili inaandikwa baada ya scope.
+Built in Tanzania, for how Tanzania really works.
+Comment TOVUTI, tuanze mazungumzo ya scope na bei iliyoandikwa.
+#WebDesignDarEsSalaam #Tovuti #AltrawareTech

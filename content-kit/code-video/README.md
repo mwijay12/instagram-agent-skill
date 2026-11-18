@@ -40,7 +40,7 @@ a happy business owner, and trending music. Add a call to action.
 Artifact : POS ya Flutter yenye risiti za thermal, tahadhari za stoo,
            matawi mengi, na APK kupitia GitHub Releases
 Repo    : mwijay12/faida-pos-releases  (https://github.com/...)
-Numbers you may state: TSh 1,200,000 custom build; TSh 99,000/mo support
+Numbers you may state: mifumo kuanzia TSh 1,200,000; Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)
 Code to composite:
   const sale = await faida.checkout({
     items, pay: "M-PESA",
@@ -118,6 +118,14 @@ python3 promptgen.py --all
 # Video halisi kutoka code (Pillow + ffmpeg), 1080x1920, 16s
 python3 render_video.py
 
+# PASI KAMILI: picha 3 (plates) + TTS ya Kiswahili + AAC -> MP4 yenye sauti
+python3 render_reel_v2.py                  # samples/02-faida-offline-tts.mp4
+python3 render_reel_v2.py --no-voice       # sauti = kimya (parity na sample ya msingi)
+python3 render_reel_v2.py --no-plates      # contour za code tu, bila picha za AI
+
+# FINAL: + logo halisi la mmiliki + credits + "comment neno POS" (clip ya 6 ya TTS)
+python3 render_reel_final.py                # samples/03-faida-offline-FINAL.mp4
+
 # Picha moja ya kukagua frame ya 8.0s
 python3 render_video.py --still 8.0 --out /tmp/frame.png
 ```
@@ -144,7 +152,7 @@ python3 render_video.py --still 8.0 --out /tmp/frame.png
 - Kila `numbers[]` kwenye scene ina chanzo. **Usiongeze namba.** Ukikosa, `NEEDS_INPUT`.
 - Code iliyoandikwa `REAL` imenakiliwa kutoka kwenye tovuti/repo yako. Iliyoandikwa `ILLUSTRATIVE` ni ya kiufundi tu na **lazima ibaki na lebo hiyo** kwenye frame. Kamwe usiiwasilishe kama code ya repo.
 - Hakuna majina ya wateja, NIDA/IMEI halisi, data ya mgonjwa/mwanafunzi, asilimia za matokeo, wala ushuhuda.
-- `guard` ya kila scene ni sehemu ya prompt; usiifute. Ndiyo inayokuzuia kusema "100% offline", "0.8s checkout", "42 clients", au kuchanganya `cloud-first` na `offline-first` ([`01-presence-audit.md`](../01-presence-audit.md) §5).
+- `guard` ya kila scene ni sehemu ya prompt; usiifute. Ndiyo inayokuzuia kusema "100% offline", "0.8s checkout", "42 clients", au kuchanganya `cloud-first` na `offline-first` ([`09-decisions.md`](../09-decisions.md), maamuzi ya mmiliki ya 17 Nov 2026).
 - "Repo 42 / followers 205" ni za 17 Nov 2026. Angalia tena kabla ya kuzitumia tena.
 
 ---
@@ -180,13 +188,56 @@ Ukikosa mawili, **usiongeze "cinematic, 4K, highly detailed, masterpiece"**. Man
 | `render_video.py` | Renderer halisi: Pillow + ffmpeg → MP4 ya 1080x1920 |
 | `samples/01-faida-offline.mp4` | Mfano uliotengenezwa **kwa code**, si kwa modeli ya video |
 | [`../studio/index.html`](../studio/index.html) | Live preview: cheza MP4, badilisha scene, nakili prompt |
+| `render_reel_v2.py` | Pasi kamili: plates + TTS + mux → MP4 yenye sauti |
+| `plates/` | Picha 3 za AI, **texture tu**, hazina maandishi/code |
+| `audio/` | Clip 5 za TTS (Kiswahili, sauti moja) + `voiceover.wav` + script |
+| `samples/02-*` | `02-faida-offline-tts.mp4`, `02-contact-sheet.jpg`, `02-render-manifest.json` |
+| [`TRY-IT.md`](TRY-IT.md) | Njia ya kutumia skill leo, hatua kwa hatua (Kiswahili) |
+| [`QA-v2.md`](QA-v2.md) | Receipts za pasi kamili + gate ya 12 |
+| `render_reel_final.py` | FINAL: end card, logo halisi, credits, CTA `POS`, clip ya 6 |
+| `assets/altraware-logo.png` | Logo la mmiliki (`final_poster_1.png`), si AI-drawn |
+| `samples/03-*` | `03-faida-offline-FINAL.mp4`, contact sheet, manifest, [`03-drive-links.md`](samples/03-drive-links.md) |
+| [`QA-final.md`](QA-final.md) | Gate ya 12 ya FINAL + usafi wa madai |
+| `skills/tech-video-motion-graphics/render_websites.py` | Websites 60fps: spring/camera/code-diff, `--still` kwanza kisha `--fps 60` |
+| `samples/04-*` | `04-altraware-websites.mp4`, contact sheet ya frame 9, manifest, [`04-look.md`](samples/04-look.md), [`04-drive-links.md`](samples/04-drive-links.md) |
+| [`QA-websites.md`](QA-websites.md) | Gate ya websites + uaminifu wa engine |
+| [Google Doc](https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk) | Brief ya script + caption + limits, public |
 
 ---
 
 ## 9. Mapungufu ya uaminifu
 
 - `ai-video` prompts hazihakikishii matokeo: kila modeli ina tabia yake. Ndiyo maana zinatoa **texture tu** na QA gate, si ahadi ya "viral".
-- `render_video.py` haina sauti. Sauti iko kwenye `audio` ya scene na inaongezwa kwenye editor/audio pass; kusema "nimekupa Reel kamili" itakuwa uongo.
+- `render_video.py` (sample ya msingi) **haina sauti**. `render_reel_v2.py` inaongeza voiceover ya TTS (clip 5 za Kiswahili, sauti moja) na plate 3 za picha; `render_reel_final.py` inaongeza clip ya 6, **logo halisi la mmiliki**, credits na CTA moja. Zote zina-mux AAC kwa ffmpeg; **bado hakuna muziki wala SFX** (mmiliki ataongeza muziki mwenyewe), captions zimeburniwa. Sauti ya TTS inatoka kwenye zana ya nje, si `scenes.json`; usipokuwa na clips tumia `--no-voice`. Picha za AI ni **texture tu**, hazina maandishi wala ushahidi wa dai lolote; logo si la AI.
 - Hii haiposti chochote. Unapata prompt, brief, spec na MP4. Unapost wewe.
 - Mstari mmoja wa code kwenye `faida-offline` umenakiliwa kutoka [altra.tanzaniareach.com](https://altra.tanzaniareach.com/); mistari mingine iliyoandikwa `ILLUSTRATIVE` haijadaiwa kuwa ya repo zako.
 - Namba kama `400% volume`, `0.8s checkout`, `99.98% uptime`, `10x faster billing` ni **vipengele/madai ya tovuti yako**, si vipimo. Kwenye prompts zetu `400%` imetumika kama kipengele kilichoandikwa kwenye README ya `hype-alarm`; nyingine hazijatumika.
+
+---
+
+## 10. Websites · 60fps programmatic motion graphics ⭐
+
+Tofauti na `01/02/03` (Faida POS), hii ni **content ya websites kwa ujumla** ya
+Altraware Tech. Inatumia skill ya 15: [`tech-video-motion-graphics`](../../skills/tech-video-motion-graphics/SKILL.md).
+
+```bash
+# Kagua keyframe KABLA ya full render (Remotion `still` equivalent)
+/tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py \
+  --fps 60 --still 12.0 --out /tmp/web-frame.png
+
+# Kisha render 60fps
+/tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py --fps 60 --crf 30
+```
+
+Laws zilizotekelezwa kwa code, si maneno: `frame` pekee (hakuna CSS transition,
+`setTimeout` wala `requestAnimationFrame`), `spring(14/120/0.8)`, `interpolate()`
+iliyo clamped, camera `1.0→1.35`, line-focus 25% + token morph 0.8s, stagger ya
+frame 4, tabular-nums, 3-second gate iliyopimwa frame-by-frame, na **no page
+chrome**. `04-look.md` inachapisha G0/G2/G3/G5; G1/G4 ni hukumu ya jicho kwenye
+contact sheet ya frame 9.
+
+⚠️ **Uaminifu:** Remotion, Motion Canvas, Revideo, Timecut na Manim-MCP
+**havikurun** hapa (hakuna Chromium / MCP server). Hii ni fallback ya Pillow +
+ffmpeg inayotekeleza laws zao kwa deterministic Python. TTS ya `voice-00` tu;
+hakuna muziki wala SFX — mmiliki anaongeza muziki. Hakuna post, DM, auto-DM wala
+mabadiliko ya akaunti.

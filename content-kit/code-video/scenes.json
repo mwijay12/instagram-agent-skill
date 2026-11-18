@@ -34,9 +34,9 @@
         "repo": "mwijay12/faida-pos-releases",
         "url": "https://github.com/mwijay12/faida-pos-releases",
         "live": "https://faida-hq.vercel.app/",
-        "what_sw": "POS ya Flutter yenye risiti za thermal, tahadhari za stoo, matawi mengi, na APK kupitia GitHub Releases",
-        "what_en": "Flutter POS with thermal receipts, low-stock alerts, multi-branch tracking and APK builds from GitHub Releases",
-        "numbers": ["TSh 1,200,000 custom build", "TSh 99,000/mo support"],
+        "what_sw": "Faida POS ni app na mfumo (system): POS ya Flutter yenye risiti za thermal, tahadhari za stoo, matawi mengi, na APK kupitia GitHub Releases",
+        "what_en": "Faida POS is an app and a system: Flutter POS with thermal receipts, low-stock alerts, multi-branch tracking and APK builds from GitHub Releases",
+        "numbers": ["mifumo kuanzia TSh 1,200,000 (bei ya kuanzia)", "Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)"],
         "code_source": "altra.tanzaniareach.com homepage (verified)",
         "code": ["const sale = await faida.checkout({", "  items, pay: \"M-PESA\",", "  lang: \"sw\"", "})"]
       },
@@ -47,8 +47,8 @@
         "onscreen_sw": "MTANDAO UMEKATIKA",
         "onscreen_en": "WI-FI OFF"
       },
-      "claim_sw": "Faida POS inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
-      "claim_en": "Faida POS records the sale, prints the receipt and updates stock with no connection, then syncs when the network returns.",
+      "claim_sw": "Faida POS ni app na system: inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
+      "claim_en": "Faida POS is an app and a system: it records the sale, prints the receipt and updates stock with no connection, then syncs when the network returns.",
       "beats": [
         {"t": "0:00-0:02", "visual": "Frame 1: real hand flipping a phone's Wi-Fi toggle; navy frame, gold crosshair, coords in mono", "text_sw": "Nazima Wi-Fi kwenye duka.", "text_en": "I turn off the Wi-Fi.", "motion": "hard cut, 0.3s snap, no fade"},
         {"t": "0:02-0:05", "visual": "Cut to POS terminal on a real screen, barcode scan, receipt line appearing", "text_sw": "Mauzo hayasimami.", "text_en": "The sale still goes through.", "motion": "counter snaps 0341 -> 0342, 0.3s"},
@@ -56,12 +56,24 @@
         {"t": "0:09-0:13", "visual": "Thermal receipt sliding up, DEMO label, M-PESA row, then a gold SYNCED pill on the phone", "text_sw": "Risiti papo hapo. Sync ikirudi.", "text_en": "Receipt now. Sync on reconnect.", "motion": "receipt slides 1.1s, pill pops 0.3s"},
         {"t": "0:13-0:16", "visual": "Paper section, big Fraunces line, one gold hand-drawn underline, keyword in mono", "text_sw": "Hii ndiyo tofauti kati ya demo na mfumo wa dukani.", "text_en": "That is the difference between a demo and a shop system.", "motion": "night -> paper cut at 0.6s"}
       ],
-      "payoff_sw": "Comment POS, tutakutumia demo.",
-      "payoff_en": "Comment POS and I will send the demo.",
-      "cta": {"keyword": "POS", "sw": "Comment POS", "en": "Comment POS"},
-      "audio": "No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Voiceover in Kiswahili if used; burn in captions.",
+      "payoff_sw": "Kama unahitaji app hii leo, comment neno POS.",
+      "payoff_en": "If you need this app today, comment the word POS.",
+      "cta": {"keyword": "POS", "sw": "Comment neno POS", "en": "Comment the word POS"},
+      "final_card": {
+        "t": "0:16-0:20",
+        "logo": "../assets/altraware-logo.png",
+        "logo_note": "Real logo supplied by the owner (final_poster_1.png), transparent PNG. Never redrawn by an AI model.",
+        "credits": ["ALTRAWARE TECHNOLOGY", "Tunatengeneza app na mifumo ya biashara", "Faida POS · APP + MFUMO / SYSTEM", "@altrawaretechnology · altra.tanzaniareach.com", "Built in Tanzania, for how Tanzania really works."],
+        "visual": "Paper end card: real logo, Altraware credits, one keyword CTA card. Every glyph is Pillow text; no AI-drawn logo, code or numbers",
+        "text_sw": "Kama unahitaji app hii leo, comment neno POS.",
+        "text_en": "If you need this app today, comment the word POS.",
+        "cta_sw": "UNAHITAJI KUIONA LEO? COMMENT NENO POS",
+        "cta_en": "NEED TO SEE IT TODAY? COMMENT THE WORD POS",
+        "motion": "logo reveals 0.6s, credits one per 0.3s, CTA pops 0.3s"
+      },
+      "audio": "No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Kiswahili TTS: 6 clips (5 beats + credits/CTA) in audio/*.wav assembled by render_reel_final.py; the owner adds music in the editor. Burn in captions.",
       "sources": ["altraware_knowledge.md", "https://github.com/mwijay12/faida-pos-releases", "https://faida-hq.vercel.app/", "https://altra.tanzaniareach.com/"],
-      "guard": "Usiseme '100% offline' wala '0.8s checkout' wala '10x faster'. angalia 01-presence-audit.md §5 #2 kabla ya kutumia neno cloud-first."
+      "guard": "Usiseme '100%' wala '100% offline' wala '0.8s checkout' wala '10x faster'. Sema offline-first, cloud-synced. Tagline: Built in Tanzania, for how Tanzania really works. Bei zote ni za kuanzia; Care Plan 99k/mwezi ni huduma tofauti, si SaaS. Angalia 09-decisions.md."
     },
     {
       "id": "shule-altra",

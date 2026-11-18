@@ -73,3 +73,46 @@ Toleo la kwanza la script lilikuwa na: (a) beats 3–5 zisizo na kitu kinachoone
 ## Mstari wa mwisho
 
 Zana hizi **hazitabiri views**. README ya repo inasema wazi: AUC 0.56 kwenye kutofautisha hit na miss za creator yule yule. Kazi yao hapa ni kuua mambo yanayojulikana kuua Reel: salamu, preamble, ukosefu wa namba, frame isiyobadilika, caption iliyokatwa katikati ya sentensi, na slop. Mengine yataamuliwa na retention graph yako baada ya post 30.
+
+---
+
+## 18 Nov 2026 · jaribio la `/ig-codevideo` (pasi kamili ya v2)
+
+Tumejaribu "code to video kabisaa": picha 3 za AI kama **texture**, TTS 5 za Kiswahili (sauti moja), na render ya Pillow + ffmpeg. Receipts mpya hazibadilishi zile za juu; ziko kwenye faili zao:
+
+| Faili | Matokeo |
+| --- | --- |
+| [`codevideo-v2-hookscore.out`](codevideo-v2-hookscore.out) | `81.8 STRONG / 76.4 STRONG / 56.0 OK` (zile zile tatu, zimethibitishwa tena) |
+| [`codevideo-v2-beats.out`](codevideo-v2-beats.out) | maneno 32 · ~11.6s @ 165 wpm · loop imegunduliwa · **8.4s chini ya target 20s** |
+| `audio/voiceover.wav` | 20.14s · clip 5 · `atempo=1.10` · RMS ~3744 (si kimya) |
+| `samples/02-faida-offline-tts.mp4` | **20.13s** · 1080×1920 · 24fps · H.264 + AAC-LC 48kHz mono |
+| `content-kit/check.py` | `47 pass · 0 warn · 0 fail · 6 decks · READY` |
+
+⚠️ **Tofauti ya uaminifu:** `beats.py` inakadiria ~11.6s kwa 165 wpm, lakini TTS halisi ilichukua **20.72s** kabla ya `atempo`, hivyo video imenyoshwa hadi **20.14s**. Hii si kosa la script; ni kasi ya sauti iliyochaguliwa. Gate ya 12 iko kwenye [`../code-video/QA-v2.md`](../code-video/QA-v2.md), pamoja na mambo mawili yaliyoachwa wazi (frame 1 ni texture ya AI, `TZS 15,000` ni namba ya DEMO).
+
+### FINAL (baada ya maoni ya mmiliki)
+
+`render_reel_final.py` → **28.63s**, clip **6** ya TTS, **logo halisi** + credits + `comment neno POS`, WAV safi ya kuongezea muziki. Drive: [`../code-video/samples/03-drive-links.md`](../code-video/samples/03-drive-links.md). Gate na usafi wa madai: [`../code-video/QA-final.md`](../code-video/QA-final.md). `check.py` bado `47 pass · 0 fail · READY`.
+
+---
+
+## 18 Nov 2026 · websites / tech-video-motion-graphics
+
+Skill loop ilirudiwa kwenye script na caption mpya ya **websites** (si Faida POS).
+Receipts ziko kwenye faili zao, si madai ya "viral":
+
+| Faili | Matokeo |
+| --- | --- |
+| [`websites-hookscore.out`](websites-hookscore.out) | **`80.0 STRONG`** · `63.1 OK` · `47.0 WEAK`; hook iliyoshinda: *"Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu yako."* |
+| [`websites-beats.out`](websites-beats.out) | maneno 61 · ~22.2s @165wpm · loop `tovuti` · flags: hook 4.4s na beat ya bei 4.7s (visual inabadilika ndani ya beat, si frame tuli) |
+| [`websites-caption.out`](websites-caption.out) | **READY** · 565/2200 chars · hashtag 3 · one ask · search terms 3/3 |
+| [`websites-detect.out`](websites-detect.out) | **71.6 REVIEW** · SLOP/FINGERPRINT/SPECIFICITY 100 · VOICE 48.0 (Kiswahili haina contractions za Kiingereza) |
+| [`websites-humanize.out`](websites-humanize.out) | 0 machine artefacts · **0 structural tells** baada ya hashtag wall kurekebishwa 5→3 |
+| [`../code-video/samples/04-look.md`](../code-video/samples/04-look.md) | G0/G2/G3/G5 zilizohesabiwa kwenye render ya 60fps |
+| `content-kit/check.py` | `47 pass · 0 warn · 0 fail · 6 decks · READY` |
+
+⚠️ Alama za Kiswahili bado ni tafsiri za heuristic, si utabiri wa views;
+`beats.py` inakadiria 165wpm lakini TTS halisi ilichukua **34.63s**, hivyo video
+imenyoshwa hadi **35.08s**. Hii si kosa la script. G1/G4 ni hukumu ya jicho kwenye
+[`04-contact-sheet.jpg`](../code-video/samples/04-contact-sheet.jpg), si
+self-certification.

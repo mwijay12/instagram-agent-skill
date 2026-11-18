@@ -1,0 +1,130 @@
+{
+  "version": "v2",
+  "date": "2026-11-18",
+  "skill": "/ig-codevideo",
+  "engine": "code-render (Pillow + ffmpeg), NOT an AI video model",
+  "scene": "faida-offline",
+  "account": "@altrawaretechnology",
+  "artifact": "https://github.com/mwijay12/faida-pos-releases",
+  "claim_sw": "Faida POS ni app na system: inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
+  "tagline": "Built in Tanzania, for how Tanzania really works.",
+  "rule": "AI images are texture only; all code, numbers and captions are real Pillow text",
+  "seconds": 20.14,
+  "fps": 24,
+  "size": [
+    1080,
+    1920
+  ],
+  "plates": [
+    "01-duka.png",
+    "02-contour.png",
+    "03-risiti.png"
+  ],
+  "voice": {
+    "language": "sw",
+    "clips": [
+      {
+        "clip": "01-hook.wav",
+        "start": 0.15,
+        "end": 3.87,
+        "duration": 3.72
+      },
+      {
+        "clip": "02-risiti.wav",
+        "start": 4.05,
+        "end": 7.748,
+        "duration": 3.698
+      },
+      {
+        "clip": "03-code.wav",
+        "start": 7.928,
+        "end": 11.361,
+        "duration": 3.433
+      },
+      {
+        "clip": "04-sync.wav",
+        "start": 11.541,
+        "end": 15.461,
+        "duration": 3.92
+      },
+      {
+        "clip": "05-payoff.wav",
+        "start": 15.641,
+        "end": 19.694,
+        "duration": 4.053
+      }
+    ],
+    "atempo": 1.1,
+    "lead": 0.15,
+    "gap": 0.18,
+    "note": "no music, no SFX; burned-in captions on every shot"
+  },
+  "beat_map": [
+    {
+      "base_16s": [
+        0.0,
+        2.2
+      ],
+      "scaled": [
+        0.0,
+        2.77
+      ],
+      "shot": "hook / Wi-Fi off"
+    },
+    {
+      "base_16s": [
+        2.2,
+        6.0
+      ],
+      "scaled": [
+        2.77,
+        7.55
+      ],
+      "shot": "terminal / risiti"
+    },
+    {
+      "base_16s": [
+        6.0,
+        10.2
+      ],
+      "scaled": [
+        7.55,
+        12.84
+      ],
+      "shot": "code / lang: sw"
+    },
+    {
+      "base_16s": [
+        10.2,
+        13.6
+      ],
+      "scaled": [
+        12.84,
+        17.12
+      ],
+      "shot": "receipt / SYNCED"
+    },
+    {
+      "base_16s": [
+        13.6,
+        16.0
+      ],
+      "scaled": [
+        17.12,
+        20.14
+      ],
+      "shot": "payoff / CTA card"
+    }
+  ],
+  "guards": [
+    "no 100% claim",
+    "offline-first, cloud-synced",
+    "prices are starting prices",
+    "Care Plan is a separate service"
+  ],
+  "outputs": {
+    "mp4": "samples/02-faida-offline-tts.mp4",
+    "voiceover": "audio/voiceover.wav",
+    "contact_sheet": "samples/02-contact-sheet.jpg"
+  }
+}
