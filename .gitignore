@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .venv/
 *.tmp
+
+# vibe reel v1 working artifacts
+skills/tech-video-motion-graphics/engine-trial/node_modules/
+skills/tech-video-motion-graphics/engine-trial/dist/
+content-kit/code-video/qa-vibe-v1/

@@ -1,0 +1,51 @@
+{
+  "tempo": 1.45,
+  "fps": 60,
+  "duration_frames": 1800,
+  "audio": "voiceover-vibe-reel-v1.wav",
+  "speech_end_seconds": 26.982,
+  "clips": [
+    {
+      "i": 1,
+      "text": "Mwezi huu, developer mmoja ametengeneza clone ya Adobe kwa AI pekee — bila timu, bila funding.",
+      "start": 0.2,
+      "from_frame": 0,
+      "to_frame": 366
+    },
+    {
+      "i": 2,
+      "text": "Vibe coding imewagawanya: wazabuni, engineers, wamiliki wa biashara.",
+      "start": 6.103,
+      "from_frame": 366,
+      "to_frame": 633
+    },
+    {
+      "i": 3,
+      "text": "Ukweli: AI huandika demo haraka. Lakini demo si production.",
+      "start": 10.546,
+      "from_frame": 633,
+      "to_frame": 916
+    },
+    {
+      "i": 4,
+      "text": "Security, malipo, data ya wateja — hapo biashara inaishi au kufa.",
+      "start": 15.26,
+      "from_frame": 916,
+      "to_frame": 1212
+    },
+    {
+      "i": 5,
+      "text": "Vibe coding kwa prototype. Engineering kwa production.",
+      "start": 20.197,
+      "from_frame": 1212,
+      "to_frame": 1380
+    },
+    {
+      "i": 6,
+      "text": "Tunajenga mifumo inayostahimili Tanzania halisi. Comment neno BUILD.",
+      "start": 23.008,
+      "from_frame": 1380,
+      "to_frame": 1800
+    }
+  ]
+}
