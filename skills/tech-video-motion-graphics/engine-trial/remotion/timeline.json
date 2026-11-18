@@ -1,0 +1,53 @@
+{
+  "engine": "Remotion 4.0.544 + React 18",
+  "voice": "voice-00 Swahili TTS",
+  "tempo": 1.7,
+  "fps": 30,
+  "duration_seconds": 36.0,
+  "duration_frames": 1080,
+  "audio": "voiceover-websites-v2.wav",
+  "clips": [
+    {
+      "i": 1,
+      "file": "v2-01-hook.wav",
+      "text_sw": "Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, anatafuta jibu la haraka.",
+      "start": 0.0,
+      "end": 3.829
+    },
+    {
+      "i": 2,
+      "file": "v2-02-phone.wav",
+      "text_sw": "Haoni unachofanya, bei wala jinsi ya kuwasiliana? Amekwenda kwa mwingine kabla hujajua.",
+      "start": 3.969,
+      "end": 8.274
+    },
+    {
+      "i": 3,
+      "file": "v2-03-language.wav",
+      "text_sw": "Altraware huanza na simu. Kiswahili na English, muundo unaoeleweka, ujumbe unaofika moja kwa moja.",
+      "start": 8.414,
+      "end": 13.577
+    },
+    {
+      "i": 4,
+      "file": "v2-04-real-code.wav",
+      "text_sw": "Tovuti si picha tu. HTML lang ni sw, viewport ya simu, na title yenye brand.",
+      "start": 13.717,
+      "end": 18.495
+    },
+    {
+      "i": 5,
+      "file": "v2-05-prices.wav",
+      "text_sw": "Bei ya kuanzia iko wazi: Web Starter TSh 350,000, Growth TSh 550,000, Custom kuanzia TSh 800,000. Bei kamili baada ya scope.",
+      "start": 18.635,
+      "end": 28.129
+    },
+    {
+      "i": 6,
+      "file": "v2-06-cta.wav",
+      "text_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Unahitaji tovuti leo? Comment neno TOVUTI.",
+      "start": 28.269,
+      "end": 34.273
+    }
+  ]
+}
