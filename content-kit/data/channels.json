@@ -93,5 +93,8 @@
   "public_phone": "0790942616",
   "owner_confirmations_2026_11_17": "Handle, LinkedIn URLs, public phone and logo confirmed; V3 clean Reel chosen.",
   "v3_reel_drive": "https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk",
-  "v3_reel_status": "rendered, G0-G6 checked, awaiting owner visual approval and manual posting"
+  "v3_reel_status": "rendered, G0-G6 checked, awaiting owner visual approval and manual posting",
+  "v4_reel_drive": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
+  "v4_contact_sheet_drive": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
+  "v4_reel_status": "rendered, G0-G6 recorded, agent-side white-dominant/sun-readability check viewed, awaiting owner phone approval and manual posting"
 }

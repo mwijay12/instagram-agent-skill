@@ -209,3 +209,7 @@ After post 10: review `views, reach, saves, sends, profile visits, hold@3s`. Aft
 6. https://www.thethunderclap.com/blog/top-video-marketing-trends  
 7. https://blog.mean.ceo/short-form-video-marketing-trends-september-2026/  
 8. User-provided repos: https://github.com/Tejashmakwana/motionmaxxing · https://github.com/charlie947/motion-graphics-skills · https://github.com/Barty-Bart/motion-graphics · https://github.com/heygen-com/hyperframes · https://github.com/naqashafzal/AI-Content-Studio · https://github.com/rediumvex/social-media-caption-generator-claude · https://github.com/DennisWei9898/social-cards-engine · https://github.com/multica-ai/andrej-karpathy-skills · https://github.com/ScrapeCreators/social-media-research-skills · https://github.com/blacktwist/social-media-skills
+
+## 11. V4 revision status — 18 Nov 2026
+
+`anza na reel sawa` ilileta V3 kwanza; baada ya mmiliki kuona dark frames, **V4 short white Reel** ndiyo revision inayofanyiwa kazi sasa, si batch pana zaidi. V4 ina `<25s`, white-dominant/sun-readable ground, slower masculine TTS trial, bei kwa maneno ya Kiswahili, na `kufahamu kazi` / `mahitaji yako` badala ya neno la Kiingereza la kupanga kazi. V2/V3 ni nakala za awali za review. Mmiliki bado hajaidhinisha; anaongeza music/SFX, final edit, anapost mwenyewe na kurekodi insights. Hakuna site-copy edit, Docs/Vercel work, live posting, DM wala bot.

@@ -345,20 +345,23 @@ content-kit/03,04-voice-*.md     filled voice.md profiles for both accounts
 content-kit/05-content-system.md pillars, proof bank, banned words, CTAs
 content-kit/06-30-day-plan.md    four-week plan + first Reel script
 content-kit/carousels/           6 decks (8 slides each) + 48 rendered PNGs
-content-kit/code-video/          8 scenes, 32 prompts, earlier MP4s, corrected 36s Remotion V2, Drive link + QA
+content-kit/code-video/          8 scenes, 32 prompts, earlier MP4s, V2/V3 review cuts, short white V4 Reel + Drive + QA
 content-kit/qa/                  receipts: all five tools run on this content
 content-kit/studio/              live preview of decks, prompts, MP4 and brand
 content-kit/09-decisions.md       canonical owner decisions / claim guards
 content-kit/10-content-engine-strategy.md  bilingual content engine, 15-project registry, 30-day pilot
 content-kit/data/                 projects.json, brand-profile.json, channels.json
-content-kit/code-video/VISUAL-SYSTEM.md  clean-background V3 spec + generated plates/SVG elements
+content-kit/code-video/VISUAL-SYSTEM.md  clean-background law + V4 white-dominant/sun-readability spec
 content-kit/check.py             stdlib linter: 47 pass, 0 fail, READY
 skills/ig-codevideo/SKILL.md     the fourteenth skill
-skills/tech-video-motion-graphics/SKILL.md  the fifteenth skill + Remotion engine + clean V3 laws
-skills/tech-video-motion-graphics/ENGINE-TRIAL.md  engine evidence (V2 + V3)
+skills/tech-video-motion-graphics/SKILL.md  the fifteenth skill + Remotion engine + clean V3/V4 laws
+skills/tech-video-motion-graphics/ENGINE-TRIAL.md  engine evidence (V2 + V3 + V4)
 content-kit/code-video/QA-websites-v3.md  G0-G6 clean-background QA
 content-kit/code-video/samples/06-altraware-websites-v3.mp4  60fps clean Reel
 content-kit/code-video/samples/06-drive-links.md  public Drive review link
+content-kit/code-video/QA-websites-v4.md  G0-G6 white-dominant short-Reel QA
+content-kit/code-video/samples/07-altraware-websites-v4.mp4  <25s white-dominant Reel
+content-kit/code-video/samples/07-drive-links.md  public Drive review links
 ```
 
 Two upstream tools were localised while QA-ing the kit:

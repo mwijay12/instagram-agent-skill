@@ -158,7 +158,7 @@ Guards:
 
 ## 10. Limits — say them out loud
 
-- Remotion rendered V2 at **30fps** and V3 at **60fps / 2160 frames**. Do not claim any other engine rendered an MP4.
+- Remotion rendered V2 at **30fps**, V3 at **60fps / 2160 frames**, and V4 at **60fps / 1410 frames / 23.5s**. Do not claim any other engine rendered an MP4.
 - Motion Canvas / Revideo / Timecut / Manim-MCP have **not** rendered an MP4 here.
 - `ffmpeg-mcp` ran; `manim-mcp` was inspected but not run.
 - No Context7 live docs, no Smithery, no Cursor Directory install, no `llms.txt` found.
@@ -176,7 +176,7 @@ Guards:
 - Public phone: **`0790942616`** for credits/captions/CTA. Human `+255 792 867 427` stays internal.
 - Logo: `content-kit/assets/altraware-logo.png` confirmed; copy to `engine-trial/public/logo.png` for V3.
 - Site copy: continue with `09-decisions.md`; site update deferred.
-- First deliverable: **V3 clean Reel**; 3 posts/week pilot assumed.
+- First deliverable: **V3 clean Reel**; V4 short white revision is now the active review cut. 3 posts/week pilot assumed.
 - Drive reference video still not accessible; do not claim it was watched.
 
 ## 12. V3 clean Reel — rendered 18 Nov 2026
@@ -187,3 +187,13 @@ Guards:
 - QA: [`content-kit/code-video/QA-websites-v3.md`](../../content-kit/code-video/QA-websites-v3.md), G0–G6 including human background-readability check.
 - Drive review: https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk
 - No music/SFX, no live posting, no DMs, no bot, no credentials, no account changes.
+
+## 13. V4 short white Reel — rendered 18 Nov 2026
+
+- Composition `AltrawareWebsitesV4`: 1080×1920, **60fps**, `1410` frames, `23.509s`, H.264 + AAC, **under 25 seconds**.
+- Owner feedback applied: white-dominant for sun readability, dark subordinate only, slower `atempo 1.3` masculine `voice-01` trial (auto-assigned, **not** owner-selected), prices in Kiswahili words, `kufahamu kazi` / `mahitaji yako` instead of the English planning term.
+- White plates `15-clean-white.png` / `12-clean-paper.png`, isolated white PNG elements `16` / `17`, four `*-ink.svg` decorations, owner logo, phone and handle.
+- All readable text/code/numbers/captions/timing from `BEATS[]` + `timeline-v4.json` + `scenes-websites-v4.json`; frame-driven only.
+- QA: [`content-kit/code-video/QA-websites-v4.md`](../../content-kit/code-video/QA-websites-v4.md), G0–G6 including white-dominant/sun-readability and G3 pacing REVIEW. `check.py` READY; full decode OK; claim-guard scan `NO_HITS`.
+- Drive review: https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk ; contact sheet: https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk
+- V2/V3 are historical review copies. Owner still approves on a phone in strong sun, adds music/SFX, does final edit and posts manually. No live posting, DMs, bot, credentials or account changes.

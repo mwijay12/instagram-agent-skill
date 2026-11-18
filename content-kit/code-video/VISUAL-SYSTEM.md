@@ -71,3 +71,18 @@ Old plates `07-dar-blue-hour.png` … `10-paper-blueprint.png` remain available 
 `09-decisions.md` wins. Starting prices only. Care Plan separate, not SaaS. `offline-first, cloud-synced` is **Faida POS only**. Ownership: `Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.` Tagline exact. CTA `Comment neno TOVUTI`. No invented metrics, clients, testimonials, domains or "official website".
 
 **V3 QA:** [`QA-websites-v3.md`](QA-websites-v3.md) records G0–G6, including the G6 human background-readability check.
+
+## V4 correction — white-dominant / sun readability (18 Nov 2026)
+
+Owner feedback on the V3 dark frames: `hizi dark sio mbaya saana` but `darks hazija kaa poa sana`, and content must be readable `hata kama mtu yuko kwenye jua kali asome vizuri`. For the active V4 revision, **white dominates**; V3 navy dominance is superseded, though dark is not banned as subordinate ink.
+
+Hard additions for V4:
+
+1. `plates/15-clean-white.png` is the dominant ground; `plates/12-clean-paper.png` is the quiet paper variant. No full-frame dark plate.
+2. Dark appears only as ink text, small chips, the narrow top accent and the CTA gradient. Coloured bands never cover the copy.
+3. Isolated white PNG elements `16-white-gold-orb.png` / `17-white-violet-ribbon.png` and `*-ink.svg` decorations stay away from readable words.
+4. Prices are spoken and written in Kiswahili words: `laki tatu na nusu`, `laki tano na nusu`, `laki nane`, `shilingi elfu tisini na tisa kwa mwezi`. The English planning term is replaced by `kufahamu kazi` / `mahitaji yako`.
+5. Whole video `<25s`: V4 renders `1410` frames at `60fps` / `23.5s`. TTS is slower (`atempo 1.3`) with a masculine `voice-01` trial that was auto-assigned, not owner-selected.
+6. G6 is now a **sun-readability** check: dark-on-white contrast, white-dominant pixel receipt, one hero per beat, and an owner-side phone check in strong sun. Agent-side contact sheets and full frames were viewed; owner approval is still pending.
+
+V2 and V3 remain historical review copies. V4 QA: [`QA-websites-v4.md`](QA-websites-v4.md).

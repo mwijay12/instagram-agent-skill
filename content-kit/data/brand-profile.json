@@ -56,7 +56,7 @@
     "Custom": "TSh 800,000 kuanzia",
     "Mifumo": "TSh 1,200,000 kuanzia",
     "Care Plan": "TSh 99,000/mwezi, huduma tofauti, si SaaS",
-    "rule": "Bei wazi = starting price in writing; full price after scope. 750K tier removed."
+    "rule": "Bei wazi = starting price in writing; full price after kufahamu kazi / mahitaji yako. 750K tier removed."
   },
   "claim_guards": {
     "offline_first": "Faida POS only: offline-first, cloud-synced. Not a general websites claim.",
@@ -113,7 +113,13 @@
       "content-kit/code-video/plates/12-clean-paper.png"
     ],
     "svg_elements": "content-kit/code-video/elements/",
-    "rule": "AI images are texture/elements only; never text or logo."
+    "rule": "AI images are texture/elements only; never text or logo.",
+    "v4_white_plates": [
+      "content-kit/code-video/plates/15-clean-white.png",
+      "content-kit/code-video/plates/16-white-gold-orb.png",
+      "content-kit/code-video/plates/17-white-violet-ribbon.png"
+    ],
+    "v4_ink_svgs": "content-kit/code-video/elements/*-ink.svg"
   },
   "research_sources": [
     "https://github.com/mwijay12/mwijay12",
@@ -143,5 +149,31 @@
     "duration_seconds": 36.011,
     "status": "rendered and shared for owner review; not approved or posted",
     "qa": "content-kit/code-video/QA-websites-v3.md"
+  },
+  "v4_owner_feedback_2026_11_18": {
+    "visual": "white-dominant, sun-readable; dark subordinate only, no full-frame dark theme",
+    "duration": "whole video less than 25 seconds",
+    "voice": "try a male voice; voice-01 auto-assigned masculine trial, NOT owner-selected",
+    "tempo": "slower than V2/V3: atempo 1.3",
+    "prices": "spoken and written in Kiswahili words",
+    "wording": "English planning term replaced by kufahamu kazi / mahitaji yako",
+    "site_copy": "no silent site update; 09-decisions.md remains canonical",
+    "status": "V4 review cut; owner approval, music/SFX, final edit and manual posting still pending"
+  },
+  "v4_deliverable": {
+    "file": "content-kit/code-video/samples/07-altraware-websites-v4.mp4",
+    "drive_id": "1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY",
+    "drive_view": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
+    "contact_sheet_drive_id": "1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC",
+    "contact_sheet_drive_view": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
+    "size": 3699257,
+    "fps": 60,
+    "duration_seconds": 23.509,
+    "under_25_seconds": true,
+    "white_dominant": true,
+    "voice": "voice-01 masculine trial, auto-assigned, not owner-selected",
+    "prices_in_words": "laki tatu na nusu / laki tano na nusu / laki nane; Care Plan elfu tisini na tisa",
+    "status": "rendered and shared for owner review; not approved or posted",
+    "qa": "content-kit/code-video/QA-websites-v4.md"
   }
 }

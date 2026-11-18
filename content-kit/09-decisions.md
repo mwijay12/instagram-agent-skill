@@ -40,3 +40,17 @@ Mmiliki ameamua migongano 5 ya [`01-presence-audit.md`](01-presence-audit.md) §
 | 13 | **V3 clean Reel** | Reel safi imetengenezwa 60fps, BG clean, plates/SVG/logo/namba iliyothibitishwa, QA G0–G6 na Drive review. **Haijapostwa**; mmiliki bado anaongeza music/SFX, final edit na kuidhinisha. |
 
 **Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+## Marekebisho ya V4 — 18 Nov 2026 (follow-up ya mmiliki baada ya V3)
+
+| # | Mada | Uamuzi |
+| --- | --- | --- |
+| 14 | **Rangi / usomaji** | V4 iwe **white-dominant** ili isomeke `hata kama mtu yuko kwenye jua kali`. Dark si marufuku, lakini iwe subordinate tu (ink, chips, kicker, CTA); hakuna full-frame dark theme. |
+| 15 | **Urefu** | Video nzima iwe **chini ya sekunde 25**. V4 imetengenezwa `23.5s` / `1410 frames` / `60fps`. |
+| 16 | **Sauti** | TTS isikimbie: `atempo 1.3` badala ya `1.7`. Jaribio la sauti ya kiume `voice-01` lilitokea kwa **auto-assign** wakati vote ilirukwa; **si sauti aliyochagua mmiliki**. Audition nyingine inaweza kuombwa. |
+| 17 | **Bei kwa maneno** | Bei zisomwe/ziandikwe kwa Kiswahili: `laki tatu na nusu`, `laki tano na nusu`, `laki nane`; Care Plan `shilingi elfu tisini na tisa kwa mwezi` ni huduma tofauti, si SaaS. |
+| 18 | **Neno mbadala** | Neno la Kiingereza la awali la kupanga kazi limebadilishwa na **`kufahamu kazi` / `mahitaji yako`**. Halipo kwenye script, caption, hooks, timeline, guards wala manifest ya V4. |
+| 19 | **Hadhi ya V2/V3** | V2 na V3 ni review copies za historia; **V4 ndiyo revision inayofanyiwa kazi sasa**. Hakuna idhini ya mmiliki bado. |
+| 20 | **Kazi ya mmiliki** | Mmiliki bado anaongeza music/SFX, final edit, anaidhinisha kwenye simu kwenye jua kali, anapost mwenyewe, kisha anaandika `views, reach, saves, sends, profile visits, hold@3s`. Site copy haijabadilishwa; `09-decisions.md` bado ni source of truth. |
+
+**Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**

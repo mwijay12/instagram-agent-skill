@@ -42,3 +42,14 @@ No live Instagram posting, DMs, auto-DM/bot, credentials, account changes, Docs/
 | Google Drive connector | upload + `make_public` | `1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3`, `anyoneWithLink reader` |
 
 V3 uses clean plates `11`/`12`, isolated PNG elements `13`/`14`, and animated SVGs. Old busy plates `07`–`10` are excluded. Keyframe stills, MP4 contact sheet and `QA-websites-v3.md` G0–G6 are in `content-kit/code-video/`. Motion Canvas / Revideo / Timecut / Manim-MCP still did **not** render an MP4. Owner adds music/SFX and posts manually.
+
+## V4 short white Reel — 18 Nov 2026
+
+| Engine | What ran | Result |
+|---|---|---|
+| Remotion 4.0.544 + React 18 + Chromium 153 | `scripts/render-remotion-v4.mjs --render` with `remotion/index-v4.jsx` / `remotion/WebsitesV4.jsx` | `07-altraware-websites-v4.mp4`, 3,699,257 bytes, 1410 frames at 60fps / 23.5s |
+| Remotion compositor ffprobe n7.1 | stream/format inspection | H.264 1080×1920 60/1, 1410 frames; AAC 48kHz 2ch; `UNDER_25_SECONDS YES` |
+| imageio ffmpeg v9.0.2 | full decode | exit 0 / FULL_DECODE_OK |
+| Google Drive connector | upload + `make_public` + `get_file` | MP4 `1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY`; contact sheet `1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC`; both `anyoneWithLink reader` |
+
+V4 uses white plate `15`, paper `12`, isolated white PNG elements `16`/`17` and ink SVGs. Six stills and eight decoded MP4 frames were viewed; white-dominant pixel receipt and G0–G6 are in `content-kit/code-video/QA-websites-v4.md`. Motion Canvas / Revideo / Timecut / Manim-MCP still did **not** render an MP4. Owner adds music/SFX, approves on a phone in strong sun and posts manually.
