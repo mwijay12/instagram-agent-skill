@@ -1,189 +1,169 @@
 ---
 name: tech-video-motion-graphics
 description: >-
-  Design and build programmatic tech videos, code walkthroughs, website/system
-  explainers and 60fps motion graphics with frame-driven physics, progressive
-  code diffs, virtual camera choreography and strict visual pacing. Use when the
-  user asks for code-to-video, animate code, motion graphics kali, tech Reel,
-  website explainer, kinetic typography, or wants an agent to prepare video
-  content repeatedly. Works with Remotion / Motion Canvas / Revideo when a
-  browser is available, and with this fork's deterministic Pillow renderer when
-  it is not.
+  Design and build programmatic tech videos, code walkthroughs, system architecture explainers, kinetic typography and 60fps motion graphics using Remotion, Motion Canvas, Revideo, Manim/MCP, Timecut/GSAP and frame-driven skills. Use whenever the user asks to create programmatic MP4 videos, animate code diffs, build tech Reels, generate clean backgrounds/elements, prepare bilingual Kiswahili + English content, or wants an agent to prepare video/social content repeatedly.
 ---
 
-# tech-video-motion-graphics
+# tech-video-motion-graphics — v2.0
 
-The **fifteenth skill** in this fork. It sits on top of `/ig-codevideo` (the
-seven-layer prompt builder) and answers one complaint: *"kwa mwanzo ni nzuri,
-lakini zitokee nzuri zaidi"*. The upgrade is not "more prompt words" - it is
-**frame-accurate motion**.
+The fifteenth skill in this fork, upgraded from the owner's brief: **"kwa mwanzo ni nzuri sanaa, but we need to use skills ili zitokee nzuri zaidi"**, and the direct critique **"background so busy, si clean"**.
 
-## The one rule (inherited, never relaxed)
+This skill now covers both halves of the job:
 
-**An AI video model must never be asked to draw code, glyphs, numbers or a
-logo.** All of those come from a deterministic render. The model supplies
-texture plates only. `[inherited from /ig-codevideo]`
+1. **Programmatic motion craft** — code-to-video, not text-to-video.
+2. **Repeatable content engine** — research, bilingual scripts, captions, carousels, QA and handoff.
 
-## 0. What was actually verified (18 Nov 2026)
+## The one rule, never relaxed
 
-Fetched from GitHub, not invented:
+**An AI video model must never be asked to draw code, glyphs, numbers, captions or a logo.** It supplies texture plates and isolated elements only. Everything readable is drawn deterministically from JSON / React / SVG.
 
-| Repo | What it is | Stars* |
-| --- | --- | --- |
-| `Tejashmakwana/motionmaxxing` | Agent skill: "looksmaxxing for motion graphics", seek-safe GSAP runtime, measured eases, scripted gates `look.py`/`lint.mjs`, **bans page chrome, progress bars, long end cards and invented stats** | 1,654 |
-| `charlie947/motion-graphics-skills` | 15 Claude Code skills for launch-grade motion, "every frame is code"; includes `motion-brief-writer`, `motion-effects`, `reel-export` | 709 |
-| `Barty-Bart/motion-graphics` | 6 video-editing skills (`explainer-high-energy`, `motion-broll`, `sound-effects`, ...) | 1,350 |
-| `remotion-dev/remotion` | React/TypeScript MP4 renderer | 73,908 |
-| `motion-canvas/motion-canvas` | TypeScript generator timeline (`yield*`) | 20,004 |
-| `redotvideo/revideo` | Motion Canvas fork for AI video agents, JSON params + headless CLI | 4,219 |
-| `ManimCommunity/manim` / `abhiemj/manim-mcp-server` | Python math animation + MCP render server | 42,646 / 662 |
-| `tungs/timecut` | Headless Chrome recorder for GSAP pages | 656 |
-| `upstash/context7` | Live docs for agents | 65,026 |
+## 0. Verified state, not aspirational
 
-\* snapshot only, re-check before quoting. `remotion/llms.txt` was **404 at the
-repo root** on 18 Nov 2026 - do not claim a file exists without fetching it.
+Snapshot 17 Nov 2026, re-check before quoting:
 
-## 1. Choose the engine (do not mix)
+| Thing | Status |
+| --- | --- |
+| Remotion 4.0.544 + React 18 | **Rendered** `05-altraware-websites-v2.mp4`: 1080×1920, 30fps, 36.011s, H.264+AAC, full decode exit 0 |
+| Chromium 153 from `@sparticuz/chromium` | Ran headless-shell; AL2023 libs via `LD_LIBRARY_PATH` |
+| `ffmpeg-mcp@0.0.3` | Ran over stdio; `listTools` + `extract_audio` succeeded |
+| `manim-mcp@0.1.1`, `@motion-canvas/*@3.17.2`, Revideo, Timecut | Installed/inspected; scripts written; **not rendered** |
+| Context7 / Smithery / Cursor Directory / `remotion/llms.txt` | **Not connected / not found**; do not claim live docs |
+| Python Pillow + ffmpeg fallback | Still available as deterministic fallback, not a Remotion clone |
+| Drive handoff | MP4 uploaded with `anyoneWithLink reader` |
 
-| Visual dominant | Engine | Runs in this sandbox? |
-| --- | --- | --- |
-| React/Tailwind, 3D, audio-synced subtitles | Remotion (`npx remotion render`) | ❌ needs Chromium |
-| Sequential code mutations, node graphs, `yield*` | Motion Canvas / Revideo | ❌ needs Chromium/Node UI |
-| Algorithms, networking, math | Manim + MCP | ❌ needs Manim + MCP server |
-| Existing GSAP HTML page at 60fps | Timecut | ❌ needs headless Chrome |
-| **Any of the above laws, deterministically** | **`render_websites.py` (Pillow + ffmpeg)** | ✅ **yes** |
+GitHub repos checked with `gh api`: `Tejashmakwana/motionmaxxing` (1,654★), `charlie947/motion-graphics-skills` (709★), `Barty-Bart/motion-graphics` (1,352★), `heygen-com/hyperframes` (86,101★), `naqashafzal/AI-Content-Studio` (946★), `remotion-dev/remotion` (73,958★), `motion-canvas/motion-canvas` (20,013★), `redotvideo/revideo` (4,219★), `ManimCommunity/manim` (42,653★), `abhiemj/manim-mcp-server` (662★), `tungs/timecut` (656★), `upstash/context7` (65,034★), `modelcontextprotocol/servers` (92,074★). Stars are snapshots, not proof.
 
-No Chromium, no Playwright, no MCP server and no system ffmpeg exist here. So
-this skill ships a **frame-driven Python fallback** that implements the same
-laws. It is not a Remotion clone; it is the honest way to try the ideas today.
-When the owner has Node + Chrome, the `scenes-websites.json` beat map ports
-directly to a Remotion composition.
+Full evidence: `skills/tech-video-motion-graphics/ENGINE-TRIAL.md`.
 
-## 2. Frame-driven physics (no browser clocks)
+## 1. Select the right engine
 
-Every transform, opacity and layout shift is computed from `frame` (the
-`useCurrentFrame()` equivalent). **Never** `setTimeout`, CSS `transition`,
-`requestAnimationFrame`, or `time.time()` inside a shot.
+Choose ONE engine per deliverable; do not mix prompt paths.
 
+| Visual dominant | Engine |
+| --- | --- |
+| React layouts, audio-synced captions, current Reels | **Remotion** |
+| Sequential code mutations, node graphs, `yield*` | Motion Canvas / Revideo |
+| Algorithms, networking, math | Manim + MCP |
+| Existing GSAP HTML page at 60fps | Timecut |
+| HTML-to-video agent workflow | HyperFrames |
+| No browser available | deterministic Pillow + ffmpeg fallback |
+
+Support skills: motionmaxxing gates, Charlie Hills launch-grade prompts, Barty-Bart B-roll/SFX licensing, `rediumvex/social-media-caption-generator-claude`, `DennisWei9898/social-cards-engine`, `ScrapeCreators/social-media-research-skills`, `blacktwist/social-media-skills`, `multica-ai/andrej-karpathy-skills`.
+
+## 2. Clean background law (owner correction)
+
+The V2 contact sheet was readable but too busy. **V3 must be calm.**
+
+- Use flat / low-frequency grounds: `content-kit/code-video/plates/11-clean-navy.png`, `12-clean-paper.png`.
+- Put motion in separate SVG/PNG elements: `content-kit/code-video/elements/*.svg`.
+- One hero per frame; quiet safe zone behind every text block.
+- Old busy plates may be cropped/low-opacity fragments only, never full-frame behind copy.
+- No page chrome, kicker-over-headline deck, timecode, progress bar, stat wall, invented UI card.
+- Add **G6 = background readability**, judged by eye on the contact sheet. G1/G4 also remain human.
+
+Full spec: `content-kit/code-video/VISUAL-SYSTEM.md`.
+
+## 3. Frame-driven physics and timing
+
+Never use browser clocks.
+
+Remotion:
+
+```ts
+const frame = useCurrentFrame();
+const {fps} = useVideoConfig();
+const p = spring({frame, fps, config: {damping: 14, stiffness: 120, mass: 0.8}});
+const x = interpolate(frame, [0, 60], [0, 240], {
+  extrapolateLeft: 'clamp',
+  extrapolateRight: 'clamp',
+});
 ```
-spring(frame, fps, damping=14, stiffness=120, mass=0.8)
-  -> damped oscillator integrated once per frame, deterministic
-interpolate(frame, [a,b], [c,d], clamp=True)
-  -> extrapolateLeft/Right = 'clamp' ALWAYS
-```
 
-Unclamped interpolation makes elements fly off-screen or opacity exceed 1.
-`render_websites.py` has no unclamped `interpolate` call.
+- Every transform / opacity / layout shift is a pure function of `frame`.
+- No CSS `transition`, `animation`, `requestAnimationFrame`, `setTimeout` inside a shot.
+- Unclamped interpolation is banned.
+- `fontVariantNumeric: 'tabular-nums'` for counters/prices.
+- 60fps target, 1080×1920 vertical, `damping: 14, stiffness: 120, mass: 0.8`.
 
-## 3. Code is choreographed, not pasted
+Motion Canvas / Revideo: use generator signals and `yield*`; `easeOutExpo`, `easeInOutCubic`, `spring(PlopSpring, ...)`. Calling `node().opacity(1, 0.5)` without `yield*` creates an unexecuted generator.
 
-- **Line-by-line focus**: unrelated lines dim to **25%**, active line at 100%
-  with a highlight bar. The eye tracks the execution path.
-- **Token morph / diff**: initial implementation → refactored state over
-  **0.6-0.9s** (`edit` / `insert` / `remove`). Only real code from this repo is
-  used; anything else keeps an `ILLUSTRATIVE` label on screen.
-- **Syntax highlighting**: strings gold `#eab308`, keywords violet `#7c3aed`,
-  punctuation paper. Never a screenshot of a wall of code.
-- **Tabular numerals**: counters and prices use JetBrains Mono so changing
-  digits never reflow the layout.
+## 4. Code is choreographed, not pasted
 
-## 4. Visual pacing and the virtual camera
+- Line-by-line focus: unrelated lines **25%**, active line **100%** with highlight bar.
+- Token morph / diff: `edit` / `insert` / `remove` over **0.6–0.9s**.
+- Syntax highlighting: strings gold `#eab308`, keywords violet `#7c3aed`, punctuation paper. Use Shiki or deterministic spans.
+- Only real code from this repo / owner projects; anything else is labelled `ILLUSTRATIVE`.
+- Never a screenshot of a wall of code.
 
-- **3-second rule**: no frame stays static for more than 3s (180 frames @60fps).
-  `render_websites.py` logs change events and asserts the max gap.
-- **Camera rig**: wrap the frame in a parent transform; zoom `1.0 → 1.35` and
-  `translateX/Y` toward the active component, then pull back. The code shot
-  starts at the left edge and pans right so the long real viewport line reads
-  without clipping.
-- **Staggered entrances**: list items / badges / price rows offset by **3-5
-  frames** (0.05-0.08s @60fps) so they cascade.
-- **Kinetic typography**: Fraunces display + JetBrains Mono technical badges,
-  tight tracking, one accent with one meaning.
+## 5. Visual pacing and virtual camera
 
-## 5. The motionmaxxing critique we accepted
+- **3-second rule:** no frame stays static > 180 frames at 60fps.
+- Camera rig: parent transform, zoom `1.0 → 1.35`, pan toward the active component, then pull back.
+- Staggered entrances: 3–5 frames (0.05–0.08s @60fps).
+- Kinetic typography: Fraunces display + JetBrains Mono technical badges, tight tracking, one accent with one meaning.
+- Cut on motion; entries decelerate, exits accelerate; almost nothing fades between scenes.
+- End card ≤ 1.4s; no web-footer ending.
 
-The old FINAL cut had `ACT 01 / MIZIZI`, coordinates, a timecode and a progress
-bar - `motionmaxxing` calls that **page chrome (G5 fail)** and rejects end cards
-held past **1.4s (G3)**. For the new websites cut we therefore:
+## 6. Gates — computed, not self-certified
 
-- removed all chrome, kicker labels, timecodes and progress bars;
-- cut on motion, with scenes already moving when they start;
-- kept the logo/credits end card to **1.4s**;
-- kept only real numbers with a source (starting prices from `09-decisions.md`);
-- added a scripted gate instead of self-certifying: `04-look.md` prints G0/G2/G3/G5.
+| Gate | Pass | Method |
+| --- | --- | --- |
+| G0 render exists | decodes, not blank, picture moves, length matches, audio present | `look.py` / ffprobe |
+| G1 proof readable | UI text ≥ 0.04H, lit, in a world | by eye |
+| G2 no empty frame | no run > 3 flat frames | `look.py` |
+| G3 end card short | hold ≤ 1.4s, final shot ≤ 25% | `look.py` |
+| G4 one hero per frame | ≤ 3 focal objects, one dominant | by eye |
+| G5 no page chrome | no labels/timecodes/progress bars/kickers/decks | `lint.mjs` |
+| **G6 clean background** | hero line readable in one glance | by eye on contact sheet |
 
-G1 (proof readable) and G4 (one hero per frame) are judged **by eye** on the
-contact sheet and said so honestly; no invented numbers.
+Quote script numbers. Never certify the film as "good".
 
-## 6. Brand and claim guards (this fork, v1.2)
+## 7. Brand, claims and bilingual content engine
 
-Never invent a palette. Tokens: navy `#071022`, paper `#f7f6f2`, gold `#eab308`,
-violet `#7c3aed`, muted `#a3aecb`; Fraunces / Inter / JetBrains Mono; motion
-`0.3 / 0.6 / 1.1s`, ease `cubic-bezier(.22,1,.36,1)`.
+Canonical: `content-kit/09-decisions.md`, `content-kit/data/brand-profile.json`, `content-kit/data/channels.json`, `content-kit/data/projects.json`.
 
-From `content-kit/09-decisions.md`: starting prices only (Web Starter 350k,
-Growth 550k, Custom kuanzia 800k, mifumo kuanzia 1.2M), **Care Plan 99k/month
-is a separate service, not SaaS**, `offline-first, cloud-synced`, **no `"100%"`**,
-tagline `Built in Tanzania, for how Tanzania really works.`, link
-`altra.tanzaniareach.com` (never "official website", never an invented domain).
-No `95+ Lighthouse`, `<2s on 2G`, `0.8s`, `10x`, `99.98%`, invented clients or
-testimonials - those are self-claimed site numbers, not measured proof.
+- Two voices: **Mwijay Davie** founder journey / AI / vibe coding; **Altraware Technologies** product proof / systems / pricing.
+- **Kiswahili + English** as paired variants from the same JSON beat map, not one mixed paragraph.
+- Niche: tech business, IT, AI, vibe coding, money-making online.
+- 15 projects are proof sources; `Avocado Farmers` is a **demo**, `Faida POS` is in development, others need URL verification.
+- Screenshots: `fetch_page` gives text + main image URL; real browser screenshots are owner-supplied until a browser tool exists.
+- Trends: `web_search` + research skills, cite the source, separate third-party claim from our proof, owner approves before any number appears.
 
-## 7. Loop (use it every time)
+Guards:
 
-1. Read `~/.claude/instagram/voice.md` (install: `content-kit/use-voice.sh`).
-2. Pick ONE engine. Pick ONE scene from `scenes-websites.json`; add a new one
-   only with a real artifact (repo path / URL / real number with source).
-3. Write the spoken script from `beats[]`; run `skills/ig-reel/beats.py`.
-4. Write 3 hooks, run `skills/ig-reel/hookscore.py`, show the ranking.
-5. Write the caption, run `skills/ig-caption/caption.py --keywords ...`, then
-   `skills/ig-human/detect.py` / `humanize.py`. Say Job A or Job B.
-6. **Verify a keyframe first** (the Remotion `still` equivalent):
-   ```bash
-   /tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py --still 3.0 --out /tmp/web-frame.png
-   ```
-   Look at it. Then render:
-   ```bash
-   /tmp/kvenv/bin/python skills/tech-video-motion-graphics/render_websites.py --fps 60 --crf 30
-   python3 content-kit/check.py
-   ```
-7. Print `04-look.md` gates, the contact sheet, and the prompt/handoff block.
-8. **Never publish.** The owner adds music, edits and posts. No auto-DM.
+- Starting prices only: Web Starter 350k, Growth 550k, Custom kuanzia 800k, mifumo kuanzia 1.2M. Care Plan 99k/month is a **separate service, not SaaS**.
+- `offline-first, cloud-synced` is **Faida POS only**, not websites in general.
+- Ownership: `Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.`
+- Tagline exact: `Built in Tanzania, for how Tanzania really works.`
+- Link `https://altra.tanzaniareach.com/`, never "official website", never invented domain.
+- No `100%`, `95+ Lighthouse`, `<2s on 2G`, `0.8s`, `10x`, `99.98%`, invented clients/testimonials/metrics.
+- Live site copy currently conflicts with these decisions; use the canonical files, not scraped site copy.
 
-## 8. Handoff sentence for AI-texture engines
+## 8. Loop — run it every time
 
-> *"Composite all code, numbers, glyphs and captions afterwards as real text.
-> The model supplies the plates."*
+1. Read canonical decisions + project/channel/brand registries.
+2. Pick ONE project + ONE pillar + ONE true claim.
+3. Research trend/source if needed; cite it.
+4. Write SW + EN script; 3 hooks each; run `skills/ig-reel/hookscore.py`.
+5. Write caption; run `skills/ig-caption/caption.py --keywords ...`, then `skills/ig-human/detect.py` / `humanize.py`. Say Job A or Job B; do not force REVIEW to PASS.
+6. Build beat map / carousel outline from JSON. Choose engine.
+7. **Verify a keyframe still first** and look at it. Then render.
+8. `esbuild` / JSON parse, `ffprobe`, full decode, contact sheet, G0–G6, QA receipts.
+9. Upload to Drive with `anyoneWithLink reader`; save link in `samples/*-drive-links.md`.
+10. Hand off script/caption/carousel/video. **Owner adds music, edits and posts.** No auto-DM, bot, credentials or account changes.
 
-## 9. Websites deliverable (18 Nov 2026)
+## 9. Handoff sentence for AI-texture engines
 
-`scenes-websites.json` uses only real website material: the live
-`content-kit/present/site/index.html` `<html lang="sw">` / viewport / `<title>`
-lines, the owner's starting prices in `09-decisions.md`, the owner's logo and
-Altraware credits, and one keyword CTA (`TOVUTI`). The spoken hook is
-`Tovuti nzuri haipimwi kwa rangi. Inapimwa kwa ujumbe unaoingia kwenye simu
-yako.` (`hookscore.py` **80.0 STRONG**). Script/caption receipts live in
-`content-kit/qa/websites-*.out`.
+> "Composite all code, numbers, glyphs, captions and the logo afterwards as real text. The model supplies clean plates and isolated elements only."
 
-Outputs: `content-kit/code-video/samples/04-altraware-websites.mp4`,
-`04-contact-sheet.jpg` (nine readable keyframes), `04-render-manifest.json`,
-`04-look.md`, and `audio/voiceover-websites.wav`. A copy-ready script/caption
-brief is also a public native Google Doc:
-`https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk`.
-Public MP4/WAV/contact-sheet/poster links are in
-`content-kit/code-video/samples/04-drive-links.md` and in the manifest's `drive`
-block; `anyoneWithLink reader` was confirmed. The MP4 is 1080×1920,
-**60fps**, H.264 + AAC, TTS only — no music or SFX. `04-look.md` prints G0/G2/G3/G5
-computed from the render; G1/G4 remain human judgments. The owner adds music,
-edits and posts; nothing is published here.
+## 10. Limits — say them out loud
 
-## 10. Limits (say them out loud)
-
-- Remotion / Motion Canvas / Revideo / Timecut / Manim-MCP **did not run here**;
-  only their laws were implemented in the Python fallback. No MCP server was
-  installed, no Context7 docs were fetched live, no `llms.txt` was found.
-- The websites deliverable was rendered at **60fps**; `--fps 30` remains a
-  quick-preview option. The code is frame-driven at either rate.
-- TTS is external, one consistent voice_id; **no music or SFX** (owner adds).
+- Remotion rendered V2 at **30fps**; V3 targets 60fps. Do not claim 60fps before it is rendered.
+- Motion Canvas / Revideo / Timecut / Manim-MCP have **not** rendered an MP4 here.
+- `ffmpeg-mcp` ran; `manim-mcp` was inspected but not run.
+- No Context7 live docs, no Smithery, no Cursor Directory install, no `llms.txt` found.
+- TTS is one consistent voice; no music/SFX. Owner adds them.
 - Kiswahili hook scores are unvalidated translations, not view predictions.
-- `motionmaxxing`'s G1/G4 are human judgments; we do not self-certify them.
+- `detect.py` clean Swahili is normally REVIEW; do not self-certify.
+- IG insights require 10–30 owner-posted items. No posting, no DM, no account changes.
+- Drive reference video `1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe` was not accessible to the connected account; do not claim it was watched.

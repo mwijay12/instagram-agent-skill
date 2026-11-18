@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-11-17",
+  "channels": [
+    {
+      "id": "ig-personal",
+      "platform": "Instagram",
+      "handle": "mwijay__davie",
+      "role": "Founder journey, vibe coding, AI agents, money-making online, build-in-public",
+      "followers": "low per owner",
+      "language": "Kiswahili-first, paired English variants",
+      "pilot_cadence": "2 posts/week",
+      "status": "active"
+    },
+    {
+      "id": "ig-company",
+      "platform": "Instagram",
+      "handle": "@altrawaretechnology",
+      "owner_typed_handle": "altrawaretechology",
+      "role": "Product proof, systems, pricing, client education, Tanzanian business reality",
+      "language": "Kiswahili + English",
+      "pilot_cadence": "1 post/week",
+      "status": "handle spelling needs confirmation"
+    },
+    {
+      "id": "linkedin",
+      "platform": "LinkedIn",
+      "url": null,
+      "role": "B2B thought leadership, case studies, technical lessons, hiring/clients",
+      "language": "English-first, Kiswahili snippets",
+      "pilot_cadence": "1 post/week",
+      "status": "URL not supplied"
+    },
+    {
+      "id": "github-mwijay12",
+      "platform": "GitHub",
+      "handle": "Mwijay12",
+      "role": "Public profile, Altraware repos, strategies playbook, proof of work",
+      "status": "verified via gh api"
+    },
+    {
+      "id": "github-mwijaydavie",
+      "platform": "GitHub",
+      "handle": "mwijaydavie",
+      "role": "Secondary repos: instagram-agent-skill, video-use, studio, rs-dsm, motorbike, mwijay__davie",
+      "status": "verified via gh api"
+    },
+    {
+      "id": "site",
+      "platform": "Website",
+      "url": "https://altra.tanzaniareach.com/",
+      "role": "Canonical approved link, not official website claim",
+      "status": "live, copy conflicts with 09-decisions.md"
+    }
+  ],
+  "posting_policy": {
+    "agent_prepares": ["research", "brief", "script", "hooks", "caption", "carousel", "video", "QA", "Drive handoff"],
+    "owner_does": ["approve", "add music/SFX", "final edit", "post", "reply to comments/DMs manually"],
+    "never": ["auto-DM", "bot", "scheduled posting", "credential storage", "account changes", "bought engagement"],
+    "measurement": "log views, reach, saves, sends, profile visits, hold@3s for 10-30 posts before conclusions"
+  }
+}

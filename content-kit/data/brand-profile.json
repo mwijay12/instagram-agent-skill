@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-17",
+  "source_of_truth": "content-kit/09-decisions.md",
+  "owner": {
+    "preferred_public_name": "Mwijay Davie",
+    "also_referenced_as": ["David Erick Mwijage", "David Mwijage"],
+    "co_founder_reference": "Clemence Ng'unda",
+    "role": "Co-Founder at Altraware Technologies; Website Developer; Digital Smart Systems Specialist",
+    "location": "Dar es Salaam, Tanzania",
+    "github": ["Mwijay12", "mwijaydavie"],
+    "github_note": "Both users exist. Mwijay12 has the profile README and Altraware repos; mwijaydavie has instagram-agent-skill, video-use, studio, rs-dsm, motorbike, mwijay__davie.",
+    "instagram_personal": "mwijay__davie",
+    "linkedin_url": null,
+    "linkedin_status": "owner said they have LinkedIn; URL not supplied"
+  },
+  "company": {
+    "name": "Altraware Technologies / Altraware Technology",
+    "short_name": "Altraware Tech",
+    "canonical_handle": "@altrawaretechnology",
+    "owner_typed_handle": "altrawaretechology",
+    "handle_status": "NEEDS_CONFIRM",
+    "site": "https://altra.tanzaniareach.com/",
+    "site_rule": "Approved link. Never call it official website. Never invent a domain.",
+    "tagline": "Built in Tanzania, for how Tanzania really works.",
+    "languages": ["Kiswahili", "English"],
+    "email": "altrawaretechnology@gmail.com",
+    "human_phone": "+255 792 867 427",
+    "bot_phone": "0790942616 / +255 790 942 616",
+    "phone_status": "owner-side final check pending",
+    "hours": "Mon-Sat 8:00-18:00 EAT",
+    "focus": ["websites", "web and mobile apps", "business systems", "Faida POS", "CareTrack", "M-Pesa / mobile money", "Kiswahili-first architecture"]
+  },
+  "pricing_canonical": {
+    "Web Starter": "TSh 350,000 kuanzia",
+    "Growth": "TSh 550,000 kuanzia",
+    "Custom": "TSh 800,000 kuanzia",
+    "Mifumo": "TSh 1,200,000 kuanzia",
+    "Care Plan": "TSh 99,000/mwezi, huduma tofauti, si SaaS",
+    "rule": "Bei wazi = starting price in writing; full price after scope. 750K tier removed."
+  },
+  "claim_guards": {
+    "offline_first": "Faida POS only: offline-first, cloud-synced. Not a general websites claim.",
+    "ownership": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "forbidden": ["100%", "95+ Lighthouse", "chini ya sekunde 2 kwenye 2G", "0.8s", "10x", "99.98%", "invented clients", "invented testimonials", "invented metrics", "invented domains", "official website claim"]
+  },
+  "logo": {
+    "local_asset": "content-kit/assets/altraware-logo.png",
+    "site_candidates": ["https://altra.tanzaniareach.com/logo.png", "https://altra.tanzaniareach.com/logo.jpg"],
+    "confirmation": "pending owner approval"
+  },
+  "site_audit": {
+    "altra.tanzaniareach.com": {
+      "fetched": true,
+      "conflicts_with_decisions": [
+        "Hero tagline says Rooted at home. Built for the world.; canonical tagline is Built in Tanzania, for how Tanzania really works.",
+        "Marquee shows TSH 350K / 550K / 750K; 750K tier was removed.",
+        "Neema testimonial and 0% / 0 / 0/7 counters are unapproved proof.",
+        "Works on 2G / offline and offline-first are presented as general site claims.",
+        "M-Pesa Ready / 2G ready style claims need measurement or approval."
+      ],
+      "content_rule": "Do not copy live site marketing copy into posts. Use 09-decisions.md and projects.json."
+    },
+    "mwijay.ct.ws": {
+      "fetched": true,
+      "status": "demo",
+      "note": "Avocado Farmers Njombe demo; zero counters and stock photos. Do not present as live client proof."
+    }
+  },
+  "drive_reference_video": {
+    "url": "https://drive.google.com/file/d/1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe/view?usp=drive_link",
+    "file_id": "1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe",
+    "status": "not accessible to connected Drive account; page fetch returned Google sign-in",
+    "action": "owner must share publicly or with connected account"
+  },
+  "visual_assets": {
+    "clean_plates": ["content-kit/code-video/plates/11-clean-navy.png", "content-kit/code-video/plates/12-clean-paper.png"],
+    "svg_elements": "content-kit/code-video/elements/",
+    "rule": "AI images are texture/elements only; never text or logo."
+  },
+  "research_sources": [
+    "https://github.com/mwijay12/mwijay12",
+    "https://github.com/mwijay12/altraware-tech",
+    "https://github.com/mwijay12/strategies",
+    "https://github.com/mwijay12/altraware-technology",
+    "https://github.com/mwijay12/daviecode",
+    "https://altra.tanzaniareach.com/",
+    "https://mwijay.ct.ws/"
+  ]
+}
