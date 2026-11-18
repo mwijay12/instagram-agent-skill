@@ -1,0 +1,40 @@
+== hookscore ==
+
+HOOK RANKING
+==============================================================================
+->  80.0 STRONG  Tovuti yako haipigwi makofi. Inaulizwa maswali matatu na mt...
+        weakest: STAKES (70)
+    78.6 STRONG  Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, an...
+        weakest: STAKES (70)
+    37.8 WEAK    Simu ya mteja ndiyo mlango wa duka lako. Je, imefunguka?
+        weakest: SPECIFICITY (15)
+
+Shoot the top one. If the top one is under 50, none of these are the hook.
+
+
+== beats ==
+
+BEAT SHEET  ·  104 words  ·  ~37.8s at 165 wpm  ·  target 36.0s
+========================================================================
+  0:00.0   4.7s  HOOK    Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, anatafuta jibu la haraka.
+                         ^ hook runs 4.7s, past the 3s mark
+                         ^ 4.7s on one beat
+  0:04.7   4.4s          Haoni unachofanya, bei wala jinsi ya kuwasiliana? Amekwenda kwa mwingine kabla hujajua.
+                         ^ 4.4s on one beat
+  0:09.1   5.1s          Altraware huanza na simu. Kiswahili na English, muundo unaoeleweka, ujumbe unaofika moja kwa moja.
+                         ^ 5.1s on one beat
+  0:14.2   5.5s  MID     Tovuti si picha tu. HTML lang ni sw, viewport ya simu, na title yenye brand.
+                         ^ 5.5s on one beat
+  0:19.6   5.8s          Bei ya kuanzia iko wazi: Web Starter TSh 350,000, Growth TSh 550,000, Custom kuanzia TSh 800,000.
+                         ^ 5.8s on one beat
+  0:25.4   1.8s          Bei kamili baada ya scope.
+  0:27.3   3.6s          Care Plan TSh 99,000/mwezi ni huduma tofauti, si SaaS.
+  0:30.9   4.7s          Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.
+                         ^ 4.7s on one beat
+  0:35.6   2.2s  CTA     Unahitaji tovuti leo? Comment neno TOVUTI.
+------------------------------------------------------------------------
+  - Beat 1 takes 4.7s to say. Cut it to 8 words or fewer, or the hook lands after the decision has been made.
+  - Beat(s) 1, 2, 3, 4, 5, 8 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.
+  - No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.
+  - Length is on target (37.8s against 36.0s).
+

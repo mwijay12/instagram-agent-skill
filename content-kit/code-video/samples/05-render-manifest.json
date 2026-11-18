@@ -1,0 +1,43 @@
+{
+  "engine": "Remotion 4.0.544 / @remotion/renderer / @remotion/bundler",
+  "react": "18.3.1",
+  "browser": {
+    "version": "Chromium 153.0.8010.0",
+    "executable": "/tmp/chromium",
+    "mode": "headless-shell"
+  },
+  "ffmpeg": "Remotion bundled compositor ffmpeg n7.1",
+  "composition": {
+    "id": "AltrawareWebsitesV2",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationInFrames": 1080,
+    "durationSeconds": 36
+  },
+  "assets": [
+    "plates/07-dar-blue-hour.png",
+    "plates/08-site-topology.png",
+    "plates/09-signal-ribbons.png",
+    "plates/10-paper-blueprint.png"
+  ],
+  "audio": "voiceover-websites-v2.wav (voice-00 Swahili TTS, atempo 1.7, no music/SFX)",
+  "poster": "05-altraware-websites-v2-poster.png",
+  "video": "05-altraware-websites-v2.mp4",
+  "videoBytes": 7303730,
+  "corrections": [
+    "Offline-first, cloud-synced applies to Faida POS only; excluded from websites reel",
+    "Ownership: Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "No invented domain claim"
+  ],
+  "guards": [
+    "No AI-drawn text or logo",
+    "No invented metrics, clients, testimonials, or official-website claim",
+    "No general-website offline or cloud-sync claim",
+    "Ownership uses the exact 09-decisions phrase; no domain ownership claim",
+    "Starting prices only; full price after scope",
+    "Care Plan 99k/month is a separate service, not SaaS",
+    "Tagline: Built in Tanzania, for how Tanzania really works.",
+    "No auto-DM, bot, posting, DMs, credentials, or account changes"
+  ]
+}

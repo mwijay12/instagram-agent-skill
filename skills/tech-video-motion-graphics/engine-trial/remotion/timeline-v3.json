@@ -1,0 +1,109 @@
+{
+  "engine": "Remotion 4.0.544 + React 18",
+  "composition": "AltrawareWebsitesV3",
+  "visual_system": "content-kit/code-video/VISUAL-SYSTEM.md",
+  "voice": "voice-00 Swahili TTS",
+  "tempo": 1.7,
+  "fps": 60,
+  "duration_seconds": 36.0,
+  "duration_frames": 2160,
+  "audio": "voiceover-websites-v2.wav",
+  "brand": {
+    "handle": "@altrawaretechnology",
+    "public_phone": "0790942616",
+    "linkedin_company": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "linkedin_personal": "https://www.linkedin.com/in/mwijay-davie/",
+    "logo": "logo.png",
+    "link": "https://altra.tanzaniareach.com/",
+    "tagline": "Built in Tanzania, for how Tanzania really works."
+  },
+  "cta": {
+    "keyword": "TOVUTI",
+    "sw": "Comment neno TOVUTI"
+  },
+  "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+  "credits": [
+    "Websites · Kiswahili + English · mobile-first",
+    "Built in Tanzania, for how Tanzania really works.",
+    "@altrawaretechnology · 0790942616",
+    "altra.tanzaniareach.com"
+  ],
+  "clips": [
+    {
+      "i": 1,
+      "file": "v2-01-hook.wav",
+      "text_sw": "Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, anatafuta jibu la haraka.",
+      "start": 0.0,
+      "end": 3.829
+    },
+    {
+      "i": 2,
+      "file": "v2-02-phone.wav",
+      "text_sw": "Haoni unachofanya, bei wala jinsi ya kuwasiliana? Amekwenda kwa mwingine kabla hujajua.",
+      "start": 3.969,
+      "end": 8.274
+    },
+    {
+      "i": 3,
+      "file": "v2-03-language.wav",
+      "text_sw": "Altraware huanza na simu. Kiswahili na English, muundo unaoeleweka, ujumbe unaofika moja kwa moja.",
+      "start": 8.414,
+      "end": 13.577
+    },
+    {
+      "i": 4,
+      "file": "v2-04-real-code.wav",
+      "text_sw": "Tovuti si picha tu. HTML lang ni sw, viewport ya simu, na title yenye brand.",
+      "start": 13.717,
+      "end": 18.495
+    },
+    {
+      "i": 5,
+      "file": "v2-05-prices.wav",
+      "text_sw": "Bei ya kuanzia iko wazi: Web Starter TSh 350,000, Growth TSh 550,000, Custom kuanzia TSh 800,000. Bei kamili baada ya scope.",
+      "start": 18.635,
+      "end": 28.129
+    },
+    {
+      "i": 6,
+      "file": "v2-06-cta.wav",
+      "text_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Unahitaji tovuti leo? Comment neno TOVUTI.",
+      "start": 28.269,
+      "end": 34.273
+    }
+  ],
+  "assets": {
+    "plates": [
+      "plates/11-clean-navy.png",
+      "plates/12-clean-paper.png"
+    ],
+    "png_elements": [
+      "plates/13-gold-orb.png",
+      "plates/14-violet-ribbon.png"
+    ],
+    "svg_elements": [
+      "elements/phone-frame.svg",
+      "elements/code-brackets.svg",
+      "elements/signal-arc.svg",
+      "elements/node-graph.svg"
+    ],
+    "logo": "logo.png",
+    "audio": "audio/voiceover-websites-v2.wav"
+  },
+  "render_contract": {
+    "all_readable_text_from": "WebsitesV3.jsx BEATS[] + timeline-v3.json",
+    "frame_driven_only": true,
+    "camera_rig": "1.0 -> 1.35 per beat",
+    "stagger_frames": "3-5",
+    "no": [
+      "CSS transitions",
+      "setTimeout",
+      "requestAnimationFrame",
+      "page chrome",
+      "HUD",
+      "timecodes",
+      "progress bars",
+      "stat walls"
+    ]
+  }
+}

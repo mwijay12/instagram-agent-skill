@@ -1,0 +1,157 @@
+{
+  "composition": "AltrawareWebsitesV4",
+  "fps": 60,
+  "duration_frames": 1410,
+  "duration_seconds": 23.5,
+  "under_25_seconds": true,
+  "width": 1080,
+  "height": 1920,
+  "source_of_truth": "content-kit/09-decisions.md",
+  "visual_system": "content-kit/code-video/VISUAL-SYSTEM.md",
+  "timeline": "skills/tech-video-motion-graphics/engine-trial/remotion/timeline-v4.json",
+  "audio": "content-kit/code-video/audio/voiceover-websites-v4.wav",
+  "voice": {
+    "voice_id": "voice-01",
+    "gender": "masculine",
+    "selection": "auto-assigned by add_voice when the vote was skipped; NOT owner-selected",
+    "tempo": 1.3,
+    "note": "Male-voice trial. Another audition can be requested."
+  },
+  "white_dominant": true,
+  "sun_readability": "dark ink on white/near-white plates; no full-frame dark theme; owner phone check still required",
+  "prices_in_words": {
+    "Web Starter": "laki tatu na nusu",
+    "Growth": "laki tano na nusu",
+    "Custom": "laki nane",
+    "Care Plan": "shilingi elfu tisini na tisa kwa mwezi, huduma tofauti, si SaaS"
+  },
+  "wording_replacement": "kufahamu kazi / mahitaji yako; the English planning term is not used in V4 content",
+  "cta": "Comment neno TOVUTI",
+  "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+  "tagline": "Built in Tanzania, for how Tanzania really works.",
+  "public_phone": "0790942616",
+  "ig_handle": "@altrawaretechnology",
+  "scenes": [
+    {
+      "id": 1,
+      "name": "SIMU KWANZA",
+      "from_frame": 0,
+      "to_frame": 114,
+      "from_seconds": 0.0,
+      "to_seconds": 1.9,
+      "hero": "white phone-frame hero + clean mobile answer card",
+      "kicker": "TOVUTI / WEBSITE",
+      "title": "Mteja yuko\nkwenye simu.",
+      "captions": [
+        "Mteja yuko kwenye simu."
+      ],
+      "assets": [
+        "plates/15-clean-white.png",
+        "plates/16-white-gold-orb.png",
+        "elements/phone-frame-ink.svg",
+        "elements/signal-arc-ink.svg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "MASWALI 3",
+      "from_frame": 114,
+      "to_frame": 291,
+      "from_seconds": 1.9,
+      "to_seconds": 4.85,
+      "hero": "three staggered question cards on paper-white plate",
+      "kicker": "USIIACHE IKIWA KIMYA",
+      "title": "Simu inauliza\nmaswali matatu.",
+      "captions": [
+        "Unafanya nini? Bei gani?",
+        "Wasiliana vipi? Majibu yawe wazi."
+      ],
+      "assets": [
+        "plates/12-clean-paper.png",
+        "plates/17-white-violet-ribbon.png",
+        "elements/node-graph-ink.svg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "LUGHA / CODE",
+      "from_frame": 291,
+      "to_frame": 489,
+      "from_seconds": 4.85,
+      "to_seconds": 8.15,
+      "hero": "Kiswahili + English chips + line-by-line deterministic code focus",
+      "kicker": "BUILT FOR TZ",
+      "title": "Tovuti si\npicha tu.",
+      "captions": [
+        "Kiswahili + English, muundo safi.",
+        "HTML, viewport, title ya brand."
+      ],
+      "assets": [
+        "plates/15-clean-white.png",
+        "elements/code-brackets-ink.svg",
+        "elements/signal-arc-ink.svg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "BEI WAZI",
+      "from_frame": 489,
+      "to_frame": 927,
+      "from_seconds": 8.15,
+      "to_seconds": 15.45,
+      "hero": "three starting-price rows written in Kiswahili words",
+      "kicker": "BEI YA KUANZIA",
+      "title": "Anza na bei\niliyo wazi.",
+      "captions": [
+        "Kuanzia laki tatu na nusu, laki tano na nusu, laki nane.",
+        "Bei kamili baada ya kufahamu kazi yako.",
+        "Care Plan ni huduma tofauti, si SaaS."
+      ],
+      "assets": [
+        "plates/15-clean-white.png",
+        "plates/16-white-gold-orb.png"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "MILIKI / CTA",
+      "from_frame": 927,
+      "to_frame": 1410,
+      "from_seconds": 15.45,
+      "to_seconds": 23.5,
+      "hero": "ownership card + owner-confirmed logo/phone + TOVUTI CTA",
+      "kicker": "FAIDA CORE IS LICENSED",
+      "title": "Umiliki wazi.",
+      "captions": [
+        "Unamiliki data yako na tovuti/app yako;",
+        "msingi wa Faida unatolewa kwa leseni.",
+        "Unahitaji tovuti leo? Comment neno TOVUTI."
+      ],
+      "assets": [
+        "plates/15-clean-white.png",
+        "logo.png",
+        "plates/17-white-violet-ribbon.png"
+      ]
+    }
+  ],
+  "g3_pacing_heuristic": "final beat 8.05s / 34.3% of video and CTA button visible 6.22s; REVIEW, not self-certified",
+  "qa": "content-kit/code-video/QA-websites-v4.md",
+  "drive": {
+    "video": {
+      "id": "1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY",
+      "view": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
+      "direct": "https://drive.google.com/uc?id=1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY&export=download",
+      "size": 3699257,
+      "created": "2026-11-18T11:19:23.228Z",
+      "permission": "anyoneWithLink reader"
+    },
+    "contact_sheet": {
+      "id": "1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC",
+      "view": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
+      "direct": "https://drive.google.com/uc?id=1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC&export=download",
+      "size": 151263,
+      "created": "2026-11-18T11:19:23.587Z",
+      "permission": "anyoneWithLink reader"
+    }
+  }
+}

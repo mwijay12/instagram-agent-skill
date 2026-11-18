@@ -1,0 +1,35 @@
+== esbuild ==
+ESBUILD_OK
+
+== node check ==
+NODE_CHECK_OK
+
+== json ==
+JSON_OK
+
+== svg xml ==
+SVG_OK
+
+== ffprobe ==
+h264 video 1080 1920 60/1 1410 23.500000 None None
+aac audio None None 0/0 1104 23.509000 48000 2
+format mov,mp4,m4a,3gp,3g2,mj2 23.509000 3699257 1258839
+UNDER_25_SECONDS YES
+
+== full decode ==
+FULL_DECODE_OK
+
+== agent-side visual review / sun readability ==
+Viewed: 07-altraware-websites-v4-poster.png, 07-contact-sheet.png, 07-mp4-contact-sheet.jpg, plus full-size qa-v4/frame-0030.png, frame-0180.png, frame-0360.png, frame-0600.png, frame-1000.png, frame-1300.png and eight decoded MP4 frames.
+Six still frames [30,180,360,600,1000,1300] and eight encoded-video frames [1,4,7,10,13,16,19,22s] are white/near-white dominant with dark ink text.
+White-dominance pixel receipt: sampled frame luminance >=200 fraction min 0.919, max 0.981; mean luminance 237.7-245.8 / 255.
+Frame motion receipt: mean absolute RGB difference between sampled seconds [13.49, 10.5, 8.07, 1.71, 7.5, 9.79, 1.63]; picture changes across beats, no blank/solid frame in the contact sheets.
+Dark is subordinate: narrow top accent band, dark ink type, colored question/price chips and CTA gradient only; no full-frame dark theme.
+G6_VISUAL_REVIEW_VIEWED. Owner-side phone check in strong sun and final visual approval are still required.
+G3 pacing heuristic: final beat 8.05s / 34.3% of video and CTA button visible 6.22s; above the skill's <=25% final-shot / <=1.4s end-card guide. REVIEW, not self-certified.
+
+== content-kit/check.py ==
+====================================================================
+--------------------------------------------------------------------
+  47 pass · 0 warn · 0 fail · 6 decks
+  READY

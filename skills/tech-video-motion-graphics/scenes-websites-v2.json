@@ -1,0 +1,186 @@
+{
+  "version": "2.0",
+  "date": "2026-11-18",
+  "note": "Strong engine trial: same websites-in-general content, corrected Swahili guards, new creative treatment, new AI texture plates, new poster and MP4. Real Remotion 4.0.544 render with npm-shipped Chromium 153. Offline-first, cloud-synced is Faida POS only and is excluded from this websites reel. No invented metrics, clients, testimonials or domains.",
+  "brand": {
+    "name": "Altraware Technology",
+    "handle": "@altrawaretechnology",
+    "link": "https://altra.tanzaniareach.com/",
+    "night": {
+      "bg": "#071022",
+      "fg": "#f7f6f2",
+      "accent": "#eab308",
+      "contour": "#7c3aed",
+      "muted": "#a3aecb"
+    },
+    "day": {
+      "bg": "#f7f6f2",
+      "fg": "#071022",
+      "accent": "#7c3aed",
+      "contour": "#10265c",
+      "muted": "#4b5570"
+    },
+    "fonts": [
+      "Fraunces",
+      "Inter",
+      "JetBrains Mono"
+    ],
+    "tagline": "Built in Tanzania, for how Tanzania really works.",
+    "safe_reel": "y 230..1440, keep right 230px clear"
+  },
+  "topic": "websites in general",
+  "title_sw": "Si banner. Ni simu.",
+  "title_en": "Not a banner. A phone.",
+  "artifact": {
+    "repo": "mwijay12/instagram-agent-skill",
+    "file": "content-kit/present/site/index.html",
+    "what_sw": "Tovuti ya mkakati iliyotengenezwa na Altraware: html lang=sw, viewport ya simu, na title yenye brand",
+    "code_label": "REAL - copied from content-kit/present/site/index.html",
+    "code": [
+      "<html lang=\"sw\">",
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<title>Altraware Tech · Mkakati wa Maudhui</title>"
+    ],
+    "numbers": [
+      "Web Starter kuanzia TSh 350,000",
+      "Growth kuanzia TSh 550,000",
+      "Custom kuanzia TSh 800,000",
+      "Care Plan TSh 99,000/mwezi (huduma tofauti, si SaaS)"
+    ],
+    "number_source": "content-kit/09-decisions.md (mmiliki ameamua 17 Nov 2026)"
+  },
+  "hook": {
+    "formula": 16,
+    "sw": "Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, anatafuta jibu la haraka.",
+    "en": "Your customer is not standing in front of a banner. They are on a phone, looking for a quick answer.",
+    "onscreen_sw": "SI BANNER. NI SIMU.",
+    "onscreen_en": "NOT A BANNER. A PHONE."
+  },
+  "claim_sw": "Tovuti ya Altraware Tech huanzia kwenye simu, ina Kiswahili na English, na bei ya kuanzia imeandikwa kabla ya mkutano.",
+  "claim_en": "An Altraware Tech website starts on the phone, ships in Kiswahili and English, and publishes its starting price before the meeting.",
+  "beats": [
+    {
+      "id": "01-hook",
+      "t": "0:00-0:03.83",
+      "visual": "Dar es Salaam blue-hour plate, blank phone silhouette, camera push 1.0->1.14, kinetic 'SI BANNER. / NI SIMU.' and gold underline spring",
+      "text_sw": "Mteja hajasimama mbele ya banner lako. Yuko kwenye simu, anatafuta jibu la haraka.",
+      "onscreen_sw": "SI BANNER. NI SIMU.",
+      "motion": "spring zoom + staggered words, no page chrome"
+    },
+    {
+      "id": "02-questions",
+      "t": "0:03.97-0:08.27",
+      "visual": "Isometric site-topology plate, three customer questions stagger in, real HTML lines with 25% dim and active gold bar",
+      "text_sw": "Haoni unachofanya, bei wala jinsi ya kuwasiliana? Amekwenda kwa mwingine kabla hujajua.",
+      "onscreen_sw": "UNAFANYA NINI? / BEI GANI? / WASILIANAJE?",
+      "motion": "line focus + token reveal"
+    },
+    {
+      "id": "03-language",
+      "t": "0:08.41-0:13.58",
+      "visual": "Gold/violet signal-ribbon plate, KISWAHILI and ENGLISH chips cascade, tabular counter 01->02, camera pull-back",
+      "text_sw": "Altraware huanza na simu. Kiswahili na English, muundo unaoeleweka, ujumbe unaofika moja kwa moja.",
+      "onscreen_sw": "UJUMBE UNAFIKA / LUGHA 02 / 02",
+      "motion": "chip stagger + spring counter"
+    },
+    {
+      "id": "04-real-code",
+      "t": "0:13.72-0:18.50",
+      "visual": "Violet topology plate, three real-code chips (html lang=sw, viewport, branded title) draw a connector across the frame",
+      "text_sw": "Tovuti si picha tu. HTML lang ni sw, viewport ya simu, na title yenye brand.",
+      "onscreen_sw": "TOVUTI SI PICHA TU / REAL CODE · SIMU KWANZA",
+      "motion": "connector draw + node stagger"
+    },
+    {
+      "id": "05-prices",
+      "t": "0:18.64-0:28.13",
+      "visual": "Paper-blueprint plate, dark ink typography, three starting-price counters spring to real values, Care Plan kept separate",
+      "text_sw": "Bei ya kuanzia iko wazi: Web Starter TSh 350,000, Growth TSh 550,000, Custom kuanzia TSh 800,000. Bei kamili baada ya scope.",
+      "onscreen_sw": "IKO WAZI KABLA YA MKUTANO / KUANZIA",
+      "motion": "tabular-nums counters + row stagger"
+    },
+    {
+      "id": "06-cta",
+      "t": "0:28.27-0:36.00",
+      "visual": "Blue-hour plate with drifting camera, ghost TOVUTI wordmark, moving gold/violet signal sweep, continuous CTA pulse and credits stagger",
+      "text_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Unahitaji tovuti leo? Comment neno TOVUTI.",
+      "onscreen_sw": "COMMENT TOVUTI / Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+      "motion": "continuous drift + signal sweep until last frame"
+    }
+  ],
+  "assets": [
+    "content-kit/code-video/plates/07-dar-blue-hour.png",
+    "content-kit/code-video/plates/08-site-topology.png",
+    "content-kit/code-video/plates/09-signal-ribbons.png",
+    "content-kit/code-video/plates/10-paper-blueprint.png"
+  ],
+  "audio": {
+    "voice": "voice-00 Swahili TTS",
+    "clips": "content-kit/code-video/audio/v2-01-hook.wav .. v2-06-cta.wav (v2-04-real-code.wav replaces the retired offline clip)",
+    "combined": "content-kit/code-video/audio/voiceover-websites-v2.wav",
+    "timeline": "content-kit/code-video/audio/v2-timeline.json",
+    "tempo": 1.7,
+    "fps": 30,
+    "duration_seconds": 36.0,
+    "duration_frames": 1080,
+    "note": "TTS only. No music, no SFX - owner adds music in the editor."
+  },
+  "engine": {
+    "final": "Remotion 4.0.544 + React 18.3.1, @remotion/bundler + @remotion/renderer",
+    "browser": "Chromium 153.0.8010.0 from @sparticuz/chromium, AL2023 libs via LD_LIBRARY_PATH",
+    "ffmpeg": "Remotion bundled compositor ffmpeg n7.1",
+    "mcp": "ffmpeg-mcp 0.0.3 stdio server ran and extracted audio via callTool",
+    "scripts": "skills/tech-video-motion-graphics/engine-trial/scripts/render-remotion.mjs",
+    "evidence": "skills/tech-video-motion-graphics/ENGINE-TRIAL.md"
+  },
+  "outputs": {
+    "poster": "content-kit/code-video/samples/05-altraware-websites-v2-poster.png",
+    "video": "content-kit/code-video/samples/05-altraware-websites-v2.mp4",
+    "contact_sheet": "content-kit/code-video/samples/05-contact-sheet.jpg",
+    "manifest": "content-kit/code-video/samples/05-render-manifest.json",
+    "qa": "content-kit/code-video/QA-websites-v2.md"
+  },
+  "credits": [
+    "ALTRAWARE TECHNOLOGY",
+    "Websites · Kiswahili + English · mobile-first",
+    "Built in Tanzania, for how Tanzania really works.",
+    "@altrawaretechnology · altra.tanzaniareach.com"
+  ],
+  "cta": {
+    "keyword": "TOVUTI",
+    "sw": "Comment neno TOVUTI",
+    "en": "Comment the word TOVUTI"
+  },
+  "common_negative": [
+    "generic purple-blue gradient",
+    "glassmorphism blobs",
+    "AI-drawn text",
+    "AI-drawn logo",
+    "page chrome",
+    "ACT kicker",
+    "timecode",
+    "progress bar",
+    "stat wall",
+    "invented metrics",
+    "95+ Lighthouse badge",
+    "0.8s claim",
+    "99.98% uptime claim",
+    "10x claim",
+    "binary rain",
+    "laptop in the dark",
+    "globe icon",
+    "invented client name",
+    "official website claim"
+  ],
+  "guard": "Usiseme '100%' wala '95+ Lighthouse' wala 'chini ya sekunde 2 kwenye 2G' wala '10x'. Bei zote ni ZA KUANZIA; bei kamili baada ya scope. Care Plan 99k/mwezi ni huduma tofauti, si SaaS. Usidai tovuti ya jumla inafanya kazi offline au ina-sync kwenye cloud: hiyo ni Faida POS pekee. Umiliki: Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Usibuni domain wala kuiita altra.tanzaniareach.com 'official website'. Tagline: Built in Tanzania, for how Tanzania really works. Angalia 09-decisions.md.",
+  "sources": [
+    "content-kit/09-decisions.md",
+    "content-kit/02-brand-system.md",
+    "content-kit/present/site/index.html",
+    "https://github.com/mwijay12/instagram-agent-skill"
+  ],
+  "corrections": [
+    "Offline-first, cloud-synced belongs to Faida POS only; the websites reel no longer claims a general website works offline and syncs.",
+    "Ownership uses the exact 09-decisions phrase and no invented domain ownership claim."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "engine": "Remotion 4.0.544 + React 18",
+  "composition": "AltrawareWebsitesV4",
+  "visual_system": "white-dominant clean V4; content-kit/code-video/VISUAL-SYSTEM.md",
+  "voice": {
+    "voice_id": "voice-01",
+    "requested_gender": "masculine",
+    "selection": "auto-assigned by add_voice when the vote was skipped; NOT described as owner-selected",
+    "language": "sw",
+    "note": "Male-voice trial. Owner can request another audition."
+  },
+  "tempo": 1.3,
+  "pace_note": "Slowed from V2/V3 atempo 1.7 to 1.3, and shortened the script to fit under 25s.",
+  "fps": 60,
+  "duration_seconds": 23.5,
+  "duration_frames": 1410,
+  "under_25_seconds": true,
+  "audio": "voiceover-websites-v4.wav",
+  "brand": {
+    "handle": "@altrawaretechnology",
+    "public_phone": "0790942616",
+    "linkedin_company": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "linkedin_personal": "https://www.linkedin.com/in/mwijay-davie/",
+    "logo": "logo.png",
+    "link": "https://altra.tanzaniareach.com/",
+    "tagline": "Built in Tanzania, for how Tanzania really works."
+  },
+  "cta": {
+    "keyword": "TOVUTI",
+    "sw": "Comment neno TOVUTI"
+  },
+  "ownership_sw": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+  "prices_in_words": {
+    "Web Starter": "laki tatu na nusu",
+    "Growth": "laki tano na nusu",
+    "Custom": "laki nane",
+    "Care Plan": "shilingi elfu tisini na tisa kwa mwezi, huduma tofauti, si SaaS"
+  },
+  "white_dominant": true,
+  "credits": [
+    "Websites · Kiswahili + English · mobile-first",
+    "Built in Tanzania, for how Tanzania really works.",
+    "@altrawaretechnology · 0790942616",
+    "altra.tanzaniareach.com"
+  ],
+  "clips": [
+    {
+      "i": 1,
+      "file": "v4-01-hook.wav",
+      "text": "Mteja yuko kwenye simu.",
+      "start": 0.0,
+      "raw_duration": 2.32,
+      "effective_duration": 1.785,
+      "end": 1.785,
+      "from_frame": 0,
+      "to_frame": 107
+    },
+    {
+      "i": 2,
+      "file": "v4-02-questions.wav",
+      "text": "Unafanya nini? Bei gani? Wasiliana vipi?",
+      "start": 1.9,
+      "raw_duration": 3.68,
+      "effective_duration": 2.831,
+      "end": 4.731,
+      "from_frame": 114,
+      "to_frame": 284
+    },
+    {
+      "i": 3,
+      "file": "v4-03-code.wav",
+      "text": "HTML, viewport, title ya brand.",
+      "start": 4.85,
+      "raw_duration": 4.12,
+      "effective_duration": 3.169,
+      "end": 8.019,
+      "from_frame": 291,
+      "to_frame": 481
+    },
+    {
+      "i": 4,
+      "file": "v4-04-prices.wav",
+      "text": "Kuanzia shilingi laki tatu na nusu, laki tano na nusu, laki nane. Bei kamili baada ya kufahamu kazi.",
+      "start": 8.15,
+      "raw_duration": 9.28,
+      "effective_duration": 7.138,
+      "end": 15.288,
+      "from_frame": 489,
+      "to_frame": 917
+    },
+    {
+      "i": 5,
+      "file": "v4-05-cta.wav",
+      "text": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Comment neno TOVUTI.",
+      "start": 15.45,
+      "raw_duration": 9.84,
+      "effective_duration": 7.569,
+      "end": 23.019,
+      "from_frame": 927,
+      "to_frame": 1381
+    }
+  ],
+  "assets": {
+    "plates": [
+      "plates/15-clean-white.png",
+      "plates/12-clean-paper.png"
+    ],
+    "png_elements": [
+      "plates/16-white-gold-orb.png",
+      "plates/17-white-violet-ribbon.png"
+    ],
+    "svg_elements": [
+      "elements/phone-frame-ink.svg",
+      "elements/code-brackets-ink.svg",
+      "elements/signal-arc-ink.svg",
+      "elements/node-graph-ink.svg"
+    ],
+    "logo": "logo.png",
+    "audio": "audio/voiceover-websites-v4.wav"
+  },
+  "render_contract": {
+    "all_readable_text_from": "WebsitesV4.jsx BEATS[] + timeline-v4.json",
+    "frame_driven_only": true,
+    "camera_rig": "1.0 -> 1.12 per beat",
+    "stagger_frames": "3-5",
+    "no": [
+      "CSS transitions",
+      "setTimeout",
+      "requestAnimationFrame",
+      "HUD",
+      "timecodes",
+      "progress bars",
+      "stat walls",
+      "full-frame dark background",
+      "English planning term (replaced by kufahamu kazi)"
+    ]
+  },
+  "wording_replacement": "kufahamu kazi / mahitaji yako; the English planning term is not used in V4 content"
+}

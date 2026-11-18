@@ -1,0 +1,67 @@
+{
+  "engine": "Remotion 4.0.544 / @remotion/renderer / @remotion/bundler",
+  "react": "18.3.1",
+  "browser": {
+    "version": "Chromium 153.0.8010.0",
+    "executable": "/tmp/chromium",
+    "mode": "headless-shell"
+  },
+  "ffmpeg": "Remotion bundled compositor ffmpeg n7.1",
+  "composition": {
+    "id": "AltrawareBusinessTipV1",
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "durationInFrames": 1320,
+    "durationSeconds": 22
+  },
+  "assets": [
+    "plates/15-clean-white.png",
+    "plates/12-clean-paper.png",
+    "plates/16-white-gold-orb.png",
+    "plates/17-white-violet-ribbon.png",
+    "elements/phone-frame-ink.svg",
+    "elements/code-brackets-ink.svg",
+    "elements/signal-arc-ink.svg",
+    "elements/node-graph-ink.svg",
+    "logo.png"
+  ],
+  "audio": "audio/voiceover-business-tip-v1.wav (voice-01 male Swahili TTS trial, atempo 1.3, no music/SFX)",
+  "poster": "08-altraware-business-tip-v1-poster.png",
+  "video": "08-altraware-business-tip-v1.mp4",
+  "videoBytes": 3636558,
+  "topic": "Jibu la haraka kwenye simu: unafanya nini, bei gani, wasiliana vipi",
+  "corrections": {
+    "visual_system": "V4 white-dominant clean law; no full-frame dark background; phone/sun check pending",
+    "public_phone": "0790942616",
+    "ig_handle": "@altrawaretechnology",
+    "logo": "content-kit/assets/altraware-logo.png (owner confirmed)",
+    "domain_guard": "No invented domain or official website claim",
+    "voice": "voice-01 masculine audition, auto-assigned when vote was skipped; NOT owner-selected",
+    "tempo": "1.3 (slower male TTS); short business-tip script",
+    "duration_under_25_seconds": true,
+    "duration_seconds": 22,
+    "prices_in_words": "No numeric prices in this Reel; bei kamili baada ya kufahamu kazi yako",
+    "wording_replacement": "kufahamu kazi / mahitaji yako; the English planning term is not used",
+    "white_dominant": true,
+    "qa_gate": "G0-G6 including G6 human phone/sun-readability check"
+  },
+  "guards": [
+    "No invented metrics, clients, testimonials, domains, or official-website claim",
+    "No numeric prices or SaaS/offline-first claims in this business-tip Reel",
+    "No English planning-term wording; uses kufahamu kazi / mahitaji yako",
+    "Tagline: Built in Tanzania, for how Tanzania really works.",
+    "CTA: Comment neno TIP",
+    "No music/SFX; owner adds music/SFX and final edit",
+    "No auto-DM, bot, posting, DMs, credentials, or account changes"
+  ],
+  "drive": {
+    "status": "PENDING",
+    "reason": "google_drive connector received empty arguments on every call this turn; no upload executed",
+    "pending_files": [
+      "08-altraware-business-tip-v1.mp4",
+      "08-mp4-contact-sheet.jpg"
+    ],
+    "local_video_bytes": 3636558
+  }
+}

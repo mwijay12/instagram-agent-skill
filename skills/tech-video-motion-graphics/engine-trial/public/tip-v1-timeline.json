@@ -1,0 +1,136 @@
+{
+  "engine": "Remotion 4.0.544 + React 18",
+  "composition": "AltrawareBusinessTipV1",
+  "visual_system": "white-dominant clean V4 law; content-kit/code-video/VISUAL-SYSTEM.md",
+  "voice": {
+    "voice_id": "voice-01",
+    "requested_gender": "masculine",
+    "selection": "auto-assigned by add_voice when the vote was skipped; NOT owner-selected",
+    "language": "sw",
+    "note": "Male-voice trial reused from V4. Owner can request another audition."
+  },
+  "tempo": 1.3,
+  "pace_note": "Slower male TTS atempo 1.3; short business tip under 25 seconds.",
+  "fps": 60,
+  "duration_seconds": 22.0,
+  "duration_frames": 1320,
+  "under_25_seconds": true,
+  "audio": "voiceover-business-tip-v1.wav",
+  "speech_end_seconds": 21.392,
+  "composite_duration_seconds": 22.0,
+  "composite_sample_rate": 48000,
+  "composite_channels": 1,
+  "brand": {
+    "handle": "@altrawaretechnology",
+    "public_phone": "0790942616",
+    "logo": "logo.png",
+    "link": "https://altra.tanzaniareach.com/",
+    "tagline": "Built in Tanzania, for how Tanzania really works."
+  },
+  "cta": {
+    "keyword": "TIP",
+    "sw": "Comment neno TIP"
+  },
+  "white_dominant": true,
+  "assets": {
+    "plates": [
+      "plates/15-clean-white.png",
+      "plates/12-clean-paper.png"
+    ],
+    "png_elements": [
+      "plates/16-white-gold-orb.png",
+      "plates/17-white-violet-ribbon.png"
+    ],
+    "svg_elements": [
+      "elements/phone-frame-ink.svg",
+      "elements/code-brackets-ink.svg",
+      "elements/signal-arc-ink.svg",
+      "elements/node-graph-ink.svg"
+    ],
+    "logo": "logo.png",
+    "audio": "audio/voiceover-business-tip-v1.wav"
+  },
+  "clips": [
+    {
+      "i": 1,
+      "file": "tip-01-hook.wav",
+      "text": "Biashara yako haianzi na banner. Inaanza na jibu la haraka.",
+      "start": 0.0,
+      "raw_duration": 4.64,
+      "effective_duration": 3.569,
+      "end": 3.569,
+      "from_frame": 0,
+      "to_frame": 214
+    },
+    {
+      "i": 2,
+      "file": "tip-02-what.wav",
+      "text": "Unafanya nini? Huduma au bidhaa iwe wazi mwanzoni.",
+      "start": 3.8,
+      "raw_duration": 4.92,
+      "effective_duration": 3.785,
+      "end": 7.585,
+      "from_frame": 228,
+      "to_frame": 455
+    },
+    {
+      "i": 3,
+      "file": "tip-03-price.wav",
+      "text": "Bei gani? Bei ya kuanzia iwe wazi, si baada ya mkutano wa tatu.",
+      "start": 7.8,
+      "raw_duration": 5.52,
+      "effective_duration": 4.246,
+      "end": 12.046,
+      "from_frame": 468,
+      "to_frame": 723
+    },
+    {
+      "i": 4,
+      "file": "tip-04-contact.wav",
+      "text": "Wasiliana vipi? Simu, WhatsApp au form, njia moja wazi.",
+      "start": 12.2,
+      "raw_duration": 6.0,
+      "effective_duration": 4.615,
+      "end": 16.815,
+      "from_frame": 732,
+      "to_frame": 1009
+    },
+    {
+      "i": 5,
+      "file": "tip-05-cta.wav",
+      "text": "Majibu matatu, ukurasa mmoja. Comment neno TIP.",
+      "start": 16.9,
+      "raw_duration": 5.84,
+      "effective_duration": 4.492,
+      "end": 21.392,
+      "from_frame": 1014,
+      "to_frame": 1284
+    }
+  ],
+  "render_contract": {
+    "all_readable_text_from": "BusinessTipV1.jsx BEATS[] + timeline-tip-v1.json",
+    "frame_driven_only": true,
+    "camera_rig": "1.0 -> 1.12 per beat",
+    "stagger_frames": "3-5",
+    "no": [
+      "CSS transitions",
+      "setTimeout",
+      "requestAnimationFrame",
+      "HUD",
+      "timecodes",
+      "progress bars",
+      "stat walls",
+      "full-frame dark background",
+      "English planning term"
+    ]
+  },
+  "g3_pacing_heuristic": {
+    "final_beat_frames": 306,
+    "final_beat_seconds": 5.1,
+    "final_beat_pct_of_video": 23.2,
+    "cta_button_visible_frames": 84,
+    "cta_button_visible_seconds": 1.4,
+    "note": "Within the <=25% final-shot / <=1.4s end-card guide; owner review still required."
+  },
+  "qa": "content-kit/code-video/QA-business-tip-v1.md"
+}

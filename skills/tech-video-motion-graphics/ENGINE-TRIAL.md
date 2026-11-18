@@ -1,0 +1,55 @@
+# Strong engine trial — evidence
+
+This note records what actually ran while rebuilding the websites reel with a code-driven motion engine. It is evidence for `scenes-websites-v2.json`, not a claim that every listed package produced a video.
+
+## Rendered the deliverable
+
+| Engine | Version | What ran | Result |
+|---|---|---|---|
+| Remotion + React | 4.0.544 / 18.3.1 | `bundle`, `getCompositions`, `renderStill`, `renderMedia` via `scripts/render-remotion.mjs` | Corrected `05-altraware-websites-v2.mp4`, poster, and render manifest |
+| Chromium | 153.0.8010.0 | `@sparticuz/chromium` headless-shell, Puppeteer smoke | Launch OK; `/tmp/chromium-smoke.png` 22,111 bytes |
+| Remotion compositor | ffmpeg n7.1 / ffprobe | H.264 + AAC stitch and validation | 1080 frames, 36.011 s, full decode exit 0 |
+
+Environment notes: the sandbox had no system browser or ffmpeg. Chromium was force-extracted from the npm tarball to `/tmp/chromium`; AL2023 NSS/NSPR libs were extracted to `/tmp/al2023/lib`; brand TTFs were exposed through `/tmp/fonts/fonts.conf`. `node_modules/` and `dist/remotion/` are gitignored and were reinstalled/rebundled after the workspace snapshot reload.
+
+## MCP trial
+
+`ffmpeg-mcp@0.0.3` was started over stdio with the MCP SDK. `listTools` returned `speed_up` and `extract_audio`; `extract_audio` wrote `/tmp/mcp-websites-audio.mp3` (281,043 bytes). This is the only MCP server that was executed. No Smithery, Context7, Cursor Directory, `llms.txt`, or general MCP server integration is claimed.
+
+## Packages inspected / prepared but not rendered
+
+| Package / file | State |
+|---|---|
+| `timecut@0.3.3` + `scripts/timecut-demo.html`, `scripts/test-timecut.mjs` | Written; CLI demo not executed |
+| `@revideo/*@0.11.0` + `revideo-project.tsx`, `scripts/test-revideo.mjs` | Written; direct renderer test not executed |
+| `@motion-canvas/*@3.17.2`, `@motion-canvas/vite-plugin@3.17.2`, `motion-canvas-project.tsx` | Installed and project file written; no Motion Canvas render |
+| `manim-mcp@0.1.1` | Installed and `dist/server.js` inspected; not run. It expects Python/Manim/voiceover/LaTeX/ffmpeg setup |
+| `@ffmpeg-installer/linux-x64/ffmpeg` | Available locally; used as an ffmpeg path option |
+
+`package.json` scripts `revideo:test` and `timecut:test` point at the actual `scripts/test-*.mjs` files. `render_websites.py` remains the deterministic Pillow + ffmpeg fallback, not a Remotion/Motion Canvas clone.
+
+## Not done
+
+No live Instagram posting, DMs, auto-DM/bot, credentials, account changes, Docs/Vercel work for this v2 cut, music/SFX, or owner-side final edit. The corrected MP4 was uploaded to Google Drive for review. TTS is the only audio track; the owner adds music in the editor.
+
+## V3 clean Reel — 18 Nov 2026
+
+| Engine | What ran | Result |
+|---|---|---|
+| Remotion 4.0.544 + React 18 + Chromium 153 | `scripts/render-remotion-v3.mjs --render` with `remotion/index-v3.jsx` / `remotion/WebsitesV3.jsx` | `06-altraware-websites-v3.mp4`, 5,529,176 bytes, 2160 frames at 60fps |
+| Remotion compositor ffprobe n7.1 | stream/format inspection | H.264 1080×1920 60/1, 2160 frames; AAC 48kHz 2ch |
+| imageio ffmpeg v9.0.2 | full decode | exit 0 / FULL_DECODE_OK |
+| Google Drive connector | upload + `make_public` | `1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3`, `anyoneWithLink reader` |
+
+V3 uses clean plates `11`/`12`, isolated PNG elements `13`/`14`, and animated SVGs. Old busy plates `07`–`10` are excluded. Keyframe stills, MP4 contact sheet and `QA-websites-v3.md` G0–G6 are in `content-kit/code-video/`. Motion Canvas / Revideo / Timecut / Manim-MCP still did **not** render an MP4. Owner adds music/SFX and posts manually.
+
+## V4 short white Reel — 18 Nov 2026
+
+| Engine | What ran | Result |
+|---|---|---|
+| Remotion 4.0.544 + React 18 + Chromium 153 | `scripts/render-remotion-v4.mjs --render` with `remotion/index-v4.jsx` / `remotion/WebsitesV4.jsx` | `07-altraware-websites-v4.mp4`, 3,699,257 bytes, 1410 frames at 60fps / 23.5s |
+| Remotion compositor ffprobe n7.1 | stream/format inspection | H.264 1080×1920 60/1, 1410 frames; AAC 48kHz 2ch; `UNDER_25_SECONDS YES` |
+| imageio ffmpeg v9.0.2 | full decode | exit 0 / FULL_DECODE_OK |
+| Google Drive connector | upload + `make_public` + `get_file` | MP4 `1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY`; contact sheet `1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC`; both `anyoneWithLink reader` |
+
+V4 uses white plate `15`, paper `12`, isolated white PNG elements `16`/`17` and ink SVGs. Six stills and eight decoded MP4 frames were viewed; white-dominant pixel receipt and G0–G6 are in `content-kit/code-video/QA-websites-v4.md`. Motion Canvas / Revideo / Timecut / Manim-MCP still did **not** render an MP4. Owner adds music/SFX, approves on a phone in strong sun and posts manually.

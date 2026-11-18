@@ -1,0 +1,197 @@
+{
+  "as_of": "2026-11-17",
+  "source_of_truth": "content-kit/09-decisions.md",
+  "owner": {
+    "preferred_public_name": "Mwijay Davie",
+    "also_referenced_as": [
+      "David Erick Mwijage",
+      "David Mwijage"
+    ],
+    "co_founder_reference": "Clemence Ng'unda",
+    "role": "Co-Founder at Altraware Technologies; Website Developer; Digital Smart Systems Specialist",
+    "location": "Dar es Salaam, Tanzania",
+    "github": [
+      "Mwijay12",
+      "mwijaydavie"
+    ],
+    "github_note": "Both users exist. Mwijay12 has the profile README and Altraware repos; mwijaydavie has instagram-agent-skill, video-use, studio, rs-dsm, motorbike, mwijay__davie.",
+    "instagram_personal": "mwijay__davie",
+    "linkedin_url": "https://www.linkedin.com/in/mwijay-davie/",
+    "linkedin_status": "CONFIRMED by owner, 17 Nov 2026"
+  },
+  "company": {
+    "name": "Altraware Technologies / Altraware Technology",
+    "short_name": "Altraware Tech",
+    "canonical_handle": "@altrawaretechnology",
+    "owner_typed_handle": "altrawaretechology",
+    "handle_status": "CONFIRMED @altrawaretechnology by owner, 17 Nov 2026",
+    "site": "https://altra.tanzaniareach.com/",
+    "site_rule": "Approved link. Never call it official website. Never invent a domain.",
+    "tagline": "Built in Tanzania, for how Tanzania really works.",
+    "languages": [
+      "Kiswahili",
+      "English"
+    ],
+    "email": "altrawaretechnology@gmail.com",
+    "human_phone": "+255 792 867 427",
+    "bot_phone": "0790942616 / +255 790 942 616",
+    "phone_status": "CONFIRMED for public content 17 Nov 2026; human phone +255 792 867 427 stays internal",
+    "hours": "Mon-Sat 8:00-18:00 EAT",
+    "focus": [
+      "websites",
+      "web and mobile apps",
+      "business systems",
+      "Faida POS",
+      "CareTrack",
+      "M-Pesa / mobile money",
+      "Kiswahili-first architecture"
+    ],
+    "linkedin_company_url": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "public_phone": "0790942616",
+    "public_phone_e164": "+255 790 942 616"
+  },
+  "pricing_canonical": {
+    "Web Starter": "TSh 350,000 kuanzia",
+    "Growth": "TSh 550,000 kuanzia",
+    "Custom": "TSh 800,000 kuanzia",
+    "Mifumo": "TSh 1,200,000 kuanzia",
+    "Care Plan": "TSh 99,000/mwezi, huduma tofauti, si SaaS",
+    "rule": "Bei wazi = starting price in writing; full price after kufahamu kazi / mahitaji yako. 750K tier removed."
+  },
+  "claim_guards": {
+    "offline_first": "Faida POS only: offline-first, cloud-synced. Not a general websites claim.",
+    "ownership": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "forbidden": [
+      "100%",
+      "95+ Lighthouse",
+      "chini ya sekunde 2 kwenye 2G",
+      "0.8s",
+      "10x",
+      "99.98%",
+      "invented clients",
+      "invented testimonials",
+      "invented metrics",
+      "invented domains",
+      "official website claim"
+    ]
+  },
+  "logo": {
+    "local_asset": "content-kit/assets/altraware-logo.png",
+    "site_candidates": [
+      "https://altra.tanzaniareach.com/logo.png",
+      "https://altra.tanzaniareach.com/logo.jpg"
+    ],
+    "confirmation": "CONFIRMED by owner 17 Nov 2026; final_poster_1.png SHA-256 72981d16359d15858d5228c45f37528a065e86ea23ef2677b5740d7013ce4def, identical to local asset"
+  },
+  "site_audit": {
+    "altra.tanzaniareach.com": {
+      "fetched": true,
+      "conflicts_with_decisions": [
+        "Hero tagline says Rooted at home. Built for the world.; canonical tagline is Built in Tanzania, for how Tanzania really works.",
+        "Marquee shows TSH 350K / 550K / 750K; 750K tier was removed.",
+        "Neema testimonial and 0% / 0 / 0/7 counters are unapproved proof.",
+        "Works on 2G / offline and offline-first are presented as general site claims.",
+        "M-Pesa Ready / 2G ready style claims need measurement or approval."
+      ],
+      "content_rule": "Continue with 09-decisions.md as source of truth; site copy update deferred until owner asks."
+    },
+    "mwijay.ct.ws": {
+      "fetched": true,
+      "status": "demo",
+      "note": "Avocado Farmers Njombe demo; zero counters and stock photos. Do not present as live client proof."
+    }
+  },
+  "drive_reference_video": {
+    "url": "https://drive.google.com/file/d/1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe/view?usp=drive_link",
+    "file_id": "1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe",
+    "status": "not accessible to connected Drive account; page fetch returned Google sign-in",
+    "action": "owner must share publicly or with connected account"
+  },
+  "visual_assets": {
+    "clean_plates": [
+      "content-kit/code-video/plates/11-clean-navy.png",
+      "content-kit/code-video/plates/12-clean-paper.png"
+    ],
+    "svg_elements": "content-kit/code-video/elements/",
+    "rule": "AI images are texture/elements only; never text or logo.",
+    "v4_white_plates": [
+      "content-kit/code-video/plates/15-clean-white.png",
+      "content-kit/code-video/plates/16-white-gold-orb.png",
+      "content-kit/code-video/plates/17-white-violet-ribbon.png"
+    ],
+    "v4_ink_svgs": "content-kit/code-video/elements/*-ink.svg"
+  },
+  "research_sources": [
+    "https://github.com/mwijay12/mwijay12",
+    "https://github.com/mwijay12/altraware-tech",
+    "https://github.com/mwijay12/strategies",
+    "https://github.com/mwijay12/altraware-technology",
+    "https://github.com/mwijay12/daviecode",
+    "https://altra.tanzaniareach.com/",
+    "https://mwijay.ct.ws/"
+  ],
+  "owner_confirmations_2026_11_17": {
+    "ig_company_handle": "@altrawaretechnology",
+    "linkedin_company": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "linkedin_personal": "https://www.linkedin.com/in/mwijay-davie/",
+    "public_phone": "0790942616",
+    "logo": "content-kit/assets/altraware-logo.png (confirmed)",
+    "site_copy": "09-decisions.md wins; site update deferred",
+    "first_deliverable": "V3 clean Reel",
+    "cadence": "3 posts/week pilot assumed; owner said endelea"
+  },
+  "v3_deliverable": {
+    "file": "content-kit/code-video/samples/06-altraware-websites-v3.mp4",
+    "drive_id": "1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3",
+    "drive_view": "https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk",
+    "size": 5529176,
+    "fps": 60,
+    "duration_seconds": 36.011,
+    "status": "rendered and shared for owner review; not approved or posted",
+    "qa": "content-kit/code-video/QA-websites-v3.md"
+  },
+  "v4_owner_feedback_2026_11_18": {
+    "visual": "white-dominant, sun-readable; dark subordinate only, no full-frame dark theme",
+    "duration": "whole video less than 25 seconds",
+    "voice": "try a male voice; voice-01 auto-assigned masculine trial, NOT owner-selected",
+    "tempo": "slower than V2/V3: atempo 1.3",
+    "prices": "spoken and written in Kiswahili words",
+    "wording": "English planning term replaced by kufahamu kazi / mahitaji yako",
+    "site_copy": "no silent site update; 09-decisions.md remains canonical",
+    "status": "V4 review cut; owner approval, music/SFX, final edit and manual posting still pending"
+  },
+  "v4_deliverable": {
+    "file": "content-kit/code-video/samples/07-altraware-websites-v4.mp4",
+    "drive_id": "1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY",
+    "drive_view": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
+    "contact_sheet_drive_id": "1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC",
+    "contact_sheet_drive_view": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
+    "size": 3699257,
+    "fps": 60,
+    "duration_seconds": 23.509,
+    "under_25_seconds": true,
+    "white_dominant": true,
+    "voice": "voice-01 masculine trial, auto-assigned, not owner-selected",
+    "prices_in_words": "laki tatu na nusu / laki tano na nusu / laki nane; Care Plan elfu tisini na tisa",
+    "status": "rendered and shared for owner review; not approved or posted",
+    "qa": "content-kit/code-video/QA-websites-v4.md"
+  },
+  "business_tip_v1_deliverable": {
+    "file": "content-kit/code-video/samples/08-altraware-business-tip-v1.mp4",
+    "topic": "Jibu la haraka kwenye simu: unafanya nini, bei gani, wasiliana vipi",
+    "duration_seconds": 22.0,
+    "fps": 60,
+    "voice": "voice-01 masculine auto-assigned trial (NOT owner-selected), atempo 1.3, no music/SFX",
+    "visual": "V4 white-dominant law; stills white fraction 0.874-0.946, mean luma 238.4-244.8/255",
+    "qa_report": "content-kit/code-video/QA-business-tip-v1.md",
+    "drive": "PENDING - connector arguments failed this turn; local file committed",
+    "owner_pending": [
+      "phone + strong sun readability check",
+      "music/SFX",
+      "final edit",
+      "manual posting",
+      "manual replies",
+      "metrics logging"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "engine": "Remotion 4.0.544 / @remotion/renderer / @remotion/bundler",
+  "react": "18.3.1",
+  "browser": {
+    "version": "Chromium 153.0.8010.0",
+    "executable": "/tmp/chromium",
+    "mode": "headless-shell"
+  },
+  "ffmpeg": "Remotion bundled compositor ffmpeg n7.1",
+  "composition": {
+    "id": "AltrawareWebsitesV4",
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "durationInFrames": 1410,
+    "durationSeconds": 23.5
+  },
+  "assets": [
+    "plates/15-clean-white.png",
+    "plates/12-clean-paper.png",
+    "elements/phone-frame-ink.svg",
+    "elements/code-brackets-ink.svg",
+    "elements/signal-arc-ink.svg",
+    "elements/node-graph-ink.svg",
+    "logo.png",
+    "plates/16-white-gold-orb.png",
+    "plates/17-white-violet-ribbon.png"
+  ],
+  "audio": "audio/voiceover-websites-v4.wav (voice-01 male Swahili TTS trial, atempo 1.3, no music/SFX)",
+  "poster": "07-altraware-websites-v4-poster.png",
+  "video": "07-altraware-websites-v4.mp4",
+  "videoBytes": 3699257,
+  "corrections": {
+    "visual_system": "V4 white-dominant clean law; full-frame dark backgrounds removed for sun readability",
+    "public_phone": "0790942616",
+    "ig_handle": "@altrawaretechnology",
+    "logo": "content-kit/assets/altraware-logo.png (owner confirmed)",
+    "offline_guard": "Offline-first, cloud-synced applies to Faida POS only; excluded from websites reel",
+    "ownership": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "domain_guard": "No invented domain claim",
+    "fps_target": 60,
+    "visual_guard": "White plate 15 + paper 12 + isolated white PNG elements 16/17 + ink SVGs",
+    "voice": "voice-01 masculine audition, auto-assigned when vote was skipped; NOT owner-selected",
+    "tempo": "1.3 (slowed from V2/V3 atempo 1.7); shorter script",
+    "duration_under_25_seconds": true,
+    "duration_seconds": 23.5,
+    "prices_in_words": "laki tatu na nusu / laki tano na nusu / laki nane; Care Plan elfu tisini na tisa",
+    "wording_replacement": "kufahamu kazi / mahitaji yako; the English planning term is not used in V4 content",
+    "white_dominant": true,
+    "qa_gate": "G0-G6 including G6 human sun-readability check"
+  },
+  "extra_guards": [],
+  "guards": [
+    "No AI-drawn text or logo",
+    "No invented metrics, clients, testimonials, or official-website claim",
+    "No general-website offline or cloud-sync claim",
+    "Ownership uses the exact 09-decisions phrase; no domain ownership claim",
+    "Starting prices only; full price after kufahamu kazi (no English planning-term wording)",
+    "Care Plan elfu tisini na tisa kwa mwezi is a separate service, not SaaS",
+    "Tagline: Built in Tanzania, for how Tanzania really works.",
+    "No auto-DM, bot, posting, DMs, credentials, or account changes"
+  ],
+  "drive": {
+    "video": {
+      "id": "1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY",
+      "view": "https://drive.google.com/file/d/1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY/view?usp=drivesdk",
+      "direct": "https://drive.google.com/uc?id=1cfTBt5uUIAt7q7pmThfI9EsIYf1epxTY&export=download",
+      "size": 3699257,
+      "created": "2026-11-18T11:19:23.228Z",
+      "permission": "anyoneWithLink reader",
+      "allowFileDiscovery": false
+    },
+    "contact_sheet": {
+      "id": "1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC",
+      "view": "https://drive.google.com/file/d/1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC/view?usp=drivesdk",
+      "direct": "https://drive.google.com/uc?id=1ZWjIlUuCFSCrhzphpLiZFEPL2sg6cPQC&export=download",
+      "size": 151263,
+      "created": "2026-11-18T11:19:23.587Z",
+      "permission": "anyoneWithLink reader",
+      "allowFileDiscovery": false
+    }
+  }
+}

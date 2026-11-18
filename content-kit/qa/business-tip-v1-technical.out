@@ -1,0 +1,12 @@
+== business-tip-v1 technical receipts ==
+ESBUILD_OK (BusinessTipV1.jsx, index-tip-v1.jsx)
+NODE_CHECK_OK (render-remotion-tip-v1.mjs, render-stills-tip-v1.mjs)
+JSON_OK (package.json, timeline-tip-v1.json, scenes-business-tip-v1.json)
+SVG_OK (reused ink SVGs validated earlier; unchanged)
+composition: AltrawareBusinessTipV1 1080x1920 60fps 1320 frames 22s
+video: 08-altraware-business-tip-v1.mp4 3636558 bytes
+ffprobe: h264 video 1080 1920 60/1 1320 22.000000 + aac audio 22.016000 48000 2ch; bit_rate 1321423
+UNDER_25_SECONDS YES
+FULL_DECODE_OK (imageio ffmpeg: every frame + audio decoded, exit 0)
+engine: Remotion 4.0.544 + React 18.3.1 + Chromium 153.0.8010.0 (headless-shell, swiftshader, AL2023 libs via LD_LIBRARY_PATH=/tmp/al2023/lib)
+render settings: crf 22, imageFormat jpeg, jpegQuality 88, x264Preset veryfast, concurrency 2, yuv420p, aac 48kHz, muted false, enforceAudioTrack true

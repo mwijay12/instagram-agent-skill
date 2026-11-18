@@ -1,0 +1,33 @@
+== hookscore ==
+
+HOOK RANKING
+==============================================================================
+->  80.0 STRONG  Tovuti yako haipigwi makofi. Inaulizwa maswali matatu na mt...
+        weakest: STAKES (70)
+    47.0 WEAK    Simu ya mteja ndiyo mlango wa duka lako. Jibu liwe wazi.
+        weakest: STAKES (20)
+    39.2 WEAK    Mteja yuko kwenye simu. Anatafuta jibu la haraka.
+        weakest: STAKES (20)
+
+Shoot the top one. If the top one is under 50, none of these are the hook.
+
+
+== beats ==
+
+BEAT SHEET  ·  49 words  ·  ~17.8s at 165 wpm  ·  target 23.5s
+========================================================================
+  0:00.0   1.4s  HOOK    Mteja yuko kwenye simu.
+  0:01.4   2.2s          Unafanya nini? Bei gani? Wasiliana vipi?
+  0:03.6   1.8s          HTML, viewport, title ya brand.
+  0:05.5   4.4s  MID     Kuanzia shilingi laki tatu na nusu, laki tano na nusu, laki nane.
+                         ^ 4.4s on one beat
+  0:09.8   2.2s          Bei kamili baada ya kufahamu kazi.
+  0:12.0   5.8s  CTA     Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni. Comment neno TOVUTI.
+                         ^ 5.8s on one beat
+------------------------------------------------------------------------
+  - Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.
+  - Beat(s) 4, 6 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.
+  - Beats 3-5 have nothing concrete in them. Put a number, a name or a price in one of them.
+  - No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.
+  - 5.7s under target. Either add 15 words or shoot it short. Short is usually right.
+

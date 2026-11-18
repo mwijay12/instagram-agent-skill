@@ -25,3 +25,51 @@ Mmiliki ameamua migongano 5 ya [`01-presence-audit.md`](01-presence-audit.md) §
 | Ruhusa ya namba za kujitangaza | Bado `NEEDS_INPUT`: 99.98% uptime, 24ms, 0.8s, 10x, "Neema", n.k. hazijatumika kama proof. |
 
 **Hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+## Maamuzi ya ziada — 17 Nov 2026 (follow-up ya mmiliki)
+
+| # | Mada | Uamuzi |
+| --- | --- | --- |
+| 6 | **IG handle** | **`@altrawaretechnology`** imethibitishwa. `altrawaretechology` si sahihi kwa content. |
+| 7 | **LinkedIn** | Company: `https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true`. Personal: `https://www.linkedin.com/in/mwijay-davie/`. |
+| 8 | **Simu ya hadhara** | Tumia **`0790942616`** (`+255 790 942 616`) kwenye content/credits/CTA. `+255 792 867 427` inabaki namba ya ndani/binadamu hadi useme vinginevyo. Usiandike "bot" kwenye post. |
+| 9 | **Logo** | `final_poster_1.png` = `content-kit/assets/altraware-logo.png` (SHA-256 `72981d16…`) imethibitishwa. Nakili kama `engine-trial/public/logo.png` kwa V3. |
+| 10 | **Site copy** | Endelea kutumia `09-decisions.md` kama source of truth; usibadilishe site bado. Conflict za site zimeandikwa kwenye `10-content-engine-strategy.md`. |
+| 11 | **Kazi ya kwanza** | Anza na **V3 clean Reel**. Cadence ya pilot `3 posts/week` inabaki assumption hadi utoe nyingine. |
+| 12 | **Drive reference** | Video `1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe` bado haijashirikiwa na account iliyounganishwa; usidai imeangaliwa. |
+| 13 | **V3 clean Reel** | Reel safi imetengenezwa 60fps, BG clean, plates/SVG/logo/namba iliyothibitishwa, QA G0–G6 na Drive review. **Haijapostwa**; mmiliki bado anaongeza music/SFX, final edit na kuidhinisha. |
+
+**Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+## Marekebisho ya V4 — 18 Nov 2026 (follow-up ya mmiliki baada ya V3)
+
+| # | Mada | Uamuzi |
+| --- | --- | --- |
+| 14 | **Rangi / usomaji** | V4 iwe **white-dominant** ili isomeke `hata kama mtu yuko kwenye jua kali`. Dark si marufuku, lakini iwe subordinate tu (ink, chips, kicker, CTA); hakuna full-frame dark theme. |
+| 15 | **Urefu** | Video nzima iwe **chini ya sekunde 25**. V4 imetengenezwa `23.5s` / `1410 frames` / `60fps`. |
+| 16 | **Sauti** | TTS isikimbie: `atempo 1.3` badala ya `1.7`. Jaribio la sauti ya kiume `voice-01` lilitokea kwa **auto-assign** wakati vote ilirukwa; **si sauti aliyochagua mmiliki**. Audition nyingine inaweza kuombwa. |
+| 17 | **Bei kwa maneno** | Bei zisomwe/ziandikwe kwa Kiswahili: `laki tatu na nusu`, `laki tano na nusu`, `laki nane`; Care Plan `shilingi elfu tisini na tisa kwa mwezi` ni huduma tofauti, si SaaS. |
+| 18 | **Neno mbadala** | Neno la Kiingereza la awali la kupanga kazi limebadilishwa na **`kufahamu kazi` / `mahitaji yako`**. Halipo kwenye script, caption, hooks, timeline, guards wala manifest ya V4. |
+| 19 | **Hadhi ya V2/V3** | V2 na V3 ni review copies za historia; **V4 ndiyo revision inayofanyiwa kazi sasa**. Hakuna idhini ya mmiliki bado. |
+| 20 | **Kazi ya mmiliki** | Mmiliki bado anaongeza music/SFX, final edit, anaidhinisha kwenye simu kwenye jua kali, anapost mwenyewe, kisha anaandika `views, reach, saves, sends, profile visits, hold@3s`. Site copy haijabadilishwa; `09-decisions.md` bado ni source of truth. |
+
+**Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+
+## Business-tip Reel v1 — 18 Nov 2026
+
+- Owner asked for a business-tip Reel in the V4 style: `Jibu la haraka kwenye simu`
+  (`unafanya nini`, `bei gani`, `wasiliana vipi`).
+- Built as `business-tip-v1` (`samples/08-*`): white-dominant, 22.0s @60fps (<25s),
+  burned captions, one male TTS voice (`voice-01`, auto-assigned trial, NOT
+  owner-selected), `atempo 1.3`, no music/SFX.
+- No prices are spoken or shown in this Reel; the approved wording
+  `Bei kamili huandikwa baada ya kufahamu kazi yako` is used instead.
+- Claim guards unchanged: no invented metrics/clients/testimonials/domains,
+  no `official website`, no offline-first/cloud-sync (Faida POS only).
+- CTA for this Reel: `Comment neno TIP`.
+- QA: `content-kit/code-video/QA-business-tip-v1.md` (G0-G5 receipts; G6 owner
+  phone/sun check pending).
+- Drive upload for `08-*` is PENDING: the google_drive connector received empty
+  arguments on every call this turn; retry or manual upload needed. Local files are
+  committed under `content-kit/code-video/samples/`.

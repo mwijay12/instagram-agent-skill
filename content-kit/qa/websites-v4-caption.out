@@ -1,0 +1,23 @@
+
+CAPTION LINT  ·  740 / 2200 chars  ·  3 hashtags  ·  1 ask(s)
+==============================================================
+
+  WHAT THE FEED SHOWS
+  +------------------------------------------------------+
+  | Tovuti / website yako haianzi na rangi. Inaanza na   |
+  | mteja aliye kwenye simu.                             |
+  | Maswali matatu: unafanya nini, bei gani, wasilian    |
+  +-------------------------------------------- ... more +
+
+  PASS  LENGTH            740 / 2200 characters
+  PASS  FIRST LINE        75 characters, lands whole
+  PASS  HOOK IS CONCRETE  1 number(s) or name(s) in the visible window
+  PASS  HASHTAGS          3 tag(s): #WebDesignDarEsSalaam #Tovuti #AltrawareTech
+  PASS  TAG PLACEMENT     tags are below the fold
+  PASS  LINKS             no dead links in the body
+  PASS  ONE ASK           one call to action: comment a keyword
+  PASS  EMOJI             0 emoji, 0.0 per 100 characters
+  PASS  SEARCH TERMS      3/3 present, 3 in the visible window
+--------------------------------------------------------------
+  VERDICT  READY
+
