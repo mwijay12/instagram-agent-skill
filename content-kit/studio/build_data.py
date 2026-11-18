@@ -65,7 +65,9 @@ payload = {
     "prompts": prompt_map,
     "video": "../code-video/samples/01-faida-offline.mp4",
     "video_tts": "../code-video/samples/02-faida-offline-tts.mp4",
+    "video_final": "../code-video/samples/03-faida-offline-FINAL.mp4",
     "contact_sheet": "../code-video/samples/02-contact-sheet.jpg",
+    "contact_sheet_final": "../code-video/samples/03-contact-sheet.jpg",
     "poster": "../code-video/samples/still-01-hook.png",
     "stills": [
         "../code-video/samples/still-01-hook.png",

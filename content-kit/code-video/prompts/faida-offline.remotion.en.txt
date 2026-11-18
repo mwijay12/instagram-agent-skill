@@ -7,7 +7,7 @@ Composition: 1080x1920, 30fps, 18s, H.264.
 Output: out/faida-offline.mp4. Fonts: local .woff2 in content-kit/assets/fonts.
 
 ## 1. SOURCE OF TRUTH
-Artifact : Flutter POS with thermal receipts, low-stock alerts, multi-branch tracking and APK builds from GitHub Releases
+Artifact : Faida POS is an app and a system: Flutter POS with thermal receipts, low-stock alerts, multi-branch tracking and APK builds from GitHub Releases
 Repo    : mwijay12/faida-pos-releases  (https://github.com/mwijay12/faida-pos-releases)
 Live    : https://faida-hq.vercel.app/
 Numbers you may state (and nothing else):
@@ -53,13 +53,18 @@ const EASE = 'cubic-bezier(.22,1,.36,1)';
   0:13-0:16    | Paper section, big Fraunces line, one gold hand-drawn underline, keyword in mono
                  | ON SCREEN / SPOKEN: That is the difference between a demo and a shop system.
                  | MOTION: night -> paper cut at 0.6s
+  0:16-0:20    | Paper end card: real logo, Altraware credits, one keyword CTA card. Every glyph is Pillow text; no AI-drawn logo, code or numbers
+                 | ON SCREEN / SPOKEN: If you need this app today, comment the word POS.
+                 | CREDITS: ALTRAWARE TECHNOLOGY | Tunatengeneza app na mifumo ya biashara | Faida POS · APP + MFUMO / SYSTEM | @altrawaretechnology · altra.tanzaniareach.com | Built in Tanzania, for how Tanzania really works.
+                 | LOGO: ../assets/altraware-logo.png (real asset, not AI-drawn)
+                 | MOTION: logo reveals 0.6s, credits one per 0.3s, CTA pops 0.3s
 
 ## 4. PROPS (paste into src/scenes/faida-offline.ts)
 {
   "sceneId": "faida-offline",
   "hook": "WI-FI OFF",
   "spokenHook": "I turn off the Wi-Fi in the shop. The sale still goes through.",
-  "claim": "Faida POS records the sale, prints the receipt and updates stock with no connection, then syncs when the network returns.",
+  "claim": "Faida POS is an app and a system: it records the sale, prints the receipt and updates stock with no connection, then syncs when the network returns.",
   "keyword": "POS",
   "code": [
     "const sale = await faida.checkout({",

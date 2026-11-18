@@ -1,0 +1,112 @@
+{
+  "version": "final",
+  "date": "2026-11-18",
+  "skill": "/ig-codevideo",
+  "engine": "code-render (Pillow + ffmpeg) + external Kiswahili TTS",
+  "scene": "faida-offline",
+  "account": "@altrawaretechnology",
+  "positioning": "Faida POS ni app na system / system, si app tu",
+  "claim_sw": "Faida POS ni app na system: inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
+  "tagline": "Built in Tanzania, for how Tanzania really works.",
+  "final_card": {
+    "t": "0:16-0:20",
+    "logo": "../assets/altraware-logo.png",
+    "logo_note": "Real logo supplied by the owner (final_poster_1.png), transparent PNG. Never redrawn by an AI model.",
+    "credits": [
+      "ALTRAWARE TECHNOLOGY",
+      "Tunatengeneza app na mifumo ya biashara",
+      "Faida POS · APP + MFUMO / SYSTEM",
+      "@altrawaretechnology · altra.tanzaniareach.com",
+      "Built in Tanzania, for how Tanzania really works."
+    ],
+    "visual": "Paper end card: real logo, Altraware credits, one keyword CTA card. Every glyph is Pillow text; no AI-drawn logo, code or numbers",
+    "text_sw": "Kama unahitaji app hii leo, comment neno POS.",
+    "text_en": "If you need this app today, comment the word POS.",
+    "cta_sw": "UNAHITAJI KUIONA LEO? COMMENT NENO POS",
+    "cta_en": "NEED TO SEE IT TODAY? COMMENT THE WORD POS",
+    "motion": "logo reveals 0.6s, credits one per 0.3s, CTA pops 0.3s"
+  },
+  "logo_source": "owner-supplied final_poster_1.png (transparent PNG, unmodified)",
+  "cta": {
+    "keyword": "POS",
+    "sw": "Comment neno POS",
+    "en": "Comment the word POS"
+  },
+  "cta_note": "Neno moja POS kwa kuchuja chats kwa mkono; hakuna auto-DM wala bot iliyowekwa.",
+  "seconds": 28.65,
+  "base_cut_seconds": 20.14,
+  "fps": 24,
+  "size": [
+    1080,
+    1920
+  ],
+  "audio": {
+    "language": "sw",
+    "clips": [
+      {
+        "clip": "01-hook.wav",
+        "start": 0.15,
+        "end": 3.87,
+        "duration": 3.72
+      },
+      {
+        "clip": "02-risiti.wav",
+        "start": 4.05,
+        "end": 7.748,
+        "duration": 3.698
+      },
+      {
+        "clip": "03-code.wav",
+        "start": 7.928,
+        "end": 11.361,
+        "duration": 3.433
+      },
+      {
+        "clip": "04-sync.wav",
+        "start": 11.541,
+        "end": 15.461,
+        "duration": 3.92
+      },
+      {
+        "clip": "05-payoff.wav",
+        "start": 15.641,
+        "end": 19.694,
+        "duration": 4.053
+      },
+      {
+        "clip": "06-cta.wav",
+        "start": 20.34,
+        "end": 28.201,
+        "duration": 7.861,
+        "note": "credits + one keyword ask, spoken over the end card"
+      }
+    ],
+    "music": "NONE - owner adds music in the editor",
+    "sfx": "NONE",
+    "captions": "burned in on every shot"
+  },
+  "plates": [
+    "01-duka.png",
+    "02-contour.png",
+    "03-risiti.png"
+  ],
+  "guards": [
+    "no 100% claim",
+    "offline-first, cloud-synced",
+    "starting prices only",
+    "Care Plan separate service",
+    "no invented domain, no 'official website'"
+  ],
+  "outputs": {
+    "mp4": "samples/03-faida-offline-FINAL.mp4",
+    "voiceover": "audio/voiceover-final.wav",
+    "contact_sheet": "samples/03-contact-sheet.jpg"
+  },
+  "drive": {
+    "mp4_view": "https://drive.google.com/file/d/1UG1-Vn0niV833ZNH_IcSrxCj0WeVNkPe/view?usp=drivesdk",
+    "mp4_download": "https://drive.google.com/uc?id=1UG1-Vn0niV833ZNH_IcSrxCj0WeVNkPe&export=download",
+    "voiceover_wav": "https://drive.google.com/file/d/18Au32g2vi0mhRki0E1LsWXHgDd01lOB_/view?usp=drivesdk",
+    "contact_sheet": "https://drive.google.com/file/d/1ZljgN1RkTXPVHniW3OfKwX8EeRJmQ-C4/view?usp=drivesdk",
+    "access": "anyoneWithLink reader (not discoverable in search)"
+  }
+}

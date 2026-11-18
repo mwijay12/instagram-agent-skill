@@ -273,10 +273,10 @@ def shot_payoff(im, t):
     hand_line(d, 90, 740, 620, 740, rgba(VIOLET), p=p)
     d.text((90, 800), "KATI YA DEMO NA MFUMO WA DUKANI", font=FM(30, 600), fill=rgba(NAVY))
     d.rounded_rectangle((90, 980, 560, 1090), radius=20, fill=rgba(VIOLET, int(255 * p)))
-    d.text((130, 1010), "COMMENT POS", font=FM(40, 700), fill=rgba(PAPER, int(255 * p)))
+    d.text((130, 1010), "COMMENT NENO POS", font=FM(40, 700), fill=rgba(PAPER, int(255 * p)))
     d.text((90, 1220), "BUILT IN TANZANIA, FOR HOW TANZANIA REALLY WORKS.", font=FM(24, 400),
            fill=rgba(NAVY_700, 160))
-    caption(d, "Comment POS, tutakutumia demo.", 1330, color=NAVY, accent=VIOLET, theme="day")
+    caption(d, "Unahitaji kuiona leo? Comment neno POS.", 1330, color=NAVY, accent=VIOLET, theme="day")
 
 
 SHOTS = [

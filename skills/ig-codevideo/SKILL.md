@@ -104,15 +104,23 @@ python3 content-kit/code-video/render_video.py --still 8.0 --out /tmp/frame.png
 # Full pass: AI texture plates + Kiswahili TTS + AAC mux -> MP4 yenye sauti
 python3 content-kit/code-video/render_reel_v2.py
 python3 content-kit/code-video/render_reel_v2.py --no-voice    # parity check
+
+# Shareable cut: + real owner logo, Altraware credits, one keyword CTA, 6th TTS clip
+python3 content-kit/code-video/render_reel_final.py
 ```
 
 `render_reel_v2.py` needs `Pillow` + `ffmpeg` (`pip install imageio-ffmpeg`),
 reads `plates/*.png` and `audio/*.wav`, writes `samples/02-*.mp4`,
-`02-contact-sheet.jpg` and `02-render-manifest.json`. The AI images are
-**plates only**: no model draws a glyph, a digit or a line of code. The
-voiceover clips are external TTS output with one consistent voice_id; if the
-user has no TTS clips, render silently with `--no-voice`. See
-[`content-kit/code-video/TRY-IT.md`](../../content-kit/code-video/TRY-IT.md).
+`02-contact-sheet.jpg` and `02-render-manifest.json`.
+`render_reel_final.py` adds the **end card**: a real owner-supplied logo
+(`assets/altraware-logo.png`, never AI-drawn), Altraware credits,
+`Faida POS ni app na system`, one CTA (`comment neno POS`) and a 6th TTS clip.
+The AI images are **plates only**: no model draws a glyph, a digit, a logo or
+a line of code. Voiceover clips are external TTS with one consistent voice_id;
+no music or SFX is added (the owner adds music in the editor). If the user has
+no TTS clips, render silently with `--no-voice`. See
+[`content-kit/code-video/TRY-IT.md`](../../content-kit/code-video/TRY-IT.md)
+and [`QA-final.md`](../../content-kit/code-video/QA-final.md).
 
 For the AI path, hand over the prompt plus this sentence: *"Composite all code,
 numbers and captions afterwards as real text. The model supplies the plates."*
@@ -166,6 +174,8 @@ render_video.py: samples/01-faida-offline.mp4 exists as a reference.
 caption: run /ig-caption (Job A). Nothing is posted.
 full pass: render_reel_v2.py -> samples/02-faida-offline-tts.mp4
            (3 AI plates + 5 Kiswahili TTS clips, burned-in captions, no music).
+final cut: render_reel_final.py -> samples/03-faida-offline-FINAL.mp4
+           (+ real logo, Altraware credits, "comment neno POS", 6th TTS clip).
 ```
 
 ## Rules

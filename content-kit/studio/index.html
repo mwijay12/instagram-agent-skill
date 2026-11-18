@@ -239,13 +239,14 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
   <section class="view" id="video">
     <div class="hero">
       <div><h1>Code → <em>Video</em></h1>
-      <p class="sub">Scene 8 halisi · beats 40 zenye sekunde · prompt 32 (engine 3 × lugha 2) · MP4 mbili zilizotengenezwa kwa code: ya kwanza kimya, ya pili ina <b>TTS ya Kiswahili + plate 3 za picha</b>. Modeli ya video <b>haijawahi kuombwa kuchora code</b> - hiyo ndiyo tofauti.</p></div>
-      <div class="coords"><b>1080 × 1920 · 16s / 20s · 24fps</b><br>H.264 / yuv420p<br>v2: + AAC voiceover</div>
+      <p class="sub">Scene 8 halisi · beats 40 zenye sekunde · prompt 32 (engine 3 × lugha 2) · MP4 tatu za code: kimya, <b>TTS ya Kiswahili + plate 3</b>, na <b>FINAL yenye logo halisi + credits + "comment neno POS"</b>. Modeli ya video <b>haijawahi kuombwa kuchora code</b> - hiyo ndiyo tofauti.</p></div>
+      <div class="coords"><b>1080 × 1920 · 16s / 20s / 28s · 24fps</b><br>H.264 / yuv420p<br>FINAL: + AAC + logo + credits</div>
     </div>
     <div class="video-layout">
       <div>
         <div class="prompt-toolbar" style="margin-bottom:10px">
           <select id="reel-version">
+            <option value="final">FINAL · logo + credits + CTA (28s)</option>
             <option value="v2">v2 · TTS + plates (20s, sauti)</option>
             <option value="v1">v1 · kimya, code tu (16s)</option>
           </select>
@@ -253,7 +254,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
         </div>
         <div class="phone">
           <video id="reel" controls playsinline loop poster="../code-video/samples/still-01-hook.png">
-            <source id="reel-src" src="../code-video/samples/02-faida-offline-tts.mp4" type="video/mp4">
+            <source id="reel-src" src="../code-video/samples/03-faida-offline-FINAL.mp4" type="video/mp4">
           </video>
         </div>
         <div class="stills" id="stills"></div>
@@ -413,6 +414,7 @@ td{color:var(--muted)} td:first-child{color:var(--paper)}
           <tr><td>PNG</td><td>48 · 1080×1350</td></tr>
           <tr><td>MP4 v1</td><td>16.0s · H.264 · 1080×1920 · kimya</td></tr>
           <tr><td>MP4 v2</td><td>20.0s · H.264 + AAC · TTS Kiswahili · plate 3</td></tr>
+          <tr><td>MP4 FINAL</td><td>28.6s · + logo halisi · credits · "comment neno POS"</td></tr>
         </table>
         <p style="margin-top:12px"><a href="../qa/README.md" style="color:var(--gold)">Soma receipts →</a></p>
       </div>
@@ -452,7 +454,7 @@ const stats = [
   ["6","Carousel decks","48 PNG · 1080×1350","v"],
   ["8","Code-video scenes","40 timed beats","g"],
   ["32","Prompt files","3 engines × 2 lugha","v"],
-  ["2","MP4 za sampuli","16s kimya + 20s TTS","g"],
+  ["3","MP4 za sampuli","16s / 20s / 28s FINAL","g"],
   ["31","QA passes","0 fail · READY","v"],
   ["→ 07","Setup ya leo","bio · settings · SEO · usalama","g"],
 ];
@@ -519,6 +521,7 @@ renderDeck();
 
 /* ---- video ---- */
 const REELS = {
+  final: "../code-video/samples/03-faida-offline-FINAL.mp4",
   v2: "../code-video/samples/02-faida-offline-tts.mp4",
   v1: "../code-video/samples/01-faida-offline.mp4"
 };

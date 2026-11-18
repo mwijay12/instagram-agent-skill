@@ -123,6 +123,9 @@ python3 render_reel_v2.py                  # samples/02-faida-offline-tts.mp4
 python3 render_reel_v2.py --no-voice       # sauti = kimya (parity na sample ya msingi)
 python3 render_reel_v2.py --no-plates      # contour za code tu, bila picha za AI
 
+# FINAL: + logo halisi la mmiliki + credits + "comment neno POS" (clip ya 6 ya TTS)
+python3 render_reel_final.py                # samples/03-faida-offline-FINAL.mp4
+
 # Picha moja ya kukagua frame ya 8.0s
 python3 render_video.py --still 8.0 --out /tmp/frame.png
 ```
@@ -191,13 +194,17 @@ Ukikosa mawili, **usiongeze "cinematic, 4K, highly detailed, masterpiece"**. Man
 | `samples/02-*` | `02-faida-offline-tts.mp4`, `02-contact-sheet.jpg`, `02-render-manifest.json` |
 | [`TRY-IT.md`](TRY-IT.md) | Njia ya kutumia skill leo, hatua kwa hatua (Kiswahili) |
 | [`QA-v2.md`](QA-v2.md) | Receipts za pasi kamili + gate ya 12 |
+| `render_reel_final.py` | FINAL: end card, logo halisi, credits, CTA `POS`, clip ya 6 |
+| `assets/altraware-logo.png` | Logo la mmiliki (`final_poster_1.png`), si AI-drawn |
+| `samples/03-*` | `03-faida-offline-FINAL.mp4`, contact sheet, manifest, [`03-drive-links.md`](samples/03-drive-links.md) |
+| [`QA-final.md`](QA-final.md) | Gate ya 12 ya FINAL + usafi wa madai |
 
 ---
 
 ## 9. Mapungufu ya uaminifu
 
 - `ai-video` prompts hazihakikishii matokeo: kila modeli ina tabia yake. Ndiyo maana zinatoa **texture tu** na QA gate, si ahadi ya "viral".
-- `render_video.py` (sample ya msingi) **haina sauti**. `render_reel_v2.py` inaongeza voiceover ya TTS (clip 5 za Kiswahili, sauti moja) na plate 3 za picha, kisha ina-mux AAC kwa ffmpeg; **bado hakuna muziki wala SFX**, captions zimeburniwa. Sauti ya TTS inatoka kwenye zana ya nje, si `scenes.json`; usipokuwa na clips tumia `--no-voice`. Picha za AI ni **texture tu**, hazina maandishi wala ushahidi wa dai lolote.
+- `render_video.py` (sample ya msingi) **haina sauti**. `render_reel_v2.py` inaongeza voiceover ya TTS (clip 5 za Kiswahili, sauti moja) na plate 3 za picha; `render_reel_final.py` inaongeza clip ya 6, **logo halisi la mmiliki**, credits na CTA moja. Zote zina-mux AAC kwa ffmpeg; **bado hakuna muziki wala SFX** (mmiliki ataongeza muziki mwenyewe), captions zimeburniwa. Sauti ya TTS inatoka kwenye zana ya nje, si `scenes.json`; usipokuwa na clips tumia `--no-voice`. Picha za AI ni **texture tu**, hazina maandishi wala ushahidi wa dai lolote; logo si la AI.
 - Hii haiposti chochote. Unapata prompt, brief, spec na MP4. Unapost wewe.
 - Mstari mmoja wa code kwenye `faida-offline` umenakiliwa kutoka [altra.tanzaniareach.com](https://altra.tanzaniareach.com/); mistari mingine iliyoandikwa `ILLUSTRATIVE` haijadaiwa kuwa ya repo zako.
 - Namba kama `400% volume`, `0.8s checkout`, `99.98% uptime`, `10x faster billing` ni **vipengele/madai ya tovuti yako**, si vipimo. Kwenye prompts zetu `400%` imetumika kama kipengele kilichoandikwa kwenye README ya `hype-alarm`; nyingine hazijatumika.

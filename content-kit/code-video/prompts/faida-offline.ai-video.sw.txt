@@ -10,7 +10,7 @@ Deliver the background plates and the physical actions listed below. Leave
 clean space at y=230..1440 and the right 230px for composited type.
 
 ## 1. CHANZO CHA UKWELI (do not contradict, do not add anything)
-Artifact : POS ya Flutter yenye risiti za thermal, tahadhari za stoo, matawi mengi, na APK kupitia GitHub Releases
+Artifact : Faida POS ni app na mfumo (system): POS ya Flutter yenye risiti za thermal, tahadhari za stoo, matawi mengi, na APK kupitia GitHub Releases
 Repo    : mwijay12/faida-pos-releases  (https://github.com/mwijay12/faida-pos-releases)
 Live    : https://faida-hq.vercel.app/
 Numbers you may state (and nothing else):
@@ -29,9 +29,9 @@ GUARD   : Usiseme '100%' wala '100% offline' wala '0.8s checkout' wala '10x fast
 ## 2. HADITHI
 HOOK (first 2 seconds, spoken): "Nazima Wi-Fi kwenye duka. Mauzo hayasimami."
 ON SCREEN AT FRAME 1: "MTANDAO UMEKATIKA"
-CLAIM (one sentence, no adjectives): "Faida POS inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi."
-PAYOFF: "Comment POS, tutakutumia demo."
-ONE ASK: "Comment POS" (keyword POS)
+CLAIM (one sentence, no adjectives): "Faida POS ni app na system: inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi."
+PAYOFF: "Kama unahitaji app hii leo, comment neno POS."
+ONE ASK: "Comment neno POS" (keyword POS)
 Hook formula id: #18 from skills/ig-reel/hooks.json
 
 ## 3. ORODHA YA SHOTI (one visual change per beat, every <= 2.5s)
@@ -50,6 +50,11 @@ Hook formula id: #18 from skills/ig-reel/hooks.json
   0:13-0:16    | Paper section, big Fraunces line, one gold hand-drawn underline, keyword in mono
                  | ON SCREEN / SPOKEN: Hii ndiyo tofauti kati ya demo na mfumo wa dukani.
                  | MOTION: night -> paper cut at 0.6s
+  0:16-0:20    | Paper end card: real logo, Altraware credits, one keyword CTA card. Every glyph is Pillow text; no AI-drawn logo, code or numbers
+                 | ON SCREEN / SPOKEN: Kama unahitaji app hii leo, comment neno POS.
+                 | CREDITS: ALTRAWARE TECHNOLOGY | Tunatengeneza app na mifumo ya biashara | Faida POS · APP + MFUMO / SYSTEM | @altrawaretechnology · altra.tanzaniareach.com | Built in Tanzania, for how Tanzania really works.
+                 | LOGO: ../assets/altraware-logo.png (real asset, not AI-drawn)
+                 | MOTION: logo reveals 0.6s, credits one per 0.3s, CTA pops 0.3s
 
 ## 4. BLOCK YA BRAND
 BRAND (non-negotiable, from the client's own design tokens):
@@ -76,7 +81,7 @@ On-screen cards are six words or fewer. Hook card is present at frame 1.
 Burn in captions for every spoken line. Keep every word inside the safe zone.
 
 ## 6. SAUTI
-No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Kiswahili TTS voiceover demo: 5 clips in audio/*.wav assembled by render_reel_v2.py; burn in captions.
+No music under the first 2 seconds. One UI click on the Wi-Fi toggle, one thermal printer click under the receipt, low room tone. Kiswahili TTS: 6 clips (5 beats + credits/CTA) in audio/*.wav assembled by render_reel_final.py; the owner adds music in the editor. Burn in captions.
 
 ## 7. YALIYOKATAZWA
 NEGATIVE / DO NOT GENERATE:

@@ -89,3 +89,7 @@ Tumejaribu "code to video kabisaa": picha 3 za AI kama **texture**, TTS 5 za Kis
 | `content-kit/check.py` | `47 pass · 0 warn · 0 fail · 6 decks · READY` |
 
 ⚠️ **Tofauti ya uaminifu:** `beats.py` inakadiria ~11.6s kwa 165 wpm, lakini TTS halisi ilichukua **20.72s** kabla ya `atempo`, hivyo video imenyoshwa hadi **20.14s**. Hii si kosa la script; ni kasi ya sauti iliyochaguliwa. Gate ya 12 iko kwenye [`../code-video/QA-v2.md`](../code-video/QA-v2.md), pamoja na mambo mawili yaliyoachwa wazi (frame 1 ni texture ya AI, `TZS 15,000` ni namba ya DEMO).
+
+### FINAL (baada ya maoni ya mmiliki)
+
+`render_reel_final.py` → **28.63s**, clip **6** ya TTS, **logo halisi** + credits + `comment neno POS`, WAV safi ya kuongezea muziki. Drive: [`../code-video/samples/03-drive-links.md`](../code-video/samples/03-drive-links.md). Gate na usafi wa madai: [`../code-video/QA-final.md`](../code-video/QA-final.md). `check.py` bado `47 pass · 0 fail · READY`.

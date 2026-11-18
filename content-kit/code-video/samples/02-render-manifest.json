@@ -6,7 +6,7 @@
   "scene": "faida-offline",
   "account": "@altrawaretechnology",
   "artifact": "https://github.com/mwijay12/faida-pos-releases",
-  "claim_sw": "Faida POS inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
+  "claim_sw": "Faida POS ni app na system: inarekodi mauzo, inatoa risiti, na inasasisha stoo hata bila internet, kisha inasync muunganisho ukirudi.",
   "tagline": "Built in Tanzania, for how Tanzania really works.",
   "rule": "AI images are texture only; all code, numbers and captions are real Pillow text",
   "seconds": 20.14,

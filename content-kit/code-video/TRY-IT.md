@@ -110,4 +110,26 @@ python3 content-kit/check.py
 | `samples/02-render-manifest.json` | clip start/end, beat map, plates, guards |
 | `audio/voiceover.wav` | track ya sauti pekee (unaweza kuibadilisha kwenye editor) |
 | `plates/*.png` | texture 3 |
-| `QA-v2.md` | receipts za leo |
+| `QA-v2.md` | receipts za pasi ya v2 |
+
+---
+
+## 8. FINAL (leo, baada ya maoni ya mmiliki) ⭐
+
+```bash
+/tmp/kvenv/bin/python content-kit/code-video/render_reel_final.py
+```
+
+Inachukua v2 yote (20.14s) na kuongeza **end card**: **logo halisi** ulichotuma (`final_poster_1.png`), **credits za Altraware**, positioning **"Faida POS ni app na system"**, na CTA moja **`comment neno POS`**. TTS ina clip ya 6, sauti ile ile, **bado hakuna muziki** (utaongeza wewe kwenye editor).
+
+| Faili | Maana |
+| --- | --- |
+| `samples/03-faida-offline-FINAL.mp4` | **Ya kushiriki** · 28.6s · H.264 + AAC |
+| `audio/voiceover-final.wav` | sauti safi ya kuwekea muziki wako |
+| `samples/03-contact-sheet.jpg` | frame 6 |
+| `samples/03-drive-links.md` | link za Drive (public) |
+| `samples/03-render-manifest.json` | ramani ya clip 6 + guards |
+| `QA-final.md` | gate ya 12 + mambo yaliyoachwa wazi |
+| `assets/altraware-logo.png` | logo yako, haijachorwa upya |
+
+**Kanuni ya CTA:** neno moja `POS` linakusaidia kuchuja zile *many chats* **kwa mkono**. Sijaweka auto-DM wala bot — uamuzi huo ni wako, na unakuja baada ya ku-rekebisha FAQ ya bot (angalia `QA-final.md` §5).
