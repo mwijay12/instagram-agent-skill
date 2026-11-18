@@ -8,9 +8,9 @@
 2. **One hero per frame.** Big needs small around it. At most 3 focal objects; text always gets a quiet safe zone.
 3. **Elements are separate.** Motion lives in isolated SVG/PNG elements placed away from the words, not as a full-frame texture.
 4. **No AI text/logo.** Generated images are texture or isolated elements only. All glyphs, code, numbers, captions, timing and logo marks come from deterministic render.
-5. **No page chrome.** No kicker-over-headline deck, tracked caps, timecodes, counters, progress bars, header/footer bars, stat walls, invented UI cards.
+5. **No page chrome.** No HUD, timecodes, counters, progress bars, stat walls, fake dashboards/analytics panels, or invented product screenshots presented as proof. One quiet brand/kicker line and a metaphorical phone frame are allowed; no deck-style kicker stacks or header/footer bars with backgrounds.
 6. **Frame-driven only.** `useCurrentFrame()`, `spring()`, `interpolate()` with `extrapolateLeft/Right: 'clamp'`. No CSS transitions, `setTimeout`, `requestAnimationFrame`, `time.time()`.
-7. **60fps target.** V2 was validated at 30fps; V3 should render 1080×1920 at 60fps when the Chromium/Remotion environment is available.
+7. **60fps rendered.** V2 was validated at 30fps; V3 rendered 1080×1920 at 60fps / 2160 frames with Remotion 4.0.544.
 8. **3-second rule.** No static frame > 180 frames at 60fps. Cut on motion; entries decelerate, exits accelerate; stagger 3–5 frames.
 9. **Readability gate G6.** Human check on contact sheet + full frames: can a stranger read the hero line in one glance? If not, simplify the ground before touching the type.
 
@@ -24,8 +24,13 @@
 | `elements/code-brackets.svg` | Vibe coding / code diff |
 | `elements/signal-arc.svg` | Ujumbe unafika / API / sync |
 | `elements/node-graph.svg` | System architecture / project proof |
+| `public/logo.png` | **Owner-confirmed** Altraware mark for V3 credits |
+| `plates/13-gold-orb.png` | Isolated AI-generated PNG element, low-opacity glow only |
+| `plates/14-violet-ribbon.png` | Isolated AI-generated PNG element, low-opacity fragment only |
 
 Old plates `07-dar-blue-hour.png` … `10-paper-blueprint.png` remain available but should be used only as **cropped, low-opacity fragments** or isolated elements, never as a full-frame background under text.
+
+**V3 owner-confirmed assets:** logo `content-kit/assets/altraware-logo.png` copied to `engine-trial/public/logo.png`; public phone `0790942616` in credits.
 
 ## Palette and type
 
@@ -64,3 +69,5 @@ Old plates `07-dar-blue-hour.png` … `10-paper-blueprint.png` remain available 
 ## Claim guards (inherit)
 
 `09-decisions.md` wins. Starting prices only. Care Plan separate, not SaaS. `offline-first, cloud-synced` is **Faida POS only**. Ownership: `Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.` Tagline exact. CTA `Comment neno TOVUTI`. No invented metrics, clients, testimonials, domains or "official website".
+
+**V3 QA:** [`QA-websites-v3.md`](QA-websites-v3.md) records G0–G6, including the G6 human background-readability check.

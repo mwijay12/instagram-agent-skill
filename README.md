@@ -355,7 +355,10 @@ content-kit/code-video/VISUAL-SYSTEM.md  clean-background V3 spec + generated pl
 content-kit/check.py             stdlib linter: 47 pass, 0 fail, READY
 skills/ig-codevideo/SKILL.md     the fourteenth skill
 skills/tech-video-motion-graphics/SKILL.md  the fifteenth skill + Remotion engine + clean V3 laws
-skills/tech-video-motion-graphics/ENGINE-TRIAL.md  engine evidence
+skills/tech-video-motion-graphics/ENGINE-TRIAL.md  engine evidence (V2 + V3)
+content-kit/code-video/QA-websites-v3.md  G0-G6 clean-background QA
+content-kit/code-video/samples/06-altraware-websites-v3.mp4  60fps clean Reel
+content-kit/code-video/samples/06-drive-links.md  public Drive review link
 ```
 
 Two upstream tools were localised while QA-ing the kit:

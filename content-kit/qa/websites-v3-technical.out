@@ -1,0 +1,16 @@
+== esbuild ==
+ESBUILD_OK
+
+== node check ==
+NODE_CHECK_OK
+
+== json ==
+JSON_OK
+
+== ffprobe ==
+h264 video 1080 1920 60/1 2160 36.000000 None None
+aac audio None None 0/0 1690 36.011000 48000 2
+format mov,mp4,m4a,3gp,3g2,mj2 36.011000 5529176 1228330
+
+== full decode ==
+FULL_DECODE_OK

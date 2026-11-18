@@ -200,6 +200,8 @@ Ukikosa mawili, **usiongeze "cinematic, 4K, highly detailed, masterpiece"**. Man
 | [`QA-final.md`](QA-final.md) | Gate ya 12 ya FINAL + usafi wa madai |
 | `skills/tech-video-motion-graphics/render_websites.py` | Websites 60fps: spring/camera/code-diff, `--still` kwanza kisha `--fps 60` |
 | `samples/04-*` | `04-altraware-websites.mp4`, contact sheet ya frame 9, manifest, [`04-look.md`](samples/04-look.md), [`04-drive-links.md`](samples/04-drive-links.md) |
+| `samples/05-*` | corrected `05-altraware-websites-v2.mp4`, poster, contact sheet, manifest, [`05-drive-links.md`](samples/05-drive-links.md), [`QA-websites-v2.md`](QA-websites-v2.md) |
+| `samples/06-*` | **V3 clean Reel** `06-altraware-websites-v3.mp4` (60fps), poster, keyframe/MP4 contact sheets, manifest, [`06-drive-links.md`](samples/06-drive-links.md), [`QA-websites-v3.md`](QA-websites-v3.md), [`scenes-websites-v3.json`](scenes-websites-v3.json) |
 | [`QA-websites.md`](QA-websites.md) | Gate ya websites + uaminifu wa engine |
 | [Google Doc](https://docs.google.com/document/d/1Nt9f_TasuJ-a5BieeU3YrBbt8HfJSCWMLPDwMGV8GPs/edit?usp=drivesdk) | Brief ya script + caption + limits, public |
 

@@ -1,6 +1,6 @@
 # Content engine strategy — Mwijay Davie × Altraware Technologies
 
-**Status:** strategy draft for owner approval, 17 Nov 2026. Nothing here has been posted.  
+**Status:** strategy draft for owner approval, 17 Nov 2026. Owner confirmed handle, LinkedIn URLs, public phone and logo the same day; **V3 clean Reel** chosen, rendered at 60fps and shared on Drive for review: https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk. Nothing here has been posted.
 **Source of truth:** `content-kit/09-decisions.md` overrides any conflicting copy on live sites.  
 **Owner's brief:** tech business, IT, AI, vibe coding, money-making online; **Kiswahili + English**; programmatic video skills; clean motion graphics; IG carousels; LinkedIn; trends/real data; 15 live/demo systems as proof; agent prepares content, owner approves/posts.
 
@@ -90,8 +90,10 @@ Project registry: `content-kit/data/projects.json` (15 projects, URLs normalised
 | Channel | Handle / URL | Cadence pilot | Format |
 | --- | --- | --- | --- |
 | IG personal | `mwijay__davie` | 2×/week | Reel + carousel, SW+EN |
-| IG Altraware | **`@altrawaretechnology`** per kit; you typed `altrawaretechology` — confirm spelling | 1×/week | Product proof Reel / carousel |
-| LinkedIn | URL not supplied | 1×/week | English text + 1 screenshot/diagram |
+| IG Altraware | **`@altrawaretechnology`** — confirmed by owner | 1×/week | Product proof Reel / carousel |
+| LinkedIn personal | https://www.linkedin.com/in/mwijay-davie/ | 1×/week | English text + 1 screenshot/diagram |
+| LinkedIn company | https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true | as needed | Company updates / proof |
+| Public phone | `0790942616` | as needed | Reel credits / captions |
 | GitHub | `Mwijay12`, `mwijaydavie` | as shipped | README / repo as proof |
 | Site | `https://altra.tanzaniareach.com/` | canonical link | Not "official website" |
 
@@ -128,10 +130,10 @@ New hard rule: **clean background, one hero, readable first.**
 - Use flat/low-frequency grounds: `content-kit/code-video/plates/11-clean-navy.png` and `12-clean-paper.png` were generated for this.
 - Put motion in **separate SVG/PNG elements**, not behind the words: `content-kit/code-video/elements/*.svg`.
 - One hero per frame; at most 3 focal objects; every text block gets a quiet safe zone.
-- No page chrome, kicker-over-headline decks, timecodes, progress bars, stat walls, invented names/numbers.
+- No page chrome: no HUD, timecodes, progress bars, stat walls, fake dashboards or invented names/numbers. One quiet brand/kicker line and a metaphorical phone frame are allowed; no full-frame busy art behind copy.
 - Generated images may be texture or isolated elements only — **never text or logo**.
 - All letters, code, numbers, captions and timing come from deterministic render.
-- Spec: 1080×1920 vertical, **60fps target** for V3, dark `#071022` / paper `#f7f6f2`, gold `#eab308`, violet `#7c3aed`, Fraunces / Inter / JetBrains Mono.
+- Spec: 1080×1920 vertical, **60fps rendered** for V3, dark `#071022` / paper `#f7f6f2`, gold `#eab308`, violet `#7c3aed`, Fraunces / Inter / JetBrains Mono.
 - Frame-driven only: `useCurrentFrame()`, `spring({damping:14,stiffness:120,mass:0.8})`, `interpolate()` with both clamps. No CSS transitions, `setTimeout`, `requestAnimationFrame`.
 - 3-second rule: no static frame > 180 frames at 60fps. Camera zoom `1.0→1.35`, stagger 3–5 frames, cut on motion.
 - Code: line-by-line focus at 25% dim / 100% active, token morph 0.6–0.9s, Shiki or deterministic spans, tabular numerals.
@@ -181,19 +183,19 @@ After post 10: review `views, reach, saves, sends, profile visits, hold@3s`. Aft
 9. Upload to Drive with `anyoneWithLink reader`, save link in `samples/*-drive-links.md`.
 10. Hand off script/caption/carousel/video. **Owner adds music, edits, posts.** No auto-DM, bot, credentials or account changes.
 
-## 11. Open confirmations before I publish anything
+## 11. Owner confirmations and open items — updated 17 Nov 2026
 
-| Item | Current assumption | Need from you |
-| --- | --- | --- |
-| Altraware IG handle | `@altrawaretechnology` from kit | Confirm `altrawaretechology` vs `@altrawaretechnology` |
-| LinkedIn | not supplied | Profile URL |
-| Drive reference video | not accessible | Share with connected account / public link |
-| Logo | local `content-kit/assets/altraware-logo.png`, site `logo.png`/`logo.jpg` | Confirm final mark |
-| Phone numbers | `09-decisions.md` bot/human split | Final check before CTA |
-| Site copy | `09-decisions.md` wins | Update site or approve using canonical copy |
-| Screenshots | fetch text + main image only | Upload real UI screenshots |
-| Cadence | 3 posts/week pilot | Approve or change |
-| First deliverable | strategy + clean assets done | Choose: **V3 clean Reel** or **first 3 content pieces** first |
+| Item | Status |
+| --- | --- |
+| Altraware IG handle | **Confirmed:** `@altrawaretechnology` |
+| LinkedIn | **Confirmed:** personal `https://www.linkedin.com/in/mwijay-davie/`; company `https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true` |
+| Public phone | **Confirmed:** `0790942616` for content/credits; human `+255 792 867 427` stays internal |
+| Logo | **Confirmed:** `final_poster_1.png` = `content-kit/assets/altraware-logo.png`, SHA-256 `72981d16…` |
+| Site copy | **Continue** with `09-decisions.md` as source of truth; site update deferred |
+| Drive reference video | Still not accessible; share with connected account / public link |
+| Screenshots | Still owner-supplied; no browser screenshot tool here |
+| Cadence | **Assumed** 3 posts/week pilot; owner said "endelea" |
+| First deliverable | **Done:** V3 clean Reel rendered, QA G0–G6 recorded, Drive review link shared; owner approval pending |
 
 ---
 

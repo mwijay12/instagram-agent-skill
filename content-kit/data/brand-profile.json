@@ -3,32 +3,52 @@
   "source_of_truth": "content-kit/09-decisions.md",
   "owner": {
     "preferred_public_name": "Mwijay Davie",
-    "also_referenced_as": ["David Erick Mwijage", "David Mwijage"],
+    "also_referenced_as": [
+      "David Erick Mwijage",
+      "David Mwijage"
+    ],
     "co_founder_reference": "Clemence Ng'unda",
     "role": "Co-Founder at Altraware Technologies; Website Developer; Digital Smart Systems Specialist",
     "location": "Dar es Salaam, Tanzania",
-    "github": ["Mwijay12", "mwijaydavie"],
+    "github": [
+      "Mwijay12",
+      "mwijaydavie"
+    ],
     "github_note": "Both users exist. Mwijay12 has the profile README and Altraware repos; mwijaydavie has instagram-agent-skill, video-use, studio, rs-dsm, motorbike, mwijay__davie.",
     "instagram_personal": "mwijay__davie",
-    "linkedin_url": null,
-    "linkedin_status": "owner said they have LinkedIn; URL not supplied"
+    "linkedin_url": "https://www.linkedin.com/in/mwijay-davie/",
+    "linkedin_status": "CONFIRMED by owner, 17 Nov 2026"
   },
   "company": {
     "name": "Altraware Technologies / Altraware Technology",
     "short_name": "Altraware Tech",
     "canonical_handle": "@altrawaretechnology",
     "owner_typed_handle": "altrawaretechology",
-    "handle_status": "NEEDS_CONFIRM",
+    "handle_status": "CONFIRMED @altrawaretechnology by owner, 17 Nov 2026",
     "site": "https://altra.tanzaniareach.com/",
     "site_rule": "Approved link. Never call it official website. Never invent a domain.",
     "tagline": "Built in Tanzania, for how Tanzania really works.",
-    "languages": ["Kiswahili", "English"],
+    "languages": [
+      "Kiswahili",
+      "English"
+    ],
     "email": "altrawaretechnology@gmail.com",
     "human_phone": "+255 792 867 427",
     "bot_phone": "0790942616 / +255 790 942 616",
-    "phone_status": "owner-side final check pending",
+    "phone_status": "CONFIRMED for public content 17 Nov 2026; human phone +255 792 867 427 stays internal",
     "hours": "Mon-Sat 8:00-18:00 EAT",
-    "focus": ["websites", "web and mobile apps", "business systems", "Faida POS", "CareTrack", "M-Pesa / mobile money", "Kiswahili-first architecture"]
+    "focus": [
+      "websites",
+      "web and mobile apps",
+      "business systems",
+      "Faida POS",
+      "CareTrack",
+      "M-Pesa / mobile money",
+      "Kiswahili-first architecture"
+    ],
+    "linkedin_company_url": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "public_phone": "0790942616",
+    "public_phone_e164": "+255 790 942 616"
   },
   "pricing_canonical": {
     "Web Starter": "TSh 350,000 kuanzia",
@@ -41,12 +61,27 @@
   "claim_guards": {
     "offline_first": "Faida POS only: offline-first, cloud-synced. Not a general websites claim.",
     "ownership": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
-    "forbidden": ["100%", "95+ Lighthouse", "chini ya sekunde 2 kwenye 2G", "0.8s", "10x", "99.98%", "invented clients", "invented testimonials", "invented metrics", "invented domains", "official website claim"]
+    "forbidden": [
+      "100%",
+      "95+ Lighthouse",
+      "chini ya sekunde 2 kwenye 2G",
+      "0.8s",
+      "10x",
+      "99.98%",
+      "invented clients",
+      "invented testimonials",
+      "invented metrics",
+      "invented domains",
+      "official website claim"
+    ]
   },
   "logo": {
     "local_asset": "content-kit/assets/altraware-logo.png",
-    "site_candidates": ["https://altra.tanzaniareach.com/logo.png", "https://altra.tanzaniareach.com/logo.jpg"],
-    "confirmation": "pending owner approval"
+    "site_candidates": [
+      "https://altra.tanzaniareach.com/logo.png",
+      "https://altra.tanzaniareach.com/logo.jpg"
+    ],
+    "confirmation": "CONFIRMED by owner 17 Nov 2026; final_poster_1.png SHA-256 72981d16359d15858d5228c45f37528a065e86ea23ef2677b5740d7013ce4def, identical to local asset"
   },
   "site_audit": {
     "altra.tanzaniareach.com": {
@@ -58,7 +93,7 @@
         "Works on 2G / offline and offline-first are presented as general site claims.",
         "M-Pesa Ready / 2G ready style claims need measurement or approval."
       ],
-      "content_rule": "Do not copy live site marketing copy into posts. Use 09-decisions.md and projects.json."
+      "content_rule": "Continue with 09-decisions.md as source of truth; site copy update deferred until owner asks."
     },
     "mwijay.ct.ws": {
       "fetched": true,
@@ -73,7 +108,10 @@
     "action": "owner must share publicly or with connected account"
   },
   "visual_assets": {
-    "clean_plates": ["content-kit/code-video/plates/11-clean-navy.png", "content-kit/code-video/plates/12-clean-paper.png"],
+    "clean_plates": [
+      "content-kit/code-video/plates/11-clean-navy.png",
+      "content-kit/code-video/plates/12-clean-paper.png"
+    ],
     "svg_elements": "content-kit/code-video/elements/",
     "rule": "AI images are texture/elements only; never text or logo."
   },
@@ -85,5 +123,25 @@
     "https://github.com/mwijay12/daviecode",
     "https://altra.tanzaniareach.com/",
     "https://mwijay.ct.ws/"
-  ]
+  ],
+  "owner_confirmations_2026_11_17": {
+    "ig_company_handle": "@altrawaretechnology",
+    "linkedin_company": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+    "linkedin_personal": "https://www.linkedin.com/in/mwijay-davie/",
+    "public_phone": "0790942616",
+    "logo": "content-kit/assets/altraware-logo.png (confirmed)",
+    "site_copy": "09-decisions.md wins; site update deferred",
+    "first_deliverable": "V3 clean Reel",
+    "cadence": "3 posts/week pilot assumed; owner said endelea"
+  },
+  "v3_deliverable": {
+    "file": "content-kit/code-video/samples/06-altraware-websites-v3.mp4",
+    "drive_id": "1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3",
+    "drive_view": "https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk",
+    "size": 5529176,
+    "fps": 60,
+    "duration_seconds": 36.011,
+    "status": "rendered and shared for owner review; not approved or posted",
+    "qa": "content-kit/code-video/QA-websites-v3.md"
+  }
 }

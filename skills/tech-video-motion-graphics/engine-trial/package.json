@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Strong trial: run real Remotion / Revideo / Motion Canvas / Timecut / MCP with an npm-shipped Chromium, for the Altraware websites Reel.",
+  "description": "Strong trial: Remotion V2/V3 renders with npm-shipped Chromium; optional Revideo / Motion Canvas / Timecut / MCP trials for the Altraware websites Reel.",
   "scripts": {
     "chromium:test": "node scripts/test-chromium.mjs",
     "mcp:test": "node scripts/test-mcp.mjs",
     "remotion:still": "node scripts/render-remotion.mjs --still",
     "remotion:render": "node scripts/render-remotion.mjs",
     "revideo:test": "node scripts/test-revideo.mjs",
-    "timecut:test": "node scripts/test-timecut.mjs"
+    "timecut:test": "node scripts/test-timecut.mjs",
+    "remotion:v3:still": "node scripts/render-remotion-v3.mjs --still",
+    "remotion:v3:render": "node scripts/render-remotion-v3.mjs --render",
+    "remotion:v3:stills": "node scripts/render-stills-v3.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.32.2",

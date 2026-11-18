@@ -19,16 +19,17 @@
       "role": "Product proof, systems, pricing, client education, Tanzanian business reality",
       "language": "Kiswahili + English",
       "pilot_cadence": "1 post/week",
-      "status": "handle spelling needs confirmation"
+      "status": "handle CONFIRMED @altrawaretechnology",
+      "public_phone": "0790942616"
     },
     {
       "id": "linkedin",
       "platform": "LinkedIn",
-      "url": null,
+      "url": "https://www.linkedin.com/in/mwijay-davie/",
       "role": "B2B thought leadership, case studies, technical lessons, hiring/clients",
       "language": "English-first, Kiswahili snippets",
       "pilot_cadence": "1 post/week",
-      "status": "URL not supplied"
+      "status": "personal URL CONFIRMED"
     },
     {
       "id": "github-mwijay12",
@@ -50,12 +51,47 @@
       "url": "https://altra.tanzaniareach.com/",
       "role": "Canonical approved link, not official website claim",
       "status": "live, copy conflicts with 09-decisions.md"
+    },
+    {
+      "id": "linkedin-company",
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true",
+      "role": "Company updates, product proof, B2B credibility",
+      "language": "English-first, Kiswahili snippets",
+      "status": "company URL CONFIRMED"
     }
   ],
   "posting_policy": {
-    "agent_prepares": ["research", "brief", "script", "hooks", "caption", "carousel", "video", "QA", "Drive handoff"],
-    "owner_does": ["approve", "add music/SFX", "final edit", "post", "reply to comments/DMs manually"],
-    "never": ["auto-DM", "bot", "scheduled posting", "credential storage", "account changes", "bought engagement"],
+    "agent_prepares": [
+      "research",
+      "brief",
+      "script",
+      "hooks",
+      "caption",
+      "carousel",
+      "video",
+      "QA",
+      "Drive handoff"
+    ],
+    "owner_does": [
+      "approve",
+      "add music/SFX",
+      "final edit",
+      "post",
+      "reply to comments/DMs manually"
+    ],
+    "never": [
+      "auto-DM",
+      "bot",
+      "scheduled posting",
+      "credential storage",
+      "account changes",
+      "bought engagement"
+    ],
     "measurement": "log views, reach, saves, sends, profile visits, hold@3s for 10-30 posts before conclusions"
-  }
+  },
+  "public_phone": "0790942616",
+  "owner_confirmations_2026_11_17": "Handle, LinkedIn URLs, public phone and logo confirmed; V3 clean Reel chosen.",
+  "v3_reel_drive": "https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk",
+  "v3_reel_status": "rendered, G0-G6 checked, awaiting owner visual approval and manual posting"
 }

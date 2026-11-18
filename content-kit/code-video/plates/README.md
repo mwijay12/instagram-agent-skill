@@ -13,3 +13,14 @@ Picha 3 zilizotengenezwa 18 Nov 2026 kwa ajili ya `render_reel_v2.py`:
 Ukibadilisha picha, weka majina haya au hariri `prepare_plates()` kwenye `render_reel_v2.py`. Ukizifuta, tumia `--no-plates` (contour za code tu zinatosha).
 
 Picha si ushahidi wa duka, risiti wala mteja yeyote halisi. Ni texture ya kuondoa "generic gradient" bila kuvunja sheria ya ukweli.
+
+## V3 clean plates and isolated PNG elements — 18 Nov 2026
+
+| Faili | Aina | Matumizi |
+| --- | --- | --- |
+| `11-clean-navy.png` | clean low-frequency navy plate | V3 dark beats (hook, language, code, CTA) |
+| `12-clean-paper.png` | clean low-frequency paper plate | V3 light beats (questions, prices) |
+| `13-gold-orb.png` | isolated AI PNG element | low-opacity glow fragment only, no text/logo |
+| `14-violet-ribbon.png` | isolated AI PNG element | low-opacity cropped fragment only, no text/logo |
+
+**Kanuni ya V3:** BG iwe clean na isomeke vizuri. Plates `07`–`10` hazitumiki kamili nyuma ya maandishi; zinaweza kuwa cropped/low-opacity fragments tu. Herufi zote, code, namba, captions, timing na logo vinachorwa na Remotion/React/SVG, si na modeli ya picha. Angalia [`../VISUAL-SYSTEM.md`](../VISUAL-SYSTEM.md) na [`../QA-websites-v3.md`](../QA-websites-v3.md).

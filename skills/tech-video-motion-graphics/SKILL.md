@@ -58,7 +58,7 @@ The V2 contact sheet was readable but too busy. **V3 must be calm.**
 - Put motion in separate SVG/PNG elements: `content-kit/code-video/elements/*.svg`.
 - One hero per frame; quiet safe zone behind every text block.
 - Old busy plates may be cropped/low-opacity fragments only, never full-frame behind copy.
-- No page chrome, kicker-over-headline deck, timecode, progress bar, stat wall, invented UI card.
+- No page chrome: no HUD, timecodes, progress bars, stat walls, fake dashboards or invented product screenshots as proof. One quiet brand/kicker line and a metaphorical phone frame are allowed.
 - Add **G6 = background readability**, judged by eye on the contact sheet. G1/G4 also remain human.
 
 Full spec: `content-kit/code-video/VISUAL-SYSTEM.md`.
@@ -83,7 +83,7 @@ const x = interpolate(frame, [0, 60], [0, 240], {
 - No CSS `transition`, `animation`, `requestAnimationFrame`, `setTimeout` inside a shot.
 - Unclamped interpolation is banned.
 - `fontVariantNumeric: 'tabular-nums'` for counters/prices.
-- 60fps target, 1080×1920 vertical, `damping: 14, stiffness: 120, mass: 0.8`.
+- 60fps rendered for V3, 1080×1920 vertical, `damping: 20, stiffness: 160, mass: 0.9`.
 
 Motion Canvas / Revideo: use generator signals and `yield*`; `easeOutExpo`, `easeInOutCubic`, `spring(PlopSpring, ...)`. Calling `node().opacity(1, 0.5)` without `yield*` creates an unexecuted generator.
 
@@ -113,7 +113,7 @@ Motion Canvas / Revideo: use generator signals and `yield*`; `easeOutExpo`, `eas
 | G2 no empty frame | no run > 3 flat frames | `look.py` |
 | G3 end card short | hold ≤ 1.4s, final shot ≤ 25% | `look.py` |
 | G4 one hero per frame | ≤ 3 focal objects, one dominant | by eye |
-| G5 no page chrome | no labels/timecodes/progress bars/kickers/decks | `lint.mjs` |
+| G5 no page chrome | no HUD/timecodes/progress bars/stat walls; one quiet brand/kicker line allowed | grep + by eye |
 | **G6 clean background** | hero line readable in one glance | by eye on contact sheet |
 
 Quote script numbers. Never certify the film as "good".
@@ -158,7 +158,7 @@ Guards:
 
 ## 10. Limits — say them out loud
 
-- Remotion rendered V2 at **30fps**; V3 targets 60fps. Do not claim 60fps before it is rendered.
+- Remotion rendered V2 at **30fps** and V3 at **60fps / 2160 frames**. Do not claim any other engine rendered an MP4.
 - Motion Canvas / Revideo / Timecut / Manim-MCP have **not** rendered an MP4 here.
 - `ffmpeg-mcp` ran; `manim-mcp` was inspected but not run.
 - No Context7 live docs, no Smithery, no Cursor Directory install, no `llms.txt` found.
@@ -167,3 +167,23 @@ Guards:
 - `detect.py` clean Swahili is normally REVIEW; do not self-certify.
 - IG insights require 10–30 owner-posted items. No posting, no DM, no account changes.
 - Drive reference video `1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe` was not accessible to the connected account; do not claim it was watched.
+- V3 clean Reel is a review cut: owner still approves the background, adds music/SFX, does final edit and posts manually.
+
+## 11. Confirmed owner inputs — 17 Nov 2026
+
+- IG Altraware: **`@altrawaretechnology`**.
+- LinkedIn company: `https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true`; personal: `https://www.linkedin.com/in/mwijay-davie/`.
+- Public phone: **`0790942616`** for credits/captions/CTA. Human `+255 792 867 427` stays internal.
+- Logo: `content-kit/assets/altraware-logo.png` confirmed; copy to `engine-trial/public/logo.png` for V3.
+- Site copy: continue with `09-decisions.md`; site update deferred.
+- First deliverable: **V3 clean Reel**; 3 posts/week pilot assumed.
+- Drive reference video still not accessible; do not claim it was watched.
+
+## 12. V3 clean Reel — rendered 18 Nov 2026
+
+- Composition `AltrawareWebsitesV3`: 1080×1920, **60fps**, 2160 frames, 36.011s, H.264 + AAC.
+- Clean plates `11-clean-navy.png` / `12-clean-paper.png`, isolated PNG elements `13-gold-orb.png` / `14-violet-ribbon.png`, animated SVGs from `content-kit/code-video/elements/`.
+- All readable text/code/numbers/captions/timing from `BEATS[]`; frame-driven only; camera rig 1.0→1.35; stagger 3–5 frames; line-by-line code focus; `tabular-nums`.
+- QA: [`content-kit/code-video/QA-websites-v3.md`](../../content-kit/code-video/QA-websites-v3.md), G0–G6 including human background-readability check.
+- Drive review: https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk
+- No music/SFX, no live posting, no DMs, no bot, no credentials, no account changes.

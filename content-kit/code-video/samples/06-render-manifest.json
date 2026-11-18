@@ -1,0 +1,65 @@
+{
+  "engine": "Remotion 4.0.544 / @remotion/renderer / @remotion/bundler",
+  "react": "18.3.1",
+  "browser": {
+    "version": "Chromium 153.0.8010.0",
+    "executable": "/tmp/chromium",
+    "mode": "headless-shell"
+  },
+  "ffmpeg": "Remotion bundled compositor ffmpeg n7.1",
+  "composition": {
+    "id": "AltrawareWebsitesV3",
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "durationInFrames": 2160,
+    "durationSeconds": 36
+  },
+  "assets": [
+    "plates/11-clean-navy.png",
+    "plates/12-clean-paper.png",
+    "elements/phone-frame.svg",
+    "elements/code-brackets.svg",
+    "elements/signal-arc.svg",
+    "elements/node-graph.svg",
+    "logo.png",
+    "plates/13-gold-orb.png",
+    "plates/14-violet-ribbon.png"
+  ],
+  "audio": "audio/voiceover-websites-v2.wav (voice-00 Swahili TTS, atempo 1.7, no music/SFX)",
+  "poster": "06-altraware-websites-v3-poster.png",
+  "video": "06-altraware-websites-v3.mp4",
+  "videoBytes": 5529176,
+  "corrections": {
+    "visual_system": "content-kit/code-video/VISUAL-SYSTEM.md V3 clean background law",
+    "public_phone": "0790942616",
+    "ig_handle": "@altrawaretechnology",
+    "logo": "content-kit/assets/altraware-logo.png (owner confirmed)",
+    "offline_guard": "Offline-first, cloud-synced applies to Faida POS only; excluded from websites reel",
+    "ownership": "Unamiliki data yako na tovuti/app yako; msingi wa Faida unatolewa kwa leseni.",
+    "domain_guard": "No invented domain claim",
+    "fps_target": 60,
+    "visual_guard": "Clean low-frequency plates 11/12 + isolated PNG elements 13/14 + animated SVGs",
+    "qa_gate": "G0-G6 including G6 human background-readability check"
+  },
+  "extra_guards": [],
+  "guards": [
+    "No AI-drawn text or logo",
+    "No invented metrics, clients, testimonials, or official-website claim",
+    "No general-website offline or cloud-sync claim",
+    "Ownership uses the exact 09-decisions phrase; no domain ownership claim",
+    "Starting prices only; full price after scope",
+    "Care Plan 99k/month is a separate service, not SaaS",
+    "Tagline: Built in Tanzania, for how Tanzania really works.",
+    "No auto-DM, bot, posting, DMs, credentials, or account changes"
+  ],
+  "drive": {
+    "id": "1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3",
+    "view": "https://drive.google.com/file/d/1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3/view?usp=drivesdk",
+    "direct": "https://drive.google.com/uc?id=1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3&export=download",
+    "size": 5529176,
+    "created": "2026-11-18T06:48:55.733Z",
+    "permission": "anyoneWithLink reader",
+    "allowFileDiscovery": false
+  }
+}

@@ -31,3 +31,14 @@ Environment notes: the sandbox had no system browser or ffmpeg. Chromium was for
 ## Not done
 
 No live Instagram posting, DMs, auto-DM/bot, credentials, account changes, Docs/Vercel work for this v2 cut, music/SFX, or owner-side final edit. The corrected MP4 was uploaded to Google Drive for review. TTS is the only audio track; the owner adds music in the editor.
+
+## V3 clean Reel — 18 Nov 2026
+
+| Engine | What ran | Result |
+|---|---|---|
+| Remotion 4.0.544 + React 18 + Chromium 153 | `scripts/render-remotion-v3.mjs --render` with `remotion/index-v3.jsx` / `remotion/WebsitesV3.jsx` | `06-altraware-websites-v3.mp4`, 5,529,176 bytes, 2160 frames at 60fps |
+| Remotion compositor ffprobe n7.1 | stream/format inspection | H.264 1080×1920 60/1, 2160 frames; AAC 48kHz 2ch |
+| imageio ffmpeg v9.0.2 | full decode | exit 0 / FULL_DECODE_OK |
+| Google Drive connector | upload + `make_public` | `1Jrg3m4hNYXLjbwgI8r9ZX9AwWmvYQNW3`, `anyoneWithLink reader` |
+
+V3 uses clean plates `11`/`12`, isolated PNG elements `13`/`14`, and animated SVGs. Old busy plates `07`–`10` are excluded. Keyframe stills, MP4 contact sheet and `QA-websites-v3.md` G0–G6 are in `content-kit/code-video/`. Motion Canvas / Revideo / Timecut / Manim-MCP still did **not** render an MP4. Owner adds music/SFX and posts manually.

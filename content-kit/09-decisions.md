@@ -25,3 +25,18 @@ Mmiliki ameamua migongano 5 ya [`01-presence-audit.md`](01-presence-audit.md) §
 | Ruhusa ya namba za kujitangaza | Bado `NEEDS_INPUT`: 99.98% uptime, 24ms, 0.8s, 10x, "Neema", n.k. hazijatumika kama proof. |
 
 **Hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
+
+## Maamuzi ya ziada — 17 Nov 2026 (follow-up ya mmiliki)
+
+| # | Mada | Uamuzi |
+| --- | --- | --- |
+| 6 | **IG handle** | **`@altrawaretechnology`** imethibitishwa. `altrawaretechology` si sahihi kwa content. |
+| 7 | **LinkedIn** | Company: `https://www.linkedin.com/company/altraware-technology/posts/?viewAsMember=true`. Personal: `https://www.linkedin.com/in/mwijay-davie/`. |
+| 8 | **Simu ya hadhara** | Tumia **`0790942616`** (`+255 790 942 616`) kwenye content/credits/CTA. `+255 792 867 427` inabaki namba ya ndani/binadamu hadi useme vinginevyo. Usiandike "bot" kwenye post. |
+| 9 | **Logo** | `final_poster_1.png` = `content-kit/assets/altraware-logo.png` (SHA-256 `72981d16…`) imethibitishwa. Nakili kama `engine-trial/public/logo.png` kwa V3. |
+| 10 | **Site copy** | Endelea kutumia `09-decisions.md` kama source of truth; usibadilishe site bado. Conflict za site zimeandikwa kwenye `10-content-engine-strategy.md`. |
+| 11 | **Kazi ya kwanza** | Anza na **V3 clean Reel**. Cadence ya pilot `3 posts/week` inabaki assumption hadi utoe nyingine. |
+| 12 | **Drive reference** | Video `1S-DgN0qHFeRApDUJW6mLFRA822ylAuWe` bado haijashirikiwa na account iliyounganishwa; usidai imeangaliwa. |
+| 13 | **V3 clean Reel** | Reel safi imetengenezwa 60fps, BG clean, plates/SVG/logo/namba iliyothibitishwa, QA G0–G6 na Drive review. **Haijapostwa**; mmiliki bado anaongeza music/SFX, final edit na kuidhinisha. |
+
+**Bado hakuna kilichopostwa, hakuna DM, hakuna auto-DM, hakuna credential iliyohifadhiwa, akaunti ya Instagram haijaguswa.**
