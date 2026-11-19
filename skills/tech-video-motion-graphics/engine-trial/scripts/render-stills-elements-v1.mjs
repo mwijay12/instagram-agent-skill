@@ -7,11 +7,11 @@ import { getCompositions, renderStill } from '@remotion/renderer';
 import { getChromium } from './lib/chromium.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-const qaDir = resolve(root, '../../../content-kit/code-video/qa-elements-v1');
+const qaDir = resolve(root, '../../../content-kit/code-video/qa-elements-v3');
 const publicDir = resolve(root, 'public');
 const entryPoint = resolve(root, 'remotion/index-elements-v1.jsx');
 
-const frames = [240, 400, 700, 950, 1200, 1600];
+const frames = [293, 544, 816, 1133, 1517, 1999];
 
 const chromium = await getChromium();
 mkdirSync(qaDir, { recursive: true });
