@@ -1,0 +1,50 @@
+{
+  "voice_id": "voice-04",
+  "fps": 60,
+  "duration_frames": 2700,
+  "audio": "voiceover-booking-v1.wav",
+  "shots": [
+    {
+      "id": "1-search",
+      "from": 0,
+      "to": 360,
+      "vo_start": 0.25,
+      "text": "Mteja anauliza ChatGPT au Gemini — naweza ku-book vipi?"
+    },
+    {
+      "id": "2-link",
+      "from": 360,
+      "to": 708,
+      "vo_start": 6.25,
+      "text": "AI inaweza kumpa jibu. Lakini akifungua link, anakuta nini?"
+    },
+    {
+      "id": "3-own",
+      "from": 708,
+      "to": 1176,
+      "vo_start": 12.05,
+      "text": "Website yako ndiyo sehemu unayodhibiti. Weka huduma, masaa na bei, na jinsi ya kuwasiliana."
+    },
+    {
+      "id": "4-work",
+      "from": 1176,
+      "to": 1656,
+      "vo_start": 19.85,
+      "text": "Kwa mifano yetu — mteja anaona menyu hapa, na specs za bidhaa hapa. Bila kuuliza tena."
+    },
+    {
+      "id": "5-offer",
+      "from": 1656,
+      "to": 2256,
+      "vo_start": 27.85,
+      "text": "Altraware tunajenga site nyepesi kwa simu, zenye taarifa wazi. Lakini kumbuka — kuonekana si guarantee."
+    },
+    {
+      "id": "6-close",
+      "from": 2256,
+      "to": 2700,
+      "vo_start": 37.85,
+      "text": "Comment WEB hapo chini. Nitakutumie checklist ya bure ya website yako."
+    }
+  ]
+}
