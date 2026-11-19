@@ -9,7 +9,7 @@ import { getChromium } from './lib/chromium.mjs';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const publicDir = resolve(root, 'public');
 const entryPoint = resolve(root, 'remotion/index-elements-v1.jsx');
-const outFile = resolve(root, '../../../content-kit/code-video/samples/10-altraware-elements-reel-v1.mp4');
+const outFile = resolve(root, '../../../content-kit/code-video/samples/10-altraware-elements-reel-v2.mp4');
 
 mkdirSync(resolve(outFile, '..'), { recursive: true });
 

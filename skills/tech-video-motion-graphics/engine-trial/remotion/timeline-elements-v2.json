@@ -1,0 +1,52 @@
+{
+  "voice_id": "voice-02",
+  "tempo": 1.0,
+  "fps": 60,
+  "duration_frames": 1800,
+  "audio": "voiceover-elements-reel-v2.wav",
+  "speech_end_seconds": 26.367,
+  "clips": [
+    {
+      "i": 1,
+      "text": "Google imetoa models nne mpya za AI — zote kwa majina ya elementi.",
+      "start": 0.3,
+      "from_frame": 0,
+      "to_frame": 279
+    },
+    {
+      "i": 2,
+      "text": "Hydrogen ni ya bure — inatosha kwa kazi za kila siku.",
+      "start": 4.652,
+      "from_frame": 279,
+      "to_frame": 500
+    },
+    {
+      "i": 3,
+      "text": "Neon ndio mpya zaidi: nguvu ya Carbon, kwa kasi ya Flash. Imeingia app wiki hii.",
+      "start": 8.33,
+      "from_frame": 500,
+      "to_frame": 784
+    },
+    {
+      "i": 4,
+      "text": "Carbon ni kwa kazi ngumu kabisa. Na Argon? Imeshafutwa kwenye app.",
+      "start": 13.074,
+      "from_frame": 784,
+      "to_frame": 1026
+    },
+    {
+      "i": 5,
+      "text": "Zinatengenezwa na Google DeepMind. Kwa wewe: tumia model sahihi kwa kazi sahihi.",
+      "start": 17.106,
+      "from_frame": 1026,
+      "to_frame": 1306
+    },
+    {
+      "i": 6,
+      "text": "Comment neno GEMINI hapo chini — nitakutumie PDF kamili inayozieleza, kwa Kiswahili.",
+      "start": 21.761,
+      "from_frame": 1306,
+      "to_frame": 1800
+    }
+  ]
+}

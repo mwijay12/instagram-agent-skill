@@ -11,7 +11,7 @@ const qaDir = resolve(root, '../../../content-kit/code-video/qa-elements-v1');
 const publicDir = resolve(root, 'public');
 const entryPoint = resolve(root, 'remotion/index-elements-v1.jsx');
 
-const frames = [150, 450, 720, 1030, 1320, 1650];
+const frames = [240, 400, 700, 950, 1200, 1600];
 
 const chromium = await getChromium();
 mkdirSync(qaDir, { recursive: true });

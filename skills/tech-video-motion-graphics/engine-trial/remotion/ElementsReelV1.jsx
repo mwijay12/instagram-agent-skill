@@ -46,12 +46,12 @@ const fontCss = `
 `;
 
 const BEATS = [
-  { id: 1, from: 0, to: 307, captions: ['Google imetoa models nne mpya za AI —', 'zote kwa majina ya elementi.'] },
-  { id: 2, from: 307, to: 567, captions: ['Hydrogen: bure kabisa, ya kila siku.', 'Kama hewa unavyoipumulia.'] },
-  { id: 3, from: 567, to: 881, captions: ['Neon ndio mpya zaidi: nguvu ya Carbon,', 'kwa kasi ya Flash. Wiki hii app.'] },
-  { id: 4, from: 881, to: 1174, captions: ['Carbon: kazi ngumu kabisa.', 'Argon? Tayari imefutwa. Miezi miwili tu.'] },
-  { id: 5, from: 1174, to: 1457, captions: ['AI inabadilika kila wiki.', 'Chagua model sahihi kwa kazi sahihi.'] },
-  { id: 6, from: 1457, to: 1800, captions: ['Comment neno GEMINI —', 'nitakutumie PDF kamili, kwa Kiswahili.'] },
+  { id: 1, from: 0, to: 279, captions: ['Google imetoa models nne mpya za AI —', 'zote kwa majina ya elementi.'] },
+  { id: 2, from: 279, to: 500, captions: ['Hydrogen ni ya bure —', 'inatosha kwa kazi za kila siku.'] },
+  { id: 3, from: 500, to: 784, captions: ['Neon ndio mpya zaidi: nguvu ya Carbon,', 'kwa kasi ya Flash. Imeingia app wiki hii.'] },
+  { id: 4, from: 784, to: 1026, captions: ['Carbon ni kwa kazi ngumu kabisa.', 'Na Argon? Imeshafutwa kwenye app.'] },
+  { id: 5, from: 1026, to: 1306, captions: ['Zinatengenezwa na Google DeepMind.', 'Tumia model sahihi kwa kazi sahihi.'] },
+  { id: 6, from: 1306, to: 1800, captions: ['Comment neno GEMINI hapo chini —', 'nitakutumie PDF kamili, kwa Kiswahili.'] },
 ];
 
 /* ------------------------------- atoms ---------------------------------- */
@@ -297,35 +297,52 @@ const NewsChip = ({ lf, at, text, glow }) => {
 
 /* -------------------------------- beats --------------------------------- */
 
-// B1 — hook: Google imegeukia kemikali + 4 tiles
+// B1 — hook: Google logo halisi + tiles
 const BeatHook = ({ beat }) => {
   const frame = useCurrentFrame();
   const lf = frame - beat.from;
+  const logo = slamIn(lf, 2, 16);
   return (
     <AbsoluteFill style={{ background: PAPER }}>
       <DotGrid />
       <TopTag label="01 — 06" />
-      <div style={{ position: 'absolute', left: 72, right: 72, top: 300 }}>
+      <div style={{ position: 'absolute', left: 72, right: 72, top: 250 }}>
         <NewsChip lf={lf} at={4} text="NOV 2026 · GEMINI 4 · INARENDA" glow={NE} />
-        <div style={{ marginTop: 54 }}>
-          <Slam lf={lf} at={14} size={108}>
-            GOOGLE SASA NI
+        {/* Google wordmark halisi */}
+        <div
+          style={{
+            marginTop: 44,
+            background: '#ffffff',
+            border: `3px solid ${INK}`,
+            borderRadius: 22,
+            padding: '34px 40px',
+            width: 640,
+            opacity: logo,
+            transform: `translateY(${(1 - logo) * 50}px) rotate(-1.2deg)`,
+            boxShadow: '0 26px 60px rgba(16,24,43,0.16)',
+          }}
+        >
+          <Img src={staticFile('elements/google-logo.png')} style={{ width: '100%', display: 'block' }} />
+        </div>
+        <div style={{ marginTop: 52 }}>
+          <Slam lf={lf} at={30} size={96}>
+            IMEGEUKIA
           </Slam>
-          <div style={{ marginTop: 10 }}>
-            <HiBar lf={lf} at={34} color={GOLD} textSize={118}>
-              DARASA LA KEMIKALI.
+          <div style={{ marginTop: 8 }}>
+            <HiBar lf={lf} at={48} color={GOLD} textSize={104}>
+              KEMIKALI.
             </HiBar>
           </div>
         </div>
-        <Slam lf={lf} at={86} size={44} color={MUTED} font={FONT_BODY} weight={550} ls="0">
+        <Slam lf={lf} at={92} size={44} color={MUTED} font={FONT_BODY} weight={550} ls="0">
           Models nne mpya za AI, majina ya elementi.
         </Slam>
       </div>
-      <div style={{ position: 'absolute', left: 72, right: 72, top: 1060, display: 'flex', justifyContent: 'space-between' }}>
-        <Tile lf={lf} at={120} num="1" sym="H" name="HYDROGEN" glow={H2} />
-        <Tile lf={lf} at={140} num="10" sym="Ne" name="NEON" glow={NE} />
-        <Tile lf={lf} at={160} num="6" sym="C" name="CARBON" glow={C} />
-        <Tile lf={lf} at={160} num="18" sym="Ar" name="ARGON" glow={AR} struck />
+      <div style={{ position: 'absolute', left: 72, right: 72, top: 1230, display: 'flex', justifyContent: 'space-between' }}>
+        <Tile lf={lf} at={130} num="1" sym="H" name="HYDROGEN" glow={H2} />
+        <Tile lf={lf} at={148} num="10" sym="Ne" name="NEON" glow={NE} />
+        <Tile lf={lf} at={166} num="6" sym="C" name="CARBON" glow={C} />
+        <Tile lf={lf} at={184} num="18" sym="Ar" name="ARGON" glow={AR} struck />
       </div>
       <CaptionBar beat={beat} />
     </AbsoluteFill>
@@ -348,15 +365,15 @@ const BeatHydrogen = ({ beat }) => {
           </Slam>
         </div>
         <div style={{ marginTop: 46, display: 'flex', gap: 22 }}>
-          <HiBar lf={lf} at={66} color={H2} textSize={74} ink="#10182b">
+          <HiBar lf={lf} at={60} color={H2} textSize={74} ink="#10182b">
             BURE KABISA
           </HiBar>
-          <HiBar lf={lf} at={84} color="#ffffff" textSize={74} ink="#10182b">
+          <HiBar lf={lf} at={78} color="#ffffff" textSize={74} ink="#10182b">
             YA KILA SIKU
           </HiBar>
         </div>
-        <Slam lf={lf} at={128} size={48} color="rgba(255,255,255,0.92)" italic font={FONT_BODY} weight={500} ls="0">
-          kama hewa unavyoipumulia.
+        <Slam lf={lf} at={120} size={48} color="rgba(255,255,255,0.92)" italic font={FONT_BODY} weight={500} ls="0">
+          inatosha kwa kazi za kila siku.
         </Slam>
       </div>
       <CaptionBar beat={beat} dark />
@@ -472,39 +489,75 @@ const BeatCarbon = ({ beat }) => {
   );
 };
 
-// B5 — meaning kwa biashara
+// B5 — Google DeepMind lab + meaning
 const BeatMeaning = ({ beat }) => {
   const frame = useCurrentFrame();
   const lf = frame - beat.from;
-  const rows = [
-    { glow: H2, t: 'Kila wiki — model mpya.', at: 60 },
-    { glow: NE, t: 'Kasi na nguvu zinakutana.', at: 96 },
-    { glow: C, t: 'Model sahihi → kazi sahihi.', at: 132 },
-  ];
+  const shot = slamIn(lf, 4, 18);
   return (
     <AbsoluteFill style={{ background: PAPER }}>
       <DotGrid />
       <TopTag label="05 — 06" />
-      <div style={{ position: 'absolute', left: 72, right: 72, top: 320 }}>
-        <Slam lf={lf} at={4} size={44} color={MUTED} font={FONT_MONO} weight={500} ls="0.12em">
-          MAANA YAKE KWA BIASHARA YAKO
+      {/* DeepMind office photo card */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 60,
+          right: 60,
+          top: 250,
+          height: 640,
+          borderRadius: 22,
+          overflow: 'hidden',
+          boxShadow: '0 34px 80px rgba(16,24,43,0.3)',
+          border: `3px solid ${INK}`,
+          opacity: shot,
+          transform: `translateY(${(1 - shot) * 60}px) rotate(-1deg)`,
+        }}
+      >
+        <Img
+          src={staticFile('elements/deepmind-office.jpg')}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: '50% 30%',
+            transform: `scale(${interpolate(lf, [4, 270], [1.02, 1.1], { extrapolateRight: 'clamp' })})`,
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            left: 24,
+            bottom: 24,
+            background: 'rgba(16,24,43,0.85)',
+            borderRadius: 999,
+            padding: '12px 26px',
+            fontFamily: FONT_MONO,
+            fontSize: 26,
+            letterSpacing: '0.1em',
+            color: '#ffffff',
+          }}
+        >
+          GOOGLE DEEPMIND · LONDON
+        </div>
+      </div>
+      <div style={{ position: 'absolute', left: 72, right: 72, top: 1000 }}>
+        <Slam lf={lf} at={60} size={44} color={MUTED} font={FONT_MONO} weight={500} ls="0.12em">
+          MAANA YAKE KWA WEWE
         </Slam>
-        <div style={{ marginTop: 40 }}>
-          <Slam lf={lf} at={16} size={118}>
-            AI HAIKUBALI
+        <div style={{ marginTop: 30 }}>
+          <Slam lf={lf} at={78} size={100}>
+            MODEL SAHIHI,
           </Slam>
-          <Slam lf={lf} at={30} size={118}>
-            KUKAA MBIO.
-          </Slam>
+          <div style={{ marginTop: 8 }}>
+            <HiBar lf={lf} at={100} color={GOLD} textSize={100}>
+              KAZI SAHIHI.
+            </HiBar>
+          </div>
         </div>
-        <div style={{ marginTop: 80, display: 'flex', flexDirection: 'column', gap: 52 }}>
-          {rows.map((r) => (
-            <div key={r.t} style={{ display: 'flex', alignItems: 'center', gap: 26, opacity: slamIn(lf, r.at) }}>
-              <div style={{ width: 26, height: 26, borderRadius: 999, background: r.glow, boxShadow: `0 0 22px ${r.glow}` }} />
-              <div style={{ fontFamily: FONT_BODY, fontSize: 56, fontWeight: 650, color: INK, letterSpacing: '-0.01em' }}>{r.t}</div>
-            </div>
-          ))}
-        </div>
+        <Slam lf={lf} at={150} size={42} color={MUTED} italic font={FONT_BODY} weight={500} ls="0">
+          usilipie nguvu ya Carbon kazi ya Hydrogen.
+        </Slam>
       </div>
       <CaptionBar beat={beat} />
     </AbsoluteFill>
@@ -534,9 +587,21 @@ const BeatCTA = ({ beat }) => {
           <Slam lf={lf} at={28} size={58} color={MUTED} font={FONT_BODY} weight={550} ls="0">
             Unataka kuzielewa zote?
           </Slam>
-          <Slam lf={lf} at={48} size={58} color={MUTED} font={FONT_BODY} weight={550} ls="0">
-            Comment neno
-          </Slam>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 24 }}>
+            <Slam lf={lf} at={48} size={58} color={MUTED} font={FONT_BODY} weight={550} ls="0">
+              Comment neno
+            </Slam>
+            <Img
+              src={staticFile('elements/gemini-sparkle.png')}
+              style={{
+                width: 92,
+                height: 86,
+                objectFit: 'contain',
+                opacity: slamIn(lf, 56, 14),
+                transform: `rotate(${(1 - slamIn(lf, 56, 14)) * -40}deg) scale(${0.6 + slamIn(lf, 56, 14) * 0.4})`,
+              }}
+            />
+          </div>
           <div style={{ marginTop: 18 }}>
             <HiBar lf={lf} at={68} color={VIOLET} textSize={196} ink="#ffffff" padY={22} padX={34}>
               GEMINI.
@@ -573,7 +638,7 @@ export const AltrawareElementsReelV1 = () => {
     <AbsoluteFill style={{ backgroundColor: PAPER, fontFamily: FONT_BODY }}>
       <style>{fontCss}</style>
       <Scene beat={active} />
-      <Audio src={staticFile('audio/voiceover-elements-reel-v1.wav')} />
+      <Audio src={staticFile('audio/voiceover-elements-reel-v2.wav')} />
     </AbsoluteFill>
   );
 };
